@@ -4,7 +4,7 @@ import {ApiService} from './shared/repository/api.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
   title = 'football-site';
@@ -14,6 +14,6 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.apiService.getLiveFixtures();
+    // this.apiService.getLiveFixtures();
   }
 }
