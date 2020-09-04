@@ -4,14 +4,9 @@
 
 <!-- Fixtures -->
   <div class="flex-grow px-2 pb-2 bg-green-100">
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
-    <app-fixture-group></app-fixture-group>
+    <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
+                       [fixtureGroup]="fixtureGroup">
+    </app-fixture-group>
 
   </div>
 

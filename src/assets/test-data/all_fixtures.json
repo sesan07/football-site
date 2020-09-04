@@ -1,0 +1,6087 @@
+{
+  "api": {
+    "results": 160,
+    "fixtures": [
+      {
+        "fixture_id": 325864,
+        "league_id": 1382,
+        "league": {
+          "name": "Serie B",
+          "country": "Ecuador",
+          "logo": "https://media.api-sports.io/football/leagues/243.png",
+          "flag": "https://media.api-sports.io/flags/ec.svg"
+        },
+        "event_date": "2020-09-04T00:00:00+00:00",
+        "event_timestamp": 1599177600,
+        "firstHalfStart": 1599177600,
+        "secondHalfStart": 1599181200,
+        "round": "Regular Season - 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1990,
+          "team_name": "America de Quito",
+          "logo": "https://media.api-sports.io/football/teams/1990.png"
+        },
+        "awayTeam": {
+          "team_id": 10111,
+          "team_name": "9 de Octubre",
+          "logo": "https://media.api-sports.io/football/teams/10111.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328050,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-04T00:00:00+00:00",
+        "event_timestamp": 1599177600,
+        "firstHalfStart": 1599170400,
+        "secondHalfStart": 1599174000,
+        "round": "Regular Season - 7",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Arena do Grêmio",
+        "referee": "Dyorgines Jose Padovani de Andrade, Brazil",
+        "homeTeam": {
+          "team_id": 130,
+          "team_name": "Gremio",
+          "logo": "https://media.api-sports.io/football/teams/130.png"
+        },
+        "awayTeam": {
+          "team_id": 123,
+          "team_name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "1-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 569722,
+        "league_id": 2656,
+        "league": {
+          "name": "Liga MX",
+          "country": "Mexico",
+          "logo": "https://media.api-sports.io/football/leagues/262.png",
+          "flag": "https://media.api-sports.io/flags/mx.svg"
+        },
+        "event_date": "2020-09-04T00:00:00+00:00",
+        "event_timestamp": 1599177600,
+        "firstHalfStart": 1599177600,
+        "secondHalfStart": 1599181200,
+        "round": "Apertura - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio La Corregidora",
+        "referee": "Cesar Arturo Ramos Palazuelos, Mexico",
+        "homeTeam": {
+          "team_id": 2290,
+          "team_name": "Club Queretaro",
+          "logo": "https://media.api-sports.io/football/teams/2290.png"
+        },
+        "awayTeam": {
+          "team_id": 2281,
+          "team_name": "Toluca",
+          "logo": "https://media.api-sports.io/football/teams/2281.png"
+        },
+        "goalsHomeTeam": 4,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-0",
+          "fulltime": "4-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 569723,
+        "league_id": 2656,
+        "league": {
+          "name": "Liga MX",
+          "country": "Mexico",
+          "logo": "https://media.api-sports.io/football/leagues/262.png",
+          "flag": "https://media.api-sports.io/flags/mx.svg"
+        },
+        "event_date": "2020-09-04T02:00:00+00:00",
+        "event_timestamp": 1599184800,
+        "firstHalfStart": 1599184800,
+        "secondHalfStart": 1599188400,
+        "round": "Apertura - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Hidalgo",
+        "referee": "Oscar Macias, Mexico",
+        "homeTeam": {
+          "team_id": 2292,
+          "team_name": "Pachuca",
+          "logo": "https://media.api-sports.io/football/teams/2292.png"
+        },
+        "awayTeam": {
+          "team_id": 2314,
+          "team_name": "Atletico San Luis",
+          "logo": "https://media.api-sports.io/football/teams/2314.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-0",
+          "fulltime": "3-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604290,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T08:30:00+00:00",
+        "event_timestamp": 1599208200,
+        "firstHalfStart": 1599208200,
+        "secondHalfStart": 1599211800,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Municipal de Vila Meã",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 227,
+          "team_name": "Santa Clara",
+          "logo": "https://media.api-sports.io/football/teams/227.png"
+        },
+        "awayTeam": {
+          "team_id": 810,
+          "team_name": "Vizela",
+          "logo": "https://media.api-sports.io/football/teams/810.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": null,
+          "fulltime": "1-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 564016,
+        "league_id": 2183,
+        "league": {
+          "name": "National League",
+          "country": "Myanmar",
+          "logo": "https://media.api-sports.io/football/leagues/588.png",
+          "flag": "https://media.api-sports.io/flags/mm.svg"
+        },
+        "event_date": "2020-09-04T09:00:00+00:00",
+        "event_timestamp": 1599210000,
+        "firstHalfStart": 1599210000,
+        "secondHalfStart": 1599213600,
+        "round": "Regular Season - 13",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Thuwanna YTC Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 12528,
+          "team_name": "Sagaing United",
+          "logo": "https://media.api-sports.io/football/teams/12528.png"
+        },
+        "awayTeam": {
+          "team_id": 8013,
+          "team_name": "Yangon United",
+          "logo": "https://media.api-sports.io/football/teams/8013.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "1-2",
+          "fulltime": "1-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 564017,
+        "league_id": 2183,
+        "league": {
+          "name": "National League",
+          "country": "Myanmar",
+          "logo": "https://media.api-sports.io/football/leagues/588.png",
+          "flag": "https://media.api-sports.io/flags/mm.svg"
+        },
+        "event_date": "2020-09-04T09:00:00+00:00",
+        "event_timestamp": 1599210000,
+        "firstHalfStart": 1599210000,
+        "secondHalfStart": 1599213600,
+        "round": "Regular Season - 13",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Yangon United Sport Complex",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8015,
+          "team_name": "Shan United",
+          "logo": "https://media.api-sports.io/football/teams/8015.png"
+        },
+        "awayTeam": {
+          "team_id": 12527,
+          "team_name": "Rakhine United",
+          "logo": "https://media.api-sports.io/football/teams/12527.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571897,
+        "league_id": 1316,
+        "league": {
+          "name": "New South Wales NPL",
+          "country": "Australia",
+          "logo": "https://media.api-sports.io/football/leagues/192.png",
+          "flag": "https://media.api-sports.io/flags/au.svg"
+        },
+        "event_date": "2020-09-04T09:30:00+00:00",
+        "event_timestamp": 1599211800,
+        "firstHalfStart": 1599211800,
+        "secondHalfStart": 1599215400,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3767,
+          "team_name": "Manly United",
+          "logo": "https://media.api-sports.io/football/teams/3767.png"
+        },
+        "awayTeam": {
+          "team_id": 3764,
+          "team_name": "APIA Leichhardt Tigers",
+          "logo": "https://media.api-sports.io/football/teams/3764.png"
+        },
+        "goalsHomeTeam": 5,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "4-0",
+          "fulltime": "5-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 311918,
+        "league_id": 1314,
+        "league": {
+          "name": "Victoria NPL",
+          "country": "Australia",
+          "logo": "https://media.api-sports.io/football/leagues/195.png",
+          "flag": "https://media.api-sports.io/flags/au.svg"
+        },
+        "event_date": "2020-09-04T09:45:00+00:00",
+        "event_timestamp": 1599212700,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 12",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "SS Anderson Reserve",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3810,
+          "team_name": "Port Melbourne",
+          "logo": "https://media.api-sports.io/football/teams/3810.png"
+        },
+        "awayTeam": {
+          "team_id": 3802,
+          "team_name": "Green Gully",
+          "logo": "https://media.api-sports.io/football/teams/3802.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 316792,
+        "league_id": 1339,
+        "league": {
+          "name": "South Australia NPL",
+          "country": "Australia",
+          "logo": "https://media.api-sports.io/football/leagues/194.png",
+          "flag": "https://media.api-sports.io/flags/au.svg"
+        },
+        "event_date": "2020-09-04T10:00:00+00:00",
+        "event_timestamp": 1599213600,
+        "firstHalfStart": 1599213600,
+        "secondHalfStart": 1599217200,
+        "round": "Regular Season - 7",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Steve Woodcock Sports Centre",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3791,
+          "team_name": "Campbelltown City",
+          "logo": "https://media.api-sports.io/football/teams/3791.png"
+        },
+        "awayTeam": {
+          "team_id": 3785,
+          "team_name": "Adelaide City",
+          "logo": "https://media.api-sports.io/football/teams/3785.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 490834,
+        "league_id": 1336,
+        "league": {
+          "name": "K-League Classic",
+          "country": "South-Korea",
+          "logo": "https://media.api-sports.io/football/leagues/292.png",
+          "flag": "https://media.api-sports.io/flags/kr.svg"
+        },
+        "event_date": "2020-09-04T10:00:00+00:00",
+        "event_timestamp": 1599213600,
+        "firstHalfStart": 1599213600,
+        "secondHalfStart": 1599217200,
+        "round": "Regular Season - 19",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Sangju Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2768,
+          "team_name": "Sangju Sangmu FC",
+          "logo": "https://media.api-sports.io/football/teams/2768.png"
+        },
+        "awayTeam": {
+          "team_id": 2765,
+          "team_name": "Suwon Bluewings",
+          "logo": "https://media.api-sports.io/football/teams/2765.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 569873,
+        "league_id": 1353,
+        "league": {
+          "name": "Super League",
+          "country": "China",
+          "logo": "https://media.api-sports.io/football/leagues/169.png",
+          "flag": "https://media.api-sports.io/flags/cn.svg"
+        },
+        "event_date": "2020-09-04T10:00:00+00:00",
+        "event_timestamp": 1599213600,
+        "firstHalfStart": 1599213600,
+        "secondHalfStart": 1599217200,
+        "round": "Regular Season - 9",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Dalian Pro Soccer Academy Base",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1433,
+          "team_name": "Shenzhen Ruby FC",
+          "logo": "https://media.api-sports.io/football/teams/1433.png"
+        },
+        "awayTeam": {
+          "team_id": 833,
+          "team_name": "Shanghai Shenhua",
+          "logo": "https://media.api-sports.io/football/teams/833.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604291,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T10:00:00+00:00",
+        "event_timestamp": 1599213600,
+        "firstHalfStart": 1599213600,
+        "secondHalfStart": 1599217200,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 404,
+          "team_name": "AC Horsens",
+          "logo": "https://media.api-sports.io/football/teams/404.png"
+        },
+        "awayTeam": {
+          "team_id": 403,
+          "team_name": "Esbjerg",
+          "logo": "https://media.api-sports.io/football/teams/403.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 316790,
+        "league_id": 1339,
+        "league": {
+          "name": "South Australia NPL",
+          "country": "Australia",
+          "logo": "https://media.api-sports.io/football/leagues/194.png",
+          "flag": "https://media.api-sports.io/flags/au.svg"
+        },
+        "event_date": "2020-09-04T10:45:00+00:00",
+        "event_timestamp": 1599216300,
+        "firstHalfStart": 1599216300,
+        "secondHalfStart": 1599219900,
+        "round": "Regular Season - 7",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Croatian Sports Centre",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3788,
+          "team_name": "Adelaide Raiders",
+          "logo": "https://media.api-sports.io/football/teams/3788.png"
+        },
+        "awayTeam": {
+          "team_id": 10009,
+          "team_name": "Cumberland United",
+          "logo": "https://media.api-sports.io/football/teams/10009.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 354937,
+        "league_id": 1487,
+        "league": {
+          "name": "Northern Territory Premier League",
+          "country": "Australia",
+          "logo": "https://media.api-sports.io/football/leagues/193.png",
+          "flag": "https://media.api-sports.io/flags/au.svg"
+        },
+        "event_date": "2020-09-04T11:00:00+00:00",
+        "event_timestamp": 1599217200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 15",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Larrakia Park",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3778,
+          "team_name": "Casuarina",
+          "logo": "https://media.api-sports.io/football/teams/3778.png"
+        },
+        "awayTeam": {
+          "team_id": 3781,
+          "team_name": "Mindil Aces",
+          "logo": "https://media.api-sports.io/football/teams/3781.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 569874,
+        "league_id": 1353,
+        "league": {
+          "name": "Super League",
+          "country": "China",
+          "logo": "https://media.api-sports.io/football/leagues/169.png",
+          "flag": "https://media.api-sports.io/flags/cn.svg"
+        },
+        "event_date": "2020-09-04T12:00:00+00:00",
+        "event_timestamp": 1599220800,
+        "firstHalfStart": 1599220800,
+        "secondHalfStart": 1599224400,
+        "round": "Regular Season - 9",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Dalian Sports Center",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 832,
+          "team_name": "Guangzhou Evergrande FC",
+          "logo": "https://media.api-sports.io/football/teams/832.png"
+        },
+        "awayTeam": {
+          "team_id": 838,
+          "team_name": "Guangzhou R&F",
+          "logo": "https://media.api-sports.io/football/teams/838.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604293,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T12:00:00+00:00",
+        "event_timestamp": 1599220800,
+        "firstHalfStart": 1599220800,
+        "secondHalfStart": 1599224400,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "IGP Arena",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2179,
+          "team_name": "FC WIL 1900",
+          "logo": "https://media.api-sports.io/football/teams/2179.png"
+        },
+        "awayTeam": {
+          "team_id": 1399,
+          "team_name": "Austria Lustenau",
+          "logo": "https://media.api-sports.io/football/teams/1399.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604294,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T12:00:00+00:00",
+        "event_timestamp": 1599220800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 742,
+          "team_name": "Genk",
+          "logo": "https://media.api-sports.io/football/teams/742.png"
+        },
+        "awayTeam": {
+          "team_id": 195,
+          "team_name": "Willem II",
+          "logo": "https://media.api-sports.io/football/teams/195.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604295,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T12:00:00+00:00",
+        "event_timestamp": 1599220800,
+        "firstHalfStart": 1599220800,
+        "secondHalfStart": 1599224400,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Sparta-Stadion Het Kasteel",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 426,
+          "team_name": "Sparta Rotterdam",
+          "logo": "https://media.api-sports.io/football/teams/426.png"
+        },
+        "awayTeam": {
+          "team_id": 198,
+          "team_name": "ADO Den Haag",
+          "logo": "https://media.api-sports.io/football/teams/198.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604299,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T12:00:00+00:00",
+        "event_timestamp": 1599220800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "Akademie Liefering - Platz 1",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 571,
+          "team_name": "Red Bull Salzburg",
+          "logo": "https://media.api-sports.io/football/teams/571.png"
+        },
+        "awayTeam": {
+          "team_id": 4674,
+          "team_name": "Bayern München II",
+          "logo": "https://media.api-sports.io/football/teams/4674.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 313475,
+        "league_id": 1325,
+        "league": {
+          "name": "Super League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/278.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T12:15:00+00:00",
+        "event_timestamp": 1599221700,
+        "firstHalfStart": 1599221700,
+        "secondHalfStart": 1599225300,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Likas",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2505,
+          "team_name": "Sabah FA",
+          "logo": "https://media.api-sports.io/football/teams/2505.png"
+        },
+        "awayTeam": {
+          "team_id": 2526,
+          "team_name": "Selangor",
+          "logo": "https://media.api-sports.io/football/teams/2526.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 580983,
+        "league_id": 1381,
+        "league": {
+          "name": "Premier League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/279.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T12:15:00+00:00",
+        "event_timestamp": 1599221700,
+        "firstHalfStart": 1599221700,
+        "secondHalfStart": 1599225300,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Negeri",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2508,
+          "team_name": "Selangor United",
+          "logo": "https://media.api-sports.io/football/teams/2508.png"
+        },
+        "awayTeam": {
+          "team_id": 2507,
+          "team_name": "UKM FC",
+          "logo": "https://media.api-sports.io/football/teams/2507.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 605037,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T12:30:00+00:00",
+        "event_timestamp": 1599222600,
+        "firstHalfStart": 1599222600,
+        "secondHalfStart": 1599226200,
+        "round": "Club Friendlies 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 202,
+          "team_name": "Groningen",
+          "logo": "https://media.api-sports.io/football/teams/202.png"
+        },
+        "awayTeam": {
+          "team_id": 413,
+          "team_name": "NEC Nijmegen",
+          "logo": "https://media.api-sports.io/football/teams/413.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "3-1",
+          "fulltime": "3-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 313477,
+        "league_id": 1325,
+        "league": {
+          "name": "Super League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/278.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Hang Jebat",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2519,
+          "team_name": "Melaka United",
+          "logo": "https://media.api-sports.io/football/teams/2519.png"
+        },
+        "awayTeam": {
+          "team_id": 2518,
+          "team_name": "Terengganu",
+          "logo": "https://media.api-sports.io/football/teams/2518.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 313478,
+        "league_id": 1325,
+        "league": {
+          "name": "Super League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/278.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Sultan Ibrahim",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2523,
+          "team_name": "Johor Darul Takzim FC",
+          "logo": "https://media.api-sports.io/football/teams/2523.png"
+        },
+        "awayTeam": {
+          "team_id": 2524,
+          "team_name": "Perak",
+          "logo": "https://media.api-sports.io/football/teams/2524.png"
+        },
+        "goalsHomeTeam": 7,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "4-0",
+          "fulltime": "7-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 570873,
+        "league_id": 2661,
+        "league": {
+          "name": "Segunda Division",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/269.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Regular Season - 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Charrúa",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2347,
+          "team_name": "SUD America",
+          "logo": "https://media.api-sports.io/football/teams/2347.png"
+        },
+        "awayTeam": {
+          "team_id": 2364,
+          "team_name": "Atenas",
+          "logo": "https://media.api-sports.io/football/teams/2364.png"
+        },
+        "goalsHomeTeam": 6,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "4-0",
+          "fulltime": "6-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 573998,
+        "league_id": 2283,
+        "league": {
+          "name": "Ýokary Liga",
+          "country": "Turkmenistan",
+          "logo": "https://media.api-sports.io/football/leagues/636.png",
+          "flag": "https://media.api-sports.io/flags/tm.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 16",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Nusay Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 13159,
+          "team_name": "Aşgabat",
+          "logo": "https://media.api-sports.io/football/teams/13159.png"
+        },
+        "awayTeam": {
+          "team_id": 13157,
+          "team_name": "Köpetdag Aşgabat",
+          "logo": "https://media.api-sports.io/football/teams/13157.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 580984,
+        "league_id": 1381,
+        "league": {
+          "name": "Premier League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/279.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Sultan Mohammad IV",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 10107,
+          "team_name": "Kelantan United",
+          "logo": "https://media.api-sports.io/football/teams/10107.png"
+        },
+        "awayTeam": {
+          "team_id": 2517,
+          "team_name": "Kuala Lumpur FA",
+          "logo": "https://media.api-sports.io/football/teams/2517.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 580985,
+        "league_id": 1381,
+        "league": {
+          "name": "Premier League",
+          "country": "Malaysia",
+          "logo": "https://media.api-sports.io/football/leagues/279.png",
+          "flag": "https://media.api-sports.io/flags/my.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Regular Season - 6",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadium Bandar Raya Pulau Pinang",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2504,
+          "team_name": "Penang",
+          "logo": "https://media.api-sports.io/football/teams/2504.png"
+        },
+        "awayTeam": {
+          "team_id": 2502,
+          "team_name": "Negeri Sembilan",
+          "logo": "https://media.api-sports.io/football/teams/2502.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581027,
+        "league_id": 2675,
+        "league": {
+          "name": "Divizia A",
+          "country": "Moldova",
+          "logo": "https://media.api-sports.io/football/leagues/395.png",
+          "flag": "https://media.api-sports.io/flags/md.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "2020/2021 - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Complexul Sportiv Drochia",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5381,
+          "team_name": "Speranța Drochia",
+          "logo": "https://media.api-sports.io/football/teams/5381.png"
+        },
+        "awayTeam": {
+          "team_id": 14010,
+          "team_name": "Olimp Comrat",
+          "logo": "https://media.api-sports.io/football/teams/14010.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581028,
+        "league_id": 2675,
+        "league": {
+          "name": "Divizia A",
+          "country": "Moldova",
+          "logo": "https://media.api-sports.io/football/leagues/395.png",
+          "flag": "https://media.api-sports.io/flags/md.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "2020/2021 - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Bolshaya Sportivnaya Arena",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 14011,
+          "team_name": "Sheriff II",
+          "logo": "https://media.api-sports.io/football/teams/14011.png"
+        },
+        "awayTeam": {
+          "team_id": 5380,
+          "team_name": "Spartanii Selemet",
+          "logo": "https://media.api-sports.io/football/teams/5380.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581029,
+        "league_id": 2675,
+        "league": {
+          "name": "Divizia A",
+          "country": "Moldova",
+          "logo": "https://media.api-sports.io/football/leagues/395.png",
+          "flag": "https://media.api-sports.io/flags/md.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "2020/2021 - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Gorodskoj Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5372,
+          "team_name": "Iskra",
+          "logo": "https://media.api-sports.io/football/teams/5372.png"
+        },
+        "awayTeam": {
+          "team_id": 14008,
+          "team_name": "CSF Bălți",
+          "logo": "https://media.api-sports.io/football/teams/14008.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581032,
+        "league_id": 2675,
+        "league": {
+          "name": "Divizia A",
+          "country": "Moldova",
+          "logo": "https://media.api-sports.io/football/leagues/395.png",
+          "flag": "https://media.api-sports.io/flags/md.svg"
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "2020/2021 - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Stadionul Ceadîr Lunga",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 14012,
+          "team_name": "Sucleia",
+          "logo": "https://media.api-sports.io/football/teams/14012.png"
+        },
+        "awayTeam": {
+          "team_id": 14009,
+          "team_name": "Făleşti",
+          "logo": "https://media.api-sports.io/football/teams/14009.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604292,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Bramall Lane",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 62,
+          "team_name": "Sheffield Utd",
+          "logo": "https://media.api-sports.io/football/teams/62.png"
+        },
+        "awayTeam": {
+          "team_id": 59,
+          "team_name": "Preston",
+          "logo": "https://media.api-sports.io/football/teams/59.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604296,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": 1599224400,
+        "secondHalfStart": 1599228000,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 402,
+          "team_name": "Aalborg",
+          "logo": "https://media.api-sports.io/football/teams/402.png"
+        },
+        "awayTeam": {
+          "team_id": 405,
+          "team_name": "Odense",
+          "logo": "https://media.api-sports.io/football/teams/405.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604297,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 112,
+          "team_name": "Metz",
+          "logo": "https://media.api-sports.io/football/teams/112.png"
+        },
+        "awayTeam": {
+          "team_id": 745,
+          "team_name": "FC Kaiserslautern",
+          "logo": "https://media.api-sports.io/football/teams/745.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604298,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T13:00:00+00:00",
+        "event_timestamp": 1599224400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Eintracht-Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 744,
+          "team_name": "Eintracht Braunschweig",
+          "logo": "https://media.api-sports.io/football/teams/744.png"
+        },
+        "awayTeam": {
+          "team_id": 179,
+          "team_name": "FC Magdeburg",
+          "logo": "https://media.api-sports.io/football/teams/179.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257566,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": 1599228000,
+        "secondHalfStart": 1599231600,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Zemgales Olimpiskā centra",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8204,
+          "team_name": "Latvia U21",
+          "logo": "https://media.api-sports.io/football/teams/8204.png"
+        },
+        "awayTeam": {
+          "team_id": 8222,
+          "team_name": "Serbia U21",
+          "logo": "https://media.api-sports.io/football/teams/8222.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "2-0",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 587121,
+        "league_id": 961,
+        "league": {
+          "name": "Sudani Premier League",
+          "country": "Sudan",
+          "logo": "https://media.api-sports.io/football/leagues/402.png",
+          "flag": "https://media.api-sports.io/flags/sd.svg"
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 29",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Al-Hilal Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5235,
+          "team_name": "Al Ahly Shendi",
+          "logo": "https://media.api-sports.io/football/teams/5235.png"
+        },
+        "awayTeam": {
+          "team_id": 5242,
+          "team_name": "Al Shorta",
+          "logo": "https://media.api-sports.io/football/teams/5242.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 587122,
+        "league_id": 961,
+        "league": {
+          "name": "Sudani Premier League",
+          "country": "Sudan",
+          "logo": "https://media.api-sports.io/football/leagues/402.png",
+          "flag": "https://media.api-sports.io/flags/sd.svg"
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 29",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Dar Alryada Omdurman Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5245,
+          "team_name": "Hay Al Arab",
+          "logo": "https://media.api-sports.io/football/teams/5245.png"
+        },
+        "awayTeam": {
+          "team_id": 5238,
+          "team_name": "Al Khartoum",
+          "logo": "https://media.api-sports.io/football/teams/5238.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 587123,
+        "league_id": 961,
+        "league": {
+          "name": "Sudani Premier League",
+          "country": "Sudan",
+          "logo": "https://media.api-sports.io/football/leagues/402.png",
+          "flag": "https://media.api-sports.io/flags/sd.svg"
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 29",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Al-Merreikh Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5551,
+          "team_name": "Hilal El-Fasher",
+          "logo": "https://media.api-sports.io/football/teams/5551.png"
+        },
+        "awayTeam": {
+          "team_id": 5246,
+          "team_name": "Hay Al Wadi",
+          "logo": "https://media.api-sports.io/football/teams/5246.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 587124,
+        "league_id": 961,
+        "league": {
+          "name": "Sudani Premier League",
+          "country": "Sudan",
+          "logo": "https://media.api-sports.io/football/leagues/402.png",
+          "flag": "https://media.api-sports.io/flags/sd.svg"
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 29",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Khartoum Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 5236,
+          "team_name": "Al Hilal Kadougli",
+          "logo": "https://media.api-sports.io/football/teams/5236.png"
+        },
+        "awayTeam": {
+          "team_id": 5237,
+          "team_name": "Al Hilal Omdurman",
+          "logo": "https://media.api-sports.io/football/teams/5237.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 587711,
+        "league_id": 2757,
+        "league": {
+          "name": "Srpska Liga - Belgrade",
+          "country": "Serbia",
+          "logo": "https://media.api-sports.io/football/leagues/572.png",
+          "flag": "https://media.api-sports.io/flags/rs.svg"
+        },
+        "event_date": "2020-09-04T14:00:00+00:00",
+        "event_timestamp": 1599228000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Belgrade - 4",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Stadion TEK",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 12349,
+          "team_name": "TEK Sloga",
+          "logo": "https://media.api-sports.io/football/teams/12349.png"
+        },
+        "awayTeam": {
+          "team_id": 12331,
+          "team_name": "Polet Dorćol",
+          "logo": "https://media.api-sports.io/football/teams/12331.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257567,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T14:30:00+00:00",
+        "event_timestamp": 1599229800,
+        "firstHalfStart": 1599229800,
+        "secondHalfStart": 1599233400,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Nogometni kamp Reprezentacije BiH",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8184,
+          "team_name": "Bosnia-Herzegovina U21",
+          "logo": "https://media.api-sports.io/football/teams/8184.png"
+        },
+        "awayTeam": {
+          "team_id": 8229,
+          "team_name": "Wales U21",
+          "logo": "https://media.api-sports.io/football/teams/8229.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 568792,
+        "league_id": 2653,
+        "league": {
+          "name": "Prva Liga",
+          "country": "Serbia",
+          "logo": "https://media.api-sports.io/football/leagues/287.png",
+          "flag": "https://media.api-sports.io/flags/rs.svg"
+        },
+        "event_date": "2020-09-04T14:30:00+00:00",
+        "event_timestamp": 1599229800,
+        "firstHalfStart": 1599229800,
+        "secondHalfStart": 1599233400,
+        "round": "Regular Season - 4",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Sportsko-Rekreativni Centar Mladost",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 12360,
+          "team_name": "Železničar Pančevo",
+          "logo": "https://media.api-sports.io/football/teams/12360.png"
+        },
+        "awayTeam": {
+          "team_id": 2642,
+          "team_name": "Zemun",
+          "logo": "https://media.api-sports.io/football/teams/2642.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604300,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T14:30:00+00:00",
+        "event_timestamp": 1599229800,
+        "firstHalfStart": 1599229800,
+        "secondHalfStart": 1599233400,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadio Rodolfo Zandegiacomo",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 487,
+          "team_name": "Lazio",
+          "logo": "https://media.api-sports.io/football/teams/487.png"
+        },
+        "awayTeam": {
+          "team_id": 1584,
+          "team_name": "Vicenza Virtus",
+          "logo": "https://media.api-sports.io/football/teams/1584.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "2-2",
+          "fulltime": "3-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 244768,
+        "league_id": 972,
+        "league": {
+          "name": "Premier League",
+          "country": "Egypt",
+          "logo": "https://media.api-sports.io/football/leagues/233.png",
+          "flag": "https://media.api-sports.io/flags/eg.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "Regular Season - 24",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Fayoum Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1038,
+          "team_name": "Misr EL Makasa",
+          "logo": "https://media.api-sports.io/football/teams/1038.png"
+        },
+        "awayTeam": {
+          "team_id": 1030,
+          "team_name": "Ismaily SC",
+          "logo": "https://media.api-sports.io/football/teams/1030.png"
+        },
+        "goalsHomeTeam": 4,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": "4-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 321246,
+        "league_id": 1342,
+        "league": {
+          "name": "Primera Division",
+          "country": "Chile",
+          "logo": "https://media.api-sports.io/football/leagues/265.png",
+          "flag": "https://media.api-sports.io/flags/cl.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "Regular Season - 9",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Municipal Nicolás Chahuán Nazar",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2326,
+          "team_name": "Union La Calera",
+          "logo": "https://media.api-sports.io/football/teams/2326.png"
+        },
+        "awayTeam": {
+          "team_id": 2331,
+          "team_name": "Cobresal",
+          "logo": "https://media.api-sports.io/football/teams/2331.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-2",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 582202,
+        "league_id": 2731,
+        "league": {
+          "name": "League Cup",
+          "country": "United-Arab-Emirates",
+          "logo": "https://media.api-sports.io/football/leagues/302.png",
+          "flag": "https://media.api-sports.io/flags/ae.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "1st Round",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Hamdan Bin Rashid Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2869,
+          "team_name": "Hatta SC",
+          "logo": "https://media.api-sports.io/football/teams/2869.png"
+        },
+        "awayTeam": {
+          "team_id": 2877,
+          "team_name": "Baniyas SC",
+          "logo": "https://media.api-sports.io/football/teams/2877.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 582204,
+        "league_id": 2731,
+        "league": {
+          "name": "League Cup",
+          "country": "United-Arab-Emirates",
+          "logo": "https://media.api-sports.io/football/leagues/302.png",
+          "flag": "https://media.api-sports.io/flags/ae.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "1st Round",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Hazza Bin Zayed Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2865,
+          "team_name": "Al Ain",
+          "logo": "https://media.api-sports.io/football/teams/2865.png"
+        },
+        "awayTeam": {
+          "team_id": 4912,
+          "team_name": "Al Khaleej",
+          "logo": "https://media.api-sports.io/football/teams/4912.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 586278,
+        "league_id": 2720,
+        "league": {
+          "name": "Druga HNL",
+          "country": "Croatia",
+          "logo": "https://media.api-sports.io/football/leagues/211.png",
+          "flag": "https://media.api-sports.io/flags/hr.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "Regular Season - 4",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadion Sv. Josip Radnik",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1479,
+          "team_name": "Sesvete",
+          "logo": "https://media.api-sports.io/football/teams/1479.png"
+        },
+        "awayTeam": {
+          "team_id": 1487,
+          "team_name": "Bsk Bijelo Brdo",
+          "logo": "https://media.api-sports.io/football/teams/1487.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 586496,
+        "league_id": 2753,
+        "league": {
+          "name": "3. liga - MSFL",
+          "country": "Czech-Republic",
+          "logo": "https://media.api-sports.io/football/leagues/349.png",
+          "flag": "https://media.api-sports.io/flags/cz.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "MSFL - 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Městský fotbalový stadion Hlučín",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 7296,
+          "team_name": "Hlučín",
+          "logo": "https://media.api-sports.io/football/teams/7296.png"
+        },
+        "awayTeam": {
+          "team_id": 7373,
+          "team_name": "Velké Meziříčí",
+          "logo": "https://media.api-sports.io/football/teams/7373.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 586503,
+        "league_id": 2753,
+        "league": {
+          "name": "3. liga - MSFL",
+          "country": "Czech-Republic",
+          "logo": "https://media.api-sports.io/football/leagues/349.png",
+          "flag": "https://media.api-sports.io/flags/cz.svg"
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "MSFL - 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Areál Vlastislava Marečka",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8625,
+          "team_name": "Zlín II",
+          "logo": "https://media.api-sports.io/football/teams/8625.png"
+        },
+        "awayTeam": {
+          "team_id": 8622,
+          "team_name": "Sigma Olomouc II",
+          "logo": "https://media.api-sports.io/football/teams/8622.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604301,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "BWT-Stadion am Hardtwald",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 189,
+          "team_name": "SV Sandhausen",
+          "logo": "https://media.api-sports.io/football/teams/189.png"
+        },
+        "awayTeam": {
+          "team_id": 1319,
+          "team_name": "SV Wehen",
+          "logo": "https://media.api-sports.io/football/teams/1319.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604305,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T15:00:00+00:00",
+        "event_timestamp": 1599231600,
+        "firstHalfStart": 1599231600,
+        "secondHalfStart": 1599235200,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3498,
+          "team_name": "ŁKS Łódź",
+          "logo": "https://media.api-sports.io/football/teams/3498.png"
+        },
+        "awayTeam": {
+          "team_id": 4248,
+          "team_name": "Radomiak Radom",
+          "logo": "https://media.api-sports.io/football/teams/4248.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 570874,
+        "league_id": 2661,
+        "league": {
+          "name": "Segunda Division",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/269.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T15:15:00+00:00",
+        "event_timestamp": 1599232500,
+        "firstHalfStart": 1599232500,
+        "secondHalfStart": 1599236100,
+        "round": "Regular Season - 5",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Municipal Parque Artigas",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2353,
+          "team_name": "Juventud",
+          "logo": "https://media.api-sports.io/football/teams/2353.png"
+        },
+        "awayTeam": {
+          "team_id": 2374,
+          "team_name": "Tacuarembo",
+          "logo": "https://media.api-sports.io/football/teams/2374.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 607154,
+        "league_id": 2848,
+        "league": {
+          "name": "Stars League",
+          "country": "Qatar",
+          "logo": "https://media.api-sports.io/football/leagues/305.png",
+          "flag": "https://media.api-sports.io/flags/qa.svg"
+        },
+        "event_date": "2020-09-04T15:15:00+00:00",
+        "event_timestamp": 1599232500,
+        "firstHalfStart": 1599232500,
+        "secondHalfStart": 1599236100,
+        "round": "Regular Season - 1",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Education City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2904,
+          "team_name": "Al-Duhail SC",
+          "logo": "https://media.api-sports.io/football/teams/2904.png"
+        },
+        "awayTeam": {
+          "team_id": 2899,
+          "team_name": "UMM Salal",
+          "logo": "https://media.api-sports.io/football/teams/2899.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "2-0",
+          "fulltime": "3-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 607155,
+        "league_id": 2848,
+        "league": {
+          "name": "Stars League",
+          "country": "Qatar",
+          "logo": "https://media.api-sports.io/football/leagues/305.png",
+          "flag": "https://media.api-sports.io/flags/qa.svg"
+        },
+        "event_date": "2020-09-04T15:15:00+00:00",
+        "event_timestamp": 1599232500,
+        "firstHalfStart": 1599232500,
+        "secondHalfStart": 1599236100,
+        "round": "Regular Season - 1",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Hamad bin Khalifa Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2896,
+          "team_name": "Al Ahli Doha",
+          "logo": "https://media.api-sports.io/football/teams/2896.png"
+        },
+        "awayTeam": {
+          "team_id": 2900,
+          "team_name": "Al Wakrah",
+          "logo": "https://media.api-sports.io/football/teams/2900.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604306,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T15:30:00+00:00",
+        "event_timestamp": 1599233400,
+        "firstHalfStart": 1599233400,
+        "secondHalfStart": 1599237000,
+        "round": "Club Friendlies 3",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1073,
+          "team_name": "Wacker Innsbruck",
+          "logo": "https://media.api-sports.io/football/teams/1073.png"
+        },
+        "awayTeam": {
+          "team_id": 1578,
+          "team_name": "Sudtirol",
+          "logo": "https://media.api-sports.io/football/teams/1578.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 324084,
+        "league_id": 928,
+        "league": {
+          "name": "Division 1",
+          "country": "Kuwait",
+          "logo": "https://media.api-sports.io/football/leagues/331.png",
+          "flag": "https://media.api-sports.io/flags/kw.svg"
+        },
+        "event_date": "2020-09-04T15:40:00+00:00",
+        "event_timestamp": 1599234000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 20",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Nayif Daboos Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3533,
+          "team_name": "Al Fahaheel",
+          "logo": "https://media.api-sports.io/football/teams/3533.png"
+        },
+        "awayTeam": {
+          "team_id": 3545,
+          "team_name": "Khaitan",
+          "logo": "https://media.api-sports.io/football/teams/3545.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 324085,
+        "league_id": 928,
+        "league": {
+          "name": "Division 1",
+          "country": "Kuwait",
+          "logo": "https://media.api-sports.io/football/leagues/331.png",
+          "flag": "https://media.api-sports.io/flags/kw.svg"
+        },
+        "event_date": "2020-09-04T15:40:00+00:00",
+        "event_timestamp": 1599234000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 20",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Al Ahmadi Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3544,
+          "team_name": "Burgan",
+          "logo": "https://media.api-sports.io/football/teams/3544.png"
+        },
+        "awayTeam": {
+          "team_id": 3543,
+          "team_name": "Al Sulaibikhat",
+          "logo": "https://media.api-sports.io/football/teams/3543.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257564,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Pärnu Rannastaadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8191,
+          "team_name": "Estonia U21",
+          "logo": "https://media.api-sports.io/football/teams/8191.png"
+        },
+        "awayTeam": {
+          "team_id": 8215,
+          "team_name": "Poland U21",
+          "logo": "https://media.api-sports.io/football/teams/8215.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 6,
+        "score": {
+          "halftime": "0-3",
+          "fulltime": "0-6",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257565,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Arena Khimki",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8219,
+          "team_name": "Russia U21",
+          "logo": "https://media.api-sports.io/football/teams/8219.png"
+        },
+        "awayTeam": {
+          "team_id": 8185,
+          "team_name": "Bulgaria U21",
+          "logo": "https://media.api-sports.io/football/teams/8185.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257568,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Marienlyst Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8214,
+          "team_name": "Norway U21",
+          "logo": "https://media.api-sports.io/football/teams/8214.png"
+        },
+        "awayTeam": {
+          "team_id": 8197,
+          "team_name": "Gibraltar U21",
+          "logo": "https://media.api-sports.io/football/teams/8197.png"
+        },
+        "goalsHomeTeam": 6,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "2-0",
+          "fulltime": "6-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257569,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "AEK Arena - George Karapatakis",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8187,
+          "team_name": "Cyprus U21",
+          "logo": "https://media.api-sports.io/football/teams/8187.png"
+        },
+        "awayTeam": {
+          "team_id": 8216,
+          "team_name": "Portugal U21",
+          "logo": "https://media.api-sports.io/football/teams/8216.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 4,
+        "score": {
+          "halftime": "0-2",
+          "fulltime": "0-4",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257570,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadyen Tarpeda",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8182,
+          "team_name": "Belarus U21",
+          "logo": "https://media.api-sports.io/football/teams/8182.png"
+        },
+        "awayTeam": {
+          "team_id": 8211,
+          "team_name": "Netherlands U21",
+          "logo": "https://media.api-sports.io/football/teams/8211.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 7,
+        "score": {
+          "halftime": "0-3",
+          "fulltime": "0-7",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257571,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "MFA Centenary Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8208,
+          "team_name": "Malta U21",
+          "logo": "https://media.api-sports.io/football/teams/8208.png"
+        },
+        "awayTeam": {
+          "team_id": 8213,
+          "team_name": "Northern Ireland U21",
+          "logo": "https://media.api-sports.io/football/teams/8213.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257572,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Aalborg Portland Park",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8189,
+          "team_name": "Denmark U21",
+          "logo": "https://media.api-sports.io/football/teams/8189.png"
+        },
+        "awayTeam": {
+          "team_id": 8228,
+          "team_name": "Ukraine U21",
+          "logo": "https://media.api-sports.io/football/teams/8228.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257573,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Veritas Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8193,
+          "team_name": "Finland U21",
+          "logo": "https://media.api-sports.io/football/teams/8193.png"
+        },
+        "awayTeam": {
+          "team_id": 8218,
+          "team_name": "Romania U21",
+          "logo": "https://media.api-sports.io/football/teams/8218.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "1-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332524,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "League C - 1",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Vilniaus LFF stadionas",
+        "referee": "Rade Obrenovic, Slovenia",
+        "homeTeam": {
+          "team_id": 1097,
+          "team_name": "Lithuania",
+          "logo": "https://media.api-sports.io/football/teams/1097.png"
+        },
+        "awayTeam": {
+          "team_id": 1095,
+          "team_name": "Kazakhstan",
+          "logo": "https://media.api-sports.io/football/teams/1095.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "0-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 583686,
+        "league_id": 2738,
+        "league": {
+          "name": "Regionalliga - West",
+          "country": "Germany",
+          "logo": "https://media.api-sports.io/football/leagues/87.png",
+          "flag": "https://media.api-sports.io/flags/de.svg"
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "West - 1",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Häcker Wiehenstadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1650,
+          "team_name": "SV Rodinghausen",
+          "logo": "https://media.api-sports.io/football/teams/1650.png"
+        },
+        "awayTeam": {
+          "team_id": 1313,
+          "team_name": "Preussen Munster",
+          "logo": "https://media.api-sports.io/football/teams/1313.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 584751,
+        "league_id": 2742,
+        "league": {
+          "name": "I Liga",
+          "country": "Poland",
+          "logo": "https://media.api-sports.io/football/leagues/107.png",
+          "flag": "https://media.api-sports.io/flags/pl.svg"
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Regular Season - 2",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadion Miejski",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 344,
+          "team_name": "Arka Gdynia",
+          "logo": "https://media.api-sports.io/football/teams/344.png"
+        },
+        "awayTeam": {
+          "team_id": 3490,
+          "team_name": "Puszcza Niepołomice",
+          "logo": "https://media.api-sports.io/football/teams/3490.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "3-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 597986,
+        "league_id": 2812,
+        "league": {
+          "name": "II Liga - East",
+          "country": "Poland",
+          "logo": "https://media.api-sports.io/football/leagues/109.png",
+          "flag": "https://media.api-sports.io/flags/pl.svg"
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": 1599235200,
+        "secondHalfStart": 1599238800,
+        "round": "Regular Season - 2",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadion Znicza",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 6964,
+          "team_name": "Znicz Pruszków",
+          "logo": "https://media.api-sports.io/football/teams/6964.png"
+        },
+        "awayTeam": {
+          "team_id": 3481,
+          "team_name": "Bytovia Bytów",
+          "logo": "https://media.api-sports.io/football/teams/3481.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604302,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "BSFZ-Arena",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1023,
+          "team_name": "Admira Wacker",
+          "logo": "https://media.api-sports.io/football/teams/1023.png"
+        },
+        "awayTeam": {
+          "team_id": 2860,
+          "team_name": "Austria Vienna (Am)",
+          "logo": "https://media.api-sports.io/football/teams/2860.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604303,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:00:00+00:00",
+        "event_timestamp": 1599235200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": "PROfertil ARENA",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1072,
+          "team_name": "TSV Hartberg",
+          "logo": "https://media.api-sports.io/football/teams/1072.png"
+        },
+        "awayTeam": {
+          "team_id": 504,
+          "team_name": "Verona",
+          "logo": "https://media.api-sports.io/football/teams/504.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257558,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:30:00+00:00",
+        "event_timestamp": 1599237000,
+        "firstHalfStart": 1599237000,
+        "secondHalfStart": 1599240600,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Víkingsvöllur",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8199,
+          "team_name": "Iceland U21",
+          "logo": "https://media.api-sports.io/football/teams/8199.png"
+        },
+        "awayTeam": {
+          "team_id": 8225,
+          "team_name": "Sweden U21",
+          "logo": "https://media.api-sports.io/football/teams/8225.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257562,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:30:00+00:00",
+        "event_timestamp": 1599237000,
+        "firstHalfStart": 1599237000,
+        "secondHalfStart": 1599240600,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "josko ARENA",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8180,
+          "team_name": "Austria U21",
+          "logo": "https://media.api-sports.io/football/teams/8180.png"
+        },
+        "awayTeam": {
+          "team_id": 8177,
+          "team_name": "Albania U21",
+          "logo": "https://media.api-sports.io/football/teams/8177.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 5,
+        "score": {
+          "halftime": "0-2",
+          "fulltime": "1-5",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 591746,
+        "league_id": 2781,
+        "league": {
+          "name": "League Cup",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/48.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-09-04T16:30:00+00:00",
+        "event_timestamp": 1599237000,
+        "firstHalfStart": 1599237000,
+        "secondHalfStart": 1599240600,
+        "round": "1st Round",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Riverside Stadium",
+        "referee": "M. Salisbury",
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 1352,
+          "team_name": "Shrewsbury",
+          "logo": "https://media.api-sports.io/football/teams/1352.png"
+        },
+        "goalsHomeTeam": 4,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": "4-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 605038,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T16:45:00+00:00",
+        "event_timestamp": 1599237900,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 5",
+        "status": "Match Cancelled",
+        "statusShort": "CANC",
+        "elapsed": 0,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 724,
+          "team_name": "Cadiz",
+          "logo": "https://media.api-sports.io/football/teams/724.png"
+        },
+        "awayTeam": {
+          "team_id": 715,
+          "team_name": "Granada CF",
+          "logo": "https://media.api-sports.io/football/teams/715.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257559,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Qualifying Round - 14",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 90,
+        "venue": "Stadioni Tengiz Burjanadze",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8195,
+          "team_name": "Georgia U21",
+          "logo": "https://media.api-sports.io/football/teams/8195.png"
+        },
+        "awayTeam": {
+          "team_id": 8194,
+          "team_name": "France U21",
+          "logo": "https://media.api-sports.io/football/teams/8194.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257560,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Qualifying Round - 14",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 89,
+        "venue": "LIPO Park Schaffhausen",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8226,
+          "team_name": "Switzerland U21",
+          "logo": "https://media.api-sports.io/football/teams/8226.png"
+        },
+        "awayTeam": {
+          "team_id": 8223,
+          "team_name": "Slovakia U21",
+          "logo": "https://media.api-sports.io/football/teams/8223.png"
+        },
+        "goalsHomeTeam": 4,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257563,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Qualifying Round - 14",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Stadiumi Fadil Vokrri",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8203,
+          "team_name": "Kosovo U21",
+          "logo": "https://media.api-sports.io/football/teams/8203.png"
+        },
+        "awayTeam": {
+          "team_id": 8190,
+          "team_name": "England U21",
+          "logo": "https://media.api-sports.io/football/teams/8190.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 6,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-6",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 481102,
+        "league_id": 2212,
+        "league": {
+          "name": "Division 2 - Östra Götaland",
+          "country": "Sweden",
+          "logo": "https://media.api-sports.io/football/leagues/597.png",
+          "flag": "https://media.api-sports.io/flags/se.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Östra Götaland - 7",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Österås IP",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 6676,
+          "team_name": "Hässleholms IF",
+          "logo": "https://media.api-sports.io/football/teams/6676.png"
+        },
+        "awayTeam": {
+          "team_id": 12617,
+          "team_name": "Räppe",
+          "logo": "https://media.api-sports.io/football/teams/12617.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 563348,
+        "league_id": 1607,
+        "league": {
+          "name": "Damallsvenskan",
+          "country": "Sweden",
+          "logo": "https://media.api-sports.io/football/leagues/549.png",
+          "flag": "https://media.api-sports.io/flags/se.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Regular Season - 14",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 90,
+        "venue": "Myresjöhus Arena",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 11084,
+          "team_name": "Växjö",
+          "logo": "https://media.api-sports.io/football/teams/11084.png"
+        },
+        "awayTeam": {
+          "team_id": 11078,
+          "team_name": "KIF Örebro",
+          "logo": "https://media.api-sports.io/football/teams/11078.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 565916,
+        "league_id": 2211,
+        "league": {
+          "name": "Division 2 - Västra Götaland",
+          "country": "Sweden",
+          "logo": "https://media.api-sports.io/football/leagues/596.png",
+          "flag": "https://media.api-sports.io/flags/se.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Västra Götaland - 7",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Ekevalla IP Eslöv A-plan",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 12602,
+          "team_name": "Eslov",
+          "logo": "https://media.api-sports.io/football/teams/12602.png"
+        },
+        "awayTeam": {
+          "team_id": 12605,
+          "team_name": "Limhamn Bunkeflo 07",
+          "logo": "https://media.api-sports.io/football/teams/12605.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 566095,
+        "league_id": 2207,
+        "league": {
+          "name": "Division 2 - Norra Götaland",
+          "country": "Sweden",
+          "logo": "https://media.api-sports.io/football/leagues/592.png",
+          "flag": "https://media.api-sports.io/flags/se.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Norra Götaland - 7",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Vänersvallen Nord",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 6713,
+          "team_name": "Vänersborgs IF",
+          "logo": "https://media.api-sports.io/football/teams/6713.png"
+        },
+        "awayTeam": {
+          "team_id": 6667,
+          "team_name": "Gauthiod",
+          "logo": "https://media.api-sports.io/football/teams/6667.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 567039,
+        "league_id": 1312,
+        "league": {
+          "name": "Superettan",
+          "country": "Sweden",
+          "logo": "https://media.api-sports.io/football/leagues/114.png",
+          "flag": "https://media.api-sports.io/flags/se.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Regular Season - 16",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 90,
+        "venue": "Gamla Ullevi",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2170,
+          "team_name": "Gais",
+          "logo": "https://media.api-sports.io/football/teams/2170.png"
+        },
+        "awayTeam": {
+          "team_id": 369,
+          "team_name": "trelleborgs FF",
+          "logo": "https://media.api-sports.io/football/teams/369.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581955,
+        "league_id": 2729,
+        "league": {
+          "name": "Landesliga - Burgenland",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/224.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Burgenland - 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Heidebodenstadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 4955,
+          "team_name": "Parndorf",
+          "logo": "https://media.api-sports.io/football/teams/4955.png"
+        },
+        "awayTeam": {
+          "team_id": 8266,
+          "team_name": "Klingenbach",
+          "logo": "https://media.api-sports.io/football/teams/8266.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581956,
+        "league_id": 2729,
+        "league": {
+          "name": "Landesliga - Burgenland",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/224.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Burgenland - 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Stadion Güssing",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8264,
+          "team_name": "Güssing",
+          "logo": "https://media.api-sports.io/football/teams/8264.png"
+        },
+        "awayTeam": {
+          "team_id": 8267,
+          "team_name": "Kohfidisch",
+          "logo": "https://media.api-sports.io/football/teams/8267.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604304,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Club Friendlies 3",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 90,
+        "venue": "Estadio Heliodoro Rodríguez Lopéz",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 719,
+          "team_name": "Tenerife",
+          "logo": "https://media.api-sports.io/football/teams/719.png"
+        },
+        "awayTeam": {
+          "team_id": 534,
+          "team_name": "Las Palmas",
+          "logo": "https://media.api-sports.io/football/teams/534.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604307,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:00:00+00:00",
+        "event_timestamp": 1599238800,
+        "firstHalfStart": 1599238800,
+        "secondHalfStart": 1599242400,
+        "round": "Club Friendlies 3",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 88,
+        "venue": "Covebo Stadion - De Koel -",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 204,
+          "team_name": "VVV Venlo",
+          "logo": "https://media.api-sports.io/football/teams/204.png"
+        },
+        "awayTeam": {
+          "team_id": 163,
+          "team_name": "Borussia Monchengladbach",
+          "logo": "https://media.api-sports.io/football/teams/163.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 4,
+        "score": {
+          "halftime": "0-2",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 574579,
+        "league_id": 2681,
+        "league": {
+          "name": "Women Bundesliga",
+          "country": "Germany",
+          "logo": "https://media.api-sports.io/football/leagues/82.png",
+          "flag": "https://media.api-sports.io/flags/de.svg"
+        },
+        "event_date": "2020-09-04T17:15:00+00:00",
+        "event_timestamp": 1599239700,
+        "firstHalfStart": 1599239700,
+        "secondHalfStart": 1599243300,
+        "round": "Regular Season - 1",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 76,
+        "venue": "AOK Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1863,
+          "team_name": "VfL Wolfsburg W",
+          "logo": "https://media.api-sports.io/football/teams/1863.png"
+        },
+        "awayTeam": {
+          "team_id": 1868,
+          "team_name": "SGS Essen W",
+          "logo": "https://media.api-sports.io/football/teams/1868.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 257561,
+        "league_id": 1076,
+        "league": {
+          "name": "UEFA U21 Championship",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/38.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Qualifying Round - 14",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 60,
+        "venue": "Necmi Kadıoğlu Stadyumu",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8227,
+          "team_name": "Turkey U21",
+          "logo": "https://media.api-sports.io/football/teams/8227.png"
+        },
+        "awayTeam": {
+          "team_id": 8178,
+          "team_name": "Andorra U21",
+          "logo": "https://media.api-sports.io/football/teams/8178.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 323269,
+        "league_id": 1369,
+        "league": {
+          "name": "Primera B",
+          "country": "Chile",
+          "logo": "https://media.api-sports.io/football/leagues/266.png",
+          "flag": "https://media.api-sports.io/flags/cl.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Regular Season - 6",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 59,
+        "venue": "Estadio Municipal Bicentenario Germán Becker",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2317,
+          "team_name": "Deportes Temuco",
+          "logo": "https://media.api-sports.io/football/teams/2317.png"
+        },
+        "awayTeam": {
+          "team_id": 2334,
+          "team_name": "Deportes Valdivia",
+          "logo": "https://media.api-sports.io/football/teams/2334.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571417,
+        "league_id": 2661,
+        "league": {
+          "name": "Segunda Division",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/269.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Regular Season - 5",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 60,
+        "venue": "Estadio Charrúa",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2354,
+          "team_name": "Rampla Juniors",
+          "logo": "https://media.api-sports.io/football/teams/2354.png"
+        },
+        "awayTeam": {
+          "team_id": 13268,
+          "team_name": "Rocha",
+          "logo": "https://media.api-sports.io/football/teams/13268.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "3-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581957,
+        "league_id": 2729,
+        "league": {
+          "name": "Landesliga - Burgenland",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/224.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Burgenland - 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Informstadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8271,
+          "team_name": "Oberwart / Rotenturm",
+          "logo": "https://media.api-sports.io/football/teams/8271.png"
+        },
+        "awayTeam": {
+          "team_id": 4983,
+          "team_name": "Siegendorf",
+          "logo": "https://media.api-sports.io/football/teams/4983.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 581958,
+        "league_id": 2729,
+        "league": {
+          "name": "Landesliga - Burgenland",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/224.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Burgenland - 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Sportplatz Deutschkreutz",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 8262,
+          "team_name": "Deutschkreutz",
+          "logo": "https://media.api-sports.io/football/teams/8262.png"
+        },
+        "awayTeam": {
+          "team_id": 8269,
+          "team_name": "Markt Allhau",
+          "logo": "https://media.api-sports.io/football/teams/8269.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 582206,
+        "league_id": 2731,
+        "league": {
+          "name": "League Cup",
+          "country": "United-Arab-Emirates",
+          "logo": "https://media.api-sports.io/football/leagues/302.png",
+          "flag": "https://media.api-sports.io/flags/ae.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "1st Round",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Al Nahyan Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2875,
+          "team_name": "Al Wahda FC",
+          "logo": "https://media.api-sports.io/football/teams/2875.png"
+        },
+        "awayTeam": {
+          "team_id": 2872,
+          "team_name": "Al-Wasl FC",
+          "logo": "https://media.api-sports.io/football/teams/2872.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 590371,
+        "league_id": 2689,
+        "league": {
+          "name": "Regionalliga - Ost",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/221.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Ost - 3",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 65,
+        "venue": "Sportzentrum Neusiedl",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 4954,
+          "team_name": "Neusiedl",
+          "logo": "https://media.api-sports.io/football/teams/4954.png"
+        },
+        "awayTeam": {
+          "team_id": 4937,
+          "team_name": "Draßburg",
+          "logo": "https://media.api-sports.io/football/teams/4937.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 590373,
+        "league_id": 2689,
+        "league": {
+          "name": "Regionalliga - Ost",
+          "country": "Austria",
+          "logo": "https://media.api-sports.io/football/leagues/221.png",
+          "flag": "https://media.api-sports.io/flags/at.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Ost - 3",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 62,
+        "venue": "Sportclub-Platz",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 4965,
+          "team_name": "Wiener SC",
+          "logo": "https://media.api-sports.io/football/teams/4965.png"
+        },
+        "awayTeam": {
+          "team_id": 4936,
+          "team_name": "Bruck/Leitha",
+          "logo": "https://media.api-sports.io/football/teams/4936.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 599758,
+        "league_id": 2821,
+        "league": {
+          "name": "Regionalliga - Nord",
+          "country": "Germany",
+          "logo": "https://media.api-sports.io/football/leagues/84.png",
+          "flag": "https://media.api-sports.io/flags/de.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Nord - 1",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 59,
+        "venue": "96 - DAS STADION",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 9341,
+          "team_name": "Hannover 96 II",
+          "logo": "https://media.api-sports.io/football/teams/9341.png"
+        },
+        "awayTeam": {
+          "team_id": 4260,
+          "team_name": "Atlas Delmenhorst",
+          "logo": "https://media.api-sports.io/football/teams/4260.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604308,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Marbella Football Center - Sur 1",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 715,
+          "team_name": "Granada CF",
+          "logo": "https://media.api-sports.io/football/teams/715.png"
+        },
+        "awayTeam": {
+          "team_id": 724,
+          "team_name": "Cadiz",
+          "logo": "https://media.api-sports.io/football/teams/724.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 607156,
+        "league_id": 2848,
+        "league": {
+          "name": "Stars League",
+          "country": "Qatar",
+          "logo": "https://media.api-sports.io/football/leagues/305.png",
+          "flag": "https://media.api-sports.io/flags/qa.svg"
+        },
+        "event_date": "2020-09-04T17:30:00+00:00",
+        "event_timestamp": 1599240600,
+        "firstHalfStart": 1599240600,
+        "secondHalfStart": 1599244200,
+        "round": "Regular Season - 1",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 60,
+        "venue": "Hamad bin Khalifa Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2901,
+          "team_name": "Al-Khor",
+          "logo": "https://media.api-sports.io/football/teams/2901.png"
+        },
+        "awayTeam": {
+          "team_id": 2905,
+          "team_name": "Al-Arabi SC",
+          "logo": "https://media.api-sports.io/football/teams/2905.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-2",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312957,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "Prince Sultan bin Abdulaziz Sports City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2951,
+          "team_name": "Abha",
+          "logo": "https://media.api-sports.io/football/teams/2951.png"
+        },
+        "awayTeam": {
+          "team_id": 2929,
+          "team_name": "Al-Ahli Jeddah",
+          "logo": "https://media.api-sports.io/football/teams/2929.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312958,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": null,
+        "round": "Regular Season - 29",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Al Majma'ah Sports City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2944,
+          "team_name": "Al-Fayha",
+          "logo": "https://media.api-sports.io/football/teams/2944.png"
+        },
+        "awayTeam": {
+          "team_id": 2950,
+          "team_name": "Al-Adalah",
+          "logo": "https://media.api-sports.io/football/teams/2950.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312959,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "Prince Mohamed bin Fahd Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2934,
+          "team_name": "Al-Ettifaq",
+          "logo": "https://media.api-sports.io/football/teams/2934.png"
+        },
+        "awayTeam": {
+          "team_id": 2956,
+          "team_name": "Dhamk",
+          "logo": "https://media.api-sports.io/football/teams/2956.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312960,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "King Abdullah Sports City",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2938,
+          "team_name": "Al-Ittihad FC",
+          "logo": "https://media.api-sports.io/football/teams/2938.png"
+        },
+        "awayTeam": {
+          "team_id": 2939,
+          "team_name": "Al-Nassr",
+          "logo": "https://media.api-sports.io/football/teams/2939.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312961,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "Prince Abdullah bin Jalawi Sports City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2931,
+          "team_name": "Al-Fateh",
+          "logo": "https://media.api-sports.io/football/teams/2931.png"
+        },
+        "awayTeam": {
+          "team_id": 2936,
+          "team_name": "Al Taawon",
+          "logo": "https://media.api-sports.io/football/teams/2936.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312962,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "King Abdullah Sport City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2935,
+          "team_name": "Al-Raed",
+          "logo": "https://media.api-sports.io/football/teams/2935.png"
+        },
+        "awayTeam": {
+          "team_id": 2930,
+          "team_name": "Al-Faisaly FC",
+          "logo": "https://media.api-sports.io/football/teams/2930.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312963,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "King Abdul Aziz Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2937,
+          "team_name": "Al Wehda Club",
+          "logo": "https://media.api-sports.io/football/teams/2937.png"
+        },
+        "awayTeam": {
+          "team_id": 2932,
+          "team_name": "Al-Hilal Saudi FC",
+          "logo": "https://media.api-sports.io/football/teams/2932.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 312964,
+        "league_id": 901,
+        "league": {
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media.api-sports.io/football/leagues/307.png",
+          "flag": "https://media.api-sports.io/flags/sa.svg"
+        },
+        "event_date": "2020-09-04T17:35:00+00:00",
+        "event_timestamp": 1599240900,
+        "firstHalfStart": 1599240900,
+        "secondHalfStart": 1599244500,
+        "round": "Regular Season - 29",
+        "status": "Second Half",
+        "statusShort": "2H",
+        "elapsed": 49,
+        "venue": "Prince Faisal bin Fahd Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2940,
+          "team_name": "Al Shabab",
+          "logo": "https://media.api-sports.io/football/teams/2940.png"
+        },
+        "awayTeam": {
+          "team_id": 2945,
+          "team_name": "Al-Hazm",
+          "logo": "https://media.api-sports.io/football/teams/2945.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 244762,
+        "league_id": 972,
+        "league": {
+          "name": "Premier League",
+          "country": "Egypt",
+          "logo": "https://media.api-sports.io/football/leagues/233.png",
+          "flag": "https://media.api-sports.io/flags/eg.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 24",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 45,
+        "venue": "Al Ahly Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1577,
+          "team_name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png"
+        },
+        "awayTeam": {
+          "team_id": 1046,
+          "team_name": "Wadi Degla",
+          "logo": "https://media.api-sports.io/football/teams/1046.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 570986,
+        "league_id": 2662,
+        "league": {
+          "name": "NB I",
+          "country": "Hungary",
+          "logo": "https://media.api-sports.io/football/leagues/271.png",
+          "flag": "https://media.api-sports.io/flags/hu.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 2",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Várkerti Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2394,
+          "team_name": "Kisvarda FC",
+          "logo": "https://media.api-sports.io/football/teams/2394.png"
+        },
+        "awayTeam": {
+          "team_id": 2391,
+          "team_name": "Puskas Academy",
+          "logo": "https://media.api-sports.io/football/teams/2391.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571986,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Stade Marcel-Verchère",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 430,
+          "team_name": "Bourg-en-bresse 01",
+          "logo": "https://media.api-sports.io/football/teams/430.png"
+        },
+        "awayTeam": {
+          "team_id": 104,
+          "team_name": "RED Star FC 93",
+          "logo": "https://media.api-sports.io/football/teams/104.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571988,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Stade Dominique Duvauchelle",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1307,
+          "team_name": "Creteil",
+          "logo": "https://media.api-sports.io/football/teams/1307.png"
+        },
+        "awayTeam": {
+          "team_id": 3229,
+          "team_name": "Stade Briochin",
+          "logo": "https://media.api-sports.io/football/teams/3229.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571989,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "Stade Guy Piriou",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1300,
+          "team_name": "Concarneau",
+          "logo": "https://media.api-sports.io/football/teams/1300.png"
+        },
+        "awayTeam": {
+          "team_id": 1292,
+          "team_name": "Cholet",
+          "logo": "https://media.api-sports.io/football/teams/1292.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571990,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Stade Francis Le Basser",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 433,
+          "team_name": "Laval",
+          "logo": "https://media.api-sports.io/football/teams/433.png"
+        },
+        "awayTeam": {
+          "team_id": 1295,
+          "team_name": "Lyon Duchere",
+          "logo": "https://media.api-sports.io/football/teams/1295.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571991,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Stade Louis-Michel",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3121,
+          "team_name": "Sète",
+          "logo": "https://media.api-sports.io/football/teams/3121.png"
+        },
+        "awayTeam": {
+          "team_id": 3012,
+          "team_name": "Annecy",
+          "logo": "https://media.api-sports.io/football/teams/3012.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571992,
+        "league_id": 2665,
+        "league": {
+          "name": "National",
+          "country": "France",
+          "logo": "https://media.api-sports.io/football/leagues/63.png",
+          "flag": "https://media.api-sports.io/flags/fr.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Halftime",
+        "statusShort": "HT",
+        "elapsed": 45,
+        "venue": "Stade Armand Chouffet",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1302,
+          "team_name": "Villefranche",
+          "logo": "https://media.api-sports.io/football/teams/1302.png"
+        },
+        "awayTeam": {
+          "team_id": 431,
+          "team_name": "Quevilly",
+          "logo": "https://media.api-sports.io/football/teams/431.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 576926,
+        "league_id": 2697,
+        "league": {
+          "name": "Super League Women",
+          "country": "Belgium",
+          "logo": "https://media.api-sports.io/football/leagues/146.png",
+          "flag": "https://media.api-sports.io/flags/be.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Regular Season - 2",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 45,
+        "venue": "Stade du Pays de Charleroi",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 14036,
+          "team_name": "Charleroi W",
+          "logo": "https://media.api-sports.io/football/teams/14036.png"
+        },
+        "awayTeam": {
+          "team_id": 14034,
+          "team_name": "White Star Woluwe",
+          "logo": "https://media.api-sports.io/football/teams/14034.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 605036,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": 1599242400,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 5",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 17,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 4711,
+          "team_name": "Taunton Town",
+          "logo": "https://media.api-sports.io/football/teams/4711.png"
+        },
+        "awayTeam": {
+          "team_id": 8147,
+          "team_name": "Chippenham Town",
+          "logo": "https://media.api-sports.io/football/teams/8147.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 606680,
+        "league_id": 1346,
+        "league": {
+          "name": "Paulista - A2",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/476.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-04T18:00:00+00:00",
+        "event_timestamp": 1599242400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Quarter-finals",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estádio Otacília Patrício Arroyo",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 10021,
+          "team_name": "Monte Azul",
+          "logo": "https://media.api-sports.io/football/teams/10021.png"
+        },
+        "awayTeam": {
+          "team_id": 7786,
+          "team_name": "São Caetano",
+          "logo": "https://media.api-sports.io/football/teams/7786.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 576927,
+        "league_id": 2697,
+        "league": {
+          "name": "Super League Women",
+          "country": "Belgium",
+          "logo": "https://media.api-sports.io/football/leagues/146.png",
+          "flag": "https://media.api-sports.io/flags/be.svg"
+        },
+        "event_date": "2020-09-04T18:30:00+00:00",
+        "event_timestamp": 1599244200,
+        "firstHalfStart": 1599244200,
+        "secondHalfStart": null,
+        "round": "Regular Season - 2",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 18,
+        "venue": "PGB-Stadion",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1789,
+          "team_name": "Gent W",
+          "logo": "https://media.api-sports.io/football/teams/1789.png"
+        },
+        "awayTeam": {
+          "team_id": 14037,
+          "team_name": "Eendracht Aalst W",
+          "logo": "https://media.api-sports.io/football/teams/14037.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 591750,
+        "league_id": 2781,
+        "league": {
+          "name": "League Cup",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/48.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-09-04T18:30:00+00:00",
+        "event_timestamp": 1599244200,
+        "firstHalfStart": 1599244200,
+        "secondHalfStart": null,
+        "round": "1st Round",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 18,
+        "venue": "Pirelli Stadium",
+        "referee": "A. Haines",
+        "homeTeam": {
+          "team_id": 748,
+          "team_name": "Burton Albion",
+          "logo": "https://media.api-sports.io/football/teams/748.png"
+        },
+        "awayTeam": {
+          "team_id": 1360,
+          "team_name": "Accrington ST",
+          "logo": "https://media.api-sports.io/football/teams/1360.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 604309,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:30:00+00:00",
+        "event_timestamp": 1599244200,
+        "firstHalfStart": 1599244200,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 3",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 15,
+        "venue": "TBC",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1377,
+          "team_name": "Yeovil Town",
+          "logo": "https://media.api-sports.io/football/teams/1377.png"
+        },
+        "awayTeam": {
+          "team_id": 7226,
+          "team_name": "Frome Town",
+          "logo": "https://media.api-sports.io/football/teams/7226.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 605039,
+        "league_id": 2808,
+        "league": {
+          "name": "Friendlies Clubs",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/667.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:30:00+00:00",
+        "event_timestamp": 1599244200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Club Friendlies 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 4627,
+          "team_name": "Mosta",
+          "logo": "https://media.api-sports.io/football/teams/4627.png"
+        },
+        "awayTeam": {
+          "team_id": 2277,
+          "team_name": "Birkirkara",
+          "logo": "https://media.api-sports.io/football/teams/2277.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 311706,
+        "league_id": 1313,
+        "league": {
+          "name": "Premier Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/357.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "Match Postponed",
+        "statusShort": "PST",
+        "elapsed": 0,
+        "venue": "The Ryan McBride Brandywell Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 670,
+          "team_name": "Derry City",
+          "logo": "https://media.api-sports.io/football/teams/670.png"
+        },
+        "awayTeam": {
+          "team_id": 584,
+          "team_name": "Dundalk",
+          "logo": "https://media.api-sports.io/football/teams/584.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 311708,
+        "league_id": 1313,
+        "league": {
+          "name": "Premier Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/357.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "Waterford Regional Sports Centre",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3845,
+          "team_name": "Waterford",
+          "logo": "https://media.api-sports.io/football/teams/3845.png"
+        },
+        "awayTeam": {
+          "team_id": 3843,
+          "team_name": "St Patrick's Athl.",
+          "logo": "https://media.api-sports.io/football/teams/3843.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 318545,
+        "league_id": 1351,
+        "league": {
+          "name": "First Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/358.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 2,
+        "venue": "Athlone Town Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3846,
+          "team_name": "Athlone Town",
+          "logo": "https://media.api-sports.io/football/teams/3846.png"
+        },
+        "awayTeam": {
+          "team_id": 3851,
+          "team_name": "Galway United",
+          "logo": "https://media.api-sports.io/football/teams/3851.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 318546,
+        "league_id": 1351,
+        "league": {
+          "name": "First Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/358.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "Carlisle Grounds",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3847,
+          "team_name": "Bray Wanderers",
+          "logo": "https://media.api-sports.io/football/teams/3847.png"
+        },
+        "awayTeam": {
+          "team_id": 3848,
+          "team_name": "Cabinteely",
+          "logo": "https://media.api-sports.io/football/teams/3848.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 318547,
+        "league_id": 1351,
+        "league": {
+          "name": "First Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/358.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 2,
+        "venue": "United Park",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3850,
+          "team_name": "Drogheda United",
+          "logo": "https://media.api-sports.io/football/teams/3850.png"
+        },
+        "awayTeam": {
+          "team_id": 3849,
+          "team_name": "Cobh Ramblers",
+          "logo": "https://media.api-sports.io/football/teams/3849.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 318548,
+        "league_id": 1351,
+        "league": {
+          "name": "First Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/358.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "UCD Bowl",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3844,
+          "team_name": "UCD",
+          "logo": "https://media.api-sports.io/football/teams/3844.png"
+        },
+        "awayTeam": {
+          "team_id": 3855,
+          "team_name": "Wexford",
+          "logo": "https://media.api-sports.io/football/teams/3855.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 318549,
+        "league_id": 1351,
+        "league": {
+          "name": "First Division",
+          "country": "Ireland",
+          "logo": "https://media.api-sports.io/football/leagues/358.png",
+          "flag": "https://media.api-sports.io/flags/ie.svg"
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Tallaght Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 10058,
+          "team_name": "Shamrock Rovers II",
+          "logo": "https://media.api-sports.io/football/teams/10058.png"
+        },
+        "awayTeam": {
+          "team_id": 3853,
+          "team_name": "Longford Town",
+          "logo": "https://media.api-sports.io/football/teams/3853.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332427,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League A - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "Stadio Artemio Franchi",
+        "referee": "Tasos Sidiropoulos, Greece",
+        "homeTeam": {
+          "team_id": 768,
+          "team_name": "Italy",
+          "logo": "https://media.api-sports.io/football/teams/768.png"
+        },
+        "awayTeam": {
+          "team_id": 1113,
+          "team_name": "Bosnia & Herzegovina",
+          "logo": "https://media.api-sports.io/football/teams/1113.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332428,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League A - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "Johan Cruijff Arena",
+        "referee": "Georgi Kabakov, Bulgaria",
+        "homeTeam": {
+          "team_id": 1118,
+          "team_name": "Netherlands",
+          "logo": "https://media.api-sports.io/football/teams/1118.png"
+        },
+        "awayTeam": {
+          "team_id": 24,
+          "team_name": "Poland",
+          "logo": "https://media.api-sports.io/football/teams/24.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332477,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League B - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 4,
+        "venue": "Ullevaal",
+        "referee": "Mattias Gestranius, Finland",
+        "homeTeam": {
+          "team_id": 1090,
+          "team_name": "Norway",
+          "logo": "https://media.api-sports.io/football/teams/1090.png"
+        },
+        "awayTeam": {
+          "team_id": 775,
+          "team_name": "Austria",
+          "logo": "https://media.api-sports.io/football/teams/775.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332478,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League B - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 4,
+        "venue": "Arena Naţională",
+        "referee": "Francois Letexier, France",
+        "homeTeam": {
+          "team_id": 774,
+          "team_name": "Romania",
+          "logo": "https://media.api-sports.io/football/teams/774.png"
+        },
+        "awayTeam": {
+          "team_id": 771,
+          "team_name": "Northern Ireland",
+          "logo": "https://media.api-sports.io/football/teams/771.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332479,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League B - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 4,
+        "venue": "Hampden Park",
+        "referee": "Slavko Vincic, Slovenia",
+        "homeTeam": {
+          "team_id": 1108,
+          "team_name": "Scotland",
+          "logo": "https://media.api-sports.io/football/teams/1108.png"
+        },
+        "awayTeam": {
+          "team_id": 1116,
+          "team_name": "Israel",
+          "logo": "https://media.api-sports.io/football/teams/1116.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332480,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League B - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 4,
+        "venue": "Tehelne Pole Stadion",
+        "referee": "Andris Treimanis, Latvia",
+        "homeTeam": {
+          "team_id": 773,
+          "team_name": "Slovakia",
+          "logo": "https://media.api-sports.io/football/teams/773.png"
+        },
+        "awayTeam": {
+          "team_id": 770,
+          "team_name": "Czech Republic",
+          "logo": "https://media.api-sports.io/football/teams/770.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 332523,
+        "league_id": 1422,
+        "league": {
+          "name": "UEFA Nations League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/5.png",
+          "flag": null
+        },
+        "event_date": "2020-09-04T18:45:00+00:00",
+        "event_timestamp": 1599245100,
+        "firstHalfStart": 1599245100,
+        "secondHalfStart": null,
+        "round": "League C - 1",
+        "status": "First Half",
+        "statusShort": "1H",
+        "elapsed": 3,
+        "venue": "Stadyen Dynama",
+        "referee": "Kristoffer Karlsson, Sweden",
+        "homeTeam": {
+          "team_id": 1100,
+          "team_name": "Belarus",
+          "logo": "https://media.api-sports.io/football/teams/1100.png"
+        },
+        "awayTeam": {
+          "team_id": 778,
+          "team_name": "Albania",
+          "logo": "https://media.api-sports.io/football/teams/778.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 324332,
+        "league_id": 1375,
+        "league": {
+          "name": "Primera Division - Apertura",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/268.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T20:00:00+00:00",
+        "event_timestamp": 1599249600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Apertura - 10",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Municipal Arquitecto Antonio Eleuterio Ubilla",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2369,
+          "team_name": "Cerro Largo",
+          "logo": "https://media.api-sports.io/football/teams/2369.png"
+        },
+        "awayTeam": {
+          "team_id": 2365,
+          "team_name": "Atletico Torque",
+          "logo": "https://media.api-sports.io/football/teams/2365.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 325861,
+        "league_id": 1382,
+        "league": {
+          "name": "Serie B",
+          "country": "Ecuador",
+          "logo": "https://media.api-sports.io/football/leagues/243.png",
+          "flag": "https://media.api-sports.io/flags/ec.svg"
+        },
+        "event_date": "2020-09-04T20:00:00+00:00",
+        "event_timestamp": 1599249600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 10112,
+          "team_name": "Chacaritas",
+          "logo": "https://media.api-sports.io/football/teams/10112.png"
+        },
+        "awayTeam": {
+          "team_id": 1980,
+          "team_name": "Manta FC",
+          "logo": "https://media.api-sports.io/football/teams/1980.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 325863,
+        "league_id": 1382,
+        "league": {
+          "name": "Serie B",
+          "country": "Ecuador",
+          "logo": "https://media.api-sports.io/football/leagues/243.png",
+          "flag": "https://media.api-sports.io/flags/ec.svg"
+        },
+        "event_date": "2020-09-04T20:00:00+00:00",
+        "event_timestamp": 1599249600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": null,
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1160,
+          "team_name": "Fuerza Amarilla",
+          "logo": "https://media.api-sports.io/football/teams/1160.png"
+        },
+        "awayTeam": {
+          "team_id": 2237,
+          "team_name": "Duros del Balon",
+          "logo": "https://media.api-sports.io/football/teams/2237.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 570875,
+        "league_id": 2661,
+        "league": {
+          "name": "Segunda Division",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/269.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T20:00:00+00:00",
+        "event_timestamp": 1599249600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Charrúa",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2366,
+          "team_name": "Villa Teresa",
+          "logo": "https://media.api-sports.io/football/teams/2366.png"
+        },
+        "awayTeam": {
+          "team_id": 2378,
+          "team_name": "Albion FC",
+          "logo": "https://media.api-sports.io/football/teams/2378.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 319493,
+        "league_id": 1356,
+        "league": {
+          "name": "Primera Division - Apertura",
+          "country": "Paraguay",
+          "logo": "https://media.api-sports.io/football/leagues/250.png",
+          "flag": "https://media.api-sports.io/flags/py.svg"
+        },
+        "event_date": "2020-09-04T21:00:00+00:00",
+        "event_timestamp": 1599253200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Apertura - 18",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Luis Alberto Salinas Tanasio",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 3832,
+          "team_name": "12 de Octubre",
+          "logo": "https://media.api-sports.io/football/teams/3832.png"
+        },
+        "awayTeam": {
+          "team_id": 1184,
+          "team_name": "Club River Plate",
+          "logo": "https://media.api-sports.io/football/teams/1184.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 605770,
+        "league_id": 2839,
+        "league": {
+          "name": "Liga MX Femenil",
+          "country": "Mexico",
+          "logo": "https://media.api-sports.io/football/leagues/673.png",
+          "flag": "https://media.api-sports.io/flags/mx.svg"
+        },
+        "event_date": "2020-09-04T21:00:00+00:00",
+        "event_timestamp": 1599253200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Apertura - 4",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio 10 de Diciembre",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 14875,
+          "team_name": "Cruz Azul W",
+          "logo": "https://media.api-sports.io/football/teams/14875.png"
+        },
+        "awayTeam": {
+          "team_id": 14879,
+          "team_name": "Monterrey W",
+          "logo": "https://media.api-sports.io/football/teams/14879.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314335,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Metropolitano de Techo",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1145,
+          "team_name": "Tigres FC",
+          "logo": "https://media.api-sports.io/football/teams/1145.png"
+        },
+        "awayTeam": {
+          "team_id": 1460,
+          "team_name": "Popayan",
+          "logo": "https://media.api-sports.io/football/teams/1460.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314336,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "statusShort": "NS",
+        "status": "Not Started",
+        "elapsed": 0,
+        "venue": "Estadio Francisco Rivera Escobar",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1469,
+          "team_name": "Orsomarso",
+          "logo": "https://media.api-sports.io/football/teams/1469.png"
+        },
+        "awayTeam": {
+          "team_id": 1459,
+          "team_name": "Real Cartagena",
+          "logo": "https://media.api-sports.io/football/teams/1459.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314337,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Centenario",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1461,
+          "team_name": "Quindio",
+          "logo": "https://media.api-sports.io/football/teams/1461.png"
+        },
+        "awayTeam": {
+          "team_id": 1463,
+          "team_name": "Real Santander",
+          "logo": "https://media.api-sports.io/football/teams/1463.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314338,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Sierra Nevada",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1465,
+          "team_name": "Union Magdalena",
+          "logo": "https://media.api-sports.io/football/teams/1465.png"
+        },
+        "awayTeam": {
+          "team_id": 1458,
+          "team_name": "Bogota FC",
+          "logo": "https://media.api-sports.io/football/teams/1458.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314339,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Manuel Calle Lombana",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1464,
+          "team_name": "Llaneros",
+          "logo": "https://media.api-sports.io/football/teams/1464.png"
+        },
+        "awayTeam": {
+          "team_id": 1147,
+          "team_name": "Fortaleza FC",
+          "logo": "https://media.api-sports.io/football/teams/1147.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314340,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Erasmo Camacho Calamar",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1467,
+          "team_name": "Valledupar",
+          "logo": "https://media.api-sports.io/football/teams/1467.png"
+        },
+        "awayTeam": {
+          "team_id": 1143,
+          "team_name": "Leones FC",
+          "logo": "https://media.api-sports.io/football/teams/1143.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314341,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Romelio Martínez",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1466,
+          "team_name": "Barranquilla",
+          "logo": "https://media.api-sports.io/football/teams/1466.png"
+        },
+        "awayTeam": {
+          "team_id": 1130,
+          "team_name": "Huila",
+          "logo": "https://media.api-sports.io/football/teams/1130.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 314342,
+        "league_id": 1327,
+        "league": {
+          "name": "Primera B",
+          "country": "Colombia",
+          "logo": "https://media.api-sports.io/football/leagues/240.png",
+          "flag": "https://media.api-sports.io/flags/co.svg"
+        },
+        "event_date": "2020-09-04T22:00:00+00:00",
+        "event_timestamp": 1599256800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Clausura - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Cacique Jamundí",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1468,
+          "team_name": "Depor FC",
+          "logo": "https://media.api-sports.io/football/teams/1468.png"
+        },
+        "awayTeam": {
+          "team_id": 1146,
+          "team_name": "Cortulua",
+          "logo": "https://media.api-sports.io/football/teams/1146.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328436,
+        "league_id": 1397,
+        "league": {
+          "name": "Serie B",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/72.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-04T22:15:00+00:00",
+        "event_timestamp": 1599257700,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estádio Orlando Scarpelli",
+        "referee": "Alexandre Vargas Tavares de Jesus",
+        "homeTeam": {
+          "team_id": 137,
+          "team_name": "Figueirense",
+          "logo": "https://media.api-sports.io/football/teams/137.png"
+        },
+        "awayTeam": {
+          "team_id": 122,
+          "team_name": "Parana",
+          "logo": "https://media.api-sports.io/football/teams/122.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 570871,
+        "league_id": 2661,
+        "league": {
+          "name": "Segunda Division",
+          "country": "Uruguay",
+          "logo": "https://media.api-sports.io/football/leagues/269.png",
+          "flag": "https://media.api-sports.io/flags/uy.svg"
+        },
+        "event_date": "2020-09-04T22:15:00+00:00",
+        "event_timestamp": 1599257700,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Charrúa",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2368,
+          "team_name": "Central Espanol",
+          "logo": "https://media.api-sports.io/football/teams/2368.png"
+        },
+        "awayTeam": {
+          "team_id": 2372,
+          "team_name": "Villa Espanola",
+          "logo": "https://media.api-sports.io/football/teams/2372.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 321241,
+        "league_id": 1342,
+        "league": {
+          "name": "Primera Division",
+          "country": "Chile",
+          "logo": "https://media.api-sports.io/football/leagues/265.png",
+          "flag": "https://media.api-sports.io/flags/cl.svg"
+        },
+        "event_date": "2020-09-04T22:30:00+00:00",
+        "event_timestamp": 1599258600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 9",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio La Portada de La Serena",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 2341,
+          "team_name": "D. La Serena",
+          "logo": "https://media.api-sports.io/football/teams/2341.png"
+        },
+        "awayTeam": {
+          "team_id": 2320,
+          "team_name": "O'Higgins",
+          "logo": "https://media.api-sports.io/football/teams/2320.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 361810,
+        "league_id": 1536,
+        "league": {
+          "name": "Amapaense",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/521.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-04T23:00:00+00:00",
+        "event_timestamp": 1599260400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Group Stage - 4",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estádio Milton Corrêa",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 7868,
+          "team_name": "Trem",
+          "logo": "https://media.api-sports.io/football/teams/7868.png"
+        },
+        "awayTeam": {
+          "team_id": 7847,
+          "team_name": "Macapá",
+          "logo": "https://media.api-sports.io/football/teams/7847.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 571319,
+        "league_id": 1406,
+        "league": {
+          "name": "USL League One",
+          "country": "USA",
+          "logo": "https://media.api-sports.io/football/leagues/489.png",
+          "flag": "https://media.api-sports.io/flags/us.svg"
+        },
+        "event_date": "2020-09-04T23:00:00+00:00",
+        "event_timestamp": 1599260400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Gillette Stadium",
+        "referee": "K. Rojas",
+        "homeTeam": {
+          "team_id": 10281,
+          "team_name": "New England II",
+          "logo": "https://media.api-sports.io/football/teams/10281.png"
+        },
+        "awayTeam": {
+          "team_id": 9025,
+          "team_name": "Forward Madison",
+          "logo": "https://media.api-sports.io/football/teams/9025.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 319492,
+        "league_id": 1356,
+        "league": {
+          "name": "Primera Division - Apertura",
+          "country": "Paraguay",
+          "logo": "https://media.api-sports.io/football/leagues/250.png",
+          "flag": "https://media.api-sports.io/flags/py.svg"
+        },
+        "event_date": "2020-09-04T23:30:00+00:00",
+        "event_timestamp": 1599262200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Apertura - 18",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estadio Rogelio Lorenzo Livieres",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 1174,
+          "team_name": "Club Guarani",
+          "logo": "https://media.api-sports.io/football/teams/1174.png"
+        },
+        "awayTeam": {
+          "team_id": 1183,
+          "team_name": "Sportivo Luqueno",
+          "logo": "https://media.api-sports.io/football/teams/1183.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      }
+    ]
+  }
+}

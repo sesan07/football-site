@@ -12,23 +12,22 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getLiveFixtures() {
-    this.http.get<FixturesApiResponse>(
-      this.BASE_URL + '/fixtures/live'
-    )
-      .pipe(map((responseJsonData => {
-        let fixtures: Fixture[] = [];
-        if (responseJsonData.api && responseJsonData.api.fixtures) {
-          fixtures = responseJsonData.api.fixtures;
-        }
+  getAllFixtures(date: string) {
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/date/' + date
+    );
+  }
 
-        return fixtures;
-      })))
-      .subscribe(fixtures => {
-        console.log(fixtures);
-      }, error => {
-        console.log(error);
-      });
+  getAllFixturesTest(date: string) {
+    return this.http.get<FixturesApiResponse>(
+      'assets/test-data/all_fixtures.json'
+    );
+  }
+
+  getLiveFixtures() {
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/live'
+    );
   }
 
   authenticate(req: HttpRequest<any>) {

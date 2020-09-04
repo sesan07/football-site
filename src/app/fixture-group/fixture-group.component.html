@@ -1,20 +1,21 @@
 <!-- Country-League fixtures -->
-<div class="flex-grow mt-2 rounded border bg-green-200 rounded overflow-hidden shadow-md">
+<div class="mt-2 rounded border bg-green-200 rounded overflow-hidden shadow-md">
   <!-- Header -->
   <div class="flex flex-grow items-end py-1 bg-green-300 px-4">
     <img class="h-5 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
     <div class="flex-grow">
-      <span class="link text-sm">Country</span>
+      <span class="link text-sm">{{fixtureGroup.country}}</span>
       <div class="inline whitespace-no-wrap">
         <span class="text-sm"> - </span>
-        <span class="link text-sm">League</span>
+        <span class="link text-sm">{{fixtureGroup.league}}</span>
       </div>
     </div>
     <img class="h-5" src="assets/img/soccer_ball.png" alt="Site Logo">
   </div>
   <!-- Content -->
   <div class="flex-grow bg-green-400">
-    <app-fixture-item></app-fixture-item>
-    <app-fixture-item></app-fixture-item>
+    <app-fixture-item *ngFor="let fixture of fixtureGroup.fixtures"
+                      [fixture]="fixture">
+    </app-fixture-item>
   </div>
 </div>

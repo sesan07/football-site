@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {FixtureGroup} from '../shared/fixture.model';
 
 @Component({
   selector: 'app-fixture-group',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fixture-group.component.scss']
 })
 export class FixtureGroupComponent implements OnInit {
+  @Input() fixtureGroup: FixtureGroup;
 
   constructor() { }
 

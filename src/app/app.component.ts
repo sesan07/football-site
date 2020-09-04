@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ApiService} from './shared/repository/api.service';
+import {RepositoryService} from './shared/repository/repository.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +9,11 @@ import {ApiService} from './shared/repository/api.service';
 export class AppComponent implements OnInit{
   title = 'football-site';
 
-  constructor(private apiService: ApiService) {
+  constructor(private repositoryService: RepositoryService) {
 
   }
 
   ngOnInit(): void {
-    // this.apiService.getLiveFixtures();
+    this.repositoryService.getAllFixtures('2020-09-04');
   }
 }

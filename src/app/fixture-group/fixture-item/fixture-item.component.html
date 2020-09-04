@@ -1,16 +1,23 @@
 <!-- Fixture -->
-<div class="flex items-center justify-center py-1 border-t border-gray-500 bg-green-500 cursor-pointer hover:bg-green-400">
-  <span class="link text-center text-sm">Home</span>
+<div class="flex items-center justify-center p-1 border-t border-gray-500 bg-green-500 cursor-pointer hover:bg-green-400">
+  <span class="w-64 text-right text-sm link">{{fixture.homeTeam.team_name}}</span>
   <!-- Score -->
-  <!--          <div class="flex justify-center w-16 mx-6 rounded bg-white">-->
-  <!--            <span class="pr-1">86</span>-->
-  <!--            <span class="px-1">-</span>-->
-  <!--            <span class="pl-1">26</span>-->
-  <!--          </div>-->
+            <div class="w-24 md:w-20 mx-4 md:mx-12 rounded bg-white text-sm">
+              <div class="flex justify-center" *ngIf="showScore">
+                <span class="">{{fixture.goalsHomeTeam}}</span>
+                <span class="px-1">-</span>
+                <span class="">{{fixture.goalsAwayTeam}}</span>
+              </div>
+              <div class="flex justify-center" *ngIf="showTime">
+                <span>{{fixture.event_date | date:'HH:mm'}}</span>
+              </div>
+              <div class="flex justify-center" *ngIf="hasError">
+                <span>{{fixture.event_date | date:'HH:mm'}}</span>
+              </div>
+            </div>
   <!-- Time -->
-  <div class="flex justify-center w-16 mx-6 rounded bg-white">
-    <span class="text-sm">20:00</span>
-  </div>
-  <span class="link text-center text-sm">Away</span>
+<!--  <div class="flex justify-center w-16 mx-6 px-2 rounded bg-white text-sm" *ngIf="showTime">-->
+<!--  </div>-->
+  <span class="w-64 text-left text-sm link">{{fixture.awayTeam.team_name}}</span>
 
 </div>
