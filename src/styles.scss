@@ -2,3 +2,15 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.link {
+  @apply
+  underline
+  cursor-pointer;
+}
+
+.link:hover {
+  @apply
+  underline
+  text-blue-600;
+}

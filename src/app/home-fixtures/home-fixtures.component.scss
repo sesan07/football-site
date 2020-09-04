@@ -1,0 +1,51 @@
+.tab-button {
+  @apply
+  inline-flex
+  items-center
+  justify-center
+  w-40
+  px-2
+  py-1
+  rounded
+  cursor-pointer
+  text-base
+  font-semibold
+  bg-teal-100
+  text-teal-700
+  text-sm
+  border
+  border-teal-600
+  transition
+  duration-200
+  ease-in-out;
+}
+
+.tab-button:hover {
+  @apply
+  scale-110
+  bg-teal-700
+  text-teal-100;
+}
+
+.tab-button.focus {
+  @apply
+  outline-none;
+}
+
+.tab-button.tab-button-left {
+  @apply
+  rounded-r-none;
+}
+
+.tab-button.tab-button-middle {
+  @apply
+  rounded-l-none
+  rounded-r-none
+  border-l-0;
+}
+
+.tab-button.tab-button-right {
+  @apply
+  rounded-l-none
+  border-l-0;
+}
