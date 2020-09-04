@@ -7,10 +7,15 @@ import {AuthInterceptorService} from './shared/repository/auth-interceptor.servi
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarItemComponent } from './sidebar/sidebar-item/sidebar-item.component';
 import { SearchComponent } from './search/search.component';
-import { NewsComponent } from './news/news.component';
-import { HomeFixturesComponent } from './home-fixtures/home-fixtures.component';
+import { NewsComponent } from './home/news/news.component';
+import { HomeFixturesComponent } from './home/home-fixtures/home-fixtures.component';
 import { FixtureGroupComponent } from './fixture-group/fixture-group.component';
 import { FixtureItemComponent } from './fixture-group/fixture-item/fixture-item.component';
+import { TeamComponent } from './team/team.component';
+import { HomeComponent } from './home/home.component';
+import { TabToggleComponent } from './shared/tab-toggle/tab-toggle.component';
+import { TeamPlayerComponent } from './team/team-player/team-player.component';
+import { TeamStatComponent } from './team/team-stat/team-stat.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { FixtureItemComponent } from './fixture-group/fixture-item/fixture-item.
     NewsComponent,
     HomeFixturesComponent,
     FixtureGroupComponent,
-    FixtureItemComponent
+    FixtureItemComponent,
+    TeamComponent,
+    HomeComponent,
+    TabToggleComponent,
+    TeamPlayerComponent,
+    TeamStatComponent
   ],
   imports: [
     BrowserModule,

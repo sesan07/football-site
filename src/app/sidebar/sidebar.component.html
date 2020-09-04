@@ -1,14 +1,17 @@
-<div class="w-full md:w-64 h-screen fixed flex flex-col">
-  <div class="inline-flex flex-grow h-16 w-full justify-center items-center text-white bg-red-400">
+<!-- Add h-screen to expand side bar on < md -->
+<!-- Remove h-screen to collapse side bar on < md -->
+<div class="w-full md:w-64 md:h-screen fixed flex flex-col">
+  <div class="inline-flex flex-grow h-16 w-full pl-2 md:pl-0 md:justify-center items-center text-white bg-red-400">
     <img class="h-12 mr-2" src="assets/img/soccer_ball.png" alt="Site Logo">
     <span class="font-semibold text-3xl tracking-tight">Site Name</span>
 
-
-    <img class="visible md:visible h-8 right-0 mr-4 absolute" src="assets/img/soccer_ball.png" alt="Site Logo">
-
+    <img class="visible md:invisible h-8 right-0 mr-4 absolute" src="assets/img/soccer_ball.png" alt="Site Logo">
   </div>
 
-  <div class="invisible md:visible bg-blue-900 h-full overflow-x-hidden">
+  <!-- Add h-full to expand side bar on < md -->
+  <!-- Add h-0 to collapse side bar on < md -->
+  <div class="h-0 md:h-full bg-blue-900 overflow-x-hidden">
+<!--  <div class="h-0 md:h-full bg-blue-900 overflow-x-hidden">-->
     <app-sidebar-item></app-sidebar-item>
     <app-sidebar-item></app-sidebar-item>
     <app-sidebar-item></app-sidebar-item>
