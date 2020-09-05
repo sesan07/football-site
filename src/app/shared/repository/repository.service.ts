@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import {ApiService} from './api.service';
-import {Fixture, FixtureGroup} from '../fixture.model';
+import {Fixture} from '../models/fixture.model';
 import {map} from 'rxjs/operators';
 import {BehaviorSubject} from 'rxjs';
-import {Team} from '../team.model';
-import {TeamPlayer} from '../team-player.model';
-import {League} from '../league.model';
-import {TeamStatistic} from '../team-statistic.model';
+import {Team} from '../models/team.model';
+import {TeamPlayer} from '../models/team-player.model';
+import {League} from '../models/league.model';
+import {TeamStatistic} from '../models/team-statistic.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +15,8 @@ export class RepositoryService {
   private isLoadingFixtures = false;
   private hasLoadedFixtures = false;
 
-  allFixturesSubject = new BehaviorSubject<FixtureGroup[]>([]);
-  liveFixtures = new BehaviorSubject<FixtureGroup[]>([]);
+  allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
+  liveFixtures = new BehaviorSubject<Fixture[]>([]);
 
   constructor(private apiService: ApiService) { }
 
@@ -43,30 +43,7 @@ export class RepositoryService {
         return fixtures;
       })))
       .subscribe(allFixtures => {
-        const allFixtureGroupsMap = new Map<string, FixtureGroup>();
-
-        allFixtures.forEach((fixture: Fixture, index: number) => {
-          // Ignore fixture is missing required values
-          if (!(fixture.league.country && fixture.league.name)) {
-            return;
-          }
-
-          // TODO Remove fixtures with TDB status code?
-
-          const key = fixture.league.country + '-' + fixture.league.name;
-          if (allFixtureGroupsMap.has(key)) {
-            allFixtureGroupsMap.get(key).fixtures.push(fixture);
-          } else {
-            allFixtureGroupsMap.set(key, new FixtureGroup(
-              fixture.league.country,
-              fixture.league.name,
-              [fixture]
-            ));
-          }
-        });
-
-        // console.log(allFixtures);
-        this.allFixturesSubject.next([...allFixtureGroupsMap.values()]);  // Iterable to array
+        this.allFixturesSubject.next(allFixtures);
 
         this.isLoadingFixtures = false;
         this.hasLoadedFixtures = true;
@@ -140,6 +117,20 @@ export class RepositoryService {
         }
 
         return teamStatistics;
+      })));
+  }
+
+  getTeamFixtures(teamId: number, count: number, isNextFixtures: boolean) {
+    // return this.apiService.getTeamFixtures(teamId, count, isNextFixtures)
+    return this.apiService.getTeamFixturesTest(teamId, count, isNextFixtures)
+      .pipe(map((responseJsonData => {
+        console.log(responseJsonData);
+        let fixtures: Fixture[] = [];
+        if (responseJsonData.api && responseJsonData.api.fixtures) {
+          fixtures = responseJsonData.api.fixtures;
+        }
+
+        return fixtures;
       })));
   }
 }

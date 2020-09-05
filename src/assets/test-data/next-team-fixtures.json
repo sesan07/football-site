@@ -1,0 +1,387 @@
+{
+  "api": {
+    "results": 10,
+    "fixtures": [
+      {
+        "fixture_id": 592892,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-09-11T18:45:00+00:00",
+        "event_timestamp": 1599849900,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 1",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Vicarage Road",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 38,
+          "team_name": "Watford",
+          "logo": "https://media.api-sports.io/football/teams/38.png"
+        },
+        "awayTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592898,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-09-19T14:00:00+00:00",
+        "event_timestamp": 1600524000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 2",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Riverside Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 35,
+          "team_name": "Bournemouth",
+          "logo": "https://media.api-sports.io/football/teams/35.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592915,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-09-26T14:00:00+00:00",
+        "event_timestamp": 1601128800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 3",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Kiyan Prince Foundation Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 72,
+          "team_name": "QPR",
+          "logo": "https://media.api-sports.io/football/teams/72.png"
+        },
+        "awayTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592922,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-03T14:00:00+00:00",
+        "event_timestamp": 1601733600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 4",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Riverside Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 747,
+          "team_name": "Barnsley",
+          "logo": "https://media.api-sports.io/football/teams/747.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592936,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-17T14:00:00+00:00",
+        "event_timestamp": 1602943200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 5",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Riverside Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 53,
+          "team_name": "Reading",
+          "logo": "https://media.api-sports.io/football/teams/53.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592941,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-20T18:45:00+00:00",
+        "event_timestamp": 1603219500,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 6",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Ashton Gate",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 56,
+          "team_name": "Bristol City",
+          "logo": "https://media.api-sports.io/football/teams/56.png"
+        },
+        "awayTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592954,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-24T14:00:00+00:00",
+        "event_timestamp": 1603548000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 7",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Cardiff City Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 43,
+          "team_name": "Cardiff",
+          "logo": "https://media.api-sports.io/football/teams/43.png"
+        },
+        "awayTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592968,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-27T18:45:00+00:00",
+        "event_timestamp": 1603824300,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 8",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Riverside Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 1346,
+          "team_name": "Coventry",
+          "logo": "https://media.api-sports.io/football/teams/1346.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592982,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-10-31T15:00:00+00:00",
+        "event_timestamp": 1604156400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 9",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Riverside Stadium",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "awayTeam": {
+          "team_id": 65,
+          "team_name": "Nottingham Forest",
+          "logo": "https://media.api-sports.io/football/teams/65.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 592989,
+        "league_id": 2794,
+        "league": {
+          "name": "Championship",
+          "country": "England",
+          "logo": "https://media.api-sports.io/football/leagues/40.png",
+          "flag": "https://media.api-sports.io/flags/gb.svg"
+        },
+        "event_date": "2020-11-03T19:45:00+00:00",
+        "event_timestamp": 1604432700,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 10",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Ewood Park",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 67,
+          "team_name": "Blackburn",
+          "logo": "https://media.api-sports.io/football/teams/67.png"
+        },
+        "awayTeam": {
+          "team_id": 70,
+          "team_name": "Middlesbrough",
+          "logo": "https://media.api-sports.io/football/teams/70.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      }
+    ]
+  }
+}

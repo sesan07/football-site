@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TeamPlayer} from '../../shared/team-player.model';
+import {TeamPlayer} from '../../shared/models/team-player.model';
 
 @Component({
   selector: 'app-team-player',

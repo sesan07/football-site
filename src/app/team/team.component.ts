@@ -1,11 +1,13 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {Team} from '../shared/team.model';
+import {Team} from '../shared/models/team.model';
 import {RepositoryService} from '../shared/repository/repository.service';
-import {TeamPlayer} from '../shared/team-player.model';
-import {League} from '../shared/league.model';
-import {TeamStatistic} from '../shared/team-statistic.model';
+import {TeamPlayer} from '../shared/models/team-player.model';
+import {League} from '../shared/models/league.model';
+import {TeamStatistic} from '../shared/models/team-statistic.model';
+import {Fixture, FixtureGroup} from '../shared/models/fixture.model';
+import {FixturesManager} from '../shared/managers/fixtures.manager';
 
 @Component({
   selector: 'app-team',
@@ -13,6 +15,9 @@ import {TeamStatistic} from '../shared/team-statistic.model';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit, OnDestroy {
+  private readonly PREVIOUS_FIXTURE_COUNT = 10;
+  private readonly NEXT_FIXTURE_COUNT = 10;
+
   private routeParamsSub: Subscription;
   private teamId: number;
   team: Team;
@@ -20,6 +25,8 @@ export class TeamComponent implements OnInit, OnDestroy {
   leagues: League[] = [];
   teamStatisticsMap: Map<number, TeamStatistic[]> = new Map();  // <leagueId, teamStatistics>
   activeTeamStatistics: TeamStatistic[] = [];
+  fixtures: Fixture[] = [];
+  fixtureGroups: FixtureGroup[] = [];
 
 
   constructor(private activatedRoute: ActivatedRoute,
@@ -59,13 +66,31 @@ export class TeamComponent implements OnInit, OnDestroy {
               this.activeTeamStatistics.push(...teamStatistics);
             }
 
-            console.log('TeamComponent received team statistics: ' + teamStatistics.length);
-            console.log(teamStatistics);
+            // console.log('TeamComponent received team statistics: ' + teamStatistics.length);
+            // console.log(teamStatistics);
           });
         });
       });
+
+      this.fixtures = [];
+      this.getTeamFixtures(this.NEXT_FIXTURE_COUNT, true);
+      this.getTeamFixtures(this.PREVIOUS_FIXTURE_COUNT, false);
     });
   }
+
+  getTeamFixtures(count: number, isNextFixtures) {
+    this.repositoryService.getTeamFixtures(this.teamId, count, isNextFixtures).subscribe((fixtures: Fixture[]) => {
+      this.fixtures.push(...fixtures);
+
+      this.fixtureGroups = [];
+      const fixtureGroups = FixturesManager.getFixtureGroups(this.fixtures);
+      this.fixtureGroups.push(...fixtureGroups);
+
+      // console.log('TeamComponent received fixtures: ' + fixtures.length);
+      // console.log(fixtures);
+    });
+  }
+
 
   ngOnDestroy(): void {
     this.routeParamsSub.unsubscribe();

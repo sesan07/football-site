@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpRequest} from '@angular/common/http';
-import {FixturesApiResponse} from '../fixture.model';
-import {TeamApiResponse} from '../team.model';
-import {TeamPlayersApiResponse} from '../team-player.model';
-import {LeaguesApiResponse} from '../league.model';
-import {TeamStatisticsApiResponse} from '../team-statistic.model';
+import {HttpClient} from '@angular/common/http';
+import {FixturesApiResponse} from '../models/fixture.model';
+import {TeamApiResponse} from '../models/team.model';
+import {TeamPlayersApiResponse} from '../models/team-player.model';
+import {LeaguesApiResponse} from '../models/league.model';
+import {TeamStatisticsApiResponse} from '../models/team-statistic.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,8 @@ export class ApiService {
 
   getAllFixtures(date: string) {
     return this.http.get<FixturesApiResponse>(
-      this.BASE_URL + '/fixtures/date/' + date
+      // this.BASE_URL + '/fixtures/date/' + date
+      this.BASE_URL + '/fixtures/team/' + 70
     );
   }
 
@@ -72,6 +73,20 @@ export class ApiService {
   getTeamStatisticsTest(teamId: number, leagueId: number) {
     return this.http.get<TeamStatisticsApiResponse>(
       'assets/test-data/team-statistics.json'
+    );
+  }
+
+  getTeamFixtures(teamId: number, count: number, isNextFixtures: boolean) {
+    const option = isNextFixtures ? '/next/' : '/last/';
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/team/' + teamId + option + count
+    );
+  }
+
+  getTeamFixturesTest(teamId: number, count: number, isNextFixtures: boolean) {
+    const url = isNextFixtures ? 'assets/test-data/next-team-fixtures.json' : 'assets/test-data/prev-team-fixtures.json';
+    return this.http.get<FixturesApiResponse>(
+      url
     );
   }
 }
