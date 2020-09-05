@@ -11,8 +11,10 @@ import {FixturesManager} from '../../shared/managers/fixtures.manager';
 })
 export class HomeFixturesComponent implements OnInit, OnDestroy {
 
+  toggleOptions: [string, string] = ['All Fixtures', 'Live Fixtures'];
+  activeToggleIndex = 0;
   allFixtureGroups: FixtureGroup[] = [];
-  liveFixtures: FixtureGroup[] = [];
+  liveFixtureGroups: FixtureGroup[] = [];
 
   private allFixturesSubscription: Subscription;
   private liveFixturesSubscription: Subscription;
@@ -20,6 +22,9 @@ export class HomeFixturesComponent implements OnInit, OnDestroy {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.repositoryService.getAllFixtures('2020-09-04');
+    this.repositoryService.getLiveFixtures();
+
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {
       this.allFixtureGroups = FixturesManager.getFixtureGroups(allFixtures);
 
@@ -27,12 +32,16 @@ export class HomeFixturesComponent implements OnInit, OnDestroy {
       // console.log(this.allFixtureGroups);
     });
 
-    this.liveFixturesSubscription = this.repositoryService.liveFixtures.subscribe((liveFixtures: Fixture[]) => {
-      this.liveFixtures = FixturesManager.getFixtureGroups(liveFixtures);
+    this.liveFixturesSubscription = this.repositoryService.liveFixturesSubject.subscribe((liveFixtures: Fixture[]) => {
+      this.liveFixtureGroups = FixturesManager.getFixtureGroups(liveFixtures);
 
       // console.log('HomeFixturesComponent received live fixtures: ' + liveFixtures.length);
       // console.log(this.liveFixtures);
     });
+  }
+
+  onToggleButtonClicked(index: number) {
+    this.activeToggleIndex = index;
   }
 
   ngOnDestroy(): void {

@@ -9,11 +9,11 @@ import { SidebarItemComponent } from './sidebar/sidebar-item/sidebar-item.compon
 import { SearchComponent } from './search/search.component';
 import { NewsComponent } from './home/news/news.component';
 import { HomeFixturesComponent } from './home/home-fixtures/home-fixtures.component';
-import { FixtureGroupComponent } from './fixture-group/fixture-group.component';
-import { FixtureItemComponent } from './fixture-group/fixture-item/fixture-item.component';
+import { FixtureGroupComponent } from './shared/components/fixture-group/fixture-group.component';
+import { FixtureItemComponent } from './shared/components/fixture-group/fixture-item/fixture-item.component';
 import { TeamComponent } from './team/team.component';
 import { HomeComponent } from './home/home.component';
-import { TabToggleComponent } from './shared/tab-toggle/tab-toggle.component';
+import { TabToggleComponent } from './shared/components/tab-toggle/tab-toggle.component';
 import { TeamPlayerComponent } from './team/team-player/team-player.component';
 import { TeamStatComponent } from './team/team-stat/team-stat.component';
 import {AppRoutingModule} from './app-routing.module';

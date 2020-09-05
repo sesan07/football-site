@@ -1,0 +1,14 @@
+<div class="flex p-2 justify-center">
+  <button class="tab-button tab-button-left"
+          [class.active]="activeIndex === 0"
+          (click)="onButtonClicked(0)">
+    <img class="h-5 mr-2" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+    <span class="inline">{{buttonLabels[0]}}</span>
+  </button>
+  <button class="tab-button tab-button-right"
+          [class.active]="activeIndex === 1"
+          (click)="onButtonClicked(1)">
+    <img class="h-5 mr-2" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+    <span class="inline">{{buttonLabels[1]}}</span>
+  </button>
+</div>

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FixtureGroup} from '../shared/models/fixture.model';
+import {FixtureGroup} from '../../models/fixture.model';
 
 @Component({
   selector: 'app-fixture-group',

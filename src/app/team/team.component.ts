@@ -18,7 +18,6 @@ export class TeamComponent implements OnInit, OnDestroy {
   private readonly PREVIOUS_FIXTURE_COUNT = 10;
   private readonly NEXT_FIXTURE_COUNT = 10;
 
-  private routeParamsSub: Subscription;
   private teamId: number;
   team: Team;
   teamPlayers: TeamPlayer[] = [];
@@ -27,6 +26,10 @@ export class TeamComponent implements OnInit, OnDestroy {
   activeTeamStatistics: TeamStatistic[] = [];
   fixtures: Fixture[] = [];
   fixtureGroups: FixtureGroup[] = [];
+  toggleOptions: [string, string] = ['Fixtures', 'Stats'];
+  activeToggleIndex = 0;
+
+  private routeParamsSub: Subscription;
 
 
   constructor(private activatedRoute: ActivatedRoute,
@@ -91,6 +94,9 @@ export class TeamComponent implements OnInit, OnDestroy {
     });
   }
 
+  onToggleButtonClicked(index: number) {
+    this.activeToggleIndex = index;
+  }
 
   ngOnDestroy(): void {
     this.routeParamsSub.unsubscribe();

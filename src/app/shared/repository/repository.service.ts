@@ -12,16 +12,17 @@ import {TeamStatistic} from '../models/team-statistic.model';
   providedIn: 'root'
 })
 export class RepositoryService {
-  private isLoadingFixtures = false;
+  private isLoadingAllFixtures = false;
   private hasLoadedFixtures = false;
+  private isLoadingLiveFixtures = false;
 
   allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
-  liveFixtures = new BehaviorSubject<Fixture[]>([]);
+  liveFixturesSubject = new BehaviorSubject<Fixture[]>([]);
 
   constructor(private apiService: ApiService) { }
 
   getAllFixtures(date: string) {
-    if (this.isLoadingFixtures) {
+    if (this.isLoadingAllFixtures) {
       console.log('Already loading all fixtures');
       return;
     }
@@ -30,7 +31,7 @@ export class RepositoryService {
       return;
     }
 
-    this.isLoadingFixtures = true;
+    this.isLoadingAllFixtures = true;
 
     // this.apiService.getAllFixtures(date)
     this.apiService.getAllFixturesTest(date)
@@ -45,11 +46,39 @@ export class RepositoryService {
       .subscribe(allFixtures => {
         this.allFixturesSubject.next(allFixtures);
 
-        this.isLoadingFixtures = false;
+        this.isLoadingAllFixtures = false;
         this.hasLoadedFixtures = true;
       }, error => {
         console.log(error);
-        this.isLoadingFixtures = false;
+        this.isLoadingAllFixtures = false;
+      });
+  }
+
+  getLiveFixtures() {
+    if (this.isLoadingLiveFixtures) {
+      console.log('Already loading live fixtures');
+      return;
+    }
+
+    this.isLoadingLiveFixtures = true;
+
+    // this.apiService.getLiveFixtures()
+    this.apiService.getLiveFixturesTest()
+      .pipe(map((responseJsonData => {
+        let fixtures: Fixture[] = [];
+        if (responseJsonData.api && responseJsonData.api.fixtures) {
+          fixtures = responseJsonData.api.fixtures;
+        }
+
+        return fixtures;
+      })))
+      .subscribe(liveFixtures => {
+        this.liveFixturesSubject.next(liveFixtures);
+
+        this.isLoadingLiveFixtures = false;
+      }, error => {
+        console.log(error);
+        this.isLoadingLiveFixtures = false;
       });
   }
 
@@ -124,7 +153,6 @@ export class RepositoryService {
     // return this.apiService.getTeamFixtures(teamId, count, isNextFixtures)
     return this.apiService.getTeamFixturesTest(teamId, count, isNextFixtures)
       .pipe(map((responseJsonData => {
-        console.log(responseJsonData);
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
           fixtures = responseJsonData.api.fixtures;

@@ -38,23 +38,25 @@
 
 <!--  Fixtures/Stats-->
   <div class="flex-grow xl:flex-grow-0 xl:w-1/3 mt-2 xl:mt-0 px-2 pb-2 bg-green-100">
-    <app-tab-toggle [buttonLabels]="['Fixtures', 'Stats']"></app-tab-toggle>
+    <app-tab-toggle [buttonLabels]="toggleOptions"
+                    (activeChanged)="onToggleButtonClicked($event)">
+    </app-tab-toggle>
 <!--    Fixtures-->
-    <div>
+    <div *ngIf="activeToggleIndex === 0">
       <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
                          [fixtureGroup]="fixtureGroup">
       </app-fixture-group>
     </div>
 
 <!--    Stats-->
-<!--    <div>-->
-<!--      <app-team-stat *ngFor="let stat of activeTeamStatistics"-->
-<!--                     [statName]="stat.name"-->
-<!--                     [homeValue]="stat.home"-->
-<!--                     [awayValue]="stat.away"-->
-<!--                     [totalValue]="stat.total">-->
-<!--      </app-team-stat>-->
-<!--    </div>-->
+    <div *ngIf="activeToggleIndex === 1">
+      <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                     [statName]="stat.name"
+                     [homeValue]="stat.home"
+                     [awayValue]="stat.away"
+                     [totalValue]="stat.total">
+      </app-team-stat>
+    </div>
   </div>
 </div>
 

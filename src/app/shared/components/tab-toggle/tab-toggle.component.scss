@@ -23,13 +23,20 @@
 .tab-button:hover {
   @apply
   scale-110
-  bg-teal-700
+  bg-teal-500
   text-teal-100;
 }
 
-.tab-button.focus {
+.tab-button:focus {
   @apply
   outline-none;
+}
+
+.tab-button.active {
+  @apply
+  scale-110
+  bg-teal-700
+  text-teal-100;
 }
 
 .tab-button.tab-button-left {

@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {RepositoryService} from './shared/repository/repository.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,6 @@ import {RepositoryService} from './shared/repository/repository.service';
 export class AppComponent implements OnInit{
   title = 'football-site';
 
-  constructor(private repositoryService: RepositoryService) {
-
-  }
-
   ngOnInit(): void {
-    this.repositoryService.getAllFixtures('2020-09-04');
   }
 }

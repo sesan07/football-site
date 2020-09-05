@@ -17,14 +17,25 @@ export class ApiService {
 
   getAllFixtures(date: string) {
     return this.http.get<FixturesApiResponse>(
-      // this.BASE_URL + '/fixtures/date/' + date
-      this.BASE_URL + '/fixtures/team/' + 70
+      this.BASE_URL + '/fixtures/date/' + date
     );
   }
 
   getAllFixturesTest(date: string) {
     return this.http.get<FixturesApiResponse>(
       'assets/test-data/all_fixtures.json'
+    );
+  }
+
+  getLiveFixtures() {
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/live'
+    );
+  }
+
+  getLiveFixturesTest() {
+    return this.http.get<FixturesApiResponse>(
+      'assets/test-data/live-fixtures.json'
     );
   }
 
