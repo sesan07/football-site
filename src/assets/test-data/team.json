@@ -1,0 +1,21 @@
+{
+  "api": {
+    "results": 1,
+    "teams": [
+      {
+        "team_id": 70,
+        "name": "Middlesbrough",
+        "code": null,
+        "logo": "https://media.api-sports.io/football/teams/70.png",
+        "country": "England",
+        "is_national": false,
+        "founded": 1876,
+        "venue_name": "Riverside Stadium",
+        "venue_surface": "grass",
+        "venue_address": "Dockside Road",
+        "venue_city": "Middlesbrough",
+        "venue_capacity": 34988
+      }
+    ]
+  }
+}

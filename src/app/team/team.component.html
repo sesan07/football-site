@@ -1,17 +1,17 @@
 <div class="flex mb-2 bg-yellow-200">
   <div class="flex items-center ml-2 lg:ml-8">
     <img class="h-24 lg:h-32 my-2" src="../../assets/img/soccer_ball.png" alt="Site Logo">
-    <div class="ml-2 my-2 text-red-700">
-      <span class="font-bold text-lg">Name</span>
-      <div class="flex items-center mb-1">
+    <div class="ml-2 md:ml-4 my-2 text-red-700">
+      <span class="font-bold text-lg">{{team ? team.name : 'Name'}}</span>
+      <div class="flex items-center mb-1" *ngIf="team ? !team.is_national : false">
         <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span>Country</span>
+        <span>{{team.country}}</span>
       </div>
       <div class="flex items-center mb-1">
         <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="text-xs">Stadium Name</span>
+        <span class="text-xs">{{team ? team.venue_name: 'Stadium'}}</span>
       </div>
-      <span class="text-xs">Founded</span>
+      <span class="text-xs">{{team ? team.founded : 'Founded date'}}</span>
     </div>
   </div>
 </div>
@@ -28,17 +28,9 @@
       </div>
       <!-- Content -->
       <div class="bg-green-400">
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
-        <app-team-player></app-team-player>
+        <app-team-player *ngFor="let teamPlayer of teamPlayers"
+                         [teamPlayer]="teamPlayer">
+        </app-team-player>
       </div>
     </div>
 
@@ -55,30 +47,11 @@
 
 <!--    Stats-->
     <div>
-      <app-team-stat [statName]="'Matches Played'"
-                     [homeValue]="'500'"
-                     [awayValue]="'499'"
-                     [totalValue]="'999'">
-      </app-team-stat>
-      <app-team-stat [statName]="'Wins'"
-                     [homeValue]="'500'"
-                     [awayValue]="'499'"
-                     [totalValue]="'999'">
-      </app-team-stat>
-      <app-team-stat [statName]="'Draws'"
-                     [homeValue]="'500'"
-                     [awayValue]="'499'"
-                     [totalValue]="'999'">
-      </app-team-stat>
-      <app-team-stat [statName]="'Losses'"
-                     [homeValue]="'500'"
-                     [awayValue]="'499'"
-                     [totalValue]="'999'">
-      </app-team-stat>
-      <app-team-stat [statName]="'Goals'"
-                     [homeValue]="'500'"
-                     [awayValue]="'499'"
-                     [totalValue]="'999'">
+      <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                     [statName]="stat.name"
+                     [homeValue]="stat.home"
+                     [awayValue]="stat.away"
+                     [totalValue]="stat.total">
       </app-team-stat>
     </div>
   </div>

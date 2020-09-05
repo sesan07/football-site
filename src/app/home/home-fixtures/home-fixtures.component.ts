@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {RepositoryService} from '../../shared/repository/repository.service';
-import {Fixture, FixtureGroup} from '../../shared/fixture.model';
+import {FixtureGroup} from '../../shared/fixture.model';
 import {Subscription} from 'rxjs';
 
 @Component({
@@ -24,9 +24,10 @@ export class HomeFixturesComponent implements OnInit, OnDestroy {
       console.log('HomeFixturesComponent received all fixtures: ' + allFixtures.length);
       console.log(this.allFixtureGroups);
     });
+
     this.liveFixturesSubscription = this.repositoryService.liveFixtures.subscribe((liveFixtures: FixtureGroup[]) => {
       this.liveFixtures = liveFixtures;
-      console.log('HomeFixturesComponent received live fixtures');
+      console.log('HomeFixturesComponent received live fixtures: ' + liveFixtures.length);
       console.log(this.liveFixtures);
     });
   }

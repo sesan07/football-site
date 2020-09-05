@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { TabToggleComponent } from './shared/tab-toggle/tab-toggle.component';
 import { TeamPlayerComponent } from './team/team-player/team-player.component';
 import { TeamStatComponent } from './team/team-stat/team-stat.component';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TeamStatComponent } from './team/team-stat/team-stat.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     {

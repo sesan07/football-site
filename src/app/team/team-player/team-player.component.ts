@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {TeamPlayer} from '../../shared/team-player.model';
 
 @Component({
   selector: 'app-team-player',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team-player.component.scss']
 })
 export class TeamPlayerComponent implements OnInit {
+  @Input() teamPlayer: TeamPlayer;
 
   constructor() { }
 

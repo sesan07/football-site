@@ -2,14 +2,14 @@
   <div class="flex flex-row">
     <div class="flex justify-center w-10 rounded bg-white">
 <!--      Number -->
-      <span class="text-sm">999</span>
+      <span class="text-sm">{{teamPlayer.number? teamPlayer.number : '-'}}</span>
     </div>
 <!--    Name -->
-    <span class="link text-center ml-2 text-sm">Player</span>
+    <span class="link text-center ml-2 text-sm">{{teamPlayer.firstname + ' ' + teamPlayer.lastname}}</span>
   </div>
   <div class="flex justify-center w-20 rounded bg-white">
 <!--    Position -->
-    <span class="text-sm">Attacker</span>
+    <span class="text-sm">{{teamPlayer.position}}</span>
   </div>
 
 </div>

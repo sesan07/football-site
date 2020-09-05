@@ -1,0 +1,88 @@
+{
+  "api": {
+    "results": 3,
+    "leagues": [
+      {
+        "league_id": 2781,
+        "name": "League Cup",
+        "type": "Cup",
+        "country": "England",
+        "country_code": "GB",
+        "season": 2020,
+        "season_start": "2020-08-29",
+        "season_end": "2020-09-06",
+        "logo": "https://media.api-sports.io/football/leagues/48.png",
+        "flag": "https://media.api-sports.io/flags/gb.svg",
+        "standings": 0,
+        "is_current": 1,
+        "coverage": {
+          "standings": false,
+          "fixtures": {
+            "events": true,
+            "lineups": true,
+            "statistics": true,
+            "players_statistics": true
+          },
+          "players": true,
+          "topScorers": true,
+          "predictions": true,
+          "odds": true
+        }
+      },
+      {
+        "league_id": 2794,
+        "name": "Championship",
+        "type": "League",
+        "country": "England",
+        "country_code": "GB",
+        "season": 2020,
+        "season_start": "2020-09-11",
+        "season_end": "2021-05-08",
+        "logo": "https://media.api-sports.io/football/leagues/40.png",
+        "flag": "https://media.api-sports.io/flags/gb.svg",
+        "standings": 1,
+        "is_current": 1,
+        "coverage": {
+          "standings": true,
+          "fixtures": {
+            "events": false,
+            "lineups": false,
+            "statistics": false,
+            "players_statistics": false
+          },
+          "players": true,
+          "topScorers": true,
+          "predictions": true,
+          "odds": true
+        }
+      },
+      {
+        "league_id": 2808,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "country": "World",
+        "country_code": null,
+        "season": 2020,
+        "season_start": "2020-01-07",
+        "season_end": "2020-09-26",
+        "logo": "https://media.api-sports.io/football/leagues/667.png",
+        "flag": null,
+        "standings": 0,
+        "is_current": 1,
+        "coverage": {
+          "standings": false,
+          "fixtures": {
+            "events": true,
+            "lineups": true,
+            "statistics": false,
+            "players_statistics": false
+          },
+          "players": false,
+          "topScorers": false,
+          "predictions": true,
+          "odds": true
+        }
+      }
+    ]
+  }
+}

@@ -3,19 +3,19 @@ export interface Fixture {
   league_id: number;
   league: League;
   event_date: string;
-  event_timestamp: string;
-  firstHalfStart: string;
-  secondHalfStart: string;
+  event_timestamp: number;
+  firstHalfStart: number;
+  secondHalfStart: number;
   round: string;
   status: string;
   statusShort: string;
-  elapsed: string;
+  elapsed: number;
   venue: string;
   referee: string;
   homeTeam: Team;
   awayTeam: Team;
-  goalsHomeTeam: string;
-  goalsAwayTeam: string;
+  goalsHomeTeam: number;
+  goalsAwayTeam: number;
   score: Score;
 }
 
