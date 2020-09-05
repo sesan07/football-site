@@ -20,7 +20,10 @@ export interface Fixture {
 }
 
 export class FixtureGroup {
-  constructor(public country: string, public league: string, public fixtures: Fixture[]) {}
+  constructor(public country: string,
+              public leagueName: string,
+              public leagueId: number,
+              public fixtures: Fixture[]) {}
 }
 
 interface Api {

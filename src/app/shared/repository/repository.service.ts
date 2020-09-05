@@ -7,6 +7,7 @@ import {Team} from '../models/team.model';
 import {TeamPlayer} from '../models/team-player.model';
 import {League} from '../models/league.model';
 import {TeamStatistic} from '../models/team-statistic.model';
+import {LeagueTopScorer} from '../models/league-top-scorer.model';
 
 @Injectable({
   providedIn: 'root'
@@ -108,9 +109,9 @@ export class RepositoryService {
       })));
   }
 
-  getLeagues(teamId: number, season: string) {
-    // return this.apiService.getLeagues(teamId, season)
-    return this.apiService.getLeaguesTest(teamId, season)
+  getTeamLeagues(teamId: number, season: string) {
+    // return this.apiService.getTeamLeagues(teamId, season)
+    return this.apiService.getTeamLeaguesTest(teamId, season)
       .pipe(map((responseJsonData => {
         let leagues: League[] = [];
         if (responseJsonData.api && responseJsonData.api.leagues) {
@@ -159,6 +160,45 @@ export class RepositoryService {
         }
 
         return fixtures;
+      })));
+  }
+
+  getLeague(leagueId: number) {
+    // return this.apiService.getLeague(leagueId)
+    return this.apiService.getLeagueTest(leagueId)
+      .pipe(map((responseJsonData => {
+        let leagues: League[] = [];
+        if (responseJsonData.api && responseJsonData.api.leagues) {
+          leagues = responseJsonData.api.leagues;
+        }
+
+        return leagues.length > 0 ? leagues[0] : null;
+      })));
+  }
+
+  getLeagueFixtures(leagueId: number, count: number, isNextFixtures: boolean) {
+    // return this.apiService.getLeagueFixtures(leagueId, count, isNextFixtures)
+    return this.apiService.getLeagueFixturesTest(leagueId, count, isNextFixtures)
+      .pipe(map((responseJsonData => {
+        let fixtures: Fixture[] = [];
+        if (responseJsonData.api && responseJsonData.api.fixtures) {
+          fixtures = responseJsonData.api.fixtures;
+        }
+
+        return fixtures;
+      })));
+  }
+
+  getLeagueTopScorers(leagueId: number) {
+    // return this.apiService.getLeagueTopScorers(leagueId)
+    return this.apiService.getLeagueTopScorersTest(leagueId)
+      .pipe(map((responseJsonData => {
+        let topScorers: LeagueTopScorer[] = [];
+        if (responseJsonData.api && responseJsonData.api.topscorers) {
+          topScorers = responseJsonData.api.topscorers;
+        }
+
+        return topScorers;
       })));
   }
 }

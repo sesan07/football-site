@@ -17,6 +17,8 @@ import { TabToggleComponent } from './shared/components/tab-toggle/tab-toggle.co
 import { TeamPlayerComponent } from './team/team-player/team-player.component';
 import { TeamStatComponent } from './team/team-stat/team-stat.component';
 import {AppRoutingModule} from './app-routing.module';
+import { LeagueComponent } from './league/league.component';
+import { LeagueTopScorerComponent } from './league/league-top-scorer/league-top-scorer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {AppRoutingModule} from './app-routing.module';
     HomeComponent,
     TabToggleComponent,
     TeamPlayerComponent,
-    TeamStatComponent
+    TeamStatComponent,
+    LeagueComponent,
+    LeagueTopScorerComponent
   ],
   imports: [
     BrowserModule,

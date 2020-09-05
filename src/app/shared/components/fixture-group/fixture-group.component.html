@@ -7,7 +7,10 @@
       <span class="link text-sm">{{fixtureGroup ? fixtureGroup.country : 'Country'}}</span>
       <div class="inline whitespace-no-wrap">
         <span class="text-sm"> - </span>
-        <span class="link text-sm">{{fixtureGroup ? fixtureGroup.league : 'League'}}</span>
+        <span class="link text-sm"
+              [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
+          {{fixtureGroup ? fixtureGroup.leagueName : 'League'}}
+        </span>
       </div>
     </div>
     <img class="h-5" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">

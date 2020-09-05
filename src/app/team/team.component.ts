@@ -31,7 +31,6 @@ export class TeamComponent implements OnInit, OnDestroy {
 
   private routeParamsSub: Subscription;
 
-
   constructor(private activatedRoute: ActivatedRoute,
               private repositoryService: RepositoryService) { }
 
@@ -53,7 +52,7 @@ export class TeamComponent implements OnInit, OnDestroy {
         // console.log(this.teamPlayers);
       });
 
-      this.repositoryService.getLeagues(this.teamId, '2020').subscribe((leagues: League[]) => {
+      this.repositoryService.getTeamLeagues(this.teamId, '2020').subscribe((leagues: League[]) => {
         this.leagues = leagues;
 
         // console.log('TeamComponent received leagues: ' + leagues.length);

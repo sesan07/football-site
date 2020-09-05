@@ -19,6 +19,7 @@ export class FixturesManager {
         fixtureGroupMap.set(key, new FixtureGroup(
           fixture.league.country,
           fixture.league.name,
+          fixture.league_id,
           [fixture]
         ));
       }

@@ -5,6 +5,7 @@ import {TeamApiResponse} from '../models/team.model';
 import {TeamPlayersApiResponse} from '../models/team-player.model';
 import {LeaguesApiResponse} from '../models/league.model';
 import {TeamStatisticsApiResponse} from '../models/team-statistic.model';
+import {LeagueTopScorersApiResponse} from '../models/league-top-scorer.model';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +24,7 @@ export class ApiService {
 
   getAllFixturesTest(date: string) {
     return this.http.get<FixturesApiResponse>(
-      'assets/test-data/all_fixtures.json'
+      'assets/test-data/all-fixtures.json'
     );
   }
 
@@ -63,15 +64,15 @@ export class ApiService {
     );
   }
 
-  getLeagues(teamId: number, season: string) {
+  getTeamLeagues(teamId: number, season: string) {
     return this.http.get<LeaguesApiResponse>(
       this.BASE_URL + '/leagues/team/' + teamId + '/' + season
     );
   }
 
-  getLeaguesTest(teamId: number, season: string) {
+  getTeamLeaguesTest(teamId: number, season: string) {
     return this.http.get<LeaguesApiResponse>(
-      'assets/test-data/leagues.json'
+      'assets/test-data/team-leagues.json'
     );
   }
 
@@ -98,6 +99,44 @@ export class ApiService {
     const url = isNextFixtures ? 'assets/test-data/next-team-fixtures.json' : 'assets/test-data/prev-team-fixtures.json';
     return this.http.get<FixturesApiResponse>(
       url
+    );
+  }
+
+  getLeague(leagueId: number) {
+    return this.http.get<LeaguesApiResponse>(
+      this.BASE_URL + '/leagues/league/' + leagueId
+    );
+  }
+
+  getLeagueTest(leagueId: number) {
+    return this.http.get<LeaguesApiResponse>(
+      'assets/test-data/league.json'
+    );
+  }
+
+  getLeagueFixtures(leagueId: number, count: number, isNextFixtures: boolean) {
+    const option = isNextFixtures ? '/next/' : '/last/';
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/league/' + leagueId + option + count
+    );
+  }
+
+  getLeagueFixturesTest(leagueId: number, count: number, isNextFixtures: boolean) {
+    const url = isNextFixtures ? 'assets/test-data/next-league-fixtures.json' : 'assets/test-data/prev-league-fixtures.json';
+    return this.http.get<FixturesApiResponse>(
+      url
+    );
+  }
+
+  getLeagueTopScorers(leagueId: number) {
+    return this.http.get<LeagueTopScorersApiResponse>(
+      this.BASE_URL + '/topscorers/' + leagueId
+    );
+  }
+
+  getLeagueTopScorersTest(leagueId: number) {
+    return this.http.get<LeagueTopScorersApiResponse>(
+      'assets/test-data/league-top-scorers.json'
     );
   }
 }

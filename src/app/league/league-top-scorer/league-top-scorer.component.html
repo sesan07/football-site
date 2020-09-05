@@ -1,0 +1,16 @@
+<div class="flex items-center justify-between py-1 px-4 border-t border-gray-500 bg-green-500 cursor-pointer hover:bg-green-400">
+  <div class="flex flex-grow">
+    <!--    Name -->
+    <span class="text-center text-sm">{{topScorer.firstname + ' ' + topScorer.lastname}}</span>
+  </div>
+  <div class="flex flex-row">
+    <div class="flex justify-center w-8 mr-2 rounded bg-white">
+      <!--    Goals -->
+      <span class="text-sm">{{topScorer.goals.total}}</span>
+    </div>
+    <div class="flex justify-center w-8 rounded bg-white">
+      <!--    Assists -->
+      <span class="text-sm">{{topScorer.goals.assists}}</span>
+    </div>
+  </div>
+</div>

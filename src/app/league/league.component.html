@@ -1,0 +1,74 @@
+<div class="flex mb-2 bg-yellow-200">
+  <div class="flex items-center ml-2 lg:ml-8">
+    <img class="h-24 lg:h-32 my-2" src="../../assets/img/soccer_ball.png" alt="Site Logo">
+    <div class="ml-2 md:ml-4 my-2 text-red-700">
+      <span class="font-bold text-lg">{{league ? league.name : 'Name'}}</span>
+      <div class="flex items-center mb-1">
+        <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
+        <span>{{league ? league.country : 'Country'}}</span>
+      </div>
+      <div class="flex items-center mb-1">
+        <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
+        <span class="text-xs">{{league ? league.type: 'Stadium'}}</span>
+      </div>
+<!--      <span class="text-xs">{{league ? league.founded : 'Founded date'}}</span>-->
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col xl:flex-row">
+  <div class="flex-grow px-2 pb-2 xl:mr-16 bg-green-100">
+
+    <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                       [fixtureGroup]="fixtureGroup">
+    </app-fixture-group>
+
+  </div>
+
+  <!--  Fixtures/Stats-->
+  <div class="flex-grow xl:flex-grow-0 xl:w-1/3 mt-2 xl:mt-0 px-2 pb-2 bg-green-100">
+
+
+
+    <!-- Header -->
+    <!--    Squad-->
+    <div class="flex-grow mt-2 rounded border bg-green-200 rounded overflow-hidden shadow-md">
+      <div class="flex items-center py-1 bg-green-300 px-4">
+        <img class="h-5 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
+        <span class="font-semibold text-lg">Top Scorers</span>
+      </div>
+      <!-- Content -->
+      <div class="bg-green-400">
+
+
+        <div class="flex items-center justify-between py-1 px-4 border-t border-gray-500 bg-green-600 cursor-pointer">
+          <div class="flex flex-grow">
+            <!--    Name -->
+            <span class="font-semibold text-sm">Name</span>
+          </div>
+          <div class="flex flex-row">
+            <div class="flex justify-center w-8 mr-2 rounded bg-white">
+              <!--    Goals -->
+              <span class="font-semibold text-sm">G</span>
+            </div>
+            <div class="flex justify-center w-8 rounded bg-white">
+              <!--    Assists -->
+              <span class="font-semibold text-sm">A</span>
+            </div>
+          </div>
+        </div>
+
+<!--        TODO Add no top scorers message-->
+
+        <app-league-top-scorer
+          *ngFor="let topScorer of topScorers"
+          [topScorer]="topScorer">
+        </app-league-top-scorer>
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
