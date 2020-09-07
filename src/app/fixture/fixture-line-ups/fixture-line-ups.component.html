@@ -1,0 +1,17 @@
+<div class="p-2 rounded border bg-green-300 rounded overflow-hidden shadow-md">
+  <div class="mb-2">
+    <span class="font-bold text-xl">Line Ups</span>
+  </div>
+  <div class="flex flex-col md:flex-row">
+    <app-fixture-line-up-team class="w-full md:w-1/2 mb-2 md:mb-0 md:mr-2"
+                              *ngIf="homeLineUp && homeTeamName"
+                              [teamName]="homeTeamName"
+                              [lineUp]="homeLineUp">
+    </app-fixture-line-up-team>
+    <app-fixture-line-up-team class="w-full md:w-1/2"
+                              *ngIf="awayLineUp && awayTeamName"
+                              [teamName]="awayTeamName"
+                              [lineUp]="awayLineUp">
+    </app-fixture-line-up-team>
+  </div>
+</div>

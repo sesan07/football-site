@@ -1,0 +1,2493 @@
+{
+  "api": {
+    "results": 1,
+    "fixtures": [
+      {
+        "fixture_id": 328063,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T00:00:00+00:00",
+        "event_timestamp": 1599350400,
+        "firstHalfStart": 1599350400,
+        "secondHalfStart": 1599354000,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Governador Plácido Aderaldo Castelo",
+        "referee": "Reway Wagner, Brazil",
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        },
+        "events": [
+          {
+            "elapsed": 9,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 9989,
+            "player": "Felipe Jonatan",
+            "assist_id": 10506,
+            "assist": "Marinho",
+            "type": "Goal",
+            "detail": "Normal Goal",
+            "comments": null
+          },
+          {
+            "elapsed": 33,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 9991,
+            "player": "Lucas Verissimo",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 43,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 9989,
+            "player": "Felipe Jonatan",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 45,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10265,
+            "player": "L. Otavio",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 50,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10192,
+            "player": "Bruno Pacheco",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 51,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10292,
+            "player": "L. Carvalho",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 56,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": null,
+            "player": "Mateus",
+            "assist_id": 10292,
+            "assist": "L. Carvalho",
+            "type": "subst",
+            "detail": "L. Carvalho",
+            "comments": null
+          },
+          {
+            "elapsed": 62,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 10008,
+            "player": "Kaio Jorge",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 67,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10406,
+            "player": "R. Sobis",
+            "assist_id": 197072,
+            "assist": "Cleber",
+            "type": "subst",
+            "detail": "Cleber",
+            "comments": null
+          },
+          {
+            "elapsed": 68,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 54061,
+            "player": "L. Braga",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 68,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 50532,
+            "player": "V. Lima",
+            "assist_id": 10279,
+            "assist": "Fabinho",
+            "type": "subst",
+            "detail": "Fabinho",
+            "comments": null
+          },
+          {
+            "elapsed": 78,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 10000,
+            "player": "C. Sanchez",
+            "assist_id": 10008,
+            "assist": "Kaio Jorge",
+            "type": "subst",
+            "detail": "Kaio Jorge",
+            "comments": null
+          },
+          {
+            "elapsed": 78,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 10002,
+            "player": "Jobson",
+            "assist_id": 10006,
+            "assist": "Arthur",
+            "type": "subst",
+            "detail": "Arthur",
+            "comments": null
+          },
+          {
+            "elapsed": 82,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 71,
+            "player": "L. Peres",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Red Card",
+            "comments": null
+          },
+          {
+            "elapsed": 82,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10267,
+            "player": "S. Xavier",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Red Card",
+            "comments": null
+          },
+          {
+            "elapsed": 89,
+            "elapsed_plus": null,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 80538,
+            "player": "Alex",
+            "assist_id": 54061,
+            "assist": "L. Braga",
+            "type": "subst",
+            "detail": "L. Braga",
+            "comments": null
+          },
+          {
+            "elapsed": 89,
+            "elapsed_plus": null,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 77665,
+            "player": "Bergson",
+            "assist_id": 9577,
+            "assist": "Charles",
+            "type": "subst",
+            "detail": "Charles",
+            "comments": null
+          },
+          {
+            "elapsed": 90,
+            "elapsed_plus": 1,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10192,
+            "player": "Bruno Pacheco",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Yellow Card",
+            "comments": null
+          },
+          {
+            "elapsed": 90,
+            "elapsed_plus": 1,
+            "team_id": 129,
+            "teamName": "Ceara",
+            "player_id": 10192,
+            "player": "Bruno Pacheco",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Red Card",
+            "comments": null
+          },
+          {
+            "elapsed": 90,
+            "elapsed_plus": 3,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 9995,
+            "player": "Alison",
+            "assist_id": null,
+            "assist": null,
+            "type": "Card",
+            "detail": "Red Card",
+            "comments": null
+          },
+          {
+            "elapsed": 90,
+            "elapsed_plus": 6,
+            "team_id": 128,
+            "teamName": "Santos",
+            "player_id": 10117,
+            "player": "Madson",
+            "assist_id": 10506,
+            "assist": "Marinho",
+            "type": "subst",
+            "detail": "Marinho",
+            "comments": null
+          }
+        ],
+        "lineups": {
+          "Ceara": {
+            "coach": "Guto Ferreira",
+            "coach_id": 228,
+            "formation": "4-2-3-1",
+            "startXI": [
+              {
+                "team_id": 129,
+                "player_id": 9903,
+                "player": "Fernando Prass",
+                "number": 1,
+                "pos": "G"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10267,
+                "player": "Samuel Xavier",
+                "number": 22,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 6204,
+                "player": "Tiago Pagnussat",
+                "number": 3,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10265,
+                "player": "Luiz Otávio",
+                "number": 13,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10192,
+                "player": "Bruno Pacheco",
+                "number": 6,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10279,
+                "player": "Fabinho",
+                "number": 19,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 9577,
+                "player": "Charles",
+                "number": 35,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 80187,
+                "player": "Fernando Sobral",
+                "number": 88,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 9886,
+                "player": "Vinícius",
+                "number": 29,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10292,
+                "player": "Leandro Carvalho",
+                "number": 80,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 197072,
+                "player": "Cléber",
+                "number": 89,
+                "pos": "F"
+              }
+            ],
+            "substitutes": [
+              {
+                "team_id": 129,
+                "player_id": 10264,
+                "player": "Diogo Silva",
+                "number": 12,
+                "pos": "G"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10197,
+                "player": "Eduardo",
+                "number": 86,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 9378,
+                "player": "Alyson",
+                "number": 14,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 198140,
+                "player": "Gabriel Lacerda",
+                "number": 15,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10273,
+                "player": "Eduardo Brock",
+                "number": 4,
+                "pos": "D"
+              },
+              {
+                "team_id": 129,
+                "player_id": 77669,
+                "player": "Felipe",
+                "number": 10,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 80171,
+                "player": "Mateus Gonçalves",
+                "number": 7,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 77714,
+                "player": "William Oliveira",
+                "number": 5,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 50532,
+                "player": "Vinicius Lima",
+                "number": 45,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10275,
+                "player": "Ricardinho",
+                "number": 8,
+                "pos": "M"
+              },
+              {
+                "team_id": 129,
+                "player_id": 10406,
+                "player": "Rafael Sóbis",
+                "number": 11,
+                "pos": "F"
+              },
+              {
+                "team_id": 129,
+                "player_id": 77665,
+                "player": "Bergson",
+                "number": 30,
+                "pos": "F"
+              }
+            ]
+          },
+          "Santos": {
+            "coach": "Jesualdo Ferreira",
+            "coach_id": 5446,
+            "formation": "4-2-3-1",
+            "startXI": [
+              {
+                "team_id": 128,
+                "player_id": 9979,
+                "player": "João Paulo",
+                "number": 34,
+                "pos": "G"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10162,
+                "player": "Pará",
+                "number": 4,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9991,
+                "player": "Lucas Veríssimo",
+                "number": 28,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 71,
+                "player": "Luan Peres",
+                "number": 14,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9989,
+                "player": "Felipe Jonatan",
+                "number": 3,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9987,
+                "player": "Diego Pituca",
+                "number": 21,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9995,
+                "player": "Alison",
+                "number": 5,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10506,
+                "player": "Marinho",
+                "number": 11,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10006,
+                "player": "Arthur Gomes",
+                "number": 23,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 54061,
+                "player": "Lucas Braga",
+                "number": 30,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10008,
+                "player": "Kaio Jorge",
+                "number": 19,
+                "pos": "F"
+              }
+            ],
+            "substitutes": [
+              {
+                "team_id": 128,
+                "player_id": 9978,
+                "player": "Éverson",
+                "number": 22,
+                "pos": "G"
+              },
+              {
+                "team_id": 128,
+                "player_id": 70366,
+                "player": "John Victor",
+                "number": 33,
+                "pos": "G"
+              },
+              {
+                "team_id": 128,
+                "player_id": 80538,
+                "player": "Alex",
+                "number": 44,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10117,
+                "player": "Madson",
+                "number": 13,
+                "pos": "D"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9999,
+                "player": "Tailson",
+                "number": 39,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 2454,
+                "player": "Yeferson Soteldo",
+                "number": 10,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 133181,
+                "player": "Ivonei Rabelo",
+                "number": 45,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10000,
+                "player": "Carlos Sánchez",
+                "number": 7,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 10002,
+                "player": "Jobson",
+                "number": 8,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 9996,
+                "player": "Lucas Lourenço",
+                "number": 37,
+                "pos": "M"
+              },
+              {
+                "team_id": 128,
+                "player_id": 267771,
+                "player": "Marcos Leonardo",
+                "number": 36,
+                "pos": "F"
+              }
+            ]
+          }
+        },
+        "statistics": {
+          "Shots on Goal": {
+            "home": "6",
+            "away": "4"
+          },
+          "Shots off Goal": {
+            "home": "6",
+            "away": "3"
+          },
+          "Total Shots": {
+            "home": "13",
+            "away": "9"
+          },
+          "Blocked Shots": {
+            "home": "1",
+            "away": "2"
+          },
+          "Shots insidebox": {
+            "home": "7",
+            "away": "6"
+          },
+          "Shots outsidebox": {
+            "home": "6",
+            "away": "3"
+          },
+          "Fouls": {
+            "home": "18",
+            "away": "18"
+          },
+          "Corner Kicks": {
+            "home": "7",
+            "away": "5"
+          },
+          "Offsides": {
+            "home": "0",
+            "away": "2"
+          },
+          "Ball Possession": {
+            "home": "63%",
+            "away": "37%"
+          },
+          "Yellow Cards": {
+            "home": "4",
+            "away": "4"
+          },
+          "Red Cards": {
+            "home": "2",
+            "away": "2"
+          },
+          "Goalkeeper Saves": {
+            "home": "3",
+            "away": "7"
+          },
+          "Total passes": {
+            "home": "413",
+            "away": "236"
+          },
+          "Passes accurate": {
+            "home": "345",
+            "away": "181"
+          },
+          "Passes %": {
+            "home": "84%",
+            "away": "77%"
+          }
+        },
+        "players": [
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9903,
+            "player_name": "Fernando Prass",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 1,
+            "position": "G",
+            "rating": "6.9",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 1,
+              "assists": 0,
+              "saves": 3
+            },
+            "passes": {
+              "total": 17,
+              "key": 0,
+              "accuracy": 85
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 0,
+              "won": 0
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10267,
+            "player_name": "Samuel Xavier",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 22,
+            "position": "D",
+            "rating": "6.6",
+            "minutes_played": 82,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 33,
+              "key": 0,
+              "accuracy": 91
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 3
+            },
+            "duels": {
+              "total": 8,
+              "won": 4
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 4,
+              "committed": 3
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 1
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 6204,
+            "player_name": "Tiago Pagnussat",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 3,
+            "position": "D",
+            "rating": "7.0",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 58,
+              "key": 0,
+              "accuracy": 84
+            },
+            "tackles": {
+              "total": 2,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 10,
+              "won": 9
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 2,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10265,
+            "player_name": "Luiz Otávio",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 13,
+            "position": "D",
+            "rating": "7.0",
+            "minutes_played": 90,
+            "captain": "True",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 58,
+              "key": 1,
+              "accuracy": 93
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 1,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 3,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10192,
+            "player_name": "Bruno Pacheco",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 6,
+            "position": "D",
+            "rating": "6.3",
+            "minutes_played": 89,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 34,
+              "key": 0,
+              "accuracy": 70
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 6,
+              "won": 4
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 1,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 2,
+              "red": 1
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10279,
+            "player_name": "Fabinho",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 19,
+            "position": "M",
+            "rating": "6.9",
+            "minutes_played": 68,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 22,
+              "key": 1,
+              "accuracy": 88
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 3,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": null,
+            "player_name": "Charles",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 35,
+            "position": "M",
+            "rating": "6.6",
+            "minutes_played": 89,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 2,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 27,
+              "key": 2,
+              "accuracy": 84
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 6,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 1
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 80187,
+            "player_name": "Fernando Sobral",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 88,
+            "position": "M",
+            "rating": "6.3",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 25,
+              "key": 1,
+              "accuracy": 69
+            },
+            "tackles": {
+              "total": 3,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 17,
+              "won": 8
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 0,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 5,
+              "committed": 3
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9886,
+            "player_name": "Vinícius",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 29,
+            "position": "M",
+            "rating": "7.9",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 4,
+              "on": 3
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 29,
+              "key": 2,
+              "accuracy": 82
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 4,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 1,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10292,
+            "player_name": "Leandro Carvalho",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 80,
+            "position": "M",
+            "rating": "6.7",
+            "minutes_played": 56,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 2,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 10,
+              "key": 0,
+              "accuracy": 76
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 10,
+              "won": 7
+            },
+            "dribbles": {
+              "attempts": 3,
+              "success": 3,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 4,
+              "committed": 3
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 197072,
+            "player_name": "Cléber",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 89,
+            "position": "F",
+            "rating": "7.0",
+            "minutes_played": 67,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 9,
+              "key": 2,
+              "accuracy": 90
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 1,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 7,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 1,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 1
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 80171,
+            "player_name": "Mateus Gonçalves",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 7,
+            "position": "M",
+            "rating": "6.9",
+            "minutes_played": 34,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 9,
+              "key": 0,
+              "accuracy": 90
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 6,
+              "won": 3
+            },
+            "dribbles": {
+              "attempts": 3,
+              "success": 3,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 1
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 50532,
+            "player_name": "Vinicius Lima",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 45,
+            "position": "M",
+            "rating": "6.6",
+            "minutes_played": 22,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 6,
+              "key": 0,
+              "accuracy": 85
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 6,
+              "won": 3
+            },
+            "dribbles": {
+              "attempts": 2,
+              "success": 2,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10406,
+            "player_name": "Rafael Sóbis",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 11,
+            "position": "F",
+            "rating": "6.7",
+            "minutes_played": 23,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 6,
+              "key": 1,
+              "accuracy": 75
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 1,
+              "won": 0
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 77665,
+            "player_name": "Bergson",
+            "team_id": 129,
+            "team_name": "Ceara",
+            "number": 30,
+            "position": "F",
+            "rating": "6.6",
+            "minutes_played": 9,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 2,
+              "key": 1,
+              "accuracy": 100
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 3,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9979,
+            "player_name": "João Paulo",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 34,
+            "position": "G",
+            "rating": "8.2",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 6
+            },
+            "passes": {
+              "total": 18,
+              "key": 0,
+              "accuracy": 66
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 0,
+              "won": 0
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10162,
+            "player_name": "Pará",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 4,
+            "position": "D",
+            "rating": "7.7",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 23,
+              "key": 0,
+              "accuracy": 88
+            },
+            "tackles": {
+              "total": 3,
+              "blocks": 0,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 8,
+              "won": 7
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 3,
+              "committed": 1
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9991,
+            "player_name": "Lucas Veríssimo",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 28,
+            "position": "D",
+            "rating": "7.2",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 30,
+              "key": 1,
+              "accuracy": 83
+            },
+            "tackles": {
+              "total": 2,
+              "blocks": 0,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 14,
+              "won": 6
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 3
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 71,
+            "player_name": "Luan Peres",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 14,
+            "position": "D",
+            "rating": "6.7",
+            "minutes_played": 82,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 12,
+              "key": 0,
+              "accuracy": 80
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 1,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 1
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9989,
+            "player_name": "Felipe Jonatan",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 3,
+            "position": "D",
+            "rating": "7.6",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 1,
+              "on": 1
+            },
+            "goals": {
+              "total": 1,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 21,
+              "key": 0,
+              "accuracy": 70
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 1,
+              "interceptions": 2
+            },
+            "duels": {
+              "total": 4,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 2,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9987,
+            "player_name": "Diego Pituca",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 21,
+            "position": "M",
+            "rating": "6.6",
+            "minutes_played": 90,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 13,
+              "key": 1,
+              "accuracy": 59
+            },
+            "tackles": {
+              "total": 3,
+              "blocks": 0,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 10,
+              "won": 5
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 2
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 9995,
+            "player_name": "Alison",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 5,
+            "position": "M",
+            "rating": "6.5",
+            "minutes_played": 93,
+            "captain": "True",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 20,
+              "key": 0,
+              "accuracy": 83
+            },
+            "tackles": {
+              "total": 2,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 14,
+              "won": 7
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 3
+            },
+            "fouls": {
+              "drawn": 3,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 1
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10506,
+            "player_name": "Marinho",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 11,
+            "position": "M",
+            "rating": "7.3",
+            "minutes_played": 89,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 4,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 1,
+              "saves": 0
+            },
+            "passes": {
+              "total": 13,
+              "key": 3,
+              "accuracy": 72
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 13,
+              "won": 7
+            },
+            "dribbles": {
+              "attempts": 3,
+              "success": 1,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 6,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10006,
+            "player_name": "Arthur Gomes",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 23,
+            "position": "M",
+            "rating": "6.9",
+            "minutes_played": 78,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": null,
+            "shots": {
+              "total": 2,
+              "on": 1
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 7,
+              "key": 1,
+              "accuracy": 87
+            },
+            "tackles": {
+              "total": 1,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 8,
+              "won": 3
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 1,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 54061,
+            "player_name": "Lucas Braga",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 30,
+            "position": "M",
+            "rating": "6.2",
+            "minutes_played": 89,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": 1,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 9,
+              "key": 1,
+              "accuracy": 90
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 9,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 4
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10008,
+            "player_name": "Kaio Jorge",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 19,
+            "position": "F",
+            "rating": "6.3",
+            "minutes_played": 78,
+            "captain": "False",
+            "substitute": "False",
+            "offsides": 1,
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 7,
+              "key": 0,
+              "accuracy": 77
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 2
+            },
+            "duels": {
+              "total": 6,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 1
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 3
+            },
+            "cards": {
+              "yellow": 1,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 80538,
+            "player_name": "Alex",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 44,
+            "position": "D",
+            "rating": "6.3",
+            "minutes_played": 9,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 3,
+              "key": 0,
+              "accuracy": 75
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 0,
+              "won": 0
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10117,
+            "player_name": "Madson",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 13,
+            "position": "D",
+            "rating": "–",
+            "minutes_played": 1,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 1,
+              "key": 0,
+              "accuracy": 100
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 0,
+              "won": 0
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10000,
+            "player_name": "Carlos Sánchez",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 7,
+            "position": "M",
+            "rating": "6.5",
+            "minutes_played": 12,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 1,
+              "key": 0,
+              "accuracy": 33
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 2,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          },
+          {
+            "event_id": 328063,
+            "updateAt": 1599392706,
+            "player_id": 10002,
+            "player_name": "Jobson",
+            "team_id": 128,
+            "team_name": "Santos",
+            "number": 8,
+            "position": "M",
+            "rating": "6.6",
+            "minutes_played": 12,
+            "captain": "False",
+            "substitute": "True",
+            "offsides": null,
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 0,
+              "assists": 0,
+              "saves": 0
+            },
+            "passes": {
+              "total": 3,
+              "key": 0,
+              "accuracy": 100
+            },
+            "tackles": {
+              "total": 0,
+              "blocks": 0,
+              "interceptions": 1
+            },
+            "duels": {
+              "total": 1,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 1,
+              "success": 1,
+              "past": 0
+            },
+            "fouls": {
+              "drawn": 0,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 0,
+              "commited": 0,
+              "success": 0,
+              "missed": 0,
+              "saved": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

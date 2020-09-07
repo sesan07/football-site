@@ -22,7 +22,7 @@ export class HomeFixturesComponent implements OnInit, OnDestroy {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
-    this.repositoryService.getAllFixtures('2020-09-04');
+    this.repositoryService.getAllFixtures('2020-09-06');
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {

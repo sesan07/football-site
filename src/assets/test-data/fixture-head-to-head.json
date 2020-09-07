@@ -1,0 +1,443 @@
+{
+  "api": {
+    "teams": [
+      {
+        "team_id": 129,
+        "team_name": "Ceara",
+        "team_logo": "https://media.api-sports.io/football/teams/129.png",
+        "statistics": {
+          "played": {
+            "home": 5,
+            "away": 4,
+            "total": 9
+          },
+          "wins": {
+            "home": 1,
+            "away": 0,
+            "total": 1
+          },
+          "draws": {
+            "home": 1,
+            "away": 1,
+            "total": 2
+          },
+          "loses": {
+            "home": 3,
+            "away": 3,
+            "total": 6
+          }
+        }
+      },
+      {
+        "team_id": 128,
+        "team_name": "Santos",
+        "team_logo": "https://media.api-sports.io/football/teams/128.png",
+        "statistics": {
+          "played": {
+            "home": 4,
+            "away": 5,
+            "total": 9
+          },
+          "wins": {
+            "home": 3,
+            "away": 3,
+            "total": 6
+          },
+          "draws": {
+            "home": 1,
+            "away": 1,
+            "total": 2
+          },
+          "loses": {
+            "home": 0,
+            "away": 1,
+            "total": 1
+          }
+        }
+      }
+    ],
+    "results": 10,
+    "fixtures": [
+      {
+        "fixture_id": 192290,
+        "league_id": 695,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2010-05-16T19:00:00+00:00",
+        "event_timestamp": 1274036400,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 37",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Urbano Caldeira (Santos, São Paulo)",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "awayTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 192102,
+        "league_id": 695,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2010-09-12T21:30:00+00:00",
+        "event_timestamp": 1284327000,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 18",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Governador Plácido Aderaldo Castelo (Fortaleza, Ceará)",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 191690,
+        "league_id": 694,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2011-08-07T19:00:00+00:00",
+        "event_timestamp": 1312743600,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 15",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Municipal Paulo Machado de Carvalho (São Paulo, São Paulo)",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "awayTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 191881,
+        "league_id": 694,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2011-11-13T19:00:00+00:00",
+        "event_timestamp": 1321210800,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 34",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Municipal Presidente Getúlio Vargas (Fortaleza, Ceará)",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 3,
+        "score": {
+          "halftime": "2-1",
+          "fulltime": "2-3",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 37349,
+        "league_id": 6,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2018-04-15T00:00:00+00:00",
+        "event_timestamp": 1523750400,
+        "firstHalfStart": 1523750400,
+        "secondHalfStart": 1523754000,
+        "round": "Regular Season - 1",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Pacaembú",
+        "referee": "Rodrigo D'Alonso Ferreira, Brazil",
+        "homeTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "awayTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "2-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 37183,
+        "league_id": 6,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2018-08-08T22:30:00+00:00",
+        "event_timestamp": 1533767400,
+        "firstHalfStart": 1533767400,
+        "secondHalfStart": 1533771000,
+        "round": "Regular Season - 20",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Castelão",
+        "referee": "Marcelo De Lima Henrique, Brazil",
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 94535,
+        "league_id": 357,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2019-06-02T19:00:00+00:00",
+        "event_timestamp": 1559502000,
+        "firstHalfStart": 1559502000,
+        "secondHalfStart": 1559505600,
+        "round": "Regular Season - 7",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estadio Castelão",
+        "referee": "Ricardo Marques Ribeiro, Brazil",
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 94729,
+        "league_id": 357,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2019-10-17T22:15:00+00:00",
+        "event_timestamp": 1571350500,
+        "firstHalfStart": 1571350500,
+        "secondHalfStart": 1571354100,
+        "round": "Regular Season - 26",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Urbano Caldeira",
+        "referee": "Rafael Traci, Brazil",
+        "homeTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "awayTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328063,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T00:00:00+00:00",
+        "event_timestamp": 1599350400,
+        "firstHalfStart": 1599350400,
+        "secondHalfStart": 1599354000,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Governador Plácido Aderaldo Castelo",
+        "referee": "Reway Wagner, Brazil",
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328253,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-12-27T20:00:00+00:00",
+        "event_timestamp": 1609099200,
+        "firstHalfStart": null,
+        "secondHalfStart": null,
+        "round": "Regular Season - 27",
+        "status": "Not Started",
+        "statusShort": "NS",
+        "elapsed": 0,
+        "venue": "Estádio Urbano Caldeira",
+        "referee": null,
+        "homeTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "awayTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "goalsHomeTeam": null,
+        "goalsAwayTeam": null,
+        "score": {
+          "halftime": null,
+          "fulltime": null,
+          "extratime": null,
+          "penalty": null
+        }
+      }
+    ]
+  }
+}

@@ -35,7 +35,7 @@ export class RepositoryService {
     this.isLoadingAllFixtures = true;
 
     // this.apiService.getAllFixtures(date)
-    this.apiService.getAllFixturesTest(date)
+    this.apiService.getAllFixturesTest()
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
@@ -85,7 +85,7 @@ export class RepositoryService {
 
   getTeam(id: number) {
     // return this.apiService.getTeam(id)
-    return this.apiService.getTeamTest(id)
+    return this.apiService.getTeamTest()
       .pipe(map((responseJsonData => {
         let teams: Team[] = [];
         if (responseJsonData.api && responseJsonData.api.teams) {
@@ -98,7 +98,7 @@ export class RepositoryService {
 
   getSquad(teamId: number, season: string) {
     // return this.apiService.getSquad(teamId, season)
-      return this.apiService.getSquadTest(teamId, season)
+      return this.apiService.getSquadTest()
       .pipe(map((responseJsonData => {
         let teamPlayers: TeamPlayer[] = [];
         if (responseJsonData.api && responseJsonData.api.players) {
@@ -111,7 +111,7 @@ export class RepositoryService {
 
   getTeamLeagues(teamId: number, season: string) {
     // return this.apiService.getTeamLeagues(teamId, season)
-    return this.apiService.getTeamLeaguesTest(teamId, season)
+    return this.apiService.getTeamLeaguesTest()
       .pipe(map((responseJsonData => {
         let leagues: League[] = [];
         if (responseJsonData.api && responseJsonData.api.leagues) {
@@ -124,7 +124,7 @@ export class RepositoryService {
 
   getTeamStatistics(teamId: number, leagueId: number) {
     // return this.apiService.getTeamStatistics(teamId, leagueId)
-    return this.apiService.getTeamStatisticsTest(teamId, leagueId)
+    return this.apiService.getTeamStatisticsTest()
       .pipe(map((responseJsonData => {
         const teamStatistics: TeamStatistic[] = [];
         if (responseJsonData.api && responseJsonData.api.statistics) {
@@ -152,7 +152,7 @@ export class RepositoryService {
 
   getTeamFixtures(teamId: number, count: number, isNextFixtures: boolean) {
     // return this.apiService.getTeamFixtures(teamId, count, isNextFixtures)
-    return this.apiService.getTeamFixturesTest(teamId, count, isNextFixtures)
+    return this.apiService.getTeamFixturesTest(isNextFixtures)
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
@@ -165,7 +165,7 @@ export class RepositoryService {
 
   getLeague(leagueId: number) {
     // return this.apiService.getLeague(leagueId)
-    return this.apiService.getLeagueTest(leagueId)
+    return this.apiService.getLeagueTest()
       .pipe(map((responseJsonData => {
         let leagues: League[] = [];
         if (responseJsonData.api && responseJsonData.api.leagues) {
@@ -178,7 +178,7 @@ export class RepositoryService {
 
   getLeagueFixtures(leagueId: number, count: number, isNextFixtures: boolean) {
     // return this.apiService.getLeagueFixtures(leagueId, count, isNextFixtures)
-    return this.apiService.getLeagueFixturesTest(leagueId, count, isNextFixtures)
+    return this.apiService.getLeagueFixturesTest(isNextFixtures)
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
@@ -191,7 +191,7 @@ export class RepositoryService {
 
   getLeagueTopScorers(leagueId: number) {
     // return this.apiService.getLeagueTopScorers(leagueId)
-    return this.apiService.getLeagueTopScorersTest(leagueId)
+    return this.apiService.getLeagueTopScorersTest()
       .pipe(map((responseJsonData => {
         let topScorers: LeagueTopScorer[] = [];
         if (responseJsonData.api && responseJsonData.api.topscorers) {
@@ -199,6 +199,32 @@ export class RepositoryService {
         }
 
         return topScorers;
+      })));
+  }
+
+  getFixture(fixtureId: number) {
+    // return this.apiService.getFixture(fixtureId)
+    return this.apiService.getFixtureTest()
+      .pipe(map((responseJsonData => {
+        let fixtures: Fixture[] = [];
+        if (responseJsonData.api && responseJsonData.api.fixtures) {
+          fixtures = responseJsonData.api.fixtures;
+        }
+
+        return fixtures.length > 0 ? fixtures[0] : null;
+      })));
+  }
+
+  getFixtureHeadToHead(homeTeamId: number, awayTeamId: number) {
+    // return this.apiService.getFixtureHeadToHead(homeTeamId, awayTeamId)
+    return this.apiService.getFixtureHeadToHeadTest()
+      .pipe(map((responseJsonData => {
+        let fixtures: Fixture[] = [];
+        if (responseJsonData.api && responseJsonData.api.fixtures) {
+          fixtures = responseJsonData.api.fixtures;
+        }
+
+        return fixtures;
       })));
   }
 }

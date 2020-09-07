@@ -1,0 +1,22 @@
+<div class="flex items-center justify-center h-12">
+  <span class="w-64 mr-2 text-right"
+        [class.invisible]="!isHomeTeam">
+    {{fixtureEvent.player}}
+  </span>
+  <img class="w-6"
+       [class.invisible]="!isHomeTeam"
+       src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+
+  <div class="flex justify-center items-center h-full w-10 mx-4">
+    <span class="px-2 text-center text-sm rounded border border-gray-700 bg-white absolute">{{fixtureEvent.elapsed}}</span>
+    <span class="h-full w-1 border-l border-r border-gray-200 bg-gray-600"></span>
+  </div>
+
+  <img class="w-6" src="../../../../assets/img/soccer_ball.png"
+       [class.invisible]="isHomeTeam"
+       alt="Site Logo">
+  <span class="w-64 ml-2 text-left"
+        [class.invisible]="isHomeTeam">
+    {{fixtureEvent.player}}
+  </span>
+</div>

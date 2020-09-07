@@ -1,0 +1,19 @@
+<div class="flex flex-col items-center px-2 py-1">
+  <span>{{getStatName()}}</span>
+  <div class="flex w-full">
+    <span class="w-8 mr-2 text-center">{{statistic[1].home}}</span>
+    <div class="flex items-center w-full">
+      <div class="flex justify-end h-3 w-1/2 relative">
+        <span class="h-full rounded-l border border-gray-200 bg-red-600 absolute" [ngStyle]="{width: getWidth(true)}"></span>
+        <span class="h-full w-full rounded-l border border-gray-200 bg-gray-600"></span>
+      </div>
+
+      <div class="flex justify-start h-3 w-1/2 relative">
+        <span class="h-full rounded-r border border-gray-200 bg-red-600 absolute" [ngStyle]="{width: getWidth(false)}"></span>
+        <span class="h-full w-full rounded-r border border-gray-200 bg-gray-600"></span>
+      </div>
+    </div>
+    <span class="w-8 ml-2 text-center">{{statistic[1].away}}</span>
+  </div>
+
+</div>

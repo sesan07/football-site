@@ -22,7 +22,7 @@ export class ApiService {
     );
   }
 
-  getAllFixturesTest(date: string) {
+  getAllFixturesTest() {
     return this.http.get<FixturesApiResponse>(
       'assets/test-data/all-fixtures.json'
     );
@@ -46,7 +46,7 @@ export class ApiService {
     );
   }
 
-  getTeamTest(id: number) {
+  getTeamTest() {
     return this.http.get<TeamApiResponse>(
       'assets/test-data/team.json'
     );
@@ -58,7 +58,7 @@ export class ApiService {
     );
   }
 
-  getSquadTest(teamId: number, season: string) {
+  getSquadTest() {
     return this.http.get<TeamPlayersApiResponse>(
       'assets/test-data/team-players.json'
     );
@@ -70,7 +70,7 @@ export class ApiService {
     );
   }
 
-  getTeamLeaguesTest(teamId: number, season: string) {
+  getTeamLeaguesTest() {
     return this.http.get<LeaguesApiResponse>(
       'assets/test-data/team-leagues.json'
     );
@@ -82,7 +82,7 @@ export class ApiService {
     );
   }
 
-  getTeamStatisticsTest(teamId: number, leagueId: number) {
+  getTeamStatisticsTest() {
     return this.http.get<TeamStatisticsApiResponse>(
       'assets/test-data/team-statistics.json'
     );
@@ -95,7 +95,7 @@ export class ApiService {
     );
   }
 
-  getTeamFixturesTest(teamId: number, count: number, isNextFixtures: boolean) {
+  getTeamFixturesTest(isNextFixtures: boolean) {
     const url = isNextFixtures ? 'assets/test-data/next-team-fixtures.json' : 'assets/test-data/prev-team-fixtures.json';
     return this.http.get<FixturesApiResponse>(
       url
@@ -108,7 +108,7 @@ export class ApiService {
     );
   }
 
-  getLeagueTest(leagueId: number) {
+  getLeagueTest() {
     return this.http.get<LeaguesApiResponse>(
       'assets/test-data/league.json'
     );
@@ -121,7 +121,7 @@ export class ApiService {
     );
   }
 
-  getLeagueFixturesTest(leagueId: number, count: number, isNextFixtures: boolean) {
+  getLeagueFixturesTest(isNextFixtures: boolean) {
     const url = isNextFixtures ? 'assets/test-data/next-league-fixtures.json' : 'assets/test-data/prev-league-fixtures.json';
     return this.http.get<FixturesApiResponse>(
       url
@@ -134,9 +134,33 @@ export class ApiService {
     );
   }
 
-  getLeagueTopScorersTest(leagueId: number) {
+  getLeagueTopScorersTest() {
     return this.http.get<LeagueTopScorersApiResponse>(
       'assets/test-data/league-top-scorers.json'
+    );
+  }
+
+  getFixture(fixtureId: number) {
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/id/' + fixtureId
+    );
+  }
+
+  getFixtureTest() {
+    return this.http.get<FixturesApiResponse>(
+      'assets/test-data/fixture.json'
+    );
+  }
+
+  getFixtureHeadToHead(homeTeamId: number, awayTeamId: number) {
+    return this.http.get<FixturesApiResponse>(
+      this.BASE_URL + '/fixtures/h2h/' + homeTeamId + '/' + awayTeamId
+    );
+  }
+
+  getFixtureHeadToHeadTest() {
+    return this.http.get<FixturesApiResponse>(
+      'assets/test-data/fixture-head-to-head.json'
     );
   }
 }

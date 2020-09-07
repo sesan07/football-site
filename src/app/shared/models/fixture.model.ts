@@ -17,6 +17,9 @@ export interface Fixture {
   goalsHomeTeam: number;
   goalsAwayTeam: number;
   score: Score;
+  events: FixtureEvent[];
+  lineups: any;
+  statistics: any;
 }
 
 export class FixtureGroup {
@@ -49,6 +52,41 @@ interface Score {
   fulltime: string;
   extratime: string;
   penalty: string;
+}
+
+export interface FixtureEvent {
+  elapsed: number;
+  elapsed_plus: string;
+  team_id: number;
+  teamName: string;
+  player_id: number;
+  player: string;
+  assist_id: string;
+  assist: string;
+  type: string;
+  detail: string;
+  comments: string;
+}
+
+export interface FixtureLineUp {
+  coach: string;
+  coach_id: number;
+  formation: string;
+  startXI: LineUpPlayer[];
+  substitutes: LineUpPlayer[];
+}
+
+export interface LineUpPlayer {
+  team_id: number;
+  player_id: number;
+  player: number;
+  number: number;
+  pos: number;
+}
+
+export interface FixtureStatistic {
+  home: string;
+  away: string;
 }
 
 export interface FixturesApiResponse {

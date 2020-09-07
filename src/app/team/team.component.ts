@@ -59,7 +59,6 @@ export class TeamComponent implements OnInit, OnDestroy {
         // console.log(this.leagues);
 
         this.teamStatisticsMap.clear();
-        this.activeTeamStatistics = [];
         leagues.forEach((league: League) => {
           this.repositoryService.getTeamStatistics(this.teamId, league.league_id).subscribe((teamStatistics: TeamStatistic[]) => {
             this.teamStatisticsMap.set(league.league_id, teamStatistics);
@@ -72,6 +71,12 @@ export class TeamComponent implements OnInit, OnDestroy {
             // console.log(teamStatistics);
           });
         });
+
+        this.activeTeamStatistics = [];
+        if (leagues.length > 0) {
+          this.activeTeamStatistics.push(...this.teamStatisticsMap.get(leagues[0].league_id));
+        }
+
       });
 
       this.fixtures = [];

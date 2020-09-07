@@ -1,0 +1,9 @@
+<div class="p-2 rounded border bg-green-300 rounded overflow-hidden shadow-md">
+  <div class="mb-2">
+    <span class="font-bold text-xl">Head to Head</span>
+  </div>
+
+  <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                     [fixtureGroup]="fixtureGroup">
+  </app-fixture-group>
+</div>

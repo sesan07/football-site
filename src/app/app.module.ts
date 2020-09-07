@@ -19,6 +19,15 @@ import { TeamStatComponent } from './team/team-stat/team-stat.component';
 import {AppRoutingModule} from './app-routing.module';
 import { LeagueComponent } from './league/league.component';
 import { LeagueTopScorerComponent } from './league/league-top-scorer/league-top-scorer.component';
+import {FixtureComponent} from './fixture/fixture.component';
+import { FixtureLineUpsComponent } from './fixture/fixture-line-ups/fixture-line-ups.component';
+import { FixtureEventsComponent } from './fixture/fixture-events/fixture-events.component';
+import { FixtureStatisticsComponent } from './fixture/fixture-statistics/fixture-statistics.component';
+import { FixtureHeadToHeadComponent } from './fixture/fixture-head-to-head/fixture-head-to-head.component';
+import { FixtureLineUpTeamComponent } from './fixture/fixture-line-ups/fixture-line-up-team/fixture-line-up-team.component';
+import { FixtureLineUpPlayerComponent } from './fixture/fixture-line-ups/fixture-line-up-team/fixture-line-up-player/fixture-line-up-player.component';
+import { FixtureEventItemComponent } from './fixture/fixture-events/fixture-event-item/fixture-event-item.component';
+import { FixtureStatisticsItemComponent } from './fixture/fixture-statistics/fixture-statistics-item/fixture-statistics-item.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +45,16 @@ import { LeagueTopScorerComponent } from './league/league-top-scorer/league-top-
     TeamPlayerComponent,
     TeamStatComponent,
     LeagueComponent,
-    LeagueTopScorerComponent
+    LeagueTopScorerComponent,
+    FixtureComponent,
+    FixtureLineUpsComponent,
+    FixtureEventsComponent,
+    FixtureStatisticsComponent,
+    FixtureHeadToHeadComponent,
+    FixtureLineUpTeamComponent,
+    FixtureLineUpPlayerComponent,
+    FixtureEventItemComponent,
+    FixtureStatisticsItemComponent
   ],
   imports: [
     BrowserModule,

@@ -3,11 +3,13 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {TeamComponent} from './team/team.component';
 import {LeagueComponent} from './league/league.component';
+import {FixtureComponent} from './fixture/fixture.component';
 
 const appRoutes: Routes =  [
   {path: '', component: HomeComponent},
   {path: 'team/:name/:id', component: TeamComponent},
-  {path: 'league/:name/:id', component: LeagueComponent}
+  {path: 'league/:name/:id', component: LeagueComponent},
+  {path: 'fixture/:id', component: FixtureComponent}
 ];
 
 @NgModule({
