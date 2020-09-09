@@ -1,24 +1,30 @@
 <!-- Country-League fixtures -->
 <div class="mb-2 rounded border rounded-lg overflow-hidden shadow-md">
   <!-- Header -->
-  <div class="flex flex-grow items-end py-1 bg-green-600 px-4">
-    <img class="h-5 mr-1" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+  <div class="flex flex-grow items-center py-2 bg-green-600 px-4 cursor-pointer"
+       (click)="isCollapsed = !isCollapsed">
     <div class="flex-grow">
-      <span class="link text-sm">{{fixtureGroup ? fixtureGroup.country : 'Country'}}</span>
+      <span class="text-sm">{{fixtureGroup.country}}</span>
       <div class="inline whitespace-no-wrap">
         <span class="text-sm"> - </span>
         <span class="link text-sm"
               [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
-          {{fixtureGroup ? fixtureGroup.leagueName : 'League'}}
+          {{fixtureGroup.leagueName}}
         </span>
       </div>
     </div>
-    <img class="h-5" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+    <img class="w-4 transition-transform transform duration-200 ease-in-out"
+         [class.rotate-180]="isCollapsed"
+         src="../../../../assets/img/up-arrow.png"
+         alt="Site Logo">
   </div>
   <!-- Content -->
-  <div class="flex-grow bg-green-400">
+  <div class="flex-grow bg-green-400"
+       [class.h-0]="isCollapsed">
     <app-fixture-item *ngFor="let fixture of fixtureGroup.fixtures"
-                      [fixture]="fixture">
+                      [fixture]="fixture"
+                      [isCompactView]="isCompactView"
+                      [isHeadToHead]="isHeadToHead">
     </app-fixture-item>
   </div>
 </div>

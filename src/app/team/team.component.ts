@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Params} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {Team} from '../shared/models/team.model';
@@ -14,11 +14,11 @@ import {FixturesManager} from '../shared/managers/fixtures.manager';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
-export class TeamComponent implements OnInit, OnDestroy {
+export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly PREVIOUS_FIXTURE_COUNT = 10;
   private readonly NEXT_FIXTURE_COUNT = 10;
 
-  private teamId: number;
+  teamId: number;
   team: Team;
   teamPlayers: TeamPlayer[] = [];
   leagues: League[] = [];
@@ -28,6 +28,10 @@ export class TeamComponent implements OnInit, OnDestroy {
   fixtureGroups: FixtureGroup[] = [];
   toggleOptions: [string, string] = ['Fixtures', 'Stats'];
   activeToggleIndex = 0;
+
+  @ViewChild('fixturesContainer') fixturesContainer: ElementRef;
+  readonly COMPACT_WIDTH = 520;
+  isCompactView = false;
 
   private routeParamsSub: Subscription;
 
@@ -40,25 +44,13 @@ export class TeamComponent implements OnInit, OnDestroy {
 
       this.repositoryService.getTeam(this.teamId).subscribe((team: Team) => {
         this.team = team;
-
-        // console.log('TeamComponent received team: ' + team.name);
-        // console.log(this.team);
-      });
-
-      this.repositoryService.getSquad(this.teamId, '2019-2020').subscribe((teamPlayers: TeamPlayer[]) => {
-        this.teamPlayers = teamPlayers;
-
-        // console.log('TeamComponent received teamPlayers: ' + teamPlayers.length);
-        // console.log(this.teamPlayers);
       });
 
       this.repositoryService.getTeamLeagues(this.teamId, '2020').subscribe((leagues: League[]) => {
         this.leagues = leagues;
 
-        // console.log('TeamComponent received leagues: ' + leagues.length);
-        // console.log(this.leagues);
-
         this.teamStatisticsMap.clear();
+        this.activeTeamStatistics = [];
         leagues.forEach((league: League) => {
           this.repositoryService.getTeamStatistics(this.teamId, league.league_id).subscribe((teamStatistics: TeamStatistic[]) => {
             this.teamStatisticsMap.set(league.league_id, teamStatistics);
@@ -66,36 +58,37 @@ export class TeamComponent implements OnInit, OnDestroy {
             if (this.activeTeamStatistics.length === 0) {
               this.activeTeamStatistics.push(...teamStatistics);
             }
-
-            // console.log('TeamComponent received team statistics: ' + teamStatistics.length);
-            // console.log(teamStatistics);
           });
         });
-
-        this.activeTeamStatistics = [];
-        if (leagues.length > 0) {
-          this.activeTeamStatistics.push(...this.teamStatisticsMap.get(leagues[0].league_id));
-        }
-
       });
 
       this.fixtures = [];
-      this.getTeamFixtures(this.NEXT_FIXTURE_COUNT, true);
-      this.getTeamFixtures(this.PREVIOUS_FIXTURE_COUNT, false);
+      this.updateTeamFixtures(this.NEXT_FIXTURE_COUNT, true);
+      this.updateTeamFixtures(this.PREVIOUS_FIXTURE_COUNT, false);
     });
   }
 
-  getTeamFixtures(count: number, isNextFixtures) {
+  updateTeamFixtures(count: number, isNextFixtures) {
     this.repositoryService.getTeamFixtures(this.teamId, count, isNextFixtures).subscribe((fixtures: Fixture[]) => {
       this.fixtures.push(...fixtures);
 
       this.fixtureGroups = [];
       const fixtureGroups = FixturesManager.getFixtureGroups(this.fixtures);
       this.fixtureGroups.push(...fixtureGroups);
-
-      // console.log('TeamComponent received fixtures: ' + fixtures.length);
-      // console.log(fixtures);
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.updateCompactView();
+  }
+
+  updateCompactView() {
+    this.isCompactView = this.fixturesContainer.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateCompactView();
   }
 
   onToggleButtonClicked(index: number) {

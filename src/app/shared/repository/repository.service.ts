@@ -14,7 +14,6 @@ import {LeagueTopScorer} from '../models/league-top-scorer.model';
 })
 export class RepositoryService {
   private isLoadingAllFixtures = false;
-  private hasLoadedFixtures = false;
   private isLoadingLiveFixtures = false;
 
   allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
@@ -25,10 +24,6 @@ export class RepositoryService {
   getAllFixtures(date: string) {
     if (this.isLoadingAllFixtures) {
       console.log('Already loading all fixtures');
-      return;
-    }
-    if (this.hasLoadedFixtures) {
-      console.log('All fixtures have already been loaded');
       return;
     }
 
@@ -48,7 +43,6 @@ export class RepositoryService {
         this.allFixturesSubject.next(allFixtures);
 
         this.isLoadingAllFixtures = false;
-        this.hasLoadedFixtures = true;
       }, error => {
         console.log(error);
         this.isLoadingAllFixtures = false;

@@ -1,8 +1,10 @@
 <div class="bg-green-500">
   <!--          Team Header-->
   <div class="flex items-end px-2 py-1 bg-green-500">
-    <img class="w-8 mr-2" src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
-    <span class="w-full font-semibold text-left text-lg link">{{teamName}}</span>
+    <img class="w-8 mr-2"
+         [src]="team.logo ? team.logo : '../../../../assets/img/soccer_ball.png'"
+         alt="Site Logo">
+    <span class="w-full font-semibold text-left text-lg link">{{team.team_name}}</span>
     <span>{{lineUp.formation}}</span>
   </div>
   <!--          Coach -->

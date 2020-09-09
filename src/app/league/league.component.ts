@@ -1,26 +1,28 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {League} from '../shared/models/league.model';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/repository/repository.service';
 import {Fixture, FixtureGroup} from '../shared/models/fixture.model';
 import {FixturesManager} from '../shared/managers/fixtures.manager';
-import {LeagueTopScorer} from '../shared/models/league-top-scorer.model';
 
 @Component({
   selector: 'app-league',
   templateUrl: './league.component.html',
   styleUrls: ['./league.component.scss']
 })
-export class LeagueComponent implements OnInit, OnDestroy {
+export class LeagueComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly PREVIOUS_FIXTURE_COUNT = 10;
   private readonly NEXT_FIXTURE_COUNT = 10;
 
-  private leagueId: number;
+  leagueId: number;
   league: League;
   fixtures: Fixture[] = [];
   fixtureGroups: FixtureGroup[] = [];
-  topScorers: LeagueTopScorer[] = [];
+
+  @ViewChild('fixturesContainer') fixturesContainer: ElementRef;
+  readonly COMPACT_WIDTH = 520;
+  isCompactView = false;
 
   private routeParamsSub: Subscription;
 
@@ -38,11 +40,20 @@ export class LeagueComponent implements OnInit, OnDestroy {
       this.fixtures = [];
       this.getLeagueFixtures(this.NEXT_FIXTURE_COUNT, true);
       this.getLeagueFixtures(this.PREVIOUS_FIXTURE_COUNT, false);
-
-      this.repositoryService.getLeagueTopScorers(this.leagueId).subscribe((topScorers: LeagueTopScorer[]) => {
-        this.topScorers = topScorers;
-      });
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.updateCompactView();
+  }
+
+  updateCompactView() {
+    this.isCompactView = this.fixturesContainer.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateCompactView();
   }
 
   getLeagueFixtures(count: number, isNextFixtures) {
@@ -52,9 +63,6 @@ export class LeagueComponent implements OnInit, OnDestroy {
       this.fixtureGroups = [];
       const fixtureGroups = FixturesManager.getFixtureGroups(this.fixtures);
       this.fixtureGroups.push(...fixtureGroups);
-
-      // console.log('TeamComponent received fixtures: ' + fixtures.length);
-      // console.log(fixtures);
     });
   }
 

@@ -1,6 +1,387 @@
 {
   "api": {
-    "results": 0,
-    "fixtures": []
+    "results": 10,
+    "fixtures": [
+      {
+        "fixture_id": 328061,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T23:30:00+00:00",
+        "event_timestamp": 1599435000,
+        "firstHalfStart": 1599435000,
+        "secondHalfStart": 1599438600,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Adelmar da Costa Carvalho",
+        "referee": "Vinicius Gomes do Amara, Brazil",
+        "homeTeam": {
+          "team_id": 123,
+          "team_name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "awayTeam": {
+          "team_id": 151,
+          "team_name": "Goias",
+          "logo": "https://media.api-sports.io/football/teams/151.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328062,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T23:30:00+00:00",
+        "event_timestamp": 1599435000,
+        "firstHalfStart": 1599435000,
+        "secondHalfStart": 1599438600,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Major Antônio Couto Pereira",
+        "referee": "Diego Pombo Lopez, Brazil",
+        "homeTeam": {
+          "team_id": 147,
+          "team_name": "Coritiba",
+          "logo": "https://media.api-sports.io/football/teams/147.png"
+        },
+        "awayTeam": {
+          "team_id": 1062,
+          "team_name": "Atletico-MG",
+          "logo": "https://media.api-sports.io/football/teams/1062.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328064,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T22:00:00+00:00",
+        "event_timestamp": 1599429600,
+        "firstHalfStart": 1599429600,
+        "secondHalfStart": 1599433200,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Olímpico Pedro Ludovico Teixeira",
+        "referee": "Ricardo Marques Ribeiro, Brazil",
+        "homeTeam": {
+          "team_id": 144,
+          "team_name": "Atletico Goianiense",
+          "logo": "https://media.api-sports.io/football/teams/144.png"
+        },
+        "awayTeam": {
+          "team_id": 130,
+          "team_name": "Gremio",
+          "logo": "https://media.api-sports.io/football/teams/130.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "1-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328056,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T21:00:00+00:00",
+        "event_timestamp": 1599426000,
+        "firstHalfStart": 1599426000,
+        "secondHalfStart": 1599429600,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Club de Regatas Vasco da Gama",
+        "referee": "Raphael Claus, Brazil",
+        "homeTeam": {
+          "team_id": 133,
+          "team_name": "Vasco DA Gama",
+          "logo": "https://media.api-sports.io/football/teams/133.png"
+        },
+        "awayTeam": {
+          "team_id": 134,
+          "team_name": "Atletico Paranaense",
+          "logo": "https://media.api-sports.io/football/teams/134.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 0,
+        "score": {
+          "halftime": "1-0",
+          "fulltime": "1-0",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328057,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T19:00:00+00:00",
+        "event_timestamp": 1599418800,
+        "firstHalfStart": 1599418800,
+        "secondHalfStart": 1599422400,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Morumbí",
+        "referee": "Paulo Roberto Alves Junior, Brazil",
+        "homeTeam": {
+          "team_id": 126,
+          "team_name": "Sao Paulo",
+          "logo": "https://media.api-sports.io/football/teams/126.png"
+        },
+        "awayTeam": {
+          "team_id": 124,
+          "team_name": "Fluminense",
+          "logo": "https://media.api-sports.io/football/teams/124.png"
+        },
+        "goalsHomeTeam": 3,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "3-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328060,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T19:00:00+00:00",
+        "event_timestamp": 1599418800,
+        "firstHalfStart": 1599418800,
+        "secondHalfStart": 1599422400,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio José Pinheiro Borda",
+        "referee": "Braulio Da Silva Machado, Brazil",
+        "homeTeam": {
+          "team_id": 119,
+          "team_name": "Internacional",
+          "logo": "https://media.api-sports.io/football/teams/119.png"
+        },
+        "awayTeam": {
+          "team_id": 118,
+          "team_name": "Bahia",
+          "logo": "https://media.api-sports.io/football/teams/118.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328058,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T14:00:00+00:00",
+        "event_timestamp": 1599400800,
+        "firstHalfStart": 1599400800,
+        "secondHalfStart": 1599404400,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Nabi Abi Chedid",
+        "referee": "Marcelo De Lima Henrique, Brazil",
+        "homeTeam": {
+          "team_id": 794,
+          "team_name": "Bragantino",
+          "logo": "https://media.api-sports.io/football/teams/794.png"
+        },
+        "awayTeam": {
+          "team_id": 121,
+          "team_name": "Palmeiras",
+          "logo": "https://media.api-sports.io/football/teams/121.png"
+        },
+        "goalsHomeTeam": 1,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "0-0",
+          "fulltime": "1-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328063,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-06T00:00:00+00:00",
+        "event_timestamp": 1599350400,
+        "firstHalfStart": 1599350400,
+        "secondHalfStart": 1599354000,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio Governador Plácido Aderaldo Castelo",
+        "referee": "Reway Wagner, Brazil",
+        "homeTeam": {
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
+        },
+        "awayTeam": {
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "0-1",
+          "fulltime": "0-1",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328059,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-05T22:00:00+00:00",
+        "event_timestamp": 1599343200,
+        "firstHalfStart": 1599343200,
+        "secondHalfStart": 1599346800,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Arena Corinthians",
+        "referee": "Rafael Traci, Brazil",
+        "homeTeam": {
+          "team_id": 131,
+          "team_name": "Corinthians",
+          "logo": "https://media.api-sports.io/football/teams/131.png"
+        },
+        "awayTeam": {
+          "team_id": 120,
+          "team_name": "Botafogo",
+          "logo": "https://media.api-sports.io/football/teams/120.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-2",
+          "extratime": null,
+          "penalty": null
+        }
+      },
+      {
+        "fixture_id": 328055,
+        "league_id": 1396,
+        "league": {
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
+        },
+        "event_date": "2020-09-05T20:00:00+00:00",
+        "event_timestamp": 1599336000,
+        "firstHalfStart": 1599336000,
+        "secondHalfStart": 1599339600,
+        "round": "Regular Season - 8",
+        "status": "Match Finished",
+        "statusShort": "FT",
+        "elapsed": 90,
+        "venue": "Estádio do Maracanã",
+        "referee": "Flavio Rodrigues De Souza, Brazil",
+        "homeTeam": {
+          "team_id": 127,
+          "team_name": "Flamengo",
+          "logo": "https://media.api-sports.io/football/teams/127.png"
+        },
+        "awayTeam": {
+          "team_id": 154,
+          "team_name": "Fortaleza EC",
+          "logo": "https://media.api-sports.io/football/teams/154.png"
+        },
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 1,
+        "score": {
+          "halftime": "1-1",
+          "fulltime": "2-1",
+          "extratime": null,
+          "penalty": null
+        }
+      }
+    ]
   }
 }

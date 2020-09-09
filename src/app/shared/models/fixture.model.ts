@@ -12,8 +12,8 @@ export interface Fixture {
   elapsed: number;
   venue: string;
   referee: string;
-  homeTeam: Team;
-  awayTeam: Team;
+  homeTeam: FixtureTeam;
+  awayTeam: FixtureTeam;
   goalsHomeTeam: number;
   goalsAwayTeam: number;
   score: Score;
@@ -26,6 +26,7 @@ export class FixtureGroup {
   constructor(public country: string,
               public leagueName: string,
               public leagueId: number,
+              public logo: string,
               public fixtures: Fixture[]) {}
 }
 
@@ -41,7 +42,7 @@ interface League {
   flag: string;
 }
 
-interface Team {
+export interface FixtureTeam {
   team_id: number;
   team_name: string;
   logo: string;

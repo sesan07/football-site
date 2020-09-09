@@ -1,6 +1,727 @@
 {
   "api": {
-    "results": 0,
-    "topscorers": []
+    "results": 20,
+    "topscorers": [
+      {
+        "player_id": 80166,
+        "player_name": "Thiago Galhardo do Nascimento Rocha",
+        "firstname": "Thiago",
+        "lastname": "Galhardo do Nascimento Rocha",
+        "position": "Midfielder",
+        "nationality": "Brazil",
+        "team_id": 119,
+        "team_name": "Internacional",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 384
+        },
+        "goals": {
+          "total": 4,
+          "assists": 2,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 11,
+          "on": 6
+        },
+        "penalty": {
+          "won": 1,
+          "commited": null,
+          "success": 1,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10506,
+        "player_name": "Mário Sérgio Santos Costa",
+        "firstname": "Mário Sérgio",
+        "lastname": "Santos Costa",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 128,
+        "team_name": "Santos",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 490
+        },
+        "goals": {
+          "total": 3,
+          "assists": 2,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 18,
+          "on": 9
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10437,
+        "player_name": "Wellington Pereira Nascimento",
+        "firstname": "Wellington",
+        "lastname": "Pereira Nascimento",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 154,
+        "team_name": "Fortaleza EC",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 355
+        },
+        "goals": {
+          "total": 3,
+          "assists": 1,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 8,
+          "on": 6
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10401,
+        "player_name": "José Paolo Guerrero Gonzáles",
+        "firstname": "José Paolo",
+        "lastname": "Guerrero Gonzáles",
+        "position": "Attacker",
+        "nationality": "Peru",
+        "team_id": 119,
+        "team_name": "Internacional",
+        "games": {
+          "appearences": 3,
+          "minutes_played": 232
+        },
+        "goals": {
+          "total": 3,
+          "assists": 1,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 9,
+          "on": 4
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 197072,
+        "player_name": "Cleber Bomfim de Jesus",
+        "firstname": "Cleber",
+        "lastname": "Bomfim de Jesus",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 129,
+        "team_name": "Ceara",
+        "games": {
+          "appearences": 7,
+          "minutes_played": 482
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 15,
+          "on": 6
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10569,
+        "player_name": "Fellipe Ramos Ignez Bastos",
+        "firstname": "Fellipe Ramos",
+        "lastname": "Ignez Bastos",
+        "position": "Midfielder",
+        "nationality": "Brazil",
+        "team_id": 133,
+        "team_name": "Vasco DA Gama",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 365
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 5,
+          "on": 3
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 9893,
+        "player_name": "Alerrandro Barra Mansa Realino de Souza",
+        "firstname": "Alerrandro",
+        "lastname": "Barra Mansa Realino de Souza",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 794,
+        "team_name": "Bragantino",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 390
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 11,
+          "on": 5
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 13523,
+        "player_name": "Germán Ezequiel Cano",
+        "firstname": "Germán Ezequiel",
+        "lastname": "Cano",
+        "position": "Attacker",
+        "nationality": "Argentina",
+        "team_id": 133,
+        "team_name": "Vasco DA Gama",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 439
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 10,
+          "on": 6
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10174,
+        "player_name": "Gabriel Barbosa Almeida",
+        "firstname": "Gabriel",
+        "lastname": "Barbosa Almeida",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 127,
+        "team_name": "Flamengo",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 508
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 24,
+          "on": 11
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 2,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 2,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 9970,
+        "player_name": "Anderson Luis de Carvalho",
+        "firstname": "Anderson Luis",
+        "lastname": "de Carvalho",
+        "position": "Midfielder",
+        "nationality": "Brazil",
+        "team_id": 124,
+        "team_name": "Fluminense",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 370
+        },
+        "goals": {
+          "total": 3,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 10,
+          "on": 5
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 2,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 9475,
+        "player_name": "Cláudio Luiz Rodrigues Parise Leonel",
+        "firstname": "Cláudio Luiz",
+        "lastname": "Rodrigues Parise Leonel",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 794,
+        "team_name": "Bragantino",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 397
+        },
+        "goals": {
+          "total": 2,
+          "assists": 1,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 15,
+          "on": 4
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 32906,
+        "player_name": "João Alves de Assis Silva",
+        "firstname": "João",
+        "lastname": "Alves de Assis Silva",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 131,
+        "team_name": "Corinthians",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 450
+        },
+        "goals": {
+          "total": 2,
+          "assists": 1,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 13,
+          "on": 8
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 1,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10321,
+        "player_name": "Pedro Guilherme Abreu dos Santos",
+        "firstname": "Pedro Guilherme",
+        "lastname": "Abreu dos Santos",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 127,
+        "team_name": "Flamengo",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 193
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 8,
+          "on": 4
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 152856,
+        "player_name": "Francisco Evanilson de Lima Barbosa",
+        "firstname": "Francisco Evanilson",
+        "lastname": "de Lima Barbosa",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 124,
+        "team_name": "Fluminense",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 491
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 7,
+          "on": 5
+        },
+        "penalty": {
+          "won": 1,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 3,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10438,
+        "player_name": "José Romário Silva de Souza",
+        "firstname": "José Romário",
+        "lastname": "Silva de Souza",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 154,
+        "team_name": "Fortaleza EC",
+        "games": {
+          "appearences": 6,
+          "minutes_played": 497
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 13,
+          "on": 5
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 9923,
+        "player_name": "Hyoran Kaue Dalmoro",
+        "firstname": "Hyoran Kaue",
+        "lastname": "Dalmoro",
+        "position": "Midfielder",
+        "nationality": "Brazil",
+        "team_id": 1062,
+        "team_name": "Atletico-MG",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 327
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 18,
+          "on": 7
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 9325,
+        "player_name": "Jorge de Moura Xavier",
+        "firstname": "Jorge",
+        "lastname": "de Moura Xavier",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 144,
+        "team_name": "Atletico Goianiense",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 379
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 6,
+          "on": 3
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 0,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10147,
+        "player_name": "Vitor Hugo Naum dos Santos",
+        "firstname": "Vitor Hugo",
+        "lastname": "Naum dos Santos",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 134,
+        "team_name": "Atletico Paranaense",
+        "games": {
+          "appearences": 5,
+          "minutes_played": 398
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 4,
+          "on": 2
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 10323,
+        "player_name": "Luciano da Rocha Neves",
+        "firstname": "Luciano",
+        "lastname": "da Rocha Neves",
+        "position": "Attacker",
+        "nationality": "Brazil",
+        "team_id": 126,
+        "team_name": "Sao Paulo",
+        "games": {
+          "appearences": 4,
+          "minutes_played": 280
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 0,
+          "on": 0
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 1,
+          "second_yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "player_id": 30778,
+        "player_name": "Daniel Sartori Bessa",
+        "firstname": "Daniel",
+        "lastname": "Sartori Bessa",
+        "position": "Midfielder",
+        "nationality": "Italy",
+        "team_id": 151,
+        "team_name": "Goias",
+        "games": {
+          "appearences": 4,
+          "minutes_played": 337
+        },
+        "goals": {
+          "total": 2,
+          "assists": null,
+          "conceded": null,
+          "saves": null
+        },
+        "shots": {
+          "total": 5,
+          "on": 2
+        },
+        "penalty": {
+          "won": null,
+          "commited": null,
+          "success": 0,
+          "missed": 0,
+          "saved": null
+        },
+        "cards": {
+          "yellow": 2,
+          "second_yellow": 0,
+          "red": 0
+        }
+      }
+    ]
   }
 }

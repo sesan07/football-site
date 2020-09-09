@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {RepositoryService} from '../../shared/repository/repository.service';
 import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
 import {Subscription} from 'rxjs';
@@ -9,12 +9,16 @@ import {FixturesManager} from '../../shared/managers/fixtures.manager';
   templateUrl: './home-fixtures.component.html',
   styleUrls: ['./home-fixtures.component.scss']
 })
-export class HomeFixturesComponent implements OnInit, OnDestroy {
+export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
 
   toggleOptions: [string, string] = ['All Fixtures', 'Live Fixtures'];
   activeToggleIndex = 0;
   allFixtureGroups: FixtureGroup[] = [];
   liveFixtureGroups: FixtureGroup[] = [];
+
+  @ViewChild('container') container: ElementRef;
+  readonly COMPACT_WIDTH = 520;
+  isCompactView = false;
 
   private allFixturesSubscription: Subscription;
   private liveFixturesSubscription: Subscription;
@@ -27,17 +31,24 @@ export class HomeFixturesComponent implements OnInit, OnDestroy {
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {
       this.allFixtureGroups = FixturesManager.getFixtureGroups(allFixtures);
-
-      // console.log('HomeFixturesComponent received all fixtures: ' + allFixtures.length);
-      // console.log(this.allFixtureGroups);
     });
 
     this.liveFixturesSubscription = this.repositoryService.liveFixturesSubject.subscribe((liveFixtures: Fixture[]) => {
       this.liveFixtureGroups = FixturesManager.getFixtureGroups(liveFixtures);
-
-      // console.log('HomeFixturesComponent received live fixtures: ' + liveFixtures.length);
-      // console.log(this.liveFixtures);
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.updateCompactView();
+  }
+
+  updateCompactView() {
+    this.isCompactView = this.container.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateCompactView();
   }
 
   onToggleButtonClicked(index: number) {

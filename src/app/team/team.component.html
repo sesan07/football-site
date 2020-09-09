@@ -17,39 +17,30 @@
 </div>
 
 <div class="flex flex-col xl:flex-row">
-  <div class="flex-grow px-2 pb-2 xl:mr-16 bg-green-100">
+  <div class="flex-grow xl:w-1/2 px-2 pb-2 xl:mr-16 bg-green-100">
 
     <!-- Header -->
 <!--    Squad-->
-    <div class="flex-grow mt-2 rounded border bg-green-200 rounded overflow-hidden shadow-md">
-      <div class="flex items-center py-1 bg-green-300 px-4">
-        <img class="h-5 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="font-semibold text-lg">Squad</span>
-      </div>
-      <!-- Content -->
-      <div class="bg-green-400">
-        <app-team-player *ngFor="let teamPlayer of teamPlayers"
-                         [teamPlayer]="teamPlayer">
-        </app-team-player>
-      </div>
-    </div>
+  <app-team-squad [teamId]="teamId"></app-team-squad>
 
   </div>
 
 <!--  Fixtures/Stats-->
-  <div class="flex-grow xl:flex-grow-0 xl:w-1/3 mt-2 xl:mt-0 px-2 pb-2 bg-green-100">
-    <app-tab-toggle [buttonLabels]="toggleOptions"
+  <div #fixturesContainer class="flex-grow xl:flex-grow-0 xl:w-1/2 mt-2 xl:mt-0 px-2 pb-2 bg-green-100">
+    <app-tab-toggle *ngIf="fixtureGroups && activeTeamStatistics"
+                    [buttonLabels]="toggleOptions"
                     (activeChanged)="onToggleButtonClicked($event)">
     </app-tab-toggle>
 <!--    Fixtures-->
-    <div *ngIf="activeToggleIndex === 0">
+    <div *ngIf="activeToggleIndex === 0 && fixtureGroups">
       <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                         [fixtureGroup]="fixtureGroup">
+                         [fixtureGroup]="fixtureGroup"
+                         [isCompactView]="isCompactView">
       </app-fixture-group>
     </div>
 
 <!--    Stats-->
-    <div *ngIf="activeToggleIndex === 1">
+    <div *ngIf="activeToggleIndex === 1 && activeTeamStatistics">
       <app-team-stat *ngFor="let stat of activeTeamStatistics"
                      [statName]="stat.name"
                      [homeValue]="stat.home"

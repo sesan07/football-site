@@ -6,7 +6,8 @@ import {LeagueComponent} from './league/league.component';
 import {FixtureComponent} from './fixture/fixture.component';
 
 const appRoutes: Routes =  [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'team/:name/:id', component: TeamComponent},
   {path: 'league/:name/:id', component: LeagueComponent},
   {path: 'fixture/:id', component: FixtureComponent}

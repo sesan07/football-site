@@ -49,11 +49,9 @@ export class FixtureStatisticsItemComponent implements OnInit {
 
     if (isHome) {
         const percentage = (homeStat / total * 100).toFixed(0);
-        console.log(percentage);
         return percentage + '%';
       } else {
         const percentage = (awayStat / total * 100).toFixed(0);
-        console.log(percentage);
         return percentage + '%';
       }
   }

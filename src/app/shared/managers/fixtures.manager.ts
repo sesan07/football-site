@@ -20,6 +20,7 @@ export class FixturesManager {
           fixture.league.country,
           fixture.league.name,
           fixture.league_id,
+          fixture.league.logo,
           [fixture]
         ));
       }

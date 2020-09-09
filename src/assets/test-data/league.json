@@ -3,25 +3,25 @@
     "results": 1,
     "leagues": [
       {
-        "league_id": 2794,
-        "name": "Championship",
+        "league_id": 1396,
+        "name": "Serie A",
         "type": "League",
-        "country": "England",
-        "country_code": "GB",
+        "country": "Brazil",
+        "country_code": "BR",
         "season": 2020,
-        "season_start": "2020-09-11",
-        "season_end": "2021-05-08",
-        "logo": "https://media.api-sports.io/football/leagues/40.png",
-        "flag": "https://media.api-sports.io/flags/gb.svg",
+        "season_start": "2020-08-08",
+        "season_end": "2021-02-24",
+        "logo": "https://media.api-sports.io/football/leagues/71.png",
+        "flag": "https://media.api-sports.io/flags/br.svg",
         "standings": 1,
         "is_current": 1,
         "coverage": {
           "standings": true,
           "fixtures": {
-            "events": false,
-            "lineups": false,
-            "statistics": false,
-            "players_statistics": false
+            "events": true,
+            "lineups": true,
+            "statistics": true,
+            "players_statistics": true
           },
           "players": true,
           "topScorers": true,

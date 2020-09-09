@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FixtureLineUp} from '../../../shared/models/fixture.model';
+import {FixtureLineUp, FixtureTeam} from '../../../shared/models/fixture.model';
 
 @Component({
   selector: 'app-fixture-line-up-team',
@@ -7,7 +7,7 @@ import {FixtureLineUp} from '../../../shared/models/fixture.model';
   styleUrls: ['./fixture-line-up-team.component.scss']
 })
 export class FixtureLineUpTeamComponent implements OnInit {
-  @Input() teamName: string;
+  @Input() team: FixtureTeam;
   @Input() lineUp: FixtureLineUp;
 
   constructor() { }

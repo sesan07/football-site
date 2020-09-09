@@ -3,33 +3,33 @@
     "results": 10,
     "fixtures": [
       {
-        "fixture_id": 592892,
-        "league_id": 2794,
+        "fixture_id": 328072,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-11T18:45:00+00:00",
-        "event_timestamp": 1599849900,
+        "event_date": "2020-09-09T20:30:00+00:00",
+        "event_timestamp": 1599683400,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Vicarage Road",
+        "venue": "Arena da Baixada",
         "referee": null,
         "homeTeam": {
-          "team_id": 38,
-          "team_name": "Watford",
-          "logo": "https://media.api-sports.io/football/teams/38.png"
+          "team_id": 134,
+          "team_name": "Atletico Paranaense",
+          "logo": "https://media.api-sports.io/football/teams/134.png"
         },
         "awayTeam": {
-          "team_id": 70,
-          "team_name": "Middlesbrough",
-          "logo": "https://media.api-sports.io/football/teams/70.png"
+          "team_id": 120,
+          "team_name": "Botafogo",
+          "logo": "https://media.api-sports.io/football/teams/120.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -41,33 +41,33 @@
         }
       },
       {
-        "fixture_id": 592884,
-        "league_id": 2794,
+        "fixture_id": 328073,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T11:30:00+00:00",
-        "event_timestamp": 1599910200,
+        "event_date": "2020-09-09T21:00:00+00:00",
+        "event_timestamp": 1599685200,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "St Andrew's Trillion Trophy Stadium",
+        "venue": "Estádio Governador Plácido Aderaldo Castelo",
         "referee": null,
         "homeTeam": {
-          "team_id": 54,
-          "team_name": "Birmingham",
-          "logo": "https://media.api-sports.io/football/teams/54.png"
+          "team_id": 154,
+          "team_name": "Fortaleza EC",
+          "logo": "https://media.api-sports.io/football/teams/154.png"
         },
         "awayTeam": {
-          "team_id": 55,
-          "team_name": "Brentford",
-          "logo": "https://media.api-sports.io/football/teams/55.png"
+          "team_id": 123,
+          "team_name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -79,33 +79,33 @@
         }
       },
       {
-        "fixture_id": 592893,
-        "league_id": 2794,
+        "fixture_id": 328074,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T11:30:00+00:00",
-        "event_timestamp": 1599910200,
+        "event_date": "2020-09-09T21:00:00+00:00",
+        "event_timestamp": 1599685200,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Adams Park",
+        "venue": "Estádio de Hailé Pinheiro",
         "referee": null,
         "homeTeam": {
-          "team_id": 1358,
-          "team_name": "Wycombe",
-          "logo": "https://media.api-sports.io/football/teams/1358.png"
+          "team_id": 151,
+          "team_name": "Goias",
+          "logo": "https://media.api-sports.io/football/teams/151.png"
         },
         "awayTeam": {
-          "team_id": 73,
-          "team_name": "Rotherham",
-          "logo": "https://media.api-sports.io/football/teams/73.png"
+          "team_id": 147,
+          "team_name": "Coritiba",
+          "logo": "https://media.api-sports.io/football/teams/147.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -117,33 +117,33 @@
         }
       },
       {
-        "fixture_id": 592882,
-        "league_id": 2794,
+        "fixture_id": 328067,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-09T22:15:00+00:00",
+        "event_timestamp": 1599689700,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Vitality Stadium",
+        "venue": "Estádio Cícero Pompeu de Toledo",
         "referee": null,
         "homeTeam": {
-          "team_id": 35,
-          "team_name": "Bournemouth",
-          "logo": "https://media.api-sports.io/football/teams/35.png"
+          "team_id": 126,
+          "team_name": "Sao Paulo",
+          "logo": "https://media.api-sports.io/football/teams/126.png"
         },
         "awayTeam": {
-          "team_id": 67,
-          "team_name": "Blackburn",
-          "logo": "https://media.api-sports.io/football/teams/67.png"
+          "team_id": 794,
+          "team_name": "Bragantino",
+          "logo": "https://media.api-sports.io/football/teams/794.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -155,33 +155,33 @@
         }
       },
       {
-        "fixture_id": 592883,
-        "league_id": 2794,
+        "fixture_id": 328065,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-10T00:30:00+00:00",
+        "event_timestamp": 1599697800,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Oakwell",
+        "venue": "Estadio Jornalista Mário Filho",
         "referee": null,
         "homeTeam": {
-          "team_id": 747,
-          "team_name": "Barnsley",
-          "logo": "https://media.api-sports.io/football/teams/747.png"
+          "team_id": 124,
+          "team_name": "Fluminense",
+          "logo": "https://media.api-sports.io/football/teams/124.png"
         },
         "awayTeam": {
-          "team_id": 1359,
-          "team_name": "Luton",
-          "logo": "https://media.api-sports.io/football/teams/1359.png"
+          "team_id": 127,
+          "team_name": "Flamengo",
+          "logo": "https://media.api-sports.io/football/teams/127.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -193,33 +193,33 @@
         }
       },
       {
-        "fixture_id": 592885,
-        "league_id": 2794,
+        "fixture_id": 328068,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-10T00:30:00+00:00",
+        "event_timestamp": 1599697800,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Ashton Gate",
+        "venue": "Estádio Urbano Caldeira",
         "referee": null,
         "homeTeam": {
-          "team_id": 56,
-          "team_name": "Bristol City",
-          "logo": "https://media.api-sports.io/football/teams/56.png"
+          "team_id": 128,
+          "team_name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png"
         },
         "awayTeam": {
-          "team_id": 1346,
-          "team_name": "Coventry",
-          "logo": "https://media.api-sports.io/football/teams/1346.png"
+          "team_id": 1062,
+          "team_name": "Atletico-MG",
+          "logo": "https://media.api-sports.io/football/teams/1062.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -231,33 +231,33 @@
         }
       },
       {
-        "fixture_id": 592886,
-        "league_id": 2794,
+        "fixture_id": 328069,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-10T22:15:00+00:00",
+        "event_timestamp": 1599776100,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Cardiff City Stadium",
+        "venue": "Arena Corinthians",
         "referee": null,
         "homeTeam": {
-          "team_id": 43,
-          "team_name": "Cardiff",
-          "logo": "https://media.api-sports.io/football/teams/43.png"
+          "team_id": 131,
+          "team_name": "Corinthians",
+          "logo": "https://media.api-sports.io/football/teams/131.png"
         },
         "awayTeam": {
-          "team_id": 74,
-          "team_name": "Sheffield Wednesday",
-          "logo": "https://media.api-sports.io/football/teams/74.png"
+          "team_id": 121,
+          "team_name": "Palmeiras",
+          "logo": "https://media.api-sports.io/football/teams/121.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -269,33 +269,33 @@
         }
       },
       {
-        "fixture_id": 592887,
-        "league_id": 2794,
+        "fixture_id": 328070,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-10T22:15:00+00:00",
+        "event_timestamp": 1599776100,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "Pride Park Stadium",
+        "venue": "Estádio José Pinheiro Borda",
         "referee": null,
         "homeTeam": {
-          "team_id": 69,
-          "team_name": "Derby",
-          "logo": "https://media.api-sports.io/football/teams/69.png"
+          "team_id": 119,
+          "team_name": "Internacional",
+          "logo": "https://media.api-sports.io/football/teams/119.png"
         },
         "awayTeam": {
-          "team_id": 53,
-          "team_name": "Reading",
-          "logo": "https://media.api-sports.io/football/teams/53.png"
+          "team_id": 129,
+          "team_name": "Ceara",
+          "logo": "https://media.api-sports.io/football/teams/129.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -307,33 +307,33 @@
         }
       },
       {
-        "fixture_id": 592888,
-        "league_id": 2794,
+        "fixture_id": 328071,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-10T22:15:00+00:00",
+        "event_timestamp": 1599776100,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "John Smith's Stadium",
+        "venue": "Estádio Governador Roberto Santos",
         "referee": null,
         "homeTeam": {
-          "team_id": 37,
-          "team_name": "Huddersfield",
-          "logo": "https://media.api-sports.io/football/teams/37.png"
+          "team_id": 118,
+          "team_name": "Bahia",
+          "logo": "https://media.api-sports.io/football/teams/118.png"
         },
         "awayTeam": {
-          "team_id": 71,
-          "team_name": "Norwich",
-          "logo": "https://media.api-sports.io/football/teams/71.png"
+          "team_id": 130,
+          "team_name": "Gremio",
+          "logo": "https://media.api-sports.io/football/teams/130.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,
@@ -345,33 +345,33 @@
         }
       },
       {
-        "fixture_id": 592889,
-        "league_id": 2794,
+        "fixture_id": 328066,
+        "league_id": 1396,
         "league": {
-          "name": "Championship",
-          "country": "England",
-          "logo": "https://media.api-sports.io/football/leagues/40.png",
-          "flag": "https://media.api-sports.io/flags/gb.svg"
+          "name": "Serie A",
+          "country": "Brazil",
+          "logo": "https://media.api-sports.io/football/leagues/71.png",
+          "flag": "https://media.api-sports.io/flags/br.svg"
         },
-        "event_date": "2020-09-12T14:00:00+00:00",
-        "event_timestamp": 1599919200,
+        "event_date": "2020-09-11T00:00:00+00:00",
+        "event_timestamp": 1599782400,
         "firstHalfStart": null,
         "secondHalfStart": null,
-        "round": "Regular Season - 1",
+        "round": "Regular Season - 9",
         "status": "Not Started",
         "statusShort": "NS",
         "elapsed": 0,
-        "venue": "The Den",
+        "venue": "Estádio Club de Regatas Vasco da Gama",
         "referee": null,
         "homeTeam": {
-          "team_id": 58,
-          "team_name": "Millwall",
-          "logo": "https://media.api-sports.io/football/teams/58.png"
+          "team_id": 133,
+          "team_name": "Vasco DA Gama",
+          "logo": "https://media.api-sports.io/football/teams/133.png"
         },
         "awayTeam": {
-          "team_id": 75,
-          "team_name": "Stoke City",
-          "logo": "https://media.api-sports.io/football/teams/75.png"
+          "team_id": 144,
+          "team_name": "Atletico Goianiense",
+          "logo": "https://media.api-sports.io/football/teams/144.png"
         },
         "goalsHomeTeam": null,
         "goalsAwayTeam": null,

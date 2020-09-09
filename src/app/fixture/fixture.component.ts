@@ -2,8 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/repository/repository.service';
-import {Fixture, FixtureGroup, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
-import {FixturesManager} from '../shared/managers/fixtures.manager';
+import {Fixture, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
 
 @Component({
   selector: 'app-fixture',
@@ -16,7 +15,6 @@ export class FixtureComponent implements OnInit, OnDestroy {
   fixture: Fixture;
   homeLineUp: FixtureLineUp;
   awayLineUp: FixtureLineUp;
-  headToHeadFixtureGroups: FixtureGroup[];
   statistics: [string, FixtureStatistic][];
 
   private routeParamsSub: Subscription;
@@ -39,13 +37,8 @@ export class FixtureComponent implements OnInit, OnDestroy {
           this.awayLineUp = fixture.lineups[fixture.awayTeam.team_name];
         }
 
-        this.repositoryService.getFixtureHeadToHead(fixture.homeTeam.team_id, fixture.awayTeam.team_id).subscribe((fixtures: Fixture[]) => {
-          this.headToHeadFixtureGroups = FixturesManager.getFixtureGroups(fixtures);
-        });
-
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
-          console.log(this.statistics);
         }
       });
     });

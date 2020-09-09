@@ -2,15 +2,15 @@
   <div class="mb-2">
     <span class="font-bold text-xl">Line Ups</span>
   </div>
-  <div class="flex flex-col md:flex-row">
-    <app-fixture-line-up-team class="w-full md:w-1/2 mb-2 md:mb-0 md:mr-2"
-                              *ngIf="homeLineUp && homeTeamName"
-                              [teamName]="homeTeamName"
+  <div class="flex flex-col lg:flex-row xl:flex-col xxl:flex-row">
+    <app-fixture-line-up-team class="team-col lg:team-row xl:team-col xxl:team-row lg:mr-2 xl:mr-0 xxl:mr-2"
+                              *ngIf="homeTeam && homeLineUp"
+                              [team]="homeTeam"
                               [lineUp]="homeLineUp">
     </app-fixture-line-up-team>
-    <app-fixture-line-up-team class="w-full md:w-1/2"
-                              *ngIf="awayLineUp && awayTeamName"
-                              [teamName]="awayTeamName"
+    <app-fixture-line-up-team class="team-col lg:team-row xl:team-col xxl:team-row"
+                              *ngIf="awayTeam && awayLineUp"
+                              [team]="awayTeam"
                               [lineUp]="awayLineUp">
     </app-fixture-line-up-team>
   </div>
