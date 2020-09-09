@@ -1,5 +1,11 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: false,
+    content: [
+      './src/**/*.html',
+      './src/**/*.scss'
+    ]
+  },
   theme: {
     screens: {
       sm: '640px',

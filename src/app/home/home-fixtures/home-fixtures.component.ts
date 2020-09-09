@@ -55,6 +55,10 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
     this.activeToggleIndex = index;
   }
 
+  getDate() {
+    return new Date();
+  }
+
   ngOnDestroy(): void {
     this.allFixturesSubscription.unsubscribe();
     this.liveFixturesSubscription.unsubscribe();

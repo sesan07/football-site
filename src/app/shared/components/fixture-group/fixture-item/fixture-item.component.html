@@ -6,7 +6,7 @@
   <div class="flex w-full" *ngIf="!isCompactView else compactView">
     <!--    Date-->
     <span class="w-24 mr-2 text-center text-sm rounded bg-white"
-          *ngIf="isHeadToHead">
+          *ngIf="showDate">
       {{fixture.event_date | date:'d MMM, yy'}}
     </span>
 
@@ -18,7 +18,7 @@
 
 
     <div class="flex flex-grow items-center justify-center">
-      <div class="w-1/2">
+      <div class="flex justify-end w-1/2">
         <span class="text-right text-sm link"
               (click)="onTeamClicked($event, true)">
           {{fixture.homeTeam.team_name}}
@@ -54,17 +54,16 @@
 <!--  Compact View-->
   <ng-template #compactView>
     <div class="flex items-center w-full">
-      <div class="flex flex-col w-12 mr-1"
-           [class.w-16]="isHeadToHead"
-           [class.w-12]="!isHeadToHead">
+      <div class="flex flex-col mr-1"
+           [ngClass]="showDate ? 'w-16' : 'w-12'">
         <!--    Time-->
         <span class="w-full px-1 text-center text-sm rounded bg-white"
-              [class.mb-2]="showStatus || isHeadToHead"
+              [class.mb-2]="showStatus || showDate"
               *ngIf="showTime">{{fixture.event_date | date:'HH:mm'}}</span>
         <!--    Date-->
         <span class="w-full px-1 text-center text-sm rounded bg-white"
               [class.mb-2]="showStatus"
-              *ngIf="isHeadToHead">{{fixture.event_date | date:'shortDate'}}</span>
+              *ngIf="showDate">{{fixture.event_date | date:'shortDate'}}</span>
         <!--    Status-->
         <span class="w-full px-1 text-center text-sm rounded bg-white"
               *ngIf="showStatus">{{fixture.statusShort}}</span>

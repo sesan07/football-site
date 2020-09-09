@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 export class FixtureItemComponent implements OnInit {
   @Input() fixture: Fixture;
   @Input() isCompactView: boolean;
-  @Input() isHeadToHead: boolean;
+  @Input() showDate: boolean;
 
   showElapsed: boolean;
   showScore: boolean;

@@ -8,6 +8,7 @@
   <div class="flex-grow px-2 pb-2 bg-green-100" *ngIf="activeToggleIndex === 0">
     <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
+                       [date]="getDate()"
                        [isCompactView]="isCompactView">
     </app-fixture-group>
   </div>

@@ -13,6 +13,13 @@
         </span>
       </div>
     </div>
+
+    <!--    Date-->
+    <span class="w-24 mr-2 text-center text-sm rounded bg-white"
+          *ngIf="date">
+      {{date | date:'d MMM, yy'}}
+    </span>
+
     <img class="w-4 transition-transform transform duration-200 ease-in-out"
          [class.rotate-180]="isCollapsed"
          src="../../../../assets/img/up-arrow.png"
@@ -24,7 +31,7 @@
     <app-fixture-item *ngFor="let fixture of fixtureGroup.fixtures"
                       [fixture]="fixture"
                       [isCompactView]="isCompactView"
-                      [isHeadToHead]="isHeadToHead">
+                      [showDate]="showFixtureDates">
     </app-fixture-item>
   </div>
 </div>

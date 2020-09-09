@@ -22,7 +22,8 @@
   <div #fixturesContainer class="flex-grow xl:w-1/2 p-2 xl:mr-16 bg-green-100">
     <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
                        [fixtureGroup]="fixtureGroup"
-                       [isCompactView]="isCompactView">
+                       [isCompactView]="isCompactView"
+                       [showFixtureDates]="true">
     </app-fixture-group>
   </div>
 

@@ -9,7 +9,8 @@ import {FixtureGroup} from '../../models/fixture.model';
 export class FixtureGroupComponent implements OnInit {
   @Input() fixtureGroup: FixtureGroup;
   @Input() isCompactView: boolean;
-  @Input() isHeadToHead = false;
+  @Input() date = new Date();
+  @Input() showFixtureDates = false;
 
   isCollapsed = false;
 
