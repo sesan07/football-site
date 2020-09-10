@@ -1,22 +1,108 @@
-<div class="flex items-center justify-center h-12">
-  <span class="w-64 mr-2 text-right"
-        [class.invisible]="!isHomeTeam">
-    {{fixtureEvent.player}}
-  </span>
-  <img class="w-6"
-       [class.invisible]="!isHomeTeam"
-       src="../../../../assets/img/soccer_ball.png" alt="Site Logo">
+<div class="flex h-12 items-center justify-center">
 
-  <div class="flex justify-center items-center h-full w-10 mx-4">
-    <span class="px-2 text-center text-sm rounded border border-gray-700 bg-white absolute">{{fixtureEvent.elapsed}}</span>
-    <span class="h-full w-1 border-l border-r border-gray-200 bg-gray-600"></span>
+  <div class="flex w-1/2 items-center justify-end border-b border-gray-500"
+       [class.invisible]="!isHomeTeam">
+
+<!--    Players-->
+    <div class="flex flex-col mr-1 items-end">
+      <span class="h-6 text-sm" *ngIf="playerOne">
+        {{playerOne}}
+      </span>
+      <span class="h-6 text-sm" *ngIf="playerTwo">
+        {{playerTwo}}
+      </span>
+    </div>
+
+<!--    Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isNormalGoal"
+         alt="Site Logo">
+
+    <!--    Own Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isOwnGoal"
+         alt="Site Logo">
+
+    <!--    Penalty Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isPenalty"
+         alt="Site Logo">
+
+    <!--    Missed Penalty Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isMissedPenalty"
+         alt="Site Logo">
+
+    <!--    Yellow Card icon-->
+    <img class="w-4" src="../../../../assets/img/yellow-card.png" *ngIf="isYellowCard"
+         alt="Site Logo">
+
+    <!--    Red Card icon-->
+    <img class="w-4" src="../../../../assets/img/red-card.png" *ngIf="isRedCard"
+         alt="Site Logo">
+
+<!--    Substitution icon-->
+    <div class="flex flex-col h-12 justify-around" *ngIf="isSubstitution">
+      <img class="w-4" src="../../../../assets/img/sub-in.png"
+           alt="Site Logo">
+
+      <img class="w-4" src="../../../../assets/img/sub-out.png"
+           alt="Site Logo">
+    </div>
+
   </div>
 
-  <img class="w-6" src="../../../../assets/img/soccer_ball.png"
-       [class.invisible]="isHomeTeam"
-       alt="Site Logo">
-  <span class="w-64 ml-2 text-left"
-        [class.invisible]="isHomeTeam">
-    {{fixtureEvent.player}}
-  </span>
+  <div class="flex h-full w-16 justify-center items-center mx-1 md:mx-4 relative">
+
+    <div class="flex flex-col items-center justify-center absolute">
+      <span class="w-12 mb-1 text-center text-xs rounded border border-gray-700 bg-white">{{fixtureEvent.elapsed + '\'' + (fixtureEvent.elapsed_plus ? ' +' + fixtureEvent.elapsed_plus : '')}}</span>
+<!--      <span class="w-12 text-center text-xs rounded border border-gray-700 bg-white" *ngIf="isGoal">2 - 2</span>-->
+    </div>
+
+    <span class="h-full w-2 border-l border-r border-gray-200 bg-gray-600"></span>
+  </div>
+
+  <div class="flex w-1/2 items-center justify-start border-b border-gray-500"
+       [class.invisible]="isHomeTeam">
+
+    <!--    Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isNormalGoal"
+         alt="Site Logo">
+
+    <!--    Own Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isOwnGoal"
+         alt="Site Logo">
+
+    <!--    Penalty Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isPenalty"
+         alt="Site Logo">
+
+    <!--    Missed Penalty Goal icon-->
+    <img class="w-4" src="../../../../assets/img/soccer_ball.png" *ngIf="isMissedPenalty"
+         alt="Site Logo">
+
+    <!--    Yellow Card icon-->
+    <img class="w-4" src="../../../../assets/img/yellow-card.png" *ngIf="isYellowCard"
+         alt="Site Logo">
+
+    <!--    Red Card icon-->
+    <img class="w-4" src="../../../../assets/img/red-card.png" *ngIf="isRedCard"
+         alt="Site Logo">
+
+    <!--    Substitution icon-->
+    <div class="flex flex-col h-12 justify-around" *ngIf="isSubstitution">
+      <img class="w-4" src="../../../../assets/img/sub-in.png"
+           alt="Site Logo">
+
+      <img class="w-4" src="../../../../assets/img/sub-out.png"
+           alt="Site Logo">
+    </div>
+
+<!--    Players-->
+    <div class="flex flex-col ml-1 items-start">
+      <span class="h-6 text-sm" *ngIf="playerOne">
+        {{playerOne}}
+      </span>
+      <span class="h-6 text-sm" *ngIf="playerTwo">
+        {{playerTwo}}
+      </span>
+    </div>
+
+  </div>
 </div>

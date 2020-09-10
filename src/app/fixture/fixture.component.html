@@ -39,7 +39,7 @@
 </div>
 
 <div class="flex flex-col-reverse xl:flex-row" *ngIf="fixture">
-  <div class="w-full xl:w-1/2 xl:mr-8 p-4 bg-green-200">
+  <div class="w-full xl:w-1/2 xl:mr-8 p-1 md:p-4 bg-green-200">
     <app-fixture-events *ngIf="fixture.events"
                         [fixtureEvents]="fixture.events"
                         [homeTeamId]="fixture.homeTeam.team_id">
@@ -53,7 +53,7 @@
     </app-fixture-head-to-head>
   </div>
 
-  <div class="w-full xl:w-1/2 p-4 bg-green-200">
+  <div class="w-full xl:w-1/2 p-1 md:p-4 bg-green-200">
     <app-fixture-line-ups *ngIf="fixture && homeLineUp && awayLineUp"
                           [homeTeam]="fixture.homeTeam"
                           [awayTeam]="fixture.awayTeam"
