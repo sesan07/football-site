@@ -9,7 +9,7 @@ import {LeagueTopScorer} from '../../shared/models/league-top-scorer.model';
 })
 export class LeagueTopScorersComponent implements OnInit {
   @Input() leagueId: number;
-  topScorers: LeagueTopScorer[] = [];
+  topScorers: LeagueTopScorer[];
 
   constructor(private repositoryService: RepositoryService) { }
 

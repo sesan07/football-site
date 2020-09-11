@@ -17,7 +17,7 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   liveFixtureGroups: FixtureGroup[] = [];
 
   @ViewChild('container') container: ElementRef;
-  readonly COMPACT_WIDTH = 520;
+  readonly COMPACT_WIDTH = 640;
   isCompactView = false;
 
   private allFixturesSubscription: Subscription;
@@ -26,7 +26,7 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
-    this.repositoryService.getAllFixtures('2020-09-06');
+    this.repositoryService.getAllFixtures('2020-09-09');
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {

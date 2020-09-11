@@ -1,8 +1,6 @@
-<div class="p-2 rounded border bg-green-300 rounded overflow-hidden shadow-md">
-  <div class="mb-2">
-    <span class="font-bold text-xl">Line Ups</span>
-  </div>
-  <div class="flex flex-col lg:flex-row xl:flex-col xxl:flex-row">
+<div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
+  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Line Ups</span>
+  <div class="flex flex-col lg:flex-row xl:flex-col xxl:flex-row px-1 py-2 md:px-2">
     <app-fixture-line-up-team class="team-col lg:team-row xl:team-col xxl:team-row lg:mr-2 xl:mr-0 xxl:mr-2"
                               *ngIf="homeTeam && homeLineUp"
                               [team]="homeTeam"

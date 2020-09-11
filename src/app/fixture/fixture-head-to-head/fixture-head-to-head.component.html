@@ -1,11 +1,10 @@
-<div #container class="p-2 rounded border bg-green-300 rounded overflow-hidden shadow-md">
-  <div class="mb-2">
-    <span class="font-bold text-xl">Head to Head</span>
+<div #container class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
+  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Head to Head</span>
+  <div class="px-1 py-2 md:px-2">
+    <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                       [fixtureGroup]="fixtureGroup"
+                       [isCompactView]="isCompactView"
+                       [showFixtureDates]="true">
+    </app-fixture-group>
   </div>
-
-  <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                     [fixtureGroup]="fixtureGroup"
-                     [isCompactView]="isCompactView"
-                     [showFixtureDates]="true">
-  </app-fixture-group>
 </div>

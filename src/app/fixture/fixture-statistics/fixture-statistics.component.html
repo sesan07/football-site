@@ -1,8 +1,6 @@
-<div class="mb-4 p-2 rounded border bg-green-300 rounded overflow-hidden shadow-md">
-  <div class="mb-2">
-    <span class="font-bold text-xl">Statistics</span>
-  </div>
-  <div class="flex flex-col w-full flex-grow bg-green-400">
+<div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
+  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Statistics</span>
+  <div class="px-1 py-2 md:px-2">
     <app-fixture-statistics-item *ngFor="let statistic of statistics"
                                  [statistic]="statistic">
     </app-fixture-statistics-item>

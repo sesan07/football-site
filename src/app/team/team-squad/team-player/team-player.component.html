@@ -1,15 +1,5 @@
-<div class="flex items-center justify-between py-1 px-4 border-t border-gray-500 bg-green-500 cursor-pointer hover:bg-green-400">
-  <div class="flex flex-row">
-    <div class="flex justify-center w-10 rounded bg-white">
-<!--      Number -->
-      <span class="text-sm">{{teamPlayer.number? teamPlayer.number : '-'}}</span>
-    </div>
-<!--    Name -->
-    <span class="link ml-2 text-sm">{{teamPlayer.firstname + ' ' + teamPlayer.lastname}}</span>
-  </div>
-  <div class="flex justify-center w-20 rounded bg-white">
-<!--    Position -->
-    <span class="text-sm">{{teamPlayer.position}}</span>
-  </div>
-
+<div class="flex items-center justify-between py-1 px-4 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500">
+  <span class="w-10 py-1 text-sm text-center rounded bg-gray-700">{{teamPlayer.number? teamPlayer.number : '-'}}</span>
+  <span class="flex-grow ml-2 text-sm link">{{teamPlayer.firstname + ' ' + teamPlayer.lastname}}</span>
+  <span class="w-24 py-1 text-sm text-center rounded bg-gray-700">{{teamPlayer.position? teamPlayer.position : '-'}}</span>
 </div>

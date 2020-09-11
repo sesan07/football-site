@@ -3,7 +3,6 @@ import {ActivatedRoute, Params} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {Team} from '../shared/models/team.model';
 import {RepositoryService} from '../shared/repository/repository.service';
-import {TeamPlayer} from '../shared/models/team-player.model';
 import {League} from '../shared/models/league.model';
 import {TeamStatistic} from '../shared/models/team-statistic.model';
 import {Fixture, FixtureGroup} from '../shared/models/fixture.model';
@@ -20,7 +19,6 @@ export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
 
   teamId: number;
   team: Team;
-  teamPlayers: TeamPlayer[] = [];
   leagues: League[] = [];
   teamStatisticsMap: Map<number, TeamStatistic[]> = new Map();  // <leagueId, teamStatistics>
   activeTeamStatistics: TeamStatistic[] = [];
@@ -30,7 +28,7 @@ export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
   activeToggleIndex = 0;
 
   @ViewChild('fixturesContainer') fixturesContainer: ElementRef;
-  readonly COMPACT_WIDTH = 520;
+  readonly COMPACT_WIDTH = 640;
   isCompactView = false;
 
   private routeParamsSub: Subscription;

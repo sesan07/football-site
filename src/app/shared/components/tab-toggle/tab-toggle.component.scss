@@ -10,11 +10,11 @@
   cursor-pointer
   text-base
   font-semibold
-  bg-teal-100
-  text-teal-700
+  bg-gray-100
+  text-black
   text-sm
   border
-  border-teal-600
+  border-gray-500
   transition
   duration-200
   ease-in-out;
@@ -23,8 +23,8 @@
 .tab-button:hover {
   @apply
   scale-110
-  bg-teal-500
-  text-teal-100;
+  bg-gray-600
+  text-white;
 }
 
 .tab-button:focus {
@@ -35,8 +35,8 @@
 .tab-button.active {
   @apply
   scale-110
-  bg-teal-700
-  text-teal-100;
+  bg-gray-700
+  text-white;
 }
 
 .tab-button.tab-button-left {

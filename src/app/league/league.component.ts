@@ -21,7 +21,7 @@ export class LeagueComponent implements OnInit, AfterViewInit, OnDestroy {
   fixtureGroups: FixtureGroup[] = [];
 
   @ViewChild('fixturesContainer') fixturesContainer: ElementRef;
-  readonly COMPACT_WIDTH = 520;
+  readonly COMPACT_WIDTH = 640;
   isCompactView = false;
 
   private routeParamsSub: Subscription;

@@ -17,6 +17,9 @@ export class FixtureComponent implements OnInit, OnDestroy {
   awayLineUp: FixtureLineUp;
   statistics: [string, FixtureStatistic][];
 
+  isLoaded = false;
+  showScore = false;
+
   private routeParamsSub: Subscription;
 
   constructor(private activatedRoute: ActivatedRoute,
@@ -40,8 +43,16 @@ export class FixtureComponent implements OnInit, OnDestroy {
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
         }
+
+        this.setUpView();
       });
     });
+  }
+
+  setUpView() {
+    this.showScore = this.fixture.goalsHomeTeam != null && this.fixture.goalsAwayTeam != null;
+
+    this.isLoaded = true;
   }
 
   ngOnDestroy(): void {

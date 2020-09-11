@@ -1,38 +1,33 @@
-<div class="bg-green-500">
+<div class="text-white">
   <!--          Team Header-->
-  <div class="flex items-end px-2 py-1 bg-green-500">
+  <div class="flex mb-2 px-2 py-1 rounded bg-gray-700">
     <img class="w-8 mr-2"
          [src]="team.logo ? team.logo : '../../../../assets/img/soccer_ball.png'"
          alt="Site Logo">
     <span class="w-full font-semibold text-left text-lg link">{{team.team_name}}</span>
     <span>{{lineUp.formation}}</span>
   </div>
-  <!--          Coach -->
-  <div class="flex items-end px-2 py-1 border-t border-gray-500 bg-green-600">
-    <span class="w-full text-left">Coach</span>
-  </div>
-  <div class="flex items-center px-2 py-1 border-t border-gray-500 bg-green-500">
-    <span class="flex-grow ml-12 text-sm">{{lineUp.coach}}</span>
+
+  <div class="flex flex-col mb-2 rounded overflow-hidden">
+    <span class="w-full px-2 py-1 text-left rounded-t bg-gray-700">Coach</span>
+    <div class="w-full pl-12 py-1 rounded-b border-t border-gray-500 bg-gray-600">
+      <span class="pl-2 text-sm">{{lineUp.coach}}</span>
+    </div>
   </div>
 
-  <!--          Players-->
-  <div class="flex items-end px-2 py-1 border-t border-gray-500 bg-green-600">
-    <span class="w-full text-left">Players</span>
-  </div>
-  <div *ngIf="lineUp">
+  <div class="flex flex-col mb-2 rounded overflow-hidden">
+    <span class="w-full px-2 py-1 text-left bg-gray-700">Players</span>
     <app-fixture-line-up-player *ngFor="let player of lineUp.startXI"
                                 [player]="player">
     </app-fixture-line-up-player>
   </div>
 
-  <!--          Substitutes-->
-  <div class="flex items-end px-2 py-1 border-t border-gray-500 bg-green-600">
-    <span class="w-full text-left">Substitutes</span>
-  </div>
-  <div *ngIf="lineUp">
+  <div class="flex flex-col mb-2 rounded overflow-hidden">
+    <span class="w-full px-2 py-1 text-left bg-gray-700">Substitutes</span>
     <app-fixture-line-up-player *ngFor="let player of lineUp.substitutes"
                                 [player]="player">
     </app-fixture-line-up-player>
   </div>
+
 
 </div>

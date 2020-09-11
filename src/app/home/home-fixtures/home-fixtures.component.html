@@ -1,11 +1,13 @@
-<div #container class="bg-white">
+<div #container>
 <!-- Toggle -->
-<app-tab-toggle [buttonLabels]="toggleOptions"
-                (activeChanged)="onToggleButtonClicked($event)">
-</app-tab-toggle>
+  <div class="mb-2">
+    <app-tab-toggle [buttonLabels]="toggleOptions"
+                    (activeChanged)="onToggleButtonClicked($event)">
+    </app-tab-toggle>
+  </div>
 
 <!--  All Fixtures-->
-  <div class="flex-grow px-2 pb-2 bg-green-100" *ngIf="activeToggleIndex === 0">
+  <div *ngIf="activeToggleIndex === 0">
     <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
                        [date]="getDate()"
@@ -13,9 +15,10 @@
     </app-fixture-group>
   </div>
 <!--  Live Fixtures-->
-  <div class="flex-grow px-2 pb-2 bg-green-100" *ngIf="activeToggleIndex === 1">
+  <div *ngIf="activeToggleIndex === 1">
     <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
+                       [date]="getDate()"
                        [isCompactView]="isCompactView">
     </app-fixture-group>
   </div>

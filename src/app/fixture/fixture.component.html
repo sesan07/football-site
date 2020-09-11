@@ -1,65 +1,64 @@
-<div class="flex justify-evenly mb-2 px-8 py-4 bg-yellow-200">
-  <div class="flex flex-col justify-center px-4 bg-yellow-300">
-    <img class="w-32"
-         [src]="fixture ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
-         alt="Site Logo">
-    <span class="mt-2 text-center text-lg">{{fixture ? fixture.homeTeam.team_name : 'Loading...'}}</span>
-  </div>
+<div *ngIf="isLoaded else loadingView">
+  <div class="flex justify-evenly px-2 py-4 rounded bg-gray-800 text-white">
+    <div class="flex flex-col justify-center px-4">
+      <img class="w-32"
+           [src]="fixture.homeTeam.logo ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
+           alt="Site Logo">
+      <span class="mt-2 font-semibold text-center text-2xl link">{{fixture.homeTeam.team_name}}</span>
+    </div>
 
-  <div class="flex flex-col justify-between px-4 bg-yellow-300">
-    <span class="text-center text-lg">{{fixture ? fixture.league.name : 'Loading...'}}</span>
+    <div class="flex flex-col justify-between items-center px-4">
+      <span class="text-center text-lg">{{fixture.league.name}}</span>
+      <span class="w-32 rounded rounded-lg bg-white text-3xl text-center text-black" *ngIf="showScore">{{fixture.goalsHomeTeam}} - {{fixture.goalsAwayTeam}}</span>
 
-    <div class="flex justify-center">
-      <div class="px-8 rounded rounded-lg bg-white text-3xl">
-        <span class="">{{fixture ? fixture.goalsHomeTeam : 'Loading...'}}</span>
-        <span class="px-1">-</span>
-        <span class="">{{fixture ? fixture.goalsAwayTeam : 'Loading...'}}</span>
+      <div class="flex justify-between">
+        <div class="flex items-center mr-16">
+          <img class="w-6" src="../../assets/img/soccer_ball.png" alt="Site Logo">
+          <span class="my-2 text-center text-lg">{{fixture.event_date | date:'mediumDate'}}</span>
+        </div>
+
+        <div class="flex items-center">
+          <img class="w-6" src="../../assets/img/soccer_ball.png" alt="Site Logo">
+          <span class="my-2 text-center text-lg">{{fixture.event_date | date:'HH:mm'}}</span>
+        </div>
       </div>
     </div>
 
-    <div class="flex justify-between">
-      <div class="flex items-center mr-16 bg-yellow-300">
-        <img class="w-6" src="../../assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="my-2 text-center text-lg">{{fixture ? (fixture.event_date | date:'mediumDate') : 'Loading...'}}</span>
-      </div>
-
-      <div class="flex items-center bg-yellow-300">
-        <img class="w-6" src="../../assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="my-2 text-center text-lg">{{fixture ? (fixture.event_date | date:'HH:mm') : 'Loading...'}}</span>
-      </div>
+    <div class="flex flex-col justify-center px-4">
+      <img class="w-32"
+           [src]="fixture.awayTeam.logo ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
+           alt="Site Logo">
+      <span class="mt-2 font-semibold text-center text-2xl link">{{fixture.awayTeam.team_name}}</span>
     </div>
   </div>
 
-  <div class="flex flex-col justify-center px-4 bg-yellow-300">
-    <img class="w-32"
-         [src]="fixture ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
-         alt="Site Logo">
-    <span class="mt-2 text-center text-lg">{{fixture ? fixture.awayTeam.team_name : 'Loading...'}}</span>
+  <div class="flex flex-col-reverse xl:flex-row my-4" *ngIf="fixture">
+    <div class="w-full xl:w-1/2 xl:mr-8">
+      <app-fixture-events *ngIf="fixture.events"
+                          [fixtureEvents]="fixture.events"
+                          [homeTeamId]="fixture.homeTeam.team_id">
+      </app-fixture-events>
+      <app-fixture-statistics *ngIf="statistics"
+                              [statistics]="statistics">
+      </app-fixture-statistics>
+      <app-fixture-head-to-head *ngIf="fixture"
+                                [homeTeamId]="fixture.homeTeam.team_id"
+                                [awayTeamId]="fixture.awayTeam.team_id">
+      </app-fixture-head-to-head>
+    </div>
+
+    <div class="w-full xl:w-1/2">
+      <app-fixture-line-ups *ngIf="fixture && homeLineUp && awayLineUp"
+                            [homeTeam]="fixture.homeTeam"
+                            [awayTeam]="fixture.awayTeam"
+                            [homeLineUp]="homeLineUp"
+                            [awayLineUp]="awayLineUp">
+      </app-fixture-line-ups>
+    </div>
+
   </div>
 </div>
 
-<div class="flex flex-col-reverse xl:flex-row" *ngIf="fixture">
-  <div class="w-full xl:w-1/2 xl:mr-8 p-1 md:p-4 bg-green-200">
-    <app-fixture-events *ngIf="fixture.events"
-                        [fixtureEvents]="fixture.events"
-                        [homeTeamId]="fixture.homeTeam.team_id">
-    </app-fixture-events>
-    <app-fixture-statistics *ngIf="statistics"
-                            [statistics]="statistics">
-    </app-fixture-statistics>
-    <app-fixture-head-to-head *ngIf="fixture"
-                              [homeTeamId]="fixture.homeTeam.team_id"
-                              [awayTeamId]="fixture.awayTeam.team_id">
-    </app-fixture-head-to-head>
-  </div>
-
-  <div class="w-full xl:w-1/2 p-1 md:p-4 bg-green-200">
-    <app-fixture-line-ups *ngIf="fixture && homeLineUp && awayLineUp"
-                          [homeTeam]="fixture.homeTeam"
-                          [awayTeam]="fixture.awayTeam"
-                          [homeLineUp]="homeLineUp"
-                          [awayLineUp]="awayLineUp">
-    </app-fixture-line-ups>
-  </div>
-
-</div>
+<ng-template #loadingView>
+  <span class="text-white">Loading...</span>
+</ng-template>

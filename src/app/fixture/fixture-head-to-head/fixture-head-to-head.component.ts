@@ -14,7 +14,7 @@ export class FixtureHeadToHeadComponent implements OnInit, AfterViewInit {
   fixtureGroups: FixtureGroup[];
 
   @ViewChild('container') container: ElementRef;
-  readonly COMPACT_WIDTH = 520;
+  readonly COMPACT_WIDTH = 640;
   isCompactView = false;
 
   constructor(private repositoryService: RepositoryService) { }

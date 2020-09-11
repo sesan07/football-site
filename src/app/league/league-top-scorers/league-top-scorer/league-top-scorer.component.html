@@ -1,16 +1,5 @@
-<div class="flex items-center justify-between py-1 px-4 border-t border-gray-500 bg-green-500 cursor-pointer hover:bg-green-400">
-  <div class="flex flex-grow">
-    <!--    Name -->
-    <span class="text-left text-sm link">{{playerName}}</span>
-  </div>
-  <div class="flex flex-row">
-    <div class="flex justify-center w-16 mr-2 rounded bg-white">
-      <!--    Goals -->
-      <span class="text-sm">{{topScorer.goals.total ? topScorer.goals.total : 0}}</span>
-    </div>
-    <div class="flex justify-center w-16 rounded bg-white">
-      <!--    Assists -->
-      <span class="text-sm">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</span>
-    </div>
-  </div>
+<div class="flex items-center justify-between py-1 px-4 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500">
+  <span class="flex-grow text-left text-sm link">{{playerName}}</span>
+  <span class="w-16 mr-2 py-1 text-center text-sm rounded bg-gray-700">{{topScorer.goals.total ? topScorer.goals.total : 0}}</span>
+  <span class="w-16 py-1 text-center text-sm rounded bg-gray-700">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</span>
 </div>

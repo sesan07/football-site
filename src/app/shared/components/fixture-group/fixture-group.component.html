@@ -1,32 +1,29 @@
 <!-- Country-League fixtures -->
-<div class="mb-2 rounded border rounded-lg overflow-hidden shadow-md">
+<div class="mb-2 rounded rounded-lg overflow-hidden shadow-md">
   <!-- Header -->
-  <div class="flex flex-grow items-center py-2 bg-green-600 px-4 cursor-pointer"
+  <div class="flex flex-grow items-center py-2 bg-gray-700 px-4 cursor-pointer"
        (click)="isCollapsed = !isCollapsed">
-    <div class="flex-grow">
-      <span class="text-sm">{{fixtureGroup.country}}</span>
-      <div class="inline whitespace-no-wrap">
-        <span class="text-sm"> - </span>
-        <span class="link text-sm"
-              [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
+    <div class="w-full text-sm text-white">
+      <span>{{fixtureGroup.country}} - </span>
+      <span class="link"
+            [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
           {{fixtureGroup.leagueName}}
-        </span>
-      </div>
+      </span>
     </div>
 
     <!--    Date-->
-    <span class="w-24 mr-2 text-center text-sm rounded bg-white"
-          *ngIf="date">
+    <span class="w-24 mr-8 text-center text-sm rounded bg-gray-100"
+          *ngIf="date && !isCompactView">
       {{date | date:'d MMM, yy'}}
     </span>
 
-    <img class="w-4 transition-transform transform duration-200 ease-in-out"
+    <img class="w-4 mr-2 transition-transform transform duration-200 ease-in-out"
          [class.rotate-180]="isCollapsed"
          src="../../../../assets/img/up-arrow.png"
-         alt="Site Logo">
+         alt="Collapse arrow">
   </div>
   <!-- Content -->
-  <div class="flex-grow bg-green-400"
+  <div class="w-full"
        [class.h-0]="isCollapsed">
     <app-fixture-item *ngFor="let fixture of fixtureGroup.fixtures"
                       [fixture]="fixture"
