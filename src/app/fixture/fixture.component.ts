@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/repository/repository.service';
@@ -9,7 +9,8 @@ import {Fixture, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture
   templateUrl: './fixture.component.html',
   styleUrls: ['./fixture.component.scss']
 })
-export class FixtureComponent implements OnInit, OnDestroy {
+export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
+  private routeParamsSub: Subscription;
 
   private fixtureId: number;
   fixture: Fixture;
@@ -18,9 +19,10 @@ export class FixtureComponent implements OnInit, OnDestroy {
   statistics: [string, FixtureStatistic][];
 
   isLoaded = false;
-  showScore = false;
 
-  private routeParamsSub: Subscription;
+  @ViewChild('container') container: ElementRef;
+  readonly COMPACT_WIDTH = 640;
+  isCompactView = false;
 
   constructor(private activatedRoute: ActivatedRoute,
               private repositoryService: RepositoryService) { }
@@ -44,15 +46,22 @@ export class FixtureComponent implements OnInit, OnDestroy {
           this.statistics = Object.entries(fixture.statistics);
         }
 
-        this.setUpView();
+        this.isLoaded = true;
       });
     });
   }
 
-  setUpView() {
-    this.showScore = this.fixture.goalsHomeTeam != null && this.fixture.goalsAwayTeam != null;
+  ngAfterViewInit(): void {
+    this.updateCompactView();
+  }
 
-    this.isLoaded = true;
+  updateCompactView() {
+    this.isCompactView = this.container.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateCompactView();
   }
 
   ngOnDestroy(): void {

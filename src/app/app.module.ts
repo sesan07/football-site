@@ -30,6 +30,8 @@ import { FixtureEventItemComponent } from './fixture/fixture-events/fixture-even
 import { FixtureStatisticsItemComponent } from './fixture/fixture-statistics/fixture-statistics-item/fixture-statistics-item.component';
 import { TeamSquadComponent } from './team/team-squad/team-squad.component';
 import { LeagueTopScorersComponent } from './league/league-top-scorers/league-top-scorers.component';
+import { FixtureHeaderComponent } from './fixture/fixture-header/fixture-header.component';
+import { FixtureHeaderCompactComponent } from './fixture/fixture-header-compact/fixture-header-compact.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { LeagueTopScorersComponent } from './league/league-top-scorers/league-to
     FixtureEventItemComponent,
     FixtureStatisticsItemComponent,
     TeamSquadComponent,
-    LeagueTopScorersComponent
+    LeagueTopScorersComponent,
+    FixtureHeaderComponent,
+    FixtureHeaderCompactComponent
   ],
   imports: [
     BrowserModule,

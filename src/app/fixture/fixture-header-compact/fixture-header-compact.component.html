@@ -1,0 +1,57 @@
+<div class="flex flex-col items-center px-2 py-4 rounded bg-gray-800 text-white">
+  <span>{{fixture.league.name}}</span>
+
+  <div class="w-full mt-2 flex items-center">
+    <div class="flex flex-col w-full">
+      <div class="flex items-center">
+        <img class="w-10 mr-2"
+             [src]="fixture.homeTeam.logo ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
+             alt="Site Logo">
+        <span class="font-semibold text-lg link">{{fixture.homeTeam.team_name}}</span>
+      </div>
+      <div class="mt-2 flex items-center">
+        <img class="w-10 mr-2"
+             [src]="fixture.awayTeam.logo ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
+             alt="Site Logo">
+        <span class="font-semibold text-lg link">{{fixture.awayTeam.team_name}}</span>
+      </div>
+    </div>
+
+    <span class="w-10 ml-1 py-1 text-center rounded bg-gray-700"
+          *ngIf="showVs">
+      VS
+    </span>
+    <div class="ml-1 flex flex-col"
+         *ngIf="showElapsed || showStatus">
+      <span class="w-8 py-1 text-center rounded bg-gray-700"
+            *ngIf="showElapsed">
+        {{fixture.elapsed}}
+      </span>
+      <span class="w-8 mt-4 py-1 text-center rounded bg-gray-700"
+            [class.mt-4]="showElapsed"
+            *ngIf="showStatus">
+        {{fixture.statusShort}}
+      </span>
+    </div>
+
+    <div class="ml-1 flex flex-col" *ngIf="showScore">
+      <span class="w-8 pt-1 pb-3 text-center rounded-t bg-gray-700">2</span>
+      <span class="w-8 pb-1 pt-3 text-center rounded-b bg-gray-700">2</span>
+    </div>
+  </div>
+
+
+  <div class="mt-2 flex justify-between">
+    <div class="flex items-center">
+      <img class="w-6" src="../../../assets/img/date.png" alt="Date icon">
+      <span class="ml-2 my-2 text-center">{{fixture.event_date | date:'mediumDate'}}</span>
+    </div>
+
+    <div class="ml-10 flex items-center">
+      <img class="w-6" src="../../../assets/img/time.png" alt="Time Icon">
+      <span class="ml-2 my-2 text-center">{{fixture.event_date | date:'HH:mm'}}</span>
+    </div>
+  </div>
+
+
+</div>

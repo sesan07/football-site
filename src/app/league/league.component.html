@@ -1,24 +1,42 @@
-<div class="flex mb-4 bg-yellow-200">
-  <div class="flex items-center ml-2 lg:ml-8">
-    <img class="h-24 lg:h-32 my-2"
-         [src]="league ? league.logo : 'assets/img/soccer_ball.png'"
-         alt="Site Logo">
-    <div class="ml-2 md:ml-4 my-2 text-red-700">
-      <span class="font-bold text-lg">{{league ? league.name : 'Name'}}</span>
-      <div class="flex items-center mb-1">
-        <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span>{{league ? league.country : 'Country'}}</span>
-      </div>
-      <div class="flex items-center mb-1">
-        <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="text-xs">{{league ? league.type: 'Stadium'}}</span>
-      </div>
-<!--      <span class="text-xs">{{league ? league.founded : 'Founded date'}}</span>-->
+<!--<div class="flex mb-4 bg-yellow-200">-->
+<!--  <div class="flex items-center ml-2 lg:ml-8">-->
+<!--    <img class="h-24 lg:h-32 my-2"-->
+<!--         [src]="league ? league.logo : 'assets/img/soccer_ball.png'"-->
+<!--         alt="Site Logo">-->
+<!--    <div class="ml-2 md:ml-4 my-2 text-red-700">-->
+<!--      <span class="font-bold text-lg">{{league ? league.name : 'Name'}}</span>-->
+<!--      <div class="flex items-center mb-1">-->
+<!--        <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">-->
+<!--        <span>{{league ? league.country : 'Country'}}</span>-->
+<!--      </div>-->
+<!--      <div class="flex items-center mb-1">-->
+<!--        <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">-->
+<!--        <span class="text-xs">{{league ? league.type: 'Stadium'}}</span>-->
+<!--      </div>-->
+<!--&lt;!&ndash;      <span class="text-xs">{{league ? league.founded : 'Founded date'}}</span>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="p-4 flex items-center rounded bg-gray-800 text-white">
+
+  <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
+  <div class="flex flex-col ml-4">
+    <span class="font-bold text-2xl">{{league.name}}</span>
+    <div class="flex items-center">
+      <img class="w-4 mr-1" [src]="league.flag ? league.flag : '../../assets/img/soccer_ball.png'" alt="Country Logo">
+      <span class="text-sm">{{league.country}}</span>
+    </div>
+    <div class="flex items-center">
+      <img class="w-4 mr-1" src="assets/img/cup.png" alt="Cup Icon">
+      <span class="text-sm">{{league.type}}</span>
     </div>
   </div>
 </div>
 
-<div class="flex flex-col xl:flex-row">
+
+<div class="mt-4 flex flex-col xl:flex-row">
   <div #fixturesContainer class="w-full xl:w-1/2 xl:mr-16">
     <div class="mb-4 rounded bg-gray-800 rounded overflow-hidden shadow-md">
       <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Fixtures</span>

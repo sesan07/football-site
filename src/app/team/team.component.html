@@ -1,22 +1,21 @@
-<div class="flex mb-4 bg-yellow-200">
-  <div class="flex items-center ml-2 lg:ml-8">
-    <img class="h-24 lg:h-32 my-2" src="../../assets/img/soccer_ball.png" alt="Site Logo">
-    <div class="ml-2 md:ml-4 my-2 text-red-700">
-      <span class="font-bold text-lg">{{team ? team.name : 'Name'}}</span>
-      <div class="flex items-center mb-1" *ngIf="team ? !team.is_national : false">
-        <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span>{{team.country}}</span>
-      </div>
-      <div class="flex items-center mb-1">
-        <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">
-        <span class="text-xs">{{team ? team.venue_name: 'Stadium'}}</span>
-      </div>
-      <span class="text-xs">{{team ? team.founded : 'Founded date'}}</span>
+<div class="p-4 flex items-center rounded bg-gray-800 text-white">
+
+  <img class="w-24" [src]="team.logo ? team.logo : '../../assets/img/soccer_ball.png'" alt="Team Logo">
+  <div class="flex flex-col ml-4">
+    <span class="font-bold text-2xl">{{team.name}}</span>
+    <div class="flex items-center" *ngIf="!team.is_national">
+      <img class="w-4 mr-1" src="../../assets/img/country.png" alt="Country Icon">
+      <span class="text-sm">{{team.country}}</span>
     </div>
+    <div class="flex items-center">
+      <img class="w-4 mr-1" src="assets/img/stadium.png" alt="Stadium Icon">
+      <span class="text-sm">{{team.venue_name}}</span>
+    </div>
+    <span class="text-sm" *ngIf="team.founded">Founded in {{team.founded}}</span>
   </div>
 </div>
 
-<div class="flex flex-col xl:flex-row">
+<div class="mt-4 flex flex-col xl:flex-row">
 <!--  Squad-->
   <div class="flex-grow xl:w-1/2 xl:mr-16">
     <app-team-squad [teamId]="teamId"></app-team-squad>
