@@ -26,6 +26,9 @@ export class FixturesManager {
       }
     });
 
-    return [...fixtureGroupMap.values()];  // Iterable (values) to array
+    const array = [...fixtureGroupMap.values()];
+    array.sort((a, b) => a.country.localeCompare(b.country));
+
+    return array;  // Iterable (values) to array
   }
 }
