@@ -1,8 +1,8 @@
 import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {RepositoryService} from '../../shared/repository/repository.service';
+import {RepositoryService} from '../../shared/services/repository.service';
 import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
 import {Subscription} from 'rxjs';
-import {FixturesManager} from '../../shared/managers/fixtures.manager';
+import {FixtureHelper} from '../../shared/helpers/fixture.helper';
 
 @Component({
   selector: 'app-home-fixtures',
@@ -30,11 +30,11 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {
-      this.allFixtureGroups = FixturesManager.getFixtureGroups(allFixtures);
+      this.allFixtureGroups = FixtureHelper.getFixtureGroups(allFixtures);
     });
 
     this.liveFixturesSubscription = this.repositoryService.liveFixturesSubject.subscribe((liveFixtures: Fixture[]) => {
-      this.liveFixtureGroups = FixturesManager.getFixtureGroups(liveFixtures);
+      this.liveFixtureGroups = FixtureHelper.getFixtureGroups(liveFixtures);
     });
   }
 

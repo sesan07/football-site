@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {RepositoryService} from '../../shared/repository/repository.service';
+import {RepositoryService} from '../../shared/services/repository.service';
 import {LeagueTopScorer} from '../../shared/models/league-top-scorer.model';
 
 @Component({

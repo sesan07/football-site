@@ -1,0 +1,17 @@
+<div class="h-20 mb-2 p-2 flex items-center text-white text-sm rounded bg-gray-700 hover:bg-gray-600 cursor-pointer"
+     [routerLink]="['/league', league.leagueName, league.leagueId]">
+  <div class="flex flex-col items-center flex-grow">
+    <img class="h-10"
+         [src]="league.leagueLogo ? league.leagueLogo : '../../../assets/img/soccer_ball.png'"
+         alt="League Icon">
+    <span>{{league.leagueName}}</span>
+  </div>
+
+  <div class="ml-2 flex flex-col">
+    <span class="h-8 w-8 py-1 text-center text-sm rounded bg-gray-800">L</span>
+    <a class="h-8 w-8 mt-1 py-1 rounded bg-gray-800"
+       (click)="onFavouriteClicked($event)">
+      <div class="heart favorite"></div>
+    </a>
+  </div>
+</div>

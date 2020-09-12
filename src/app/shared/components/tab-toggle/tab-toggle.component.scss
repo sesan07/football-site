@@ -10,8 +10,8 @@
   cursor-pointer
   text-base
   font-semibold
-  bg-gray-100
-  text-black
+  bg-gray-700
+  text-white
   text-sm
   border
   border-gray-500
@@ -22,7 +22,6 @@
 
 .tab-button:hover {
   @apply
-  scale-110
   bg-gray-600
   text-white;
 }
@@ -35,8 +34,12 @@
 .tab-button.active {
   @apply
   scale-110
-  bg-gray-700
-  text-white;
+  bg-gray-100
+  text-black;
+}
+
+.tab-button.active:hover {
+  @apply cursor-auto;
 }
 
 .tab-button.tab-button-left {

@@ -18,3 +18,36 @@ html {
   underline
   text-blue-600;
 }
+
+.heart {
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/img/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.heart:hover {
+  background-image: url("assets/img/heart-add.png");
+}
+
+@media (hover: none) {
+  .heart:hover {
+    background-image: url("assets/img/heart.png");
+  }
+}
+
+.heart.favorite {
+  background-image: url("assets/img/heart-added.png");
+}
+
+.heart.favorite:hover {
+  background-image: url("assets/img/heart-remove.png");
+}
+
+@media (hover: none) {
+  .heart.favorite:hover {
+    background-image: url("assets/img/heart-added.png");
+  }
+}

@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
-import {RepositoryService} from '../shared/repository/repository.service';
+import {RepositoryService} from '../shared/services/repository.service';
 import {Fixture, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
 
 @Component({

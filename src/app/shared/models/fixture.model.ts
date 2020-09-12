@@ -93,3 +93,11 @@ export interface FixtureStatistic {
 export interface FixturesApiResponse {
   api: Api;
 }
+
+export interface FavoriteFixture {
+  fixtureId: number;
+  homeTeamName: string;
+  awayTeamName: string;
+  homeTeamLogo: string;
+  awayTeamLogo: string;
+}

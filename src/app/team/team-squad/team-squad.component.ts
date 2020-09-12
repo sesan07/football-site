@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {TeamPlayer} from '../../shared/models/team-player.model';
-import {RepositoryService} from '../../shared/repository/repository.service';
+import {RepositoryService} from '../../shared/services/repository.service';
 
 @Component({
   selector: 'app-team-squad',

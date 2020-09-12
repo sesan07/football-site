@@ -1,19 +1,22 @@
-import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {ActivatedRoute, Params} from '@angular/router';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {ActivatedRoute, Params, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {Team} from '../shared/models/team.model';
-import {RepositoryService} from '../shared/repository/repository.service';
+import {RepositoryService} from '../shared/services/repository.service';
 import {League} from '../shared/models/league.model';
 import {TeamStatistic} from '../shared/models/team-statistic.model';
 import {Fixture, FixtureGroup} from '../shared/models/fixture.model';
-import {FixturesManager} from '../shared/managers/fixtures.manager';
+import {FixtureHelper} from '../shared/helpers/fixture.helper';
+import {FavoritesService} from '../shared/services/favorites.service';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
-export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
+export class TeamComponent implements OnInit, OnDestroy {
+  private routeParamsSub: Subscription;
+
   private readonly PREVIOUS_FIXTURE_COUNT = 10;
   private readonly NEXT_FIXTURE_COUNT = 10;
 
@@ -27,14 +30,12 @@ export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
   toggleOptions: [string, string] = ['Fixtures', 'Stats'];
   activeToggleIndex = 0;
 
-  @ViewChild('fixturesContainer') fixturesContainer: ElementRef;
-  readonly COMPACT_WIDTH = 640;
-  isCompactView = false;
-
-  private routeParamsSub: Subscription;
+  isFavorite: boolean;
+  favoritesSub: Subscription;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private repositoryService: RepositoryService) { }
+              private repositoryService: RepositoryService,
+              private favoritesService: FavoritesService) { }
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
@@ -42,6 +43,11 @@ export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
 
       this.repositoryService.getTeam(this.teamId).subscribe((team: Team) => {
         this.team = team;
+
+        this.isFavorite = this.favoritesService.isFavoriteTeam(this.team.team_id);
+        this.favoritesSub = this.favoritesService.favoriteTeamRemoved.subscribe((teamId: number) => {
+          if (teamId === this.team.team_id) { this.isFavorite = false; }
+        });
       });
 
       this.repositoryService.getTeamLeagues(this.teamId, '2020').subscribe((leagues: League[]) => {
@@ -71,30 +77,30 @@ export class TeamComponent implements OnInit, AfterViewInit, OnDestroy {
       this.fixtures.push(...fixtures);
 
       this.fixtureGroups = [];
-      const fixtureGroups = FixturesManager.getFixtureGroups(this.fixtures);
+      const fixtureGroups = FixtureHelper.getFixtureGroups(this.fixtures);
       this.fixtureGroups.push(...fixtureGroups);
     });
-  }
-
-  ngAfterViewInit(): void {
-    this.updateCompactView();
-  }
-
-  updateCompactView() {
-    this.isCompactView = this.fixturesContainer.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
-  }
-
-  @HostListener('window:resize')
-  onResize() {
-    this.updateCompactView();
   }
 
   onToggleButtonClicked(index: number) {
     this.activeToggleIndex = index;
   }
 
+  onFavouriteClicked(event: Event) {
+    event.stopPropagation();
+
+    if (this.isFavorite) {
+      this.isFavorite = false;
+      this.favoritesService.removeTeam(this.team.team_id);
+    } else {
+      this.isFavorite = true;
+      this.favoritesService.addTeam(this.team);
+    }
+  }
+
   ngOnDestroy(): void {
     this.routeParamsSub.unsubscribe();
+    this.favoritesSub.unsubscribe();
   }
 
 }

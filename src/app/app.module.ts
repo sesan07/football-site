@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import {AuthInterceptorService} from './shared/repository/auth-interceptor.service';
+import {AuthInterceptorService} from './shared/services/auth-interceptor.service';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { SidebarItemComponent } from './sidebar/sidebar-item/sidebar-item.component';
 import { SearchComponent } from './search/search.component';
 import { NewsComponent } from './home/news/news.component';
 import { HomeFixturesComponent } from './home/home-fixtures/home-fixtures.component';
@@ -32,12 +31,14 @@ import { TeamSquadComponent } from './team/team-squad/team-squad.component';
 import { LeagueTopScorersComponent } from './league/league-top-scorers/league-top-scorers.component';
 import { FixtureHeaderComponent } from './fixture/fixture-header/fixture-header.component';
 import { FixtureHeaderCompactComponent } from './fixture/fixture-header-compact/fixture-header-compact.component';
+import { SidebarTeamItemComponent } from './sidebar/sidebar-team-item/sidebar-team-item.component';
+import { SidebarLeagueItemComponent } from './sidebar/sidebar-league-item/sidebar-league-item.component';
+import { SidebarFixtureItemComponent } from './sidebar/sidebar-fixture-item/sidebar-fixture-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    SidebarItemComponent,
     SearchComponent,
     NewsComponent,
     HomeFixturesComponent,
@@ -62,7 +63,10 @@ import { FixtureHeaderCompactComponent } from './fixture/fixture-header-compact/
     TeamSquadComponent,
     LeagueTopScorersComponent,
     FixtureHeaderComponent,
-    FixtureHeaderCompactComponent
+    FixtureHeaderCompactComponent,
+    SidebarTeamItemComponent,
+    SidebarLeagueItemComponent,
+    SidebarFixtureItemComponent
   ],
   imports: [
     BrowserModule,

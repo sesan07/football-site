@@ -1,59 +1,50 @@
-<!--<div class="flex mb-4 bg-yellow-200">-->
-<!--  <div class="flex items-center ml-2 lg:ml-8">-->
-<!--    <img class="h-24 lg:h-32 my-2"-->
-<!--         [src]="league ? league.logo : 'assets/img/soccer_ball.png'"-->
-<!--         alt="Site Logo">-->
-<!--    <div class="ml-2 md:ml-4 my-2 text-red-700">-->
-<!--      <span class="font-bold text-lg">{{league ? league.name : 'Name'}}</span>-->
-<!--      <div class="flex items-center mb-1">-->
-<!--        <img class="h-8 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">-->
-<!--        <span>{{league ? league.country : 'Country'}}</span>-->
-<!--      </div>-->
-<!--      <div class="flex items-center mb-1">-->
-<!--        <img class="h-4 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">-->
-<!--        <span class="text-xs">{{league ? league.type: 'Stadium'}}</span>-->
-<!--      </div>-->
-<!--&lt;!&ndash;      <span class="text-xs">{{league ? league.founded : 'Founded date'}}</span>&ndash;&gt;-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-
-<div class="p-4 flex items-center rounded bg-gray-800 text-white">
-
-  <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
-  <div class="flex flex-col ml-4">
-    <span class="font-bold text-2xl">{{league.name}}</span>
-    <div class="flex items-center">
-      <img class="w-4 mr-1" [src]="league.flag ? league.flag : '../../assets/img/soccer_ball.png'" alt="Country Logo">
-      <span class="text-sm">{{league.country}}</span>
+<div *ngIf="league else loadingView">
+  <div class="p-4 flex items-center rounded bg-gray-800 text-white">
+    <div class="flex flex-col items-center">
+      <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
+      <a class="h-8 w-20 mt-2 py-1 rounded bg-gray-900 cursor-pointer"
+         (click)="onFavouriteClicked($event)">
+        <div class="heart" [class.favorite]="isFavorite"></div>
+      </a>
     </div>
-    <div class="flex items-center">
-      <img class="w-4 mr-1" src="assets/img/cup.png" alt="Cup Icon">
-      <span class="text-sm">{{league.type}}</span>
-    </div>
-  </div>
-</div>
 
 
-<div class="mt-4 flex flex-col xl:flex-row">
-  <div #fixturesContainer class="w-full xl:w-1/2 xl:mr-16">
-    <div class="mb-4 rounded bg-gray-800 rounded overflow-hidden shadow-md">
-      <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Fixtures</span>
-      <div class="px-1 py-2 md:px-2">
-        <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                           [fixtureGroup]="fixtureGroup"
-                           [isCompactView]="isCompactView"
-                           [showFixtureDates]="true">
-        </app-fixture-group>
+    <div class="flex flex-col ml-4">
+      <span class="font-bold text-2xl">{{league.name}}</span>
+      <div class="flex items-center">
+        <img class="w-4 mr-1" [src]="league.flag ? league.flag : '../../assets/img/soccer_ball.png'" alt="Country Logo">
+        <span class="text-sm">{{league.country}}</span>
+      </div>
+      <div class="flex items-center">
+        <img class="w-4 mr-1" src="assets/img/cup.png" alt="Cup Icon">
+        <span class="text-sm">{{league.type}}</span>
       </div>
     </div>
   </div>
 
 
+  <div class="mt-4 flex flex-col xl:flex-row">
+    <div class="w-full xl:w-1/2 xl:mr-16">
+      <div class="mb-4 rounded bg-gray-800 rounded overflow-hidden shadow-md">
+        <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Fixtures</span>
+        <div class="px-1 py-2 md:px-2">
+          <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                             [fixtureGroup]="fixtureGroup"
+                             [isCompactView]="true"
+                             [showFixtureDates]="true">
+          </app-fixture-group>
+        </div>
+      </div>
+    </div>
 
-  <!--  Top Scorers-->
-  <div class="w-full xl:w-1/2 mt-2 xl:mt-0">
-    <app-league-top-scorers [leagueId]="leagueId"></app-league-top-scorers>
+    <!--  Top Scorers-->
+    <div class="w-full xl:w-1/2 mt-2 xl:mt-0">
+      <app-league-top-scorers [leagueId]="leagueId"></app-league-top-scorers>
+    </div>
   </div>
 </div>
+
+
+<ng-template #loadingView>
+  <span>Loading...</span>
+</ng-template>

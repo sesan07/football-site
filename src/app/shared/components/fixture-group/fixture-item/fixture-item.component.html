@@ -1,21 +1,23 @@
 <!-- Fixture -->
-<div class="flex items-center px-4 py-1 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500"
+<div class="flex items-center py-1 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500"
      (click)="onFixtureClicked()">
 
 <!--  Default View-->
-  <div class="flex flex-grow" *ngIf="!isCompactView else compactView">
-    <!--    Date-->
-    <span class="w-24 mr-2 py-1 text-center text-sm rounded bg-gray-700"
-          *ngIf="showDate">
-      {{fixture.event_date | date:'d MMM, yy'}}
-    </span>
+  <div class="px-4 flex flex-grow" *ngIf="!isCompactView else compactView">
 
-    <!--    Status-->
-    <span class="w-12 mr-2 py-1 text-center text-sm rounded bg-gray-700"
-          [class.invisible]="!showStatus">
-      {{fixture.statusShort}}
-    </span>
+    <div class="flex w-40">
+      <!--    Date-->
+      <span class="w-24 mr-2 py-1 text-center text-sm rounded bg-gray-700"
+            *ngIf="showDate">
+        {{fixture.event_date | date:'d MMM, yy'}}
+      </span>
 
+      <!--    Status-->
+      <span class="w-12 mr-2 py-1 text-center text-sm rounded bg-gray-700"
+            [class.invisible]="!showStatus">
+        {{fixture.statusShort}}
+      </span>
+    </div>
 
     <div class="flex flex-grow items-center justify-center">
       <div class="flex justify-end w-1/2">
@@ -24,7 +26,6 @@
           {{fixture.homeTeam.team_name}}
         </span>
       </div>
-
 
       <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-gray-700"
             *ngIf="showScore">
@@ -43,17 +44,31 @@
       </div>
     </div>
 
-    <!--    Elapsed Time-->
-    <span class="w-8 ml-6 py-1 text-center text-sm rounded bg-gray-700"
-          [class.invisible]="!showElapsed">
-        {{fixture.elapsed + '\''}}
-      </span>
+    <div class="w-40 flex justify-end">
+      <!--    Elapsed Time-->
+      <span class="w-8 ml-6 py-1 text-center text-sm rounded bg-gray-700"
+            *ngIf="showElapsed">
+      {{fixture.elapsed + '\''}}
+    </span>
+
+      <!--    Heart button-->
+      <a class="w-8 ml-2 py-1 rounded bg-gray-700" (click)="onFavouriteClicked($event)">
+        <div class="heart" [class.favorite]="isFavorite"></div>
+      </a>
+    </div>
+
   </div>
 
 
 <!--  Compact View-->
   <ng-template #compactView>
-    <div class="flex items-center w-full">
+    <div class="px-2 flex items-center w-full">
+
+      <!--    Heart button-->
+      <a class="h-8 w-8 mr-2 py-1 rounded bg-gray-700" (click)="onFavouriteClicked($event)">
+        <div class="heart" [class.favorite]="isFavorite"></div>
+      </a>
+
       <div class="flex flex-col mr-1"
            [ngClass]="showDate ? 'w-16' : 'w-12'">
         <!--    Time-->
@@ -68,7 +83,6 @@
         <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
               *ngIf="showStatus">{{fixture.statusShort}}</span>
       </div>
-
 
       <!--    Teams-->
       <div class="flex flex-col flex-grow mr-1">
@@ -86,13 +100,11 @@
         </div>
       </div>
 
-
       <!--    Elapsed Time-->
       <span class="w-8 py-1 text-center text-sm rounded bg-gray-700"
             [class.mr-1]="showScore"
             *ngIf="showElapsed">{{fixture.elapsed + '\''}}
       </span>
-
 
       <!--    Score-->
       <div class="flex flex-col w-8"

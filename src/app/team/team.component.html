@@ -1,52 +1,66 @@
-<div class="p-4 flex items-center rounded bg-gray-800 text-white">
+<div *ngIf="team else loadingView">
+  <div class="px-2 md:px-4 py-4 flex items-center rounded bg-gray-800 text-white">
+    <div class="flex flex-col items-center">
+      <img class="w-24" [src]="team.logo ? team.logo : '../../assets/img/soccer_ball.png'" alt="Team Logo">
+      <a class="h-8 w-20 mt-2 py-1 rounded bg-gray-900 cursor-pointer"
+         (click)="onFavouriteClicked($event)">
+        <div class="heart" [class.favorite]="isFavorite"></div>
+      </a>
+    </div>
 
-  <img class="w-24" [src]="team.logo ? team.logo : '../../assets/img/soccer_ball.png'" alt="Team Logo">
-  <div class="flex flex-col ml-4">
-    <span class="font-bold text-2xl">{{team.name}}</span>
-    <div class="flex items-center" *ngIf="!team.is_national">
-      <img class="w-4 mr-1" src="../../assets/img/country.png" alt="Country Icon">
-      <span class="text-sm">{{team.country}}</span>
+    <div class="flex flex-col ml-2 md:ml-4">
+      <span class="font-bold text-2xl">{{team.name}}</span>
+      <div class="flex items-center" *ngIf="!team.is_national">
+        <img class="w-4 mr-1" src="../../assets/img/country.png" alt="Country Icon">
+        <span class="text-sm">{{team.country}}</span>
+      </div>
+      <div class="flex items-center">
+        <img class="w-4 mr-1" src="assets/img/stadium.png" alt="Stadium Icon">
+        <span class="text-sm">{{team.venue_name}}</span>
+      </div>
+      <span class="text-sm" *ngIf="team.founded">Founded in {{team.founded}}</span>
+
     </div>
-    <div class="flex items-center">
-      <img class="w-4 mr-1" src="assets/img/stadium.png" alt="Stadium Icon">
-      <span class="text-sm">{{team.venue_name}}</span>
+  </div>
+
+  <div class="mt-4 flex flex-col xl:flex-row">
+    <!--  Squad-->
+    <div class="flex-grow xl:w-1/2 xl:mr-16">
+      <app-team-squad [teamId]="teamId"></app-team-squad>
     </div>
-    <span class="text-sm" *ngIf="team.founded">Founded in {{team.founded}}</span>
+
+    <!--  Fixtures/Stats-->
+    <div #fixturesContainer class="flex-grow xl:flex-grow-0 xl:w-1/2 mt-2 xl:mt-0 pb-2">
+      <div class="mb-2">
+        <app-tab-toggle *ngIf="fixtureGroups && activeTeamStatistics"
+                        [buttonLabels]="toggleOptions"
+                        (activeChanged)="onToggleButtonClicked($event)">
+        </app-tab-toggle>
+      </div>
+      <!--    Fixtures-->
+      <div *ngIf="activeToggleIndex === 0 && fixtureGroups">
+        <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                           [fixtureGroup]="fixtureGroup"
+                           [isCompactView]="true"
+                           [showFixtureDates]="true">
+        </app-fixture-group>
+      </div>
+
+      <!--    Stats-->
+      <div *ngIf="activeToggleIndex === 1 && activeTeamStatistics">
+        <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                       [statName]="stat.name"
+                       [homeValue]="stat.home"
+                       [awayValue]="stat.away"
+                       [totalValue]="stat.total">
+        </app-team-stat>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="mt-4 flex flex-col xl:flex-row">
-<!--  Squad-->
-  <div class="flex-grow xl:w-1/2 xl:mr-16">
-    <app-team-squad [teamId]="teamId"></app-team-squad>
-  </div>
 
-<!--  Fixtures/Stats-->
-  <div #fixturesContainer class="flex-grow xl:flex-grow-0 xl:w-1/2 mt-2 xl:mt-0 pb-2">
-    <div class="mb-2">
-      <app-tab-toggle *ngIf="fixtureGroups && activeTeamStatistics"
-                      [buttonLabels]="toggleOptions"
-                      (activeChanged)="onToggleButtonClicked($event)">
-      </app-tab-toggle>
-    </div>
-<!--    Fixtures-->
-    <div *ngIf="activeToggleIndex === 0 && fixtureGroups">
-      <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                         [fixtureGroup]="fixtureGroup"
-                         [isCompactView]="isCompactView"
-                         [showFixtureDates]="true">
-      </app-fixture-group>
-    </div>
-
-<!--    Stats-->
-    <div *ngIf="activeToggleIndex === 1 && activeTeamStatistics">
-      <app-team-stat *ngFor="let stat of activeTeamStatistics"
-                     [statName]="stat.name"
-                     [homeValue]="stat.home"
-                     [awayValue]="stat.away"
-                     [totalValue]="stat.total">
-      </app-team-stat>
-    </div>
-  </div>
-</div>
+<ng-template #loadingView>
+  <span>Loading...</span>
+</ng-template>
 

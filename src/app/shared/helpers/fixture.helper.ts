@@ -1,6 +1,6 @@
 import {Fixture, FixtureGroup} from '../models/fixture.model';
 
-export class FixturesManager {
+export class FixtureHelper {
   static getFixtureGroups(fixtures: Fixture[]): FixtureGroup[] {
     const fixtureGroupMap = new Map<string, FixtureGroup>();
 
