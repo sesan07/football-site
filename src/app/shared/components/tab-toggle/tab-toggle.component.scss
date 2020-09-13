@@ -13,8 +13,6 @@
   bg-gray-700
   text-white
   text-sm
-  border
-  border-gray-500
   transition
   duration-200
   ease-in-out;
@@ -50,12 +48,10 @@
 .tab-button.tab-button-middle {
   @apply
   rounded-l-none
-  rounded-r-none
-  border-l-0;
+  rounded-r-none;
 }
 
 .tab-button.tab-button-right {
   @apply
-  rounded-l-none
-  border-l-0;
+  rounded-l-none;
 }

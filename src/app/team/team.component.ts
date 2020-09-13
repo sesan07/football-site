@@ -1,12 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute, Params, Router} from '@angular/router';
+import {ActivatedRoute, Params} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {Team} from '../shared/models/team.model';
 import {RepositoryService} from '../shared/services/repository.service';
-import {League} from '../shared/models/league.model';
-import {TeamStatistic} from '../shared/models/team-statistic.model';
-import {Fixture, FixtureGroup} from '../shared/models/fixture.model';
-import {FixtureHelper} from '../shared/helpers/fixture.helper';
 import {FavoritesService} from '../shared/services/favorites.service';
 
 @Component({
@@ -17,18 +13,8 @@ import {FavoritesService} from '../shared/services/favorites.service';
 export class TeamComponent implements OnInit, OnDestroy {
   private routeParamsSub: Subscription;
 
-  private readonly PREVIOUS_FIXTURE_COUNT = 10;
-  private readonly NEXT_FIXTURE_COUNT = 10;
-
   teamId: number;
   team: Team;
-  leagues: League[] = [];
-  teamStatisticsMap: Map<number, TeamStatistic[]> = new Map();  // <leagueId, teamStatistics>
-  activeTeamStatistics: TeamStatistic[] = [];
-  fixtures: Fixture[] = [];
-  fixtureGroups: FixtureGroup[] = [];
-  toggleOptions: [string, string] = ['Fixtures', 'Stats'];
-  activeToggleIndex = 0;
 
   isFavorite: boolean;
   favoritesSub: Subscription;
@@ -50,40 +36,7 @@ export class TeamComponent implements OnInit, OnDestroy {
         });
       });
 
-      this.repositoryService.getTeamLeagues(this.teamId, '2020').subscribe((leagues: League[]) => {
-        this.leagues = leagues;
-
-        this.teamStatisticsMap.clear();
-        this.activeTeamStatistics = [];
-        leagues.forEach((league: League) => {
-          this.repositoryService.getTeamStatistics(this.teamId, league.league_id).subscribe((teamStatistics: TeamStatistic[]) => {
-            this.teamStatisticsMap.set(league.league_id, teamStatistics);
-
-            if (this.activeTeamStatistics.length === 0) {
-              this.activeTeamStatistics.push(...teamStatistics);
-            }
-          });
-        });
-      });
-
-      this.fixtures = [];
-      this.updateTeamFixtures(this.NEXT_FIXTURE_COUNT, true);
-      this.updateTeamFixtures(this.PREVIOUS_FIXTURE_COUNT, false);
     });
-  }
-
-  updateTeamFixtures(count: number, isNextFixtures) {
-    this.repositoryService.getTeamFixtures(this.teamId, count, isNextFixtures).subscribe((fixtures: Fixture[]) => {
-      this.fixtures.push(...fixtures);
-
-      this.fixtureGroups = [];
-      const fixtureGroups = FixtureHelper.getFixtureGroups(this.fixtures);
-      this.fixtureGroups.push(...fixtureGroups);
-    });
-  }
-
-  onToggleButtonClicked(index: number) {
-    this.activeToggleIndex = index;
   }
 
   onFavouriteClicked(event: Event) {

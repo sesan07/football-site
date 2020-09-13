@@ -1,10 +1,5 @@
 <div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
-<!--  <div class="flex items-center py-1 bg-green-300 px-4">-->
-<!--    <img class="h-5 mr-1" src="assets/img/soccer_ball.png" alt="Site Logo">-->
-<!--    <span class="font-semibold text-lg">Squad</span>-->
-<!--  </div>-->
   <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Squad</span>
-  <!-- Content -->
   <div>
     <app-team-player *ngFor="let teamPlayer of teamPlayers"
                      [teamPlayer]="teamPlayer">

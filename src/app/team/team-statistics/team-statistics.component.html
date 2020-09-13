@@ -1,0 +1,11 @@
+<div class="rounded bg-gray-800 overflow-hidden shadow-md">
+  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Statistics</span>
+  <div class="px-1 py-2 md:px-2">
+    <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                   [statName]="stat.name"
+                   [homeValue]="stat.home"
+                   [awayValue]="stat.away"
+                   [totalValue]="stat.total">
+    </app-team-stat>
+  </div>
+</div>

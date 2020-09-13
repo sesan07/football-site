@@ -23,38 +23,15 @@
     </div>
   </div>
 
-  <div class="mt-4 flex flex-col xl:flex-row">
-    <!--  Squad-->
-    <div class="flex-grow xl:w-1/2 xl:mr-16">
+  <div class="flex flex-col-reverse xl:flex-row my-4">
+    <div class="w-full xl:w-1/2 xl:mr-8">
       <app-team-squad [teamId]="teamId"></app-team-squad>
+      <app-team-statistics></app-team-statistics>
+
     </div>
 
-    <!--  Fixtures/Stats-->
-    <div #fixturesContainer class="flex-grow xl:flex-grow-0 xl:w-1/2 mt-2 xl:mt-0 pb-2">
-      <div class="mb-2">
-        <app-tab-toggle *ngIf="fixtureGroups && activeTeamStatistics"
-                        [buttonLabels]="toggleOptions"
-                        (activeChanged)="onToggleButtonClicked($event)">
-        </app-tab-toggle>
-      </div>
-      <!--    Fixtures-->
-      <div *ngIf="activeToggleIndex === 0 && fixtureGroups">
-        <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                           [fixtureGroup]="fixtureGroup"
-                           [isCompactView]="true"
-                           [showFixtureDates]="true">
-        </app-fixture-group>
-      </div>
-
-      <!--    Stats-->
-      <div *ngIf="activeToggleIndex === 1 && activeTeamStatistics">
-        <app-team-stat *ngFor="let stat of activeTeamStatistics"
-                       [statName]="stat.name"
-                       [homeValue]="stat.home"
-                       [awayValue]="stat.away"
-                       [totalValue]="stat.total">
-        </app-team-stat>
-      </div>
+    <div class="w-full xl:w-1/2">
+      <app-team-fixtures></app-team-fixtures>
     </div>
   </div>
 </div>

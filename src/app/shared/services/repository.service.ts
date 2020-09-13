@@ -144,9 +144,9 @@ export class RepositoryService {
       })));
   }
 
-  getTeamFixtures(teamId: number, count: number, isNextFixtures: boolean) {
-    // return this.apiService.getTeamFixtures(teamId, count, isNextFixtures)
-    return this.apiService.getTeamFixturesTest(isNextFixtures)
+  getTeamFixtures(teamId: number) {
+    // return this.apiService.getTeamFixtures(teamId)
+    return this.apiService.getTeamFixturesTest()
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {

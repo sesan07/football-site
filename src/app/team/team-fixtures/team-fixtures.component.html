@@ -1,0 +1,28 @@
+<div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md" style="min-height: 16rem">
+  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Matches</span>
+  <div class="px-1 py-2 md:px-2">
+    <app-tab-toggle [buttonLabels]="toggleOptions"
+                    (activeChanged)="onToggleButtonClicked($event)">
+    </app-tab-toggle>
+
+    <div class="mt-2">
+      <app-drop-down (itemClicked)="onPeriodOptionClicked($event)"
+                     [options]="fixturePeriodOptions"></app-drop-down>
+    </div>
+
+    <div class="mt-2" *ngIf="toggleIndex === 0">
+      <app-fixture-group *ngFor="let fixtureGroup of nextFixtureGroups"
+                         [fixtureGroup]="fixtureGroup"
+                         [isCompactView]="true"
+                         [showFixtureDates]="true">
+      </app-fixture-group>
+    </div>
+    <div class="mt-2" *ngIf="toggleIndex === 1">
+      <app-fixture-group *ngFor="let fixtureGroup of prevFixtureGroups"
+                         [fixtureGroup]="fixtureGroup"
+                         [isCompactView]="true"
+                         [showFixtureDates]="true">
+      </app-fixture-group>
+    </div>
+  </div>
+</div>

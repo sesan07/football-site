@@ -88,17 +88,15 @@ export class ApiService {
     );
   }
 
-  getTeamFixtures(teamId: number, count: number, isNextFixtures: boolean) {
-    const option = isNextFixtures ? '/next/' : '/last/';
+  getTeamFixtures(teamId: number) {
     return this.http.get<FixturesApiResponse>(
-      this.BASE_URL + '/fixtures/team/' + teamId + option + count
+      this.BASE_URL + '/fixtures/team/' + teamId
     );
   }
 
-  getTeamFixturesTest(isNextFixtures: boolean) {
-    const url = isNextFixtures ? 'assets/test-data/next-team-fixtures.json' : 'assets/test-data/prev-team-fixtures.json';
+  getTeamFixturesTest() {
     return this.http.get<FixturesApiResponse>(
-      url
+      'assets/test-data/team-fixtures.json'
     );
   }
 
