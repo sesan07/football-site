@@ -7,7 +7,8 @@ import {Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} f
 })
 export class DropDownComponent implements OnInit {
   @Input() options: string[];
-  @Output() itemClicked = new EventEmitter<number>();
+  @Output() indexItemClicked = new EventEmitter<number>();
+  @Output() textItemClicked = new EventEmitter<string>();
 
   @ViewChild('dropdownList', {static: false}) dropdownListRef: ElementRef;
 
@@ -21,8 +22,9 @@ export class DropDownComponent implements OnInit {
     this.lastIndex = this.options.length - 1;
   }
 
-  onItemClicked(index: number) {
+  onItemClicked(index: number, text: string) {
     this.activeButtonLabel = this.options[index];
-    this.itemClicked.emit(index);
+    this.indexItemClicked.emit(index);
+    this.textItemClicked.emit(text);
   }
 }

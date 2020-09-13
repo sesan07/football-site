@@ -64,9 +64,9 @@ export class ApiService {
     );
   }
 
-  getTeamLeagues(teamId: number, season: string) {
+  getTeamLeagues(teamId: number) {
     return this.http.get<LeaguesApiResponse>(
-      this.BASE_URL + '/leagues/team/' + teamId + '/' + season
+      this.BASE_URL + '/leagues/team/' + teamId
     );
   }
 

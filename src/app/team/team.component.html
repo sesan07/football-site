@@ -24,13 +24,13 @@
   </div>
 
   <div class="flex flex-col-reverse xl:flex-row my-4">
-    <div class="w-full xl:w-1/2 xl:mr-8">
+    <div class="w-full xl:w-3/5 xl:mr-8">
       <app-team-squad [teamId]="teamId"></app-team-squad>
-      <app-team-statistics></app-team-statistics>
+      <app-team-statistics [teamId]="teamId"></app-team-statistics>
 
     </div>
 
-    <div class="w-full xl:w-1/2">
+    <div class="w-full xl:w-2/5">
       <app-team-fixtures></app-team-fixtures>
     </div>
   </div>

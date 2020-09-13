@@ -9,7 +9,7 @@
         <a class="py-1 px-4 block whitespace-no-wrap bg-gray-100 text-sm text-black hover:text-white hover:bg-gray-600"
            [class.rounded-t]="i === 0"
            [class.rounded-b]="i === lastIndex"
-           (click)="onItemClicked(i)">
+           (click)="onItemClicked(i, option)">
           {{option}}
         </a>
       </li>

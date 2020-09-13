@@ -6,8 +6,9 @@
     </app-tab-toggle>
 
     <div class="mt-2">
-      <app-drop-down (itemClicked)="onPeriodOptionClicked($event)"
-                     [options]="fixturePeriodOptions"></app-drop-down>
+      <app-drop-down (indexItemClicked)="onPeriodOptionClicked($event)"
+                     [options]="fixturePeriodOptions">
+      </app-drop-down>
     </div>
 
     <div class="mt-2" *ngIf="toggleIndex === 0">

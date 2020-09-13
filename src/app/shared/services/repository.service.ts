@@ -103,8 +103,8 @@ export class RepositoryService {
       })));
   }
 
-  getTeamLeagues(teamId: number, season: string) {
-    // return this.apiService.getTeamLeagues(teamId, season)
+  getTeamLeagues(teamId: number) {
+    // return this.apiService.getTeamLeagues(teamId)
     return this.apiService.getTeamLeaguesTest()
       .pipe(map((responseJsonData => {
         let leagues: League[] = [];

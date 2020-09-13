@@ -1,11 +1,33 @@
-<div class="rounded bg-gray-800 overflow-hidden shadow-md">
+<div class="rounded bg-gray-800 overflow-hidden shadow-md" style="min-height: 16rem">
   <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Statistics</span>
-  <div class="px-1 py-2 md:px-2">
-    <app-team-stat *ngFor="let stat of activeTeamStatistics"
-                   [statName]="stat.name"
-                   [homeValue]="stat.home"
-                   [awayValue]="stat.away"
-                   [totalValue]="stat.total">
-    </app-team-stat>
+  <div class="px-1 py-2 md:px-2" *ngIf="!isLoading else loadingView">
+    <div *ngIf="leagueOptions else noDataView">
+      <div class="flex">
+        <app-drop-down (textItemClicked)="onLeagueOptionClicked($event)"
+                       [options]="leagueOptions">
+        </app-drop-down>
+        <app-drop-down class="ml-2"
+                       (textItemClicked)="onSeasonOptionClicked($event)"
+                       [options]="seasonOptions">
+        </app-drop-down>
+      </div>
+
+      <div class="mt-2">
+        <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                       [statName]="stat.name"
+                       [homeValue]="stat.home"
+                       [awayValue]="stat.away"
+                       [totalValue]="stat.total">
+        </app-team-stat>
+      </div>
+    </div>
   </div>
 </div>
+
+<ng-template #loadingView>
+  <span>Loading...</span>
+</ng-template>
+
+<ng-template #noDataView>
+  <span>No data available</span>
+</ng-template>
