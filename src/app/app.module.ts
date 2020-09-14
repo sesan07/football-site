@@ -34,9 +34,9 @@ import { FixtureHeaderCompactComponent } from './fixture/fixture-header-compact/
 import { SidebarTeamItemComponent } from './sidebar/sidebar-team-item/sidebar-team-item.component';
 import { SidebarLeagueItemComponent } from './sidebar/sidebar-league-item/sidebar-league-item.component';
 import { SidebarFixtureItemComponent } from './sidebar/sidebar-fixture-item/sidebar-fixture-item.component';
-import { TeamFixturesComponent } from './team/team-fixtures/team-fixtures.component';
 import { TeamStatisticsComponent } from './team/team-statistics/team-statistics.component';
 import { DropDownComponent } from './shared/components/drop-down/drop-down.component';
+import { MatchesComponent } from './shared/components/matches/matches.component';
 
 @NgModule({
   declarations: [
@@ -70,9 +70,9 @@ import { DropDownComponent } from './shared/components/drop-down/drop-down.compo
     SidebarTeamItemComponent,
     SidebarLeagueItemComponent,
     SidebarFixtureItemComponent,
-    TeamFixturesComponent,
     TeamStatisticsComponent,
-    DropDownComponent
+    DropDownComponent,
+    MatchesComponent
   ],
   imports: [
     BrowserModule,

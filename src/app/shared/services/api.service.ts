@@ -100,29 +100,27 @@ export class ApiService {
     );
   }
 
-  getLeague(leagueId: number) {
+  getLeagues() {
     return this.http.get<LeaguesApiResponse>(
-      this.BASE_URL + '/leagues/league/' + leagueId
+      this.BASE_URL + '/leagues'
     );
   }
 
-  getLeagueTest() {
+  getLeaguesTest() {
     return this.http.get<LeaguesApiResponse>(
-      'assets/test-data/league.json'
+      'assets/test-data/leagues.json'
     );
   }
 
-  getLeagueFixtures(leagueId: number, count: number, isNextFixtures: boolean) {
-    const option = isNextFixtures ? '/next/' : '/last/';
+  getLeagueFixtures(leagueId: number) {
     return this.http.get<FixturesApiResponse>(
-      this.BASE_URL + '/fixtures/league/' + leagueId + option + count
+      this.BASE_URL + '/fixtures/league/' + leagueId
     );
   }
 
-  getLeagueFixturesTest(isNextFixtures: boolean) {
-    const url = isNextFixtures ? 'assets/test-data/next-league-fixtures.json' : 'assets/test-data/prev-league-fixtures.json';
+  getLeagueFixturesTest() {
     return this.http.get<FixturesApiResponse>(
-      url
+      'assets/test-data/league-fixtures.json'
     );
   }
 

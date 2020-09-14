@@ -1,22 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {RepositoryService} from '../../shared/services/repository.service';
-import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
-import {FixtureHelper} from '../../shared/helpers/fixture.helper';
-
-/*enum FixturePeriod {
-  OneMonth = '1 Month',
-  SixMonths = '6 Months',
-  OneYear = '1 Year',
-  All = 'All'
-}*/
+import {Fixture, FixtureGroup} from '../../models/fixture.model';
+import {FixtureHelper} from '../../helpers/fixture.helper';
 
 @Component({
-  selector: 'app-team-fixtures',
-  templateUrl: './team-fixtures.component.html',
-  styleUrls: ['./team-fixtures.component.scss']
+  selector: 'app-matches',
+  templateUrl: './matches.component.html',
+  styleUrls: ['./matches.component.scss']
 })
-export class TeamFixturesComponent implements OnInit {
-  @Input() teamId: number;
+export class MatchesComponent implements OnInit {
+  @Input() fixtures: Fixture[];
 
   nextFixtures: Fixture[] = [];
   prevFixtures: Fixture[] = [];
@@ -32,22 +24,20 @@ export class TeamFixturesComponent implements OnInit {
   nextFixturesPeriod = this.fixturePeriodOptions[0];
   prevFixturesPeriod = this.fixturePeriodOptions[0];
 
-  constructor(private repositoryService: RepositoryService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.repositoryService.getTeamFixtures(this.teamId).subscribe((fixtures: Fixture[]) => {
-      fixtures.forEach(fixture => {
+    this.fixtures.forEach(fixture => {
 
-        if (Date.parse(fixture.event_date) > Date.now()) {
-          this.nextFixtures.push(fixture);
-        } else {
-          this.prevFixtures.push(fixture);
-        }
-      });
-
-      this.updateFixtureGroups(true);
-      this.updateFixtureGroups(false);
+      if (Date.parse(fixture.event_date) > Date.now()) {
+        this.nextFixtures.push(fixture);
+      } else {
+        this.prevFixtures.push(fixture);
+      }
     });
+
+    this.updateFixtureGroups(true);
+    this.updateFixtureGroups(false);
   }
 
   onToggleButtonClicked(index: number) {

@@ -18,6 +18,7 @@ export class RepositoryService {
 
   allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
   liveFixturesSubject = new BehaviorSubject<Fixture[]>([]);
+  allLeagues: League[] = [];
 
   constructor(private apiService: ApiService) { }
 
@@ -158,21 +159,40 @@ export class RepositoryService {
   }
 
   getLeague(leagueId: number) {
-    // return this.apiService.getLeague(leagueId)
-    return this.apiService.getLeagueTest()
+    if (this.allLeagues.length > 0) {
+      const foundLeague = this.findLeague(leagueId);
+      if (foundLeague) { return foundLeague; }
+    }
+
+
+    // return this.apiService.getLeagues()
+    return this.apiService.getLeaguesTest()
       .pipe(map((responseJsonData => {
         let leagues: League[] = [];
         if (responseJsonData.api && responseJsonData.api.leagues) {
           leagues = responseJsonData.api.leagues;
+          this.allLeagues = leagues;
         }
 
-        return leagues.length > 0 ? leagues[0] : null;
+        return this.findLeague(leagueId);
       })));
   }
 
-  getLeagueFixtures(leagueId: number, count: number, isNextFixtures: boolean) {
-    // return this.apiService.getLeagueFixtures(leagueId, count, isNextFixtures)
-    return this.apiService.getLeagueFixturesTest(isNextFixtures)
+  private findLeague(leagueId: number) {
+    let foundLeague: League = null;
+    this.allLeagues.forEach(league => {
+      if (+leagueId === league.league_id) {  // For some reason, leagueId is no longer a number at this point.............
+        foundLeague = league;
+        return;
+      }
+    });
+
+    return foundLeague;
+  }
+
+  getLeagueFixtures(leagueId: number) {
+    // return this.apiService.getLeagueFixtures(leagueId)
+    return this.apiService.getLeagueFixturesTest()
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {

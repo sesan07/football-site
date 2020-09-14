@@ -31,7 +31,9 @@
     </div>
 
     <div class="w-full xl:w-2/5">
-      <app-team-fixtures></app-team-fixtures>
+      <app-matches *ngIf="fixtures"
+                   [fixtures]="fixtures">
+      </app-matches>
     </div>
   </div>
 </div>

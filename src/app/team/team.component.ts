@@ -4,6 +4,7 @@ import {Subscription} from 'rxjs';
 import {Team} from '../shared/models/team.model';
 import {RepositoryService} from '../shared/services/repository.service';
 import {FavoritesService} from '../shared/services/favorites.service';
+import {Fixture} from '../shared/models/fixture.model';
 
 @Component({
   selector: 'app-team',
@@ -15,6 +16,7 @@ export class TeamComponent implements OnInit, OnDestroy {
 
   teamId: number;
   team: Team;
+  fixtures: Fixture[];
 
   isFavorite: boolean;
   favoritesSub: Subscription;
@@ -36,6 +38,9 @@ export class TeamComponent implements OnInit, OnDestroy {
         });
       });
 
+      this.repositoryService.getTeamFixtures(this.teamId).subscribe((fixtures: Fixture[]) => {
+        this.fixtures = fixtures;
+      });
     });
   }
 
