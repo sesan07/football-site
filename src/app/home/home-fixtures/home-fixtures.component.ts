@@ -3,6 +3,7 @@ import {RepositoryService} from '../../shared/services/repository.service';
 import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
 import {Subscription} from 'rxjs';
 import {FixtureHelper} from '../../shared/helpers/fixture.helper';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-home-fixtures',
@@ -23,10 +24,10 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   private allFixturesSubscription: Subscription;
   private liveFixturesSubscription: Subscription;
 
-  constructor(private repositoryService: RepositoryService) { }
+  constructor(private repositoryService: RepositoryService, private datePipe: DatePipe) { }
 
   ngOnInit(): void {
-    this.repositoryService.getAllFixtures('2020-09-09');
+    this.repositoryService.getAllFixtures(this.datePipe.transform(new Date(), 'yyyy-MM-dd'));
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {

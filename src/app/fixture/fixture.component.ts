@@ -33,13 +33,14 @@ export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
 
       this.repositoryService.getFixture(this.fixtureId).subscribe((fixture: Fixture) => {
         this.fixture = fixture;
+        if (fixture.lineups) {
+          if (fixture.lineups.hasOwnProperty(fixture.homeTeam.team_name)) {
+            this.homeLineUp = fixture.lineups[fixture.homeTeam.team_name];
+          }
 
-        if (fixture.lineups.hasOwnProperty(fixture.homeTeam.team_name)) {
-          this.homeLineUp = fixture.lineups[fixture.homeTeam.team_name];
-        }
-
-        if (fixture.lineups.hasOwnProperty(fixture.awayTeam.team_name)) {
-          this.awayLineUp = fixture.lineups[fixture.awayTeam.team_name];
+          if (fixture.lineups.hasOwnProperty(fixture.awayTeam.team_name)) {
+            this.awayLineUp = fixture.lineups[fixture.awayTeam.team_name];
+          }
         }
 
         if (fixture.statistics) {

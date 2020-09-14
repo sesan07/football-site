@@ -37,6 +37,7 @@ import { SidebarFixtureItemComponent } from './sidebar/sidebar-fixture-item/side
 import { TeamStatisticsComponent } from './team/team-statistics/team-statistics.component';
 import { DropDownComponent } from './shared/components/drop-down/drop-down.component';
 import { MatchesComponent } from './shared/components/matches/matches.component';
+import {DatePipe} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,9 @@ import { MatchesComponent } from './shared/components/matches/matches.component'
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
-    }],
+    },
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
