@@ -1,3 +1,7 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.dropdown .dropdown-button {
+  @apply inline-flex items-center font-semibold text-white text-sm rounded bg-gray-700;
+}

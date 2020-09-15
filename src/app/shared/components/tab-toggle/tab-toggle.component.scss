@@ -1,24 +1,25 @@
 .tab-button {
+  height: 2rem;
   @apply
   inline-flex
   items-center
   justify-center
-  w-40
+  w-32
   px-2
   py-1
   rounded
   cursor-pointer
-  text-base
   font-semibold
+  text-sm
   bg-gray-700
   text-white
-  text-sm
-  transition
+  transition-colors
   duration-200
   ease-in-out;
 }
 
 .tab-button:hover {
+  height: 2.25rem;
   @apply
   bg-gray-600
   text-white;
@@ -30,8 +31,8 @@
 }
 
 .tab-button.active {
+  height: 2.25rem;
   @apply
-  scale-110
   bg-gray-100
   text-black;
 }
