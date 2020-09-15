@@ -18,7 +18,7 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   liveFixtureGroups: FixtureGroup[] = [];
 
   @ViewChild('container') container: ElementRef;
-  readonly COMPACT_WIDTH = 640;
+  readonly COMPACT_WIDTH = 720;
   isCompactView = false;
 
   private allFixturesSubscription: Subscription;

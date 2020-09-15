@@ -5,7 +5,8 @@
 <!--  Default View-->
   <div class="px-4 flex flex-grow" *ngIf="!isCompactView else compactView">
 
-    <div class="flex w-40">
+    <div class="w-20 flex"
+         [class.w-40]="showDate">
       <!--    Date-->
       <span class="w-24 mr-2 py-1 text-center text-sm rounded bg-gray-700"
             *ngIf="showDate">
@@ -44,18 +45,20 @@
       </div>
     </div>
 
-    <div class="w-40 flex justify-end">
+    <div class="w-20 flex justify-end"
+         [class.w-40]="showDate">
       <!--    Elapsed Time-->
-      <span class="w-8 ml-6 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-8 py-1 text-center text-sm rounded bg-gray-700"
             *ngIf="showElapsed">
-      {{fixture.elapsed + '\''}}
-    </span>
+        {{fixture.elapsed + '\''}}
+      </span>
 
       <!--    Heart button-->
-      <a class="w-8 ml-2 py-1 rounded bg-gray-700" (click)="onFavouriteClicked($event)">
-        <div class="heart" [class.favorite]="isFavorite"></div>
-      </a>
+      <button class="heart h-8 w-8 ml-2 py-1 " [class.favorite]="isFavorite"
+              (click)="onFavouriteClicked($event)">
+      </button>
     </div>
+
 
   </div>
 
@@ -65,9 +68,9 @@
     <div class="px-2 flex items-center w-full">
 
       <!--    Heart button-->
-      <a class="h-8 w-8 mr-2 py-1 rounded bg-gray-700" (click)="onFavouriteClicked($event)">
-        <div class="heart" [class.favorite]="isFavorite"></div>
-      </a>
+      <button class="heart h-8 w-8 mr-2 py-1 " [class.favorite]="isFavorite"
+              (click)="onFavouriteClicked($event)">
+      </button>
 
       <div class="flex flex-col mr-1"
            [ngClass]="showDate ? 'w-16' : 'w-12'">

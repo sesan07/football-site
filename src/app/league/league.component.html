@@ -1,11 +1,10 @@
 <div *ngIf="league else loadingView">
-  <div class="p-4 flex items-center rounded bg-gray-800 text-white">
+  <div class="p-4 flex items-center rounded bg-gray-700 text-white">
     <div class="flex flex-col items-center">
       <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
-      <a class="h-8 w-20 mt-2 py-1 rounded bg-gray-900 cursor-pointer"
-         (click)="onFavouriteClicked($event)">
-        <div class="heart" [class.favorite]="isFavorite"></div>
-      </a>
+      <button class="heart h-8 w-20 mt-2 py-1 " [class.favorite]="isFavorite"
+              (click)="onFavouriteClicked($event)">
+      </button>
     </div>
 
     <div class="flex flex-col ml-4">

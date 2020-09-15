@@ -20,34 +20,42 @@ html {
 }
 
 .heart {
-  height: 100%;
-  width: 100%;
-  background-image: url("assets/img/heart.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @apply inline-flex justify-center items-center rounded bg-gray-800;
+}
+
+.heart:after {
+  content : url("assets/img/heart.png");
+  transform: scale(.15);
 }
 
 .heart:hover {
-  background-image: url("assets/img/heart-add.png");
+  @apply bg-gray-900;
+}
+
+.heart:hover::after {
+  content : url("assets/img/heart-add.png");
 }
 
 @media (hover: none) {
   .heart:hover {
-    background-image: url("assets/img/heart.png");
+    @apply bg-gray-800;
+  }
+
+  .heart:hover::after {
+    content : url("assets/img/heart.png");
   }
 }
 
-.heart.favorite {
-  background-image: url("assets/img/heart-added.png");
+.heart.favorite::after {
+  content : url("assets/img/heart-added.png");
 }
 
-.heart.favorite:hover {
-  background-image: url("assets/img/heart-remove.png");
+.heart.favorite:hover::after {
+  content : url("assets/img/heart-remove.png");
 }
 
 @media (hover: none) {
-  .heart.favorite:hover {
-    background-image: url("assets/img/heart-added.png");
+  .heart.favorite:hover::after {
+    content : url("assets/img/heart-added.png");
   }
 }
