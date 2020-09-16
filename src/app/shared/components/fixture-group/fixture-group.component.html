@@ -24,7 +24,7 @@
   </div>
   <!-- Content -->
   <div class="w-full"
-       [class.h-0]="isCollapsed">
+       *ngIf="!isCollapsed">
     <app-fixture-item *ngFor="let fixture of fixtureGroup.fixtures"
                       [fixture]="fixture"
                       [isCompactView]="isCompactView"

@@ -23,11 +23,11 @@
     </span>
     <div class="ml-1 flex flex-col"
          *ngIf="showElapsed || showStatus">
-      <span class="w-8 py-1 text-center rounded bg-gray-700"
+      <span class="w-12 py-1 text-center rounded bg-gray-700"
             *ngIf="showElapsed">
-        {{fixture.elapsed}}
+        {{fixture.elapsed}}'
       </span>
-      <span class="w-8 mt-4 py-1 text-center rounded bg-gray-700"
+      <span class="w-12 mt-4 py-1 text-center rounded bg-gray-700"
             [class.mt-4]="showElapsed"
             *ngIf="showStatus">
         {{fixture.statusShort}}
@@ -35,8 +35,8 @@
     </div>
 
     <div class="ml-1 flex flex-col" *ngIf="showScore">
-      <span class="w-8 pt-1 pb-3 text-center rounded-t bg-gray-700">2</span>
-      <span class="w-8 pb-1 pt-3 text-center rounded-b bg-gray-700">2</span>
+      <span class="w-8 pt-1 pb-3 text-center rounded-t bg-gray-700">{{fixture.goalsHomeTeam}}</span>
+      <span class="w-8 pb-1 pt-3 text-center rounded-b bg-gray-700">{{fixture.goalsAwayTeam}}</span>
     </div>
   </div>
 

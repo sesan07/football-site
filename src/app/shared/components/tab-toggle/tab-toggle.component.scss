@@ -43,16 +43,20 @@
 
 .tab-button.tab-button-left {
   @apply
+  border-r-0
   rounded-r-none;
 }
 
 .tab-button.tab-button-middle {
   @apply
+  border-l-0
+  border-r-0
   rounded-l-none
   rounded-r-none;
 }
 
 .tab-button.tab-button-right {
   @apply
+  border-l-0
   rounded-l-none;
 }

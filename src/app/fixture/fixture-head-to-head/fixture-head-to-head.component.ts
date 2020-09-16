@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
-import {FixtureHelper} from '../../shared/helpers/fixture.helper';
 import {RepositoryService} from '../../shared/services/repository.service';
+import {FixtureService} from '../../shared/services/fixture.service';
 
 @Component({
   selector: 'app-fixture-head-to-head',
@@ -13,11 +13,11 @@ export class FixtureHeadToHeadComponent implements OnInit {
   @Input() awayTeamId: number;
   fixtureGroups: FixtureGroup[];
 
-  constructor(private repositoryService: RepositoryService) { }
+  constructor(private repositoryService: RepositoryService, private fixtureService: FixtureService) { }
 
   ngOnInit(): void {
     this.repositoryService.getFixtureHeadToHead(this.homeTeamId, this.awayTeamId).subscribe((fixtures: Fixture[]) => {
-      this.fixtureGroups = FixtureHelper.getFixtureGroups(fixtures);
+      this.fixtureGroups = this.fixtureService.getFixtureGroups(fixtures);
     });
   }
 

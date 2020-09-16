@@ -11,8 +11,7 @@ export class FixtureGroupComponent implements OnInit {
   @Input() isCompactView: boolean;
   @Input() date;
   @Input() showFixtureDates = false;
-
-  isCollapsed = false;
+  @Input() isCollapsed = false;
 
   constructor() { }
 

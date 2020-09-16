@@ -31,9 +31,9 @@ export class FixtureEventItemComponent implements OnInit {
   ngOnInit(): void {
     if (this.fixtureEvent.type === 'Goal') {
       // this.isGoal = true;
-      this.isNormalGoal = this.fixtureEvent.detail === 'Normal Goal';
+      this.isNormalGoal = this.fixtureEvent.detail === 'Normal Goal';  // Confirmed
       this.isOwnGoal = this.fixtureEvent.detail === 'Own Goal';
-      this.isPenalty = this.fixtureEvent.detail === 'Penalty';
+      this.isPenalty = this.fixtureEvent.detail === 'Penalty';  // Confirmed
       this.isMissedPenalty = this.fixtureEvent.detail === 'Missed Penalty';
 
       this.playerOne = this.fixtureEvent.player;

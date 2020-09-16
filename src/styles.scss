@@ -7,6 +7,10 @@ html {
   @apply bg-gray-900;
 }
 
+button {
+  @apply border border-gray-500 shadow;
+}
+
 .link {
   @apply
   underline

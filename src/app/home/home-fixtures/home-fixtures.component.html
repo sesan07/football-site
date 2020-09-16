@@ -14,16 +14,18 @@
 
     <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
-                       [date]="getDate()"
-                       [isCompactView]="isCompactView">
+                       [date]="getAllFixturesDate()"
+                       [isCompactView]="isCompactView"
+                       [isCollapsed]="!fixtureGroup.isFavorite">
     </app-fixture-group>
   </div>
 <!--  Live Fixtures-->
   <div *ngIf="activeToggleIndex === 1">
     <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
-                       [date]="getDate()"
-                       [isCompactView]="isCompactView">
+                       [date]="getLiveDate()"
+                       [isCompactView]="isCompactView"
+                       [isCollapsed]="!fixtureGroup.isFavorite">
     </app-fixture-group>
   </div>
 

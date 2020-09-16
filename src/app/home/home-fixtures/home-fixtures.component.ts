@@ -2,8 +2,8 @@ import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, V
 import {RepositoryService} from '../../shared/services/repository.service';
 import {Fixture, FixtureGroup} from '../../shared/models/fixture.model';
 import {Subscription} from 'rxjs';
-import {FixtureHelper} from '../../shared/helpers/fixture.helper';
 import {DatePipe} from '@angular/common';
+import {FixtureService} from '../../shared/services/fixture.service';
 
 @Component({
   selector: 'app-home-fixtures',
@@ -26,19 +26,20 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   private allFixturesSubscription: Subscription;
   private liveFixturesSubscription: Subscription;
 
-  constructor(private repositoryService: RepositoryService, private datePipe: DatePipe) { }
+  constructor(private repositoryService: RepositoryService, private fixtureService: FixtureService, private datePipe: DatePipe) { }
 
   ngOnInit(): void {
     this.repositoryService.getAllFixtures(this.datePipe.transform(this.allFixturesDate, 'yyyy-MM-dd'));
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {
-      this.allFixtureGroups = FixtureHelper.getFixtureGroups(allFixtures);
+      this.allFixtureGroups = this.fixtureService.getFixtureGroups(allFixtures);
     });
 
     this.liveFixturesSubscription = this.repositoryService.liveFixturesSubject.subscribe((liveFixtures: Fixture[]) => {
-      this.liveFixtureGroups = FixtureHelper.getFixtureGroups(liveFixtures);
+      this.liveFixtureGroups = this.fixtureService.getFixtureGroups(liveFixtures);
     });
+
   }
 
   ngAfterViewInit(): void {
@@ -63,7 +64,11 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
     this.repositoryService.getAllFixtures(this.datePipe.transform(this.allFixturesDate, 'yyyy-MM-dd'));
   }
 
-  getDate() {
+  getAllFixturesDate() {
+    return this.allFixturesDate;
+  }
+
+  getLiveDate() {
     return new Date();
   }
 

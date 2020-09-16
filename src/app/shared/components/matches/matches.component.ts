@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Fixture, FixtureGroup} from '../../models/fixture.model';
-import {FixtureHelper} from '../../helpers/fixture.helper';
+import {FixtureService} from '../../services/fixture.service';
 
 @Component({
   selector: 'app-matches',
@@ -24,7 +24,7 @@ export class MatchesComponent implements OnInit {
   nextFixturesPeriod = this.fixturePeriodOptions[0];
   prevFixturesPeriod = this.fixturePeriodOptions[0];
 
-  constructor() { }
+  constructor(private fixtureService: FixtureService) { }
 
   ngOnInit(): void {
     this.fixtures.forEach(fixture => {
@@ -65,9 +65,9 @@ export class MatchesComponent implements OnInit {
 
     if (this.fixturesPeriod === 'All') {
       if (isNextFixtures) {
-        this.nextFixtureGroups = FixtureHelper.getFixtureGroups(this.nextFixtures);
+        this.nextFixtureGroups = this.fixtureService.getFixtureGroups(this.nextFixtures);
       } else {
-        this.prevFixtureGroups = FixtureHelper.getFixtureGroups(this.prevFixtures);
+        this.prevFixtureGroups = this.fixtureService.getFixtureGroups(this.prevFixtures);
       }
 
       return;
@@ -96,7 +96,7 @@ export class MatchesComponent implements OnInit {
         }
       });
 
-      this.nextFixtureGroups = FixtureHelper.getFixtureGroups(fixtures);
+      this.nextFixtureGroups = this.fixtureService.getFixtureGroups(fixtures);
     } else {
       this.prevFixtures.forEach(fixture => {
         if (Date.parse(fixture.event_date) > periodDateMilliSeconds) {
@@ -104,7 +104,7 @@ export class MatchesComponent implements OnInit {
         }
       });
 
-      this.prevFixtureGroups = FixtureHelper.getFixtureGroups(fixtures);
+      this.prevFixtureGroups = this.fixtureService.getFixtureGroups(fixtures);
     }
   }
 

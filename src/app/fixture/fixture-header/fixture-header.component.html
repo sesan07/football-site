@@ -1,5 +1,5 @@
 <div class="flex justify-evenly px-2 py-4 rounded bg-gray-800 text-white">
-  <div class="flex flex-col justify-center px-4">
+  <div class="flex flex-col items-center px-4">
     <img class="w-32"
          [src]="fixture.homeTeam.logo ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
          alt="Site Logo">
@@ -11,8 +11,8 @@
     <span class="w-32 rounded rounded bg-gray-700 text-3xl text-center" *ngIf="showScore">{{fixture.goalsHomeTeam}} - {{fixture.goalsAwayTeam}}</span>
     <span class="w-32 rounded rounded bg-gray-700 text-3xl text-center" *ngIf="showVs">VS</span>
     <div class="flex justify-evenly w-32" *ngIf="showElapsed || showStatus">
-      <span class="w-10 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showElapsed">{{fixture.elapsed}}</span>
-      <span class="w-10 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showStatus">{{fixture.statusShort}}</span>
+      <span class="w-10 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showElapsed">{{fixture.elapsed}}'</span>
+      <span class="w-16 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showStatus">{{fixture.statusShort}}</span>
     </div>
 
     <div class="flex justify-between">
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col justify-center px-4">
+  <div class="flex flex-col items-center px-4">
     <img class="w-32"
          [src]="fixture.awayTeam.logo ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
          alt="Site Logo">

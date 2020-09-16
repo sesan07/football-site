@@ -27,6 +27,7 @@ export class FixtureGroup {
               public leagueName: string,
               public leagueId: number,
               public logo: string,
+              public isFavorite: boolean,
               public fixtures: Fixture[]) {}
 }
 

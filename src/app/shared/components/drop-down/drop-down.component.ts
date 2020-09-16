@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-drop-down',
@@ -10,8 +10,8 @@ export class DropDownComponent implements OnInit {
   @Output() indexItemClicked = new EventEmitter<number>();
   @Output() textItemClicked = new EventEmitter<string>();
 
-  @ViewChild('dropdownList', {static: false}) dropdownListRef: ElementRef;
-
+  isOpen = false;
+  isInList = false;
   activeButtonLabel: string;
   lastIndex: number;
 
@@ -22,7 +22,28 @@ export class DropDownComponent implements OnInit {
     this.lastIndex = this.options.length - 1;
   }
 
+  onMainButtonClicked() {
+    this.isOpen = true;
+  }
+
+  onFocusOut() {
+    if (!this.isInList) {
+      this.isOpen = false;
+    }
+  }
+
+  onListEnter() {
+    this.isInList = true;
+  }
+
+  onListExit() {
+    this.isInList = false;
+  }
+
   onItemClicked(index: number, text: string) {
+    this.isOpen = false;
+    this.isInList = false;
+
     this.activeButtonLabel = this.options[index];
     this.indexItemClicked.emit(index);
     this.textItemClicked.emit(text);
