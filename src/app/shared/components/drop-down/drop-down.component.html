@@ -2,13 +2,14 @@
   <div class="dropdown inline-block relative">
     <button class="dropdown-button py-1 px-4 ">
       <span class="mr-1">{{activeButtonLabel}}</span>
-      <img class="h-3 w-3 ml-1" src="../../../../assets/img/down-arrow.png" alt="Dropdown arrow">
+      <img class="h-3 w-3 ml-1 transform rotate-180" src="../../../../assets/img/up-arrow.png" alt="Dropdown arrow">
     </button>
     <ul class="dropdown-menu absolute hidden text-sm text-white pt-1 cursor-pointer z-10">
       <li *ngFor="let option of options; let i = index">
-        <a class="py-1 px-4 block whitespace-no-wrap bg-gray-700 hover:bg-gray-600"
-           [class.rounded-t]="i === 0"
-           [class.rounded-b]="i === lastIndex"
+        <a class="py-1 px-4 block whitespace-no-wrap border-l border-r bg-gray-700 hover:bg-gray-600"
+           [ngClass]="
+           {'rounded-t border-t': (i === 0),
+            'rounded-b border-b': (i === lastIndex)}"
            (click)="onItemClicked(i, option)">
           {{option}}
         </a>

@@ -1,0 +1,11 @@
+.day {
+  @apply w-full px-3 py-1 rounded;
+}
+
+.day:hover {
+  @apply bg-gray-600;
+}
+
+.day.active {
+  @apply text-black bg-white;
+}

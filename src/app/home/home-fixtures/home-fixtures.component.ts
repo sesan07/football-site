@@ -21,13 +21,15 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
   readonly COMPACT_WIDTH = 720;
   isCompactView = false;
 
+  allFixturesDate = new Date();
+
   private allFixturesSubscription: Subscription;
   private liveFixturesSubscription: Subscription;
 
   constructor(private repositoryService: RepositoryService, private datePipe: DatePipe) { }
 
   ngOnInit(): void {
-    this.repositoryService.getAllFixtures(this.datePipe.transform(new Date(), 'yyyy-MM-dd'));
+    this.repositoryService.getAllFixtures(this.datePipe.transform(this.allFixturesDate, 'yyyy-MM-dd'));
     this.repositoryService.getLiveFixtures();
 
     this.allFixturesSubscription = this.repositoryService.allFixturesSubject.subscribe((allFixtures: Fixture[]) => {
@@ -54,6 +56,11 @@ export class HomeFixturesComponent implements OnInit, AfterViewInit, OnDestroy {
 
   onToggleButtonClicked(index: number) {
     this.activeToggleIndex = index;
+  }
+
+  onDateSelected(date: Date) {
+    this.allFixturesDate = date;
+    this.repositoryService.getAllFixtures(this.datePipe.transform(this.allFixturesDate, 'yyyy-MM-dd'));
   }
 
   getDate() {

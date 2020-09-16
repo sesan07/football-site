@@ -38,6 +38,7 @@ import { TeamStatisticsComponent } from './team/team-statistics/team-statistics.
 import { DropDownComponent } from './shared/components/drop-down/drop-down.component';
 import { MatchesComponent } from './shared/components/matches/matches.component';
 import {DatePipe} from '@angular/common';
+import { DatePickerComponent } from './shared/components/date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import {DatePipe} from '@angular/common';
     SidebarFixtureItemComponent,
     TeamStatisticsComponent,
     DropDownComponent,
-    MatchesComponent
+    MatchesComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,

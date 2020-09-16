@@ -8,6 +8,10 @@
 
 <!--  All Fixtures-->
   <div *ngIf="activeToggleIndex === 0">
+    <app-date-picker [startDate]="allFixturesDate"
+                     (dateSelected)="onDateSelected($event)">
+    </app-date-picker>
+
     <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
                        [fixtureGroup]="fixtureGroup"
                        [date]="getDate()"

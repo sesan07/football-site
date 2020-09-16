@@ -1,0 +1,51 @@
+<div class="mb-2 flex justify-center text-white">
+  <div class="flex flex-col items-center">
+    <button class="px-2 py-1 inline-flex items-center justify-between space-x-6 text-sm rounded bg-gray-700 hover:bg-gray-600"
+            (click)="onMainButtonClicked()"
+            (focusout)="onFocusOut()">
+      <span>{{selectedFullDate}}</span>
+      <img class="h-6 w-6 ml-1" src="../../../../assets/img/date.png" alt="Dropdown arrow">
+    </button>
+
+    <div class="w-full flex justify-center relative" *ngIf="isOpen">
+      <div class="absolute mt-1 p-2 flex flex-col space-y-1 rounded overflow-hidden border border-gray-500 bg-gray-700 z-10"
+           (mouseenter)="onCalenderEnter()"
+           (mouseleave)="onCalenderExit()"
+           (focusout)="onFocusOut()">
+        <div class="flex justify-between items-center">
+          <span>
+            <span class="font-semibold">{{viewMonth}}</span>
+            <span class="ml-2 text-sm">{{viewYear}}</span>
+          </span>
+          <div class="flex">
+            <button class="px-3 py-1 rounded hover:bg-gray-600" (click)="onPrevClicked()">
+              <img class="h-5 w-5 transform -rotate-90" src="../../../../assets/img/up-arrow.png" alt="Dropdown arrow">
+            </button>
+            <button class="ml-2 px-3 py-1 rounded hover:bg-gray-600" (click)="onNextClicked()">
+              <img class="h-5 w-5 transform rotate-90" src="../../../../assets/img/up-arrow.png" alt="Dropdown arrow">
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-7 text-white text-center text-sm" style="width: 18rem">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          <span *ngFor="let day of daysBeforeMonth"></span>
+          <div *ngFor="let monthDay of monthDays">
+            <button class="day" [class.active]="selectedDay && monthDay === selectedDay"
+                    (click)="onDayClicked(monthDay)">
+              {{monthDay}}
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
