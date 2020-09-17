@@ -6,14 +6,14 @@
       <span class="mr-1">{{activeButtonLabel}}</span>
       <img class="h-3 w-3 ml-1 transition duration-200 transform" [class.rotate-180]="!isOpen" src="../../../../assets/img/up-arrow.png" alt="Dropdown arrow">
     </button>
-    <ul class="dropdown-menu absolute text-sm text-white pt-1 cursor-pointer z-10"
+    <ul class="dropdown-menu absolute text-sm text-white pt-1 cursor-pointer z-10 overflow-auto"
         [class.block]="isOpen"
         *ngIf="isOpen"
         (mouseenter)="onListEnter()"
         (mouseleave)="onListExit()"
         (focusout)="onFocusOut()">
       <li *ngFor="let option of options; let i = index">
-        <a class="py-1 px-4 block whitespace-no-wrap border-l border-r border-gray-900 bg-gray-700 hover:bg-gray-600"
+        <a class="py-1 px-4 block whitespace-no-wrap border-l border-r border-gray-500 bg-gray-700 hover:bg-gray-600"
            [ngClass]="
            {'rounded-t border-t': (i === 0),
             'rounded-b border-b': (i === lastIndex)}"

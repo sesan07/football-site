@@ -1,30 +1,31 @@
-<div class="rounded bg-gray-800 overflow-hidden shadow-md" style="min-height: 16rem">
-  <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Statistics</span>
+<div class="rounded bg-gray-800 shadow-md">
+  <div class="p-2 flex justify-between font-bold text-xl text-white rounded-t bg-gray-700">
+    <span>Statistics</span>
+    <div class="flex">
+      <app-drop-down *ngIf="leagueOptions"
+                     (ItemClickedValue)="onLeagueOptionClicked($event)"
+                     [options]="leagueOptions">
+      </app-drop-down>
+      <app-drop-down class="ml-2"
+                     *ngIf="seasonOptions"
+                     (ItemClickedValue)="onSeasonOptionClicked($event)"
+                     [options]="seasonOptions">
+      </app-drop-down>
+    </div>
+  </div>
   <div class="px-1 py-2 md:px-2" *ngIf="!isLoading else loadingView">
     <div *ngIf="leagueOptions else noDataView">
-      <div class="flex">
-        <app-drop-down (textItemClicked)="onLeagueOptionClicked($event)"
-                       [options]="leagueOptions">
-        </app-drop-down>
-        <app-drop-down class="ml-2"
-                       (textItemClicked)="onSeasonOptionClicked($event)"
-                       [options]="seasonOptions">
-        </app-drop-down>
-      </div>
-
-      <div class="mt-2">
-        <app-team-stat *ngFor="let stat of activeTeamStatistics"
-                       [statName]="stat.name"
-                       [homeValue]="stat.home"
-                       [awayValue]="stat.away"
-                       [totalValue]="stat.total">
-        </app-team-stat>
-      </div>
+      <app-team-stat *ngFor="let stat of activeTeamStatistics"
+                     [statName]="stat.name"
+                     [homeValue]="stat.home"
+                     [awayValue]="stat.away"
+                     [totalValue]="stat.total">
+      </app-team-stat>
     </div>
   </div>
 </div>
 
-<ng-template #loadingView>
+<ng-template class="px-1 py-2 md:px-2" #loadingView>
   <span>Loading...</span>
 </ng-template>
 

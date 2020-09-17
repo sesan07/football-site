@@ -1,6 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FavoriteTeam} from '../../shared/models/team.model';
 import {FavoritesService} from '../../shared/services/favorites.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sidebar-team-item',
@@ -9,8 +10,9 @@ import {FavoritesService} from '../../shared/services/favorites.service';
 })
 export class SidebarTeamItemComponent implements OnInit {
   @Input() team: FavoriteTeam;
+  @Output() clicked = new EventEmitter<null>();
 
-  constructor(private favoritesService: FavoritesService) { }
+  constructor(private router: Router, private favoritesService: FavoritesService) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +20,11 @@ export class SidebarTeamItemComponent implements OnInit {
   onFavouriteClicked(event: Event) {
     event.stopPropagation();
     this.favoritesService.removeTeam(this.team.teamId);
+  }
+
+  onClicked() {
+    this.clicked.emit();
+    this.router.navigate(['/team', this.team.teamName, this.team.teamId]);
   }
 
 }

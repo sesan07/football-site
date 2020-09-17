@@ -1,0 +1,2070 @@
+{
+  "api": {
+    "results": 14,
+    "standings": [
+      [
+        {
+          "rank": 1,
+          "team_id": 768,
+          "teamName": "Italy",
+          "logo": "https://media.api-sports.io/football/teams/768.png",
+          "group": "UEFA Nations League A: Group 1",
+          "forme": "WD",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A - Play Offs)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1118,
+          "teamName": "Netherlands",
+          "logo": "https://media.api-sports.io/football/teams/1118.png",
+          "group": "UEFA Nations League A: Group 1",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 24,
+          "teamName": "Poland",
+          "logo": "https://media.api-sports.io/football/teams/24.png",
+          "group": "UEFA Nations League A: Group 1",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1113,
+          "teamName": "Bosnia & Herzegovina",
+          "logo": "https://media.api-sports.io/football/teams/1113.png",
+          "group": "UEFA Nations League A: Group 1",
+          "forme": "LD",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1,
+          "teamName": "Belgium",
+          "logo": "https://media.api-sports.io/football/teams/1.png",
+          "group": "UEFA Nations League A: Group 2",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A - Play Offs)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 7,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 5,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 6,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 10,
+          "teamName": "England",
+          "logo": "https://media.api-sports.io/football/teams/10.png",
+          "group": "UEFA Nations League A: Group 2",
+          "forme": "DW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 21,
+          "teamName": "Denmark",
+          "logo": "https://media.api-sports.io/football/teams/21.png",
+          "group": "UEFA Nations League A: Group 2",
+          "forme": "DL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -2,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 18,
+          "teamName": "Iceland",
+          "logo": "https://media.api-sports.io/football/teams/18.png",
+          "group": "UEFA Nations League A: Group 2",
+          "forme": "LL",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 1,
+            "goalsAgainst": 6
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 5
+          },
+          "goalsDiff": -5,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 27,
+          "teamName": "Portugal",
+          "logo": "https://media.api-sports.io/football/teams/27.png",
+          "group": "UEFA Nations League A: Group 3",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A - Play Offs)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 6,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 5,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 2,
+          "teamName": "France",
+          "logo": "https://media.api-sports.io/football/teams/2.png",
+          "group": "UEFA Nations League A: Group 3",
+          "forme": "WW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 5,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 3,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 5,
+          "teamName": "Sweden",
+          "logo": "https://media.api-sports.io/football/teams/5.png",
+          "group": "UEFA Nations League A: Group 3",
+          "forme": "LL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -3,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 3,
+          "teamName": "Croatia",
+          "logo": "https://media.api-sports.io/football/teams/3.png",
+          "group": "UEFA Nations League A: Group 3",
+          "forme": "LL",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 3,
+            "goalsAgainst": 8
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 3,
+            "goalsAgainst": 8
+          },
+          "goalsDiff": -5,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 9,
+          "teamName": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "group": "UEFA Nations League A: Group 4",
+          "forme": "WD",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A - Play Offs)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 5,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 4,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 772,
+          "teamName": "Ukraine",
+          "logo": "https://media.api-sports.io/football/teams/772.png",
+          "group": "UEFA Nations League A: Group 4",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 5
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 4
+          },
+          "goalsDiff": -3,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 25,
+          "teamName": "Germany",
+          "logo": "https://media.api-sports.io/football/teams/25.png",
+          "group": "UEFA Nations League A: Group 4",
+          "forme": "DD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 2,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 0,
+          "points": 2,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 15,
+          "teamName": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
+          "group": "UEFA Nations League A: Group 4",
+          "forme": "DL",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 774,
+          "teamName": "Romania",
+          "logo": "https://media.api-sports.io/football/teams/774.png",
+          "group": "UEFA Nations League B: Group 1",
+          "forme": "WD",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 775,
+          "teamName": "Austria",
+          "logo": "https://media.api-sports.io/football/teams/775.png",
+          "group": "UEFA Nations League B: Group 1",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 4,
+            "goalsAgainst": 4
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1090,
+          "teamName": "Norway",
+          "logo": "https://media.api-sports.io/football/teams/1090.png",
+          "group": "UEFA Nations League B: Group 1",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 6,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 5,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 3,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 771,
+          "teamName": "Northern Ireland",
+          "logo": "https://media.api-sports.io/football/teams/771.png",
+          "group": "UEFA Nations League B: Group 1",
+          "forme": "LD",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 6
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 5
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -4,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1108,
+          "teamName": "Scotland",
+          "logo": "https://media.api-sports.io/football/teams/1108.png",
+          "group": "UEFA Nations League B: Group 2",
+          "forme": "WD",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 770,
+          "teamName": "Czech Republic",
+          "logo": "https://media.api-sports.io/football/teams/770.png",
+          "group": "UEFA Nations League B: Group 2",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 4,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1116,
+          "teamName": "Israel",
+          "logo": "https://media.api-sports.io/football/teams/1116.png",
+          "group": "UEFA Nations League B: Group 2",
+          "forme": "DD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 2,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 0,
+          "points": 2,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 773,
+          "teamName": "Slovakia",
+          "logo": "https://media.api-sports.io/football/teams/773.png",
+          "group": "UEFA Nations League B: Group 2",
+          "forme": "DL",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 4
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -2,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 4,
+          "teamName": "Russia",
+          "logo": "https://media.api-sports.io/football/teams/4.png",
+          "group": "UEFA Nations League B: Group 3",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 6,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": 3,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 769,
+          "teamName": "Hungary",
+          "logo": "https://media.api-sports.io/football/teams/769.png",
+          "group": "UEFA Nations League B: Group 3",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 777,
+          "teamName": "Turkey",
+          "logo": "https://media.api-sports.io/football/teams/777.png",
+          "group": "UEFA Nations League B: Group 3",
+          "forme": "DL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 14,
+          "teamName": "Serbia",
+          "logo": "https://media.api-sports.io/football/teams/14.png",
+          "group": "UEFA Nations League B: Group 3",
+          "forme": "DL",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 3
+          },
+          "goalsDiff": -2,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 767,
+          "teamName": "Wales",
+          "logo": "https://media.api-sports.io/football/teams/767.png",
+          "group": "UEFA Nations League B: Group 4",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League A)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 2,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1099,
+          "teamName": "Finland",
+          "logo": "https://media.api-sports.io/football/teams/1099.png",
+          "group": "UEFA Nations League B: Group 4",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 776,
+          "teamName": "Rep. Of Ireland",
+          "logo": "https://media.api-sports.io/football/teams/776.png",
+          "group": "UEFA Nations League B: Group 4",
+          "forme": "LD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1103,
+          "teamName": "Bulgaria",
+          "logo": "https://media.api-sports.io/football/teams/1103.png",
+          "group": "UEFA Nations League B: Group 4",
+          "forme": "LD",
+          "status": "same",
+          "description": "Relegation - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1109,
+          "teamName": "Montenegro",
+          "logo": "https://media.api-sports.io/football/teams/1109.png",
+          "group": "UEFA Nations League C: Group 1",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 3,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1102,
+          "teamName": "Luxembourg",
+          "logo": "https://media.api-sports.io/football/teams/1102.png",
+          "group": "UEFA Nations League C: Group 1",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1096,
+          "teamName": "Azerbaijan",
+          "logo": "https://media.api-sports.io/football/teams/1096.png",
+          "group": "UEFA Nations League C: Group 1",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 0,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1106,
+          "teamName": "Cyprus",
+          "logo": "https://media.api-sports.io/football/teams/1106.png",
+          "group": "UEFA Nations League C: Group 1",
+          "forme": "LL",
+          "status": "same",
+          "description": "UEFA Nations League (League C - Play Out)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -3,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1105,
+          "teamName": "FYR Macedonia",
+          "logo": "https://media.api-sports.io/football/teams/1105.png",
+          "group": "UEFA Nations League C: Group 2",
+          "forme": "DW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1104,
+          "teamName": "Georgia",
+          "logo": "https://media.api-sports.io/football/teams/1104.png",
+          "group": "UEFA Nations League C: Group 2",
+          "forme": "DW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1094,
+          "teamName": "Armenia",
+          "logo": "https://media.api-sports.io/football/teams/1094.png",
+          "group": "UEFA Nations League C: Group 2",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": 1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1101,
+          "teamName": "Estonia",
+          "logo": "https://media.api-sports.io/football/teams/1101.png",
+          "group": "UEFA Nations League C: Group 2",
+          "forme": "LL",
+          "status": "same",
+          "description": "UEFA Nations League (League C - Play Out)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "goalsDiff": -3,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1117,
+          "teamName": "Greece",
+          "logo": "https://media.api-sports.io/football/teams/1117.png",
+          "group": "UEFA Nations League C: Group 3",
+          "forme": "WD",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1091,
+          "teamName": "Slovenia",
+          "logo": "https://media.api-sports.io/football/teams/1091.png",
+          "group": "UEFA Nations League C: Group 3",
+          "forme": "WD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 4,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1111,
+          "teamName": "Kosovo",
+          "logo": "https://media.api-sports.io/football/teams/1111.png",
+          "group": "UEFA Nations League C: Group 3",
+          "forme": "LD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1114,
+          "teamName": "Moldova",
+          "logo": "https://media.api-sports.io/football/teams/1114.png",
+          "group": "UEFA Nations League C: Group 3",
+          "forme": "LD",
+          "status": "same",
+          "description": "UEFA Nations League (League C - Play Out)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1095,
+          "teamName": "Kazakhstan",
+          "logo": "https://media.api-sports.io/football/teams/1095.png",
+          "group": "UEFA Nations League C: Group 4",
+          "forme": "LW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League B)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 778,
+          "teamName": "Albania",
+          "logo": "https://media.api-sports.io/football/teams/778.png",
+          "group": "UEFA Nations League C: Group 4",
+          "forme": "LW",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1100,
+          "teamName": "Belarus",
+          "logo": "https://media.api-sports.io/football/teams/1100.png",
+          "group": "UEFA Nations League C: Group 4",
+          "forme": "WL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1097,
+          "teamName": "Lithuania",
+          "logo": "https://media.api-sports.io/football/teams/1097.png",
+          "group": "UEFA Nations League C: Group 4",
+          "forme": "WL",
+          "status": "same",
+          "description": "UEFA Nations League (League C - Play Out)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 1,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1098,
+          "teamName": "Faroe Islands",
+          "logo": "https://media.api-sports.io/football/teams/1098.png",
+          "group": "UEFA Nations League D: Group 1",
+          "forme": "WW",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 2,
+            "win": 2,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 2
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 3,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 2,
+          "points": 6,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1092,
+          "teamName": "Latvia",
+          "logo": "https://media.api-sports.io/football/teams/1092.png",
+          "group": "UEFA Nations League D: Group 1",
+          "forme": "DD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 2,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": 0,
+          "points": 2,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1112,
+          "teamName": "Malta",
+          "logo": "https://media.api-sports.io/football/teams/1112.png",
+          "group": "UEFA Nations League D: Group 1",
+          "forme": "DL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 4
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 3
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 4,
+          "team_id": 1110,
+          "teamName": "andorra",
+          "logo": "https://media.api-sports.io/football/teams/1110.png",
+          "group": "UEFA Nations League D: Group 1",
+          "forme": "LD",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 1,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 1,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": -1,
+          "points": 1,
+          "lastUpdate": "2020-09-08"
+        }
+      ],
+      [
+        {
+          "rank": 1,
+          "team_id": 1107,
+          "teamName": "Liechtenstein",
+          "logo": "https://media.api-sports.io/football/teams/1107.png",
+          "group": "UEFA Nations League D: Group 2",
+          "forme": "W",
+          "status": "same",
+          "description": "Promotion - UEFA Nations League (League C)",
+          "all": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 2,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 2,
+          "team_id": 1093,
+          "teamName": "Gibraltar",
+          "logo": "https://media.api-sports.io/football/teams/1093.png",
+          "group": "UEFA Nations League D: Group 2",
+          "forme": "W",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 1,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 1,
+            "goalsAgainst": 0
+          },
+          "away": {
+            "matchsPlayed": 0,
+            "win": 0,
+            "draw": 0,
+            "lose": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0
+          },
+          "goalsDiff": 1,
+          "points": 3,
+          "lastUpdate": "2020-09-08"
+        },
+        {
+          "rank": 3,
+          "team_id": 1115,
+          "teamName": "San Marino",
+          "logo": "https://media.api-sports.io/football/teams/1115.png",
+          "group": "UEFA Nations League D: Group 2",
+          "forme": "LL",
+          "status": "same",
+          "description": null,
+          "all": {
+            "matchsPlayed": 2,
+            "win": 0,
+            "draw": 0,
+            "lose": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3
+          },
+          "home": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 2
+          },
+          "away": {
+            "matchsPlayed": 1,
+            "win": 0,
+            "draw": 0,
+            "lose": 1,
+            "goalsFor": 0,
+            "goalsAgainst": 1
+          },
+          "goalsDiff": -3,
+          "points": 0,
+          "lastUpdate": "2020-09-08"
+        }
+      ]
+    ]
+  }
+}

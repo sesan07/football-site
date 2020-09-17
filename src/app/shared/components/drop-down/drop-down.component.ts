@@ -7,8 +7,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class DropDownComponent implements OnInit {
   @Input() options: string[];
-  @Output() indexItemClicked = new EventEmitter<number>();
-  @Output() textItemClicked = new EventEmitter<string>();
+  @Output() ItemClickedIndex = new EventEmitter<number>();
+  @Output() ItemClickedValue = new EventEmitter<string>();
 
   isOpen = false;
   isInList = false;
@@ -45,7 +45,7 @@ export class DropDownComponent implements OnInit {
     this.isInList = false;
 
     this.activeButtonLabel = this.options[index];
-    this.indexItemClicked.emit(index);
-    this.textItemClicked.emit(text);
+    this.ItemClickedIndex.emit(index);
+    this.ItemClickedValue.emit(text);
   }
 }

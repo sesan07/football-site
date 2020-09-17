@@ -39,6 +39,8 @@ import { DropDownComponent } from './shared/components/drop-down/drop-down.compo
 import { MatchesComponent } from './shared/components/matches/matches.component';
 import {DatePipe} from '@angular/common';
 import { DatePickerComponent } from './shared/components/date-picker/date-picker.component';
+import { LeagueStandingsComponent } from './league/league-standings/league-standings.component';
+import { LeagueStandingsGroupComponent } from './league/league-standings/league-standings-group/league-standings-group.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +77,9 @@ import { DatePickerComponent } from './shared/components/date-picker/date-picker
     TeamStatisticsComponent,
     DropDownComponent,
     MatchesComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    LeagueStandingsComponent,
+    LeagueStandingsGroupComponent
   ],
   imports: [
     BrowserModule,

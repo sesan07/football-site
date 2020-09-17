@@ -17,15 +17,18 @@
 
 
     <app-sidebar-team-item *ngFor="let team of teams"
-                           [team]="team">
+                           [team]="team"
+                           (clicked)="onFavoriteClicked()">
     </app-sidebar-team-item>
 
     <app-sidebar-league-item *ngFor="let league of leagues"
-                             [league]="league">
+                             [league]="league"
+                             (clicked)="onFavoriteClicked()">
     </app-sidebar-league-item>
 
     <app-sidebar-fixture-item *ngFor="let fixture of fixtures"
-                              [fixture]="fixture">
+                              [fixture]="fixture"
+                              (clicked)="onFavoriteClicked()">
     </app-sidebar-fixture-item>
 
   </div>

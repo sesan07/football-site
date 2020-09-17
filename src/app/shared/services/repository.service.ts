@@ -8,6 +8,7 @@ import {TeamPlayer} from '../models/team-player.model';
 import {League} from '../models/league.model';
 import {TeamStatistic} from '../models/team-statistic.model';
 import {LeagueTopScorer} from '../models/league-top-scorer.model';
+import {LeagueTeamStanding} from '../models/league-standing.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,10 +16,10 @@ import {LeagueTopScorer} from '../models/league-top-scorer.model';
 export class RepositoryService {
   private isLoadingAllFixtures = false;
   private isLoadingLiveFixtures = false;
+  private allLeagues: League[] = [];
 
   allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
   liveFixturesSubject = new BehaviorSubject<Fixture[]>([]);
-  allLeagues: League[] = [];
 
   constructor(private apiService: ApiService) { }
 
@@ -188,6 +189,19 @@ export class RepositoryService {
     });
 
     return foundLeague;
+  }
+
+  getLeagueStandings(leagueId: number) {
+    // return this.apiService.getLeagueStandings(leagueId)
+    return this.apiService.getLeagueStandingsTest()
+      .pipe(map((responseJsonData => {
+        let standings: LeagueTeamStanding[][] = [];
+        if (responseJsonData.api && responseJsonData.api.standings) {
+          standings = responseJsonData.api.standings;
+        }
+
+        return standings;
+      })));
   }
 
   getLeagueFixtures(leagueId: number) {

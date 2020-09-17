@@ -46,6 +46,10 @@ export class SidebarComponent implements OnInit {
     this.fixtures = this.favoritesService.getFixtures();
   }
 
+  onFavoriteClicked() {
+    this.isCollapsed = true;
+  }
+
   onHomeClicked() {
     this.isCollapsed = true;
     this.router.navigate(['']);

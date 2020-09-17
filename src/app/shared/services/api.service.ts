@@ -6,6 +6,7 @@ import {TeamPlayersApiResponse} from '../models/team-player.model';
 import {LeaguesApiResponse} from '../models/league.model';
 import {TeamStatisticsApiResponse} from '../models/team-statistic.model';
 import {LeagueTopScorersApiResponse} from '../models/league-top-scorer.model';
+import {LeagueStandingsApiResponse} from '../models/league-standing.model';
 
 @Injectable({
   providedIn: 'root'
@@ -109,6 +110,18 @@ export class ApiService {
   getLeaguesTest() {
     return this.http.get<LeaguesApiResponse>(
       'assets/test-data/leagues.json'
+    );
+  }
+
+  getLeagueStandings(leagueId: number) {
+    return this.http.get<LeagueStandingsApiResponse>(
+      this.BASE_URL + '/leagueTable/' + leagueId
+    );
+  }
+
+  getLeagueStandingsTest() {
+    return this.http.get<LeagueStandingsApiResponse>(
+      'assets/test-data/league-standings.json'
     );
   }
 
