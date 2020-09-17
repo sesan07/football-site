@@ -21,4 +21,9 @@ export class LeagueTopScorersComponent implements OnInit {
 
   }
 
+  getPlayerName(fullName: string) {
+    const names = fullName.split(' ');
+    return names.slice()[0] + ' ' + names.slice(-1)[0];
+  }
+
 }

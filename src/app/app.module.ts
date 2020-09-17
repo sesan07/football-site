@@ -17,7 +17,6 @@ import { TeamPlayerComponent } from './team/team-squad/team-player/team-player.c
 import { TeamStatComponent } from './team/team-statistics/team-stat/team-stat.component';
 import {AppRoutingModule} from './app-routing.module';
 import { LeagueComponent } from './league/league.component';
-import { LeagueTopScorerComponent } from './league/league-top-scorers/league-top-scorer/league-top-scorer.component';
 import {FixtureComponent} from './fixture/fixture.component';
 import { FixtureLineUpsComponent } from './fixture/fixture-line-ups/fixture-line-ups.component';
 import { FixtureEventsComponent } from './fixture/fixture-events/fixture-events.component';
@@ -57,7 +56,6 @@ import { LeagueStandingsGroupComponent } from './league/league-standings/league-
     TeamPlayerComponent,
     TeamStatComponent,
     LeagueComponent,
-    LeagueTopScorerComponent,
     FixtureComponent,
     FixtureLineUpsComponent,
     FixtureEventsComponent,

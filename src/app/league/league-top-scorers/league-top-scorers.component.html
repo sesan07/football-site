@@ -1,40 +1,23 @@
 <div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
   <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Top Scorers</span>
-  <!-- Content -->
-  <div class="px-1 py-2 md:px-2">
 
-    <div class="rounded overflow-hidden">
-      <div class="flex items-center justify-between py-1 px-4 bg-gray-700">
-        <div class="flex flex-grow">
-          <!--    Name -->
-          <span class="font-semibold text-white">Name</span>
-        </div>
-        <div class="flex">
-          <div class="flex justify-center w-16 mr-2 rounded bg-gray-100">
-            <!--    Goals -->
-            <span class="py-1 font-semibold">Goals</span>
-          </div>
-          <div class="flex justify-center w-16 rounded bg-gray-100">
-            <!--    Assists -->
-            <span class="py-1 font-semibold">Assists</span>
-          </div>
-        </div>
-      </div>
+  <table class="w-full table-fixed text-white text-sm">
+    <thead>
+    <tr class="bg-gray-900">
+      <th class="w-3/4 py-2">Name</th>
+      <th class="py-2 hidden sm:table-cell">Goals</th>
+      <th class="py-2 hidden sm:table-cell">Assists</th>
 
-      <!--        TODO Add no top scorers message-->
-
-      <div *ngIf="topScorers else noTopScorersView">
-        <app-league-top-scorer
-          *ngFor="let topScorer of topScorers"
-          [topScorer]="topScorer">
-        </app-league-top-scorer>
-      </div>
-    </div>
-
-
-  </div>
+      <th class="py-2 sm:hidden">G</th>
+      <th class="py-2 sm:hidden">A</th>
+    </tr>
+    </thead>
+    <tbody class="bg-gray-600">
+    <tr class="border-t border-gray-500" *ngFor="let topScorer of topScorers">
+      <td class="py-2 pl-2"><a class="link">{{getPlayerName(topScorer.player_name)}}</a></td>
+      <td class="py-2 text-center ">{{topScorer.goals.total ? topScorer.goals.total : 0}}</td>
+      <td class="py-2 text-center ">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
-
-<ng-template #noTopScorersView>
-  <span class="ml-4 text-white">No top scorers</span>
-</ng-template>
