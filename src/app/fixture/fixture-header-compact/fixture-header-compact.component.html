@@ -50,14 +50,17 @@
   <div class="mt-2 flex justify-between">
     <div class="flex items-center">
       <img class="w-6" src="../../../assets/img/date.png" alt="Date icon">
-      <span class="ml-2 my-2 text-center">{{fixture.event_date | date:'mediumDate'}}</span>
+      <span class="ml-2 text-center">{{fixture.event_date | date:'mediumDate'}}</span>
     </div>
 
     <div class="ml-10 flex items-center">
       <img class="w-6" src="../../../assets/img/time.png" alt="Time Icon">
-      <span class="ml-2 my-2 text-center">{{fixture.event_date | date:'HH:mm'}}</span>
+      <span class="ml-2 text-center">{{fixture.event_date | date:'HH:mm'}}</span>
     </div>
   </div>
 
+  <button class="heart h-8 w-20 mt-2 py-1 " [class.favorite]="isFavorite"
+          (click)="onFavouriteClicked()">
+  </button>
 
 </div>
