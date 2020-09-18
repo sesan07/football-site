@@ -3,18 +3,18 @@
     "results": 1,
     "teams": [
       {
-        "team_id": 70,
-        "name": "Middlesbrough",
+        "team_id": 49,
+        "name": "Chelsea",
         "code": null,
-        "logo": "https://media.api-sports.io/football/teams/70.png",
+        "logo": "https://media.api-sports.io/football/teams/49.png",
         "country": "England",
         "is_national": false,
-        "founded": 1876,
-        "venue_name": "Riverside Stadium",
+        "founded": 1905,
+        "venue_name": "Stamford Bridge",
         "venue_surface": "grass",
-        "venue_address": "Dockside Road",
-        "venue_city": "Middlesbrough",
-        "venue_capacity": 34988
+        "venue_address": "Fulham Road",
+        "venue_city": "London",
+        "venue_capacity": 41841
       }
     ]
   }

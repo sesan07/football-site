@@ -1,8 +1,10 @@
 <div class="mb-4 rounded bg-gray-800 shadow-md">
-  <div class="p-2 flex justify-between font-bold text-xl text-white rounded-t bg-gray-700">
+  <div class="p-2 flex justify-between items-center font-bold text-xl text-white rounded-t bg-gray-700">
     <span>Matches</span>
-    <app-drop-down *ngIf="fixturePeriodOptions"
+    <app-drop-down class="ml-2"
+                   *ngIf="fixturePeriodOptions"
                    [options]="fixturePeriodOptions"
+                   [isListPositionRight]="true"
                    (ItemClickedIndex)="onPeriodOptionClicked($event)">
     </app-drop-down>
   </div>

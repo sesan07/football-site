@@ -13,7 +13,6 @@ import { FixtureItemComponent } from './shared/components/fixture-group/fixture-
 import { TeamComponent } from './team/team.component';
 import { HomeComponent } from './home/home.component';
 import { TabToggleComponent } from './shared/components/tab-toggle/tab-toggle.component';
-import { TeamPlayerComponent } from './team/team-squad/team-player/team-player.component';
 import { TeamStatComponent } from './team/team-statistics/team-stat/team-stat.component';
 import {AppRoutingModule} from './app-routing.module';
 import { LeagueComponent } from './league/league.component';
@@ -53,7 +52,6 @@ import { LeagueStandingsGroupComponent } from './league/league-standings/league-
     TeamComponent,
     HomeComponent,
     TabToggleComponent,
-    TeamPlayerComponent,
     TeamStatComponent,
     LeagueComponent,
     FixtureComponent,

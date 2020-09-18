@@ -1,15 +1,16 @@
-import {AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/services/repository.service';
-import {Fixture, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
+import {Fixture, FixtureGroup, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
+import {FixtureService} from '../shared/services/fixture.service';
 
 @Component({
   selector: 'app-fixture',
   templateUrl: './fixture.component.html',
   styleUrls: ['./fixture.component.scss']
 })
-export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
+export class FixtureComponent implements OnInit, OnDestroy {
   private routeParamsSub: Subscription;
 
   private fixtureId: number;
@@ -17,15 +18,13 @@ export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
   homeLineUp: FixtureLineUp;
   awayLineUp: FixtureLineUp;
   statistics: [string, FixtureStatistic][];
+  headToHeadFixtureGroups: FixtureGroup[];
 
   isLoaded = false;
 
-  @ViewChild('container') container: ElementRef;
-  readonly COMPACT_WIDTH = 640;
-  isCompactView = false;
-
   constructor(private activatedRoute: ActivatedRoute,
-              private repositoryService: RepositoryService) { }
+              private repositoryService: RepositoryService,
+              private fixtureService: FixtureService) { }
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
@@ -33,6 +32,8 @@ export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
 
       this.repositoryService.getFixture(this.fixtureId).subscribe((fixture: Fixture) => {
         this.fixture = fixture;
+
+        // Line Ups
         if (fixture.lineups) {
           if (fixture.lineups.hasOwnProperty(fixture.homeTeam.team_name)) {
             this.homeLineUp = fixture.lineups[fixture.homeTeam.team_name];
@@ -43,6 +44,13 @@ export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
           }
         }
 
+        // Head to head
+        this.repositoryService.getFixtureHeadToHead(fixture.homeTeam.team_id, fixture.awayTeam.team_id)
+          .subscribe((fixtures: Fixture[]) => {
+            this.headToHeadFixtureGroups = this.fixtureService.getFixtureGroups(fixtures);
+          });
+
+        // Statistics
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
         }
@@ -50,19 +58,6 @@ export class FixtureComponent implements OnInit, AfterViewInit, OnDestroy {
         this.isLoaded = true;
       });
     });
-  }
-
-  ngAfterViewInit(): void {
-    this.updateCompactView();
-  }
-
-  updateCompactView() {
-    this.isCompactView = this.container.nativeElement.offsetWidth <= this.COMPACT_WIDTH;
-  }
-
-  @HostListener('window:resize')
-  onResize() {
-    this.updateCompactView();
   }
 
   ngOnDestroy(): void {

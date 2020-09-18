@@ -1,20 +1,22 @@
 <div class="rounded bg-gray-800 shadow-md">
-  <div class="p-2 flex justify-between font-bold text-xl text-white rounded-t bg-gray-700">
+  <div class="p-2 flex justify-between items-center font-bold text-xl text-white rounded-t bg-gray-700">
     <span>Statistics</span>
-    <div class="flex">
+    <div class="ml-2 flex items-center">
       <app-drop-down *ngIf="leagueOptions"
-                     (ItemClickedValue)="onLeagueOptionClicked($event)"
-                     [options]="leagueOptions">
+                     [options]="leagueOptions"
+                     [isListPositionRight]="true"
+                     (ItemClickedValue)="onLeagueOptionClicked($event)">
       </app-drop-down>
       <app-drop-down class="ml-2"
                      *ngIf="seasonOptions"
-                     (ItemClickedValue)="onSeasonOptionClicked($event)"
-                     [options]="seasonOptions">
+                     [options]="seasonOptions"
+                     [isListPositionRight]="true"
+                     (ItemClickedValue)="onSeasonOptionClicked($event)">
       </app-drop-down>
     </div>
   </div>
-  <div class="px-1 py-2 md:px-2" *ngIf="!isLoading else loadingView">
-    <div *ngIf="leagueOptions else noDataView">
+  <div class="px-1 md:px-2 pt-2" *ngIf="!isLoading else loadingView">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-x-4" *ngIf="leagueOptions else noDataView">
       <app-team-stat *ngFor="let stat of activeTeamStatistics"
                      [statName]="stat.name"
                      [homeValue]="stat.home"

@@ -19,7 +19,7 @@ export class MatchesComponent implements OnInit {
   toggleOptions = ['Fixtures', 'Results'];
   toggleIndex = 0;
 
-  fixturePeriodOptions = ['1 Month', '6 Months', '1 Year', 'All'];
+  fixturePeriodOptions = ['1 Week', '2 Weeks', '1 Month', '6 Months', '1 Year', 'All'];
   fixturesPeriod = this.fixturePeriodOptions[0];
   nextFixturesPeriod = this.fixturePeriodOptions[0];
   prevFixturesPeriod = this.fixturePeriodOptions[0];
@@ -35,6 +35,7 @@ export class MatchesComponent implements OnInit {
         this.prevFixtures.push(fixture);
       }
     });
+    this.prevFixtures.reverse();
 
     this.updateFixtureGroups(true);
     this.updateFixtureGroups(false);
@@ -77,8 +78,14 @@ export class MatchesComponent implements OnInit {
     let periodDateMilliSeconds: number;
     const dayMultiplier = isNextFixtures ? 1 : -1; // Add or subtract days
     switch (this.fixturesPeriod) {
+      case '1 Week':
+        periodDateMilliSeconds = currDate.setDate(currDate.getDate() + 7 * dayMultiplier);  // Add or subtract 7 days
+        break;
+      case '2 Weeks':
+        periodDateMilliSeconds = currDate.setDate(currDate.getDate() + 14 * dayMultiplier);
+        break;
       case '1 Month':
-        periodDateMilliSeconds = currDate.setDate(currDate.getDate() + 30 * dayMultiplier);  // Add or subtract 30 days
+        periodDateMilliSeconds = currDate.setDate(currDate.getDate() + 30 * dayMultiplier);
         break;
       case '6 Months':
         periodDateMilliSeconds = currDate.setDate(currDate.getDate() + 180 * dayMultiplier);

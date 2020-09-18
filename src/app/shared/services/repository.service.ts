@@ -92,7 +92,7 @@ export class RepositoryService {
       })));
   }
 
-  getSquad(teamId: number, season: string) {
+  getTeamSquad(teamId: number, season: string) {
     // return this.apiService.getSquad(teamId, season)
       return this.apiService.getSquadTest()
       .pipe(map((responseJsonData => {
@@ -164,7 +164,6 @@ export class RepositoryService {
       const foundLeague = this.findLeague(leagueId);
       if (foundLeague) { return foundLeague; }
     }
-
 
     // return this.apiService.getLeagues()
     return this.apiService.getLeaguesTest()

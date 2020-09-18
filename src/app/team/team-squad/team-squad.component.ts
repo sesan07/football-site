@@ -9,16 +9,25 @@ import {RepositoryService} from '../../shared/services/repository.service';
 })
 export class TeamSquadComponent implements OnInit {
   @Input() teamId: number;
-  teamPlayers: TeamPlayer[] = [];
+  squad: [string, TeamPlayer[]][];
 
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
-    this.repositoryService.getSquad(this.teamId, '2019-2020').subscribe((teamPlayers: TeamPlayer[]) => {
-      this.teamPlayers = teamPlayers;
+    this.repositoryService.getTeamSquad(this.teamId, '2019-2020').subscribe((players: TeamPlayer[]) => {
+      const playerMap = new Map<string, TeamPlayer[]>();
+      players.forEach(player => {
+        if (playerMap.has(player.position)) {
+          playerMap.get(player.position).push(player);
+        } else {
+          playerMap.set(player.position, [player]);
+        }
+      });
 
-      // console.log('TeamComponent received teamPlayers: ' + teamPlayers.length);
-      // console.log(this.teamPlayers);
+      this.squad = Array.from(playerMap);
+      this.squad.forEach(position => {
+        position[1].sort((a, b) => a.firstname.localeCompare(b.firstname));
+      });
     });
   }
 

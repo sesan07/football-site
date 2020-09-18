@@ -1,9 +1,9 @@
 <div #container>
   <div *ngIf="isLoaded else loadingView">
-    <app-fixture-header *ngIf="!isCompactView"
+    <app-fixture-header class="hidden lg:block"
                         [fixture]="fixture">
     </app-fixture-header>
-    <app-fixture-header-compact *ngIf="isCompactView"
+    <app-fixture-header-compact class="lg:hidden"
                                 [fixture]="fixture">
     </app-fixture-header-compact>
 
@@ -16,9 +16,9 @@
         <app-fixture-statistics *ngIf="statistics"
                                 [statistics]="statistics">
         </app-fixture-statistics>
-        <app-fixture-head-to-head *ngIf="fixture"
-                                  [homeTeamId]="fixture.homeTeam.team_id"
-                                  [awayTeamId]="fixture.awayTeam.team_id">
+        <app-fixture-head-to-head class="xl:hidden"
+                                  *ngIf="headToHeadFixtureGroups"
+                                  [fixtureGroups]="headToHeadFixtureGroups">
         </app-fixture-head-to-head>
       </div>
 
@@ -29,6 +29,9 @@
                               [homeLineUp]="homeLineUp"
                               [awayLineUp]="awayLineUp">
         </app-fixture-line-ups>
+        <app-fixture-head-to-head class="hidden xl:block" *ngIf="headToHeadFixtureGroups"
+                                  [fixtureGroups]="headToHeadFixtureGroups">
+        </app-fixture-head-to-head>
       </div>
     </div>
   </div>

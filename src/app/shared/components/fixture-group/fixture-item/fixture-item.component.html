@@ -81,7 +81,7 @@
         <!--    Date-->
         <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
               [class.mb-2]="showStatus"
-              *ngIf="showDate">{{fixture.event_date | date:'shortDate'}}</span>
+              *ngIf="showDate">{{fixture.event_date | date:'d/M/yy'}}</span>
         <!--    Status-->
         <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
               *ngIf="showStatus">{{fixture.statusShort}}</span>

@@ -1,8 +1,15 @@
 <div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
   <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Squad</span>
-  <div>
-    <app-team-player *ngFor="let teamPlayer of teamPlayers"
-                     [teamPlayer]="teamPlayer">
-    </app-team-player>
+  <div class="px-2 pt-2">
+    <div class="mb-2 flex flex-col text-white rounded bg-gray-800 overflow-hidden shadow-md"
+         *ngFor="let position of squad">
+      <span class="px-4 py-2 font-semibold text-white bg-gray-700">{{position[0]}}s</span>
+      <div class="pb-2 grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-x-4 bg-gray-600">
+        <div class="pl-4 pb-1 pt-3 text-sm border-b last:border-b-0 border-gray-500"
+             *ngFor="let player of position[1]">
+          <span class="link">{{player.firstname}} {{player.lastname}}</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
