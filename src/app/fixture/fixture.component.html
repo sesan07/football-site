@@ -11,7 +11,8 @@
       <div class="w-full xl:w-1/2 xl:mr-8">
         <app-fixture-events *ngIf="fixture.events"
                             [fixtureEvents]="fixture.events"
-                            [homeTeamId]="fixture.homeTeam.team_id">
+                            [homeTeamId]="fixture.homeTeam.team_id"
+                            [isFullTime]="fixture.statusShort ==='FT'">
         </app-fixture-events>
         <app-fixture-statistics *ngIf="statistics"
                                 [statistics]="statistics">

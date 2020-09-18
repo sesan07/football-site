@@ -3,8 +3,11 @@
   <div class="flex mb-2 px-2 py-1 rounded bg-gray-700">
     <img class="w-8 mr-2"
          [src]="team.logo ? team.logo : '../../../../assets/img/soccer_ball.png'"
-         alt="Site Logo">
-    <span class="flex-grow font-semibold text-left text-lg link">{{team.team_name}}</span>
+         alt="Team logo">
+    <a class="flex-grow font-semibold text-left text-lg link"
+          [routerLink]="['/team', team.team_name, team.team_id]">
+      {{team.team_name}}
+    </a>
     <span>{{lineUp.formation}}</span>
   </div>
 

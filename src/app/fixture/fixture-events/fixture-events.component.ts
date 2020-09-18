@@ -9,6 +9,7 @@ import {FixtureEvent} from '../../shared/models/fixture.model';
 export class FixtureEventsComponent implements OnInit {
   @Input() fixtureEvents: FixtureEvent[];
   @Input() homeTeamId: number;
+  @Input() isFullTime: boolean;
 
   constructor() { }
 

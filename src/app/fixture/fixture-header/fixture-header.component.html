@@ -3,7 +3,10 @@
     <img class="w-32"
          [src]="fixture.homeTeam.logo ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
          alt="Site Logo">
-    <span class="mt-2 font-semibold text-center text-2xl link">{{fixture.homeTeam.team_name}}</span>
+    <a class="mt-2 font-semibold text-center text-2xl link"
+       [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]">
+      {{fixture.homeTeam.team_name}}
+    </a>
   </div>
 
   <div class="flex flex-col justify-between items-center px-4">
@@ -32,6 +35,9 @@
     <img class="w-32"
          [src]="fixture.awayTeam.logo ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
          alt="Site Logo">
-    <span class="mt-2 font-semibold text-center text-2xl link">{{fixture.awayTeam.team_name}}</span>
+    <a class="mt-2 font-semibold text-center text-2xl link"
+       [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]">
+      {{fixture.awayTeam.team_name}}
+    </a>
   </div>
 </div>

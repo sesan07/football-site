@@ -1,6 +1,6 @@
 <div class="mb-4 rounded bg-gray-800 overflow-hidden shadow-md">
   <span class="flex p-2 font-bold text-xl text-white bg-gray-700">Events</span>
-  <div class="px-1 py-2 md:px-2">
+  <div class="px-1 py-2 md:px-2" *ngIf="fixtureEvents.length > 0">
     <div class="flex flex-col items-center">
       <span class="mb-1 font-semibold text-center text-white">Kick-off</span>
       <span class="h-4 w-2 rounded-t bg-gray-500"></span>
@@ -13,7 +13,7 @@
 
     <div class="flex flex-col items-center">
       <span class="h-4 w-2 rounded-b bg-gray-500"></span>
-      <span class="mt-1 font-semibold text-center text-white">Full Time</span>
+      <span class="mt-1 font-semibold text-center text-white" *ngIf="isFullTime">Full Time</span>
     </div>
   </div>
 </div>

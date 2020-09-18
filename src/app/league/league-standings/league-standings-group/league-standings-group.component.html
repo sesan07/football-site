@@ -23,7 +23,12 @@
     <tbody class="bg-gray-600">
     <tr class="border-t border-gray-500" *ngFor="let teamStanding of groupStandings">
       <td class="text-center" [style]="{backgroundColor: getRankColor(teamStanding.description)}">{{teamStanding.rank}}</td>
-      <td class="py-2 pl-2"><a class="link">{{teamStanding.teamName}}</a></td>
+      <td class="py-2 pl-2">
+        <a class="link"
+           [routerLink]="['/team', teamStanding.teamName, teamStanding.team_id]">
+          {{teamStanding.teamName}}
+        </a>
+      </td>
       <td class="py-2 text-center ">{{teamStanding.all.matchsPlayed}}</td>
       <td class="py-2 text-center hidden sm:table-cell">{{teamStanding.all.win}}</td>
       <td class="py-2 text-center hidden sm:table-cell">{{teamStanding.all.draw}}</td>

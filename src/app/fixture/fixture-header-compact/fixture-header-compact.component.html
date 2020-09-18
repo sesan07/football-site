@@ -7,13 +7,19 @@
         <img class="w-10 mr-2"
              [src]="fixture.homeTeam.logo ? fixture.homeTeam.logo : '../../assets/img/soccer_ball.png'"
              alt="Site Logo">
-        <span class="font-semibold text-lg link">{{fixture.homeTeam.team_name}}</span>
+        <a class="font-semibold text-lg link"
+              [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]">
+          {{fixture.homeTeam.team_name}}
+        </a>
       </div>
       <div class="mt-2 flex items-center">
         <img class="w-10 mr-2"
              [src]="fixture.awayTeam.logo ? fixture.awayTeam.logo : '../../assets/img/soccer_ball.png'"
              alt="Site Logo">
-        <span class="font-semibold text-lg link">{{fixture.awayTeam.team_name}}</span>
+        <a class="font-semibold text-lg link"
+              [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]">
+          {{fixture.awayTeam.team_name}}
+        </a>
       </div>
     </div>
 
