@@ -5,10 +5,10 @@
        (click)="isCollapsed = !isCollapsed">
     <div class="w-full text-sm text-white">
       <span>{{fixtureGroup.country}} - </span>
-      <span class="link"
+      <a class="link"
             [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
           {{fixtureGroup.leagueName}}
-      </span>
+      </a>
     </div>
 
     <!--    Date-->

@@ -1,5 +1,5 @@
 <div class="flex px-2 py-1 border-t border-gray-500 cursor-pointer bg-gray-600 hover:bg-gray-500">
-  <span class="w-10 mr-2 rounded text-sm text-center text-black bg-white">{{player ? player.number : '-'}}</span>
-  <span class="flex-grow mr-2 text-sm link">{{player ? player.player : '-'}}</span>
-  <span class="w-10 rounded text-sm text-center text-black bg-white">{{player ? player.pos : '-'}}</span>
+  <span class="w-10 mr-2 rounded text-sm text-center text-black bg-white">{{player.number !== null ? player.number : '-'}}</span>
+  <a class="flex-grow mr-2 text-sm link">{{player.player}}</a>
+  <span class="w-10 rounded text-sm text-center text-black bg-white">{{player.pos ? player.pos : '-'}}</span>
 </div>

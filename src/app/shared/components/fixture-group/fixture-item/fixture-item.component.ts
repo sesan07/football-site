@@ -38,17 +38,8 @@ export class FixtureItemComponent implements OnInit, OnDestroy {
     });
   }
 
-  onTeamClicked(event: Event, isHome: boolean) {
+  onTeamClicked(event: Event) {
     event.stopPropagation();  // Prevent clicking fixture underneath team
-
-    const teamName = isHome ? this.fixture.homeTeam.team_name : this.fixture.awayTeam.team_name;
-    const teamId = isHome ? this.fixture.homeTeam.team_id : this.fixture.awayTeam.team_id;
-    this.router.navigate(['/team', teamName, teamId]);
-
-  }
-
-  onFixtureClicked() {
-    this.router.navigate(['/fixture', this.fixture.fixture_id]);
   }
 
   onFavouriteClicked(event: Event) {

@@ -1,6 +1,6 @@
 <!-- Fixture -->
 <div class="flex items-center py-1 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500"
-     (click)="onFixtureClicked()">
+     [routerLink]="['/fixture', fixture.fixture_id]">
 
 <!--  Default View-->
   <div class="px-4 flex flex-grow" *ngIf="!isCompactView else compactView">
@@ -22,10 +22,11 @@
 
     <div class="flex flex-grow items-center justify-center">
       <div class="flex justify-end w-1/2">
-        <span class="text-right text-sm link"
-              (click)="onTeamClicked($event, true)">
+        <a class="text-right text-sm link"
+              [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]"
+              (click)="onTeamClicked($event)">
           {{fixture.homeTeam.team_name}}
-        </span>
+        </a>
       </div>
 
       <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-gray-700"
@@ -39,9 +40,10 @@
 
 
       <div class="w-1/2">
-        <span class="text-left text-sm link"
-              (click)="onTeamClicked($event, false)"
-        >{{fixture.awayTeam.team_name}}</span>
+        <a class="text-left text-sm link"
+              [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]"
+              (click)="onTeamClicked($event)"
+        >{{fixture.awayTeam.team_name}}</a>
       </div>
     </div>
 
@@ -90,16 +92,18 @@
       <!--    Teams-->
       <div class="flex flex-col flex-grow mr-1">
         <div class="w-full mb-2">
-          <span class="text-left text-sm link"
-                (click)="onTeamClicked($event, true)">
+          <a class="text-left text-sm link"
+             [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]"
+             (click)="onTeamClicked($event)">
             {{fixture.homeTeam.team_name}}
-          </span>
+          </a>
         </div>
         <div class="w-full">
-          <span class="text-left text-sm link"
-                (click)="onTeamClicked($event, false)">
+          <a class="text-left text-sm link"
+             [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]"
+             (click)="onTeamClicked($event)">
             {{fixture.awayTeam.team_name}}
-          </span>
+          </a>
         </div>
       </div>
 
