@@ -38,9 +38,3 @@ interface Fixtures {
 export interface LeaguesApiResponse {
   api: Api;
 }
-
-export interface FavoriteLeague {
-  leagueId: number;
-  leagueName: string;
-  leagueLogo: string;
-}

@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {FavoriteFixture} from '../../shared/models/fixture.model';
 import {FavoritesService} from '../../shared/services/favorites.service';
 import {Router} from '@angular/router';
+import {FavoriteFixture} from '../../shared/models/favorite.model';
 
 @Component({
   selector: 'app-sidebar-fixture-item',
@@ -19,12 +19,13 @@ export class SidebarFixtureItemComponent implements OnInit {
 
   onFavouriteClicked(event: Event) {
     event.stopPropagation();
-    this.favoritesService.removeFixture(this.fixture.fixtureId);
+    this.favoritesService.removeFixture(this.fixture.id);
   }
 
   onClicked() {
     this.clicked.emit();
-    this.router.navigate(['/fixture', this.fixture.fixtureId]);
+    this.favoritesService.fixtureClicked(this.fixture.id);
+    this.router.navigate(['/fixture', this.fixture.id]);
   }
 
 }

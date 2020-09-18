@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import {FavoriteTeam, Team} from '../models/team.model';
-import {FavoriteLeague, League} from '../models/league.model';
-import {FavoriteFixture, Fixture} from '../models/fixture.model';
+import {League} from '../models/league.model';
+import {Fixture} from '../models/fixture.model';
 import {Subject} from 'rxjs';
+import {FavoriteFixture, FavoriteLeague, FavoriteTeam} from '../models/favorite.model';
+import {Team} from '../models/team.model';
 
 @Injectable({
   providedIn: 'root'
@@ -42,38 +43,41 @@ export class FavoritesService {
 
   addTeam(team: Team) {
     const favoriteTeam: FavoriteTeam = {
-      teamId: team.team_id,
+      id: team.team_id,
       teamName: team.name,
-      teamLogo: team.logo
+      teamLogo: team.logo,
+      clickCount: 0
     };
 
-    this.teams.set(favoriteTeam.teamId.toString(), favoriteTeam);
+    this.teams.set(favoriteTeam.id.toString(), favoriteTeam);
     this.favoriteTeamAdded.next(favoriteTeam);
     localStorage.setItem('teams', JSON.stringify(Array.from(this.teams)));
   }
 
   addLeague(league: League) {
     const favoriteLeague: FavoriteLeague = {
-      leagueId: league.league_id,
+      id: league.league_id,
       leagueName: league.name,
-      leagueLogo: league.logo
+      leagueLogo: league.logo,
+      clickCount: 0
     };
 
-    this.leagues.set(favoriteLeague.leagueId.toString(), favoriteLeague);
+    this.leagues.set(favoriteLeague.id.toString(), favoriteLeague);
     this.favoriteLeagueAdded.next(favoriteLeague);
     localStorage.setItem('leagues', JSON.stringify(Array.from(this.leagues)));
   }
 
   addFixture(fixture: Fixture) {
     const favoriteFixture: FavoriteFixture = {
-      fixtureId: fixture.fixture_id,
+      id: fixture.fixture_id,
       homeTeamName: fixture.homeTeam.team_name,
       awayTeamName: fixture.awayTeam.team_name,
       homeTeamLogo: fixture.homeTeam.logo,
-      awayTeamLogo: fixture.awayTeam.logo
+      awayTeamLogo: fixture.awayTeam.logo,
+      clickCount: 0
     };
 
-    this.fixtures.set(favoriteFixture.fixtureId.toString(), favoriteFixture);
+    this.fixtures.set(favoriteFixture.id.toString(), favoriteFixture);
     this.favoriteFixtureAdded.next(favoriteFixture);
 
     localStorage.setItem('fixtures', JSON.stringify(Array.from(this.fixtures)));
@@ -122,5 +126,20 @@ export class FavoritesService {
 
   isFavoriteFixture(fixtureId: number) {
     return this.fixtures.has(fixtureId.toString());
+  }
+
+  teamClicked(teamId: number) {
+    this.teams.get(teamId.toString()).clickCount++;
+    localStorage.setItem('teams', JSON.stringify(Array.from(this.teams)));
+  }
+
+  leagueClicked(leagueId: number) {
+    this.leagues.get(leagueId.toString()).clickCount++;
+    localStorage.setItem('leagues', JSON.stringify(Array.from(this.leagues)));
+  }
+
+  fixtureClicked(fixtureId: number) {
+    this.fixtures.get(fixtureId.toString()).clickCount++;
+    localStorage.setItem('fixtures', JSON.stringify(Array.from(this.fixtures)));
   }
 }

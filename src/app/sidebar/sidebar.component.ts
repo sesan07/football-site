@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {FavoritesService} from '../shared/services/favorites.service';
-import {FavoriteTeam} from '../shared/models/team.model';
-import {FavoriteLeague} from '../shared/models/league.model';
-import {FavoriteFixture} from '../shared/models/fixture.model';
+import {FavoriteFixture, FavoriteLeague, FavoriteTeam} from '../shared/models/favorite.model';
 
 
 @Component({
@@ -35,15 +33,18 @@ export class SidebarComponent implements OnInit {
   }
 
   private updateTeams() {
-    this.teams = this.favoritesService.getTeams();
+    this.teams = this.favoritesService.getTeams()
+      .sort((a, b) => b.clickCount - a.clickCount);
   }
 
   private updateLeagues() {
-    this.leagues = this.favoritesService.getLeagues();
+    this.leagues = this.favoritesService.getLeagues()
+      .sort((a, b) => b.clickCount - a.clickCount);
   }
 
   private updateFixtures() {
-    this.fixtures = this.favoritesService.getFixtures();
+    this.fixtures = this.favoritesService.getFixtures()
+      .sort((a, b) => b.clickCount - a.clickCount);
   }
 
   onFavoriteClicked() {

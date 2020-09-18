@@ -21,9 +21,3 @@ interface Api {
 export interface TeamApiResponse {
   api: Api;
 }
-
-export interface FavoriteTeam {
-  teamId: number;
-  teamName: string;
-  teamLogo: string;
-}
