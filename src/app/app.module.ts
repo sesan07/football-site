@@ -6,8 +6,6 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthInterceptorService} from './shared/services/auth-interceptor.service';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchComponent } from './search/search.component';
-import { NewsComponent } from './home/news/news.component';
-import { HomeFixturesComponent } from './home/home-fixtures/home-fixtures.component';
 import { FixtureGroupComponent } from './shared/components/fixture-group/fixture-group.component';
 import { FixtureItemComponent } from './shared/components/fixture-group/fixture-item/fixture-item.component';
 import { TeamComponent } from './team/team.component';
@@ -45,8 +43,6 @@ import { LeagueStandingsGroupComponent } from './league/league-standings/league-
     AppComponent,
     SidebarComponent,
     SearchComponent,
-    NewsComponent,
-    HomeFixturesComponent,
     FixtureGroupComponent,
     FixtureItemComponent,
     TeamComponent,

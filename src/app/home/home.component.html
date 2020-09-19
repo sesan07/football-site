@@ -1,4 +1,32 @@
-<div class="mb-4">
-  <app-news></app-news>
+<div #container>
+  <!-- Toggle -->
+  <div class="mb-2">
+    <app-tab-toggle [buttonLabels]="toggleOptions"
+                    (activeChanged)="onToggleButtonClicked($event)">
+    </app-tab-toggle>
+  </div>
+
+  <!--  All Fixtures-->
+  <div *ngIf="activeToggleIndex === 0">
+    <app-date-picker [startDate]="allFixturesDate"
+                     (dateSelected)="onDateSelected($event)">
+    </app-date-picker>
+
+    <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
+                       [fixtureGroup]="fixtureGroup"
+                       [date]="getAllFixturesDate()"
+                       [isCompactView]="isCompactView"
+                       [isCollapsed]="!fixtureGroup.isFavorite">
+    </app-fixture-group>
+  </div>
+  <!--  Live Fixtures-->
+  <div *ngIf="activeToggleIndex === 1">
+    <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups"
+                       [fixtureGroup]="fixtureGroup"
+                       [date]="getLiveDate()"
+                       [isCompactView]="isCompactView"
+                       [isCollapsed]="!fixtureGroup.isFavorite">
+    </app-fixture-group>
+  </div>
+
 </div>
-<app-home-fixtures></app-home-fixtures>
