@@ -1,5 +1,5 @@
 <!-- Fixture -->
-<div class="flex items-center py-1 text-white border-t border-gray-500 bg-gray-600 cursor-pointer hover:bg-gray-500"
+<div class="flex items-center py-1 text-white border-t border-dark-100 bg-dark-200 cursor-pointer hover:bg-dark-300"
      [routerLink]="['/fixture', fixture.fixture_id]">
 
 <!--  Default View-->
@@ -8,13 +8,13 @@
     <div class="w-20 flex"
          [class.w-40]="showDate">
       <!--    Date-->
-      <span class="w-24 mr-2 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-24 mr-2 py-1 text-center text-sm rounded bg-dark-400"
             *ngIf="showDate">
         {{fixture.event_date | date:'d MMM, yy'}}
       </span>
 
       <!--    Status-->
-      <span class="w-12 mr-2 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-12 mr-2 py-1 text-center text-sm rounded bg-dark-400"
             [class.invisible]="!showStatus">
         {{fixture.statusShort}}
       </span>
@@ -29,11 +29,11 @@
         </a>
       </div>
 
-      <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-dark-400"
             *ngIf="showScore">
         {{fixture.goalsHomeTeam + ' - ' + fixture.goalsAwayTeam}}
       </span>
-      <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-dark-400"
             *ngIf="showTime">
         {{fixture.event_date | date:'HH:mm'}}
       </span>
@@ -50,7 +50,7 @@
     <div class="w-20 flex justify-end"
          [class.w-40]="showDate">
       <!--    Elapsed Time-->
-      <span class="w-8 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-8 py-1 text-center text-sm rounded bg-dark-400"
             *ngIf="showElapsed">
         {{fixture.elapsed + '\''}}
       </span>
@@ -77,15 +77,15 @@
       <div class="flex flex-col mr-1"
            [ngClass]="showDate ? 'w-16' : 'w-12'">
         <!--    Time-->
-        <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
+        <span class="w-full py-1 text-center text-sm rounded bg-dark-400"
               [class.mb-2]="showStatus || showDate"
               *ngIf="showTime">{{fixture.event_date | date:'HH:mm'}}</span>
         <!--    Date-->
-        <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
+        <span class="w-full py-1 text-center text-sm rounded bg-dark-400"
               [class.mb-2]="showStatus"
               *ngIf="showDate">{{fixture.event_date | date:'d/M/yy'}}</span>
         <!--    Status-->
-        <span class="w-full py-1 text-center text-sm rounded bg-gray-700"
+        <span class="w-full py-1 text-center text-sm rounded bg-dark-400"
               *ngIf="showStatus">{{fixture.statusShort}}</span>
       </div>
 
@@ -108,7 +108,7 @@
       </div>
 
       <!--    Elapsed Time-->
-      <span class="w-8 py-1 text-center text-sm rounded bg-gray-700"
+      <span class="w-8 py-1 text-center text-sm rounded bg-dark-400"
             [class.mr-1]="showScore"
             *ngIf="showElapsed">{{fixture.elapsed + '\''}}
       </span>
@@ -116,8 +116,8 @@
       <!--    Score-->
       <div class="flex flex-col w-8"
            *ngIf="showScore">
-        <span class="w-full pt-2 pb-1 text-center text-sm rounded-t bg-gray-700">{{fixture.goalsHomeTeam}}</span>
-        <span class="w-full pt-1 pb-2 text-center text-sm rounded-b bg-gray-700">{{fixture.goalsAwayTeam}}</span>
+        <span class="w-full pt-2 pb-1 text-center text-sm rounded-t bg-dark-400">{{fixture.goalsHomeTeam}}</span>
+        <span class="w-full pt-1 pb-2 text-center text-sm rounded-b bg-dark-400">{{fixture.goalsAwayTeam}}</span>
       </div>
     </div>
   </ng-template>

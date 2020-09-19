@@ -37,6 +37,7 @@ import {DatePipe} from '@angular/common';
 import { DatePickerComponent } from './shared/components/date-picker/date-picker.component';
 import { LeagueStandingsComponent } from './league/league-standings/league-standings.component';
 import { LeagueStandingsGroupComponent } from './league/league-standings/league-standings-group/league-standings-group.component';
+import { LoaderComponent } from './shared/components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { LeagueStandingsGroupComponent } from './league/league-standings/league-
     MatchesComponent,
     DatePickerComponent,
     LeagueStandingsComponent,
-    LeagueStandingsGroupComponent
+    LeagueStandingsGroupComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

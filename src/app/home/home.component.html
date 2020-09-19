@@ -12,20 +12,25 @@
                      (dateSelected)="onDateSelected($event)">
     </app-date-picker>
 
-    <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups"
+    <app-loader *ngIf="isAllLoading"></app-loader>
+
+    <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups; let i = index"
                        [fixtureGroup]="fixtureGroup"
                        [date]="getAllFixturesDate()"
                        [isCompactView]="isCompactView"
-                       [isCollapsed]="!fixtureGroup.isFavorite">
+                       [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
     </app-fixture-group>
   </div>
   <!--  Live Fixtures-->
   <div *ngIf="activeToggleIndex === 1">
-    <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups"
+
+    <app-loader *ngIf="isLiveLoading"></app-loader>
+
+    <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups; let i = index"
                        [fixtureGroup]="fixtureGroup"
                        [date]="getLiveDate()"
                        [isCompactView]="isCompactView"
-                       [isCollapsed]="!fixtureGroup.isFavorite">
+                       [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
     </app-fixture-group>
   </div>
 

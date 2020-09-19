@@ -1,8 +1,8 @@
-<div class="mb-4 rounded overflow-hidden shadow-md bg-gray-700">
-  <span class="flex p-2 font-bold text-md text-white">{{groupName}}</span>
+<div class="mb-4 rounded overflow-hidden shadow-md bg-dark-600">
+  <span class="flex p-2 font-bold text-md text-white bg-dark-400">{{groupName}}</span>
   <table class="w-full table-fixed text-white text-sm">
     <thead>
-    <tr class="bg-gray-900">
+    <tr class="bg-dark-600">
       <th class="w-12">#</th>
       <th class="w-3/5 sm:w-2/5 py-2">Team</th>
       <th class="py-2 hidden xxl:table-cell">Played</th>
@@ -20,8 +20,8 @@
       <th class="py-2 xxl:hidden">Pts</th>
     </tr>
     </thead>
-    <tbody class="bg-gray-600">
-    <tr class="border-t border-gray-500" *ngFor="let teamStanding of groupStandings">
+    <tbody class="bg-dark-200">
+    <tr class="border-t border-dark-100" *ngFor="let teamStanding of groupStandings">
       <td class="text-center" [style]="{backgroundColor: getRankColor(teamStanding.description)}">{{teamStanding.rank}}</td>
       <td class="py-2 pl-2">
         <a class="link"
@@ -40,9 +40,9 @@
     </tbody>
   </table>
 
-  <div class="my-1">
+  <div class="py-1 border-t border-dark-100 bg-dark-400">
     <div class="px-2 py-1 flex items-center" *ngFor="let descriptionPair of descriptionPairs">
-      <span class="h-5 w-5 rounded border border-gray-300 bg-green-500" [style]="{backgroundColor: descriptionPair[1]}"></span>
+      <span class="h-5 w-5 rounded border border-gray-300" [style]="{backgroundColor: descriptionPair[1]}"></span>
       <span class="ml-2 text-sm text-white">{{descriptionPair[0]}}</span>
     </div>
 

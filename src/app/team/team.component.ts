@@ -5,6 +5,8 @@ import {Team} from '../shared/models/team.model';
 import {RepositoryService} from '../shared/services/repository.service';
 import {FavoritesService} from '../shared/services/favorites.service';
 import {Fixture} from '../shared/models/fixture.model';
+import {Title} from '@angular/platform-browser';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-team',
@@ -22,12 +24,14 @@ export class TeamComponent implements OnInit, OnDestroy {
   favoritesSub: Subscription;
 
   constructor(private activatedRoute: ActivatedRoute,
+              private titleService: Title,
               private repositoryService: RepositoryService,
               private favoritesService: FavoritesService) { }
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
       this.teamId = params.id;
+      this.titleService.setTitle(params.name + ' - ' + environment.appTitle);
 
       this.repositoryService.getTeam(this.teamId).subscribe((team: Team) => {
         this.team = team;

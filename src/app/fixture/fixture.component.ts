@@ -4,6 +4,8 @@ import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/services/repository.service';
 import {Fixture, FixtureGroup, FixtureLineUp, FixtureStatistic} from '../shared/models/fixture.model';
 import {FixtureService} from '../shared/services/fixture.service';
+import {environment} from '../../environments/environment';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fixture',
@@ -20,18 +22,19 @@ export class FixtureComponent implements OnInit, OnDestroy {
   statistics: [string, FixtureStatistic][];
   headToHeadFixtureGroups: FixtureGroup[];
 
-  isLoaded = false;
-
   constructor(private activatedRoute: ActivatedRoute,
+              private titleService: Title,
               private repositoryService: RepositoryService,
               private fixtureService: FixtureService) { }
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
       this.fixtureId = params.id;
+      this.titleService.setTitle('Fixture' + ' - ' + environment.appTitle);
 
       this.repositoryService.getFixture(this.fixtureId).subscribe((fixture: Fixture) => {
         this.fixture = fixture;
+        this.titleService.setTitle(fixture.homeTeam.team_name + ' vs ' + fixture.awayTeam.team_name + ' - ' + environment.appTitle);
 
         // Line Ups
         if (fixture.lineups) {
@@ -54,10 +57,12 @@ export class FixtureComponent implements OnInit, OnDestroy {
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
         }
-
-        this.isLoaded = true;
       });
     });
+  }
+
+  isLoaded() {
+    return this.fixture && this.headToHeadFixtureGroups;
   }
 
   ngOnDestroy(): void {

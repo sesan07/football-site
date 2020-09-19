@@ -11,17 +11,14 @@
   cursor-pointer
   font-semibold
   text-sm
-  bg-gray-700
-  text-white
-  transition-colors
-  duration-200
-  ease-in-out;
+  bg-dark-400
+  text-white;
 }
 
 .tab-button:hover {
   height: 2.25rem;
   @apply
-  bg-gray-600
+  bg-dark-600
   text-white;
 }
 
@@ -33,7 +30,7 @@
 .tab-button.active {
   height: 2.25rem;
   @apply
-  bg-gray-100
+  bg-white
   text-black;
 }
 

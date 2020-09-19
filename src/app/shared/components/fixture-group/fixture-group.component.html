@@ -1,9 +1,9 @@
 <!-- Country-League fixtures -->
-<div class="mb-2 rounded rounded-lg overflow-hidden shadow-md">
+<div class="mb-2 text-white rounded rounded-lg overflow-hidden shadow-md">
   <!-- Header -->
-  <div class="flex flex-grow items-center py-2 bg-gray-700 px-4 cursor-pointer"
+  <div class="flex flex-grow items-center py-2 bg-dark-400 px-4 cursor-pointer"
        (click)="isCollapsed = !isCollapsed">
-    <div class="w-full text-sm text-white">
+    <div class="w-full text-sm ">
       <span>{{fixtureGroup.country}} - </span>
       <a class="truncate link"
             [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
@@ -12,7 +12,7 @@
     </div>
 
     <!--    Date-->
-    <span class="w-24 mr-8 text-center text-sm rounded bg-gray-100"
+    <span class="w-24 mr-8 text-center text-sm rounded bg-dark-100"
           *ngIf="date && !isCompactView">
       {{date | date:'d MMM, yy'}}
     </span>

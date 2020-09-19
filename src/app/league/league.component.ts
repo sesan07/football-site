@@ -5,6 +5,8 @@ import {ActivatedRoute, Params} from '@angular/router';
 import {RepositoryService} from '../shared/services/repository.service';
 import {Fixture} from '../shared/models/fixture.model';
 import {FavoritesService} from '../shared/services/favorites.service';
+import {environment} from '../../environments/environment';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-league',
@@ -22,12 +24,14 @@ export class LeagueComponent implements OnInit, OnDestroy {
   favoritesSub: Subscription;
 
   constructor(private activatedRoute: ActivatedRoute,
+              private titleService: Title,
               private repositoryService: RepositoryService,
               private favoritesService: FavoritesService) { }
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
       this.leagueId = params.id;
+      this.titleService.setTitle(params.name + ' - ' + environment.appTitle);
 
       const response = this.repositoryService.getLeague(this.leagueId);
       if (this.isLeague(response)) {

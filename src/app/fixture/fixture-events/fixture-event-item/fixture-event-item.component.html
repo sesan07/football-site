@@ -1,6 +1,6 @@
 <div class="flex h-16 items-center justify-center text-white">
 
-  <div class="flex w-1/2 items-center justify-end border-b border-gray-500"
+  <div class="flex w-1/2 items-center justify-end border-b border-dark-100"
        [class.invisible]="!isHomeTeam">
 
 <!--    Players-->
@@ -8,7 +8,7 @@
       <span class="h-6" *ngIf="playerOne">
         {{playerOne}}
       </span>
-      <span class="h-6 text-gray-500" *ngIf="playerTwo">
+      <span class="h-6 text-white opacity-50" *ngIf="playerTwo">
         {{playerTwo}}
       </span>
     </div>
@@ -49,17 +49,13 @@
   </div>
 
   <div class="flex h-full w-16 justify-center items-center mx-1 md:mx-4 relative">
-
-    <span class="h-full w-2 bg-gray-500"></span>
-
-    <div class="flex w-12 h-12 items-center justify-center rounded bg-gray-700 absolute">
+    <span class="h-full w-2 bg-dark-200 opacity-25"></span>
+    <div class="flex w-12 h-8 items-center justify-center rounded bg-dark-200 absolute">
       <span class="text-sm">{{fixtureEvent.elapsed}}'{{(fixtureEvent.elapsed_plus ? ' +' + fixtureEvent.elapsed_plus : '')}}</span>
     </div>
-
-
   </div>
 
-  <div class="flex w-1/2 items-center justify-start border-b border-gray-500"
+  <div class="flex w-1/2 items-center justify-start border-b border-dark-100"
        [class.invisible]="isHomeTeam">
 
     <!--    Goal icon-->
@@ -100,7 +96,7 @@
       <span class="h-6" *ngIf="playerOne">
         {{playerOne}}
       </span>
-      <span class="h-6 text-gray-500" *ngIf="playerTwo">
+      <span class="h-6 text-white opacity-50" *ngIf="playerTwo">
         {{playerTwo}}
       </span>
     </div>

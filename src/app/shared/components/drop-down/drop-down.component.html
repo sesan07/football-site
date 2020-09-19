@@ -1,12 +1,12 @@
 <div>
-  <div class="dropdown relative" [class.block]="isOpen" [class.inline-block]="!isOpen">
+  <div class="relative" [class.block]="isOpen" [class.inline-block]="!isOpen">
     <button class="dropdown-button py-1 px-4"
             (click)="onMainButtonClicked()"
             (focusout)="onFocusOut()">
       <span class="mr-1">{{activeButtonLabel}}</span>
       <img class="h-3 w-3 ml-1 transition duration-200 transform" [class.rotate-180]="!isOpen" src="../../../../assets/img/up-arrow.png" alt="Dropdown arrow">
     </button>
-    <ul class="dropdown-menu absolute text-sm text-white pt-1 cursor-pointer z-10 overflow-auto"
+    <ul class="absolute text-sm text-white pt-1 cursor-pointer z-10 overflow-auto"
         [class.right-0]="isListPositionRight"
         [class.block]="isOpen"
         *ngIf="isOpen"
@@ -14,7 +14,7 @@
         (mouseleave)="onListExit()"
         (focusout)="onFocusOut()">
       <li *ngFor="let option of options; let i = index">
-        <a class="py-1 px-4 block whitespace-no-wrap border-l border-r border-gray-500 bg-gray-700 hover:bg-gray-600"
+        <a class="py-1 px-4 block whitespace-no-wrap border-l border-r border-dark-100 bg-dark-400 hover:bg-dark-600"
            [ngClass]="
            {'rounded-t border-t': (i === 0),
             'rounded-b border-b': (i === lastIndex)}"

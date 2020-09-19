@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center rounded bg-gray-800 text-white">
+<div class="flex flex-col items-center rounded bg-dark-200 text-white">
   <div class="flex w-full justify-evenly px-2 py-4">
     <div class="flex flex-col items-center px-4">
       <img class="w-32"
@@ -12,11 +12,11 @@
 
     <div class="px-4 flex flex-col justify-between items-center space-y-2">
       <span class="text-center text-lg">{{fixture.league.name}}</span>
-      <span class="w-32 rounded rounded bg-gray-700 text-3xl text-center" *ngIf="showScore">{{fixture.goalsHomeTeam}} - {{fixture.goalsAwayTeam}}</span>
-      <span class="w-32 rounded rounded bg-gray-700 text-3xl text-center" *ngIf="showVs">VS</span>
+      <span class="w-32 rounded rounded bg-dark-400 text-5xl text-center" *ngIf="showScore">{{fixture.goalsHomeTeam}} - {{fixture.goalsAwayTeam}}</span>
+      <span class="w-32 rounded rounded bg-dark-400 text-5xl text-center" *ngIf="showVs">-</span>
       <div class="flex justify-evenly w-32" *ngIf="showElapsed || showStatus">
-        <span class="w-10 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showElapsed">{{fixture.elapsed}}'</span>
-        <span class="w-16 py-1 rounded bg-gray-700 text-xl text-center" *ngIf="showStatus">{{fixture.statusShort}}</span>
+        <span class="w-10 py-1 rounded bg-dark-400 text-xl text-center" *ngIf="showElapsed">{{fixture.elapsed}}'</span>
+        <span class="w-16 py-1 rounded bg-dark-400 text-xl text-center" *ngIf="showStatus">{{fixture.statusShort}}</span>
       </div>
 
       <div class="flex justify-between">

@@ -9,14 +9,17 @@ import {LeagueTopScorer} from '../../shared/models/league-top-scorer.model';
 })
 export class LeagueTopScorersComponent implements OnInit {
   @Input() leagueId: number;
+
+  isLoading: boolean;
   topScorers: LeagueTopScorer[];
 
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
-
+    this.isLoading = true;
     this.repositoryService.getLeagueTopScorers(this.leagueId).subscribe((topScorers: LeagueTopScorer[]) => {
       this.topScorers = topScorers;
+      this.isLoading = false;
     });
 
   }

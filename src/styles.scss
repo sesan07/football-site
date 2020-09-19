@@ -4,11 +4,11 @@
 @import 'tailwindcss/utilities';
 
 html {
-  @apply bg-gray-900;
+  @apply bg-dark-900;
 }
 
 button {
-  @apply border border-gray-500 shadow;
+  @apply border border-dark-100 shadow;
 }
 
 .link {
@@ -24,7 +24,7 @@ button {
 }
 
 .heart {
-  @apply inline-flex justify-center items-center rounded bg-gray-800;
+  @apply inline-flex justify-center items-center rounded bg-dark-400;
 }
 
 .heart:after {
@@ -33,7 +33,7 @@ button {
 }
 
 .heart:hover {
-  @apply bg-gray-900;
+  @apply bg-dark-600;
 }
 
 .heart:hover::after {
@@ -42,7 +42,7 @@ button {
 
 @media (hover: none) {
   .heart:hover {
-    @apply bg-gray-800;
+    @apply bg-dark-600;
   }
 
   .heart:hover::after {

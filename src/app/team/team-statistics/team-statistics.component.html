@@ -1,5 +1,5 @@
-<div class="rounded bg-gray-800 shadow-md">
-  <div class="p-2 flex justify-between items-center font-bold text-xl text-white rounded-t bg-gray-700">
+<div class="rounded bg-dark-600 shadow-md">
+  <div class="p-2 flex justify-between items-center font-bold text-xl text-white rounded-t bg-dark-400">
     <span>Statistics</span>
     <div class="ml-2 flex items-center">
       <app-drop-down *ngIf="leagueOptions"
@@ -27,8 +27,8 @@
   </div>
 </div>
 
-<ng-template class="px-1 py-2 md:px-2" #loadingView>
-  <span>Loading...</span>
+<ng-template #loadingView>
+  <app-loader></app-loader>
 </ng-template>
 
 <ng-template #noDataView>

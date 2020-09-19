@@ -1,5 +1,5 @@
 <div *ngIf="team else loadingView">
-  <div class="px-2 md:px-4 py-4 flex items-center rounded bg-gray-700 text-white">
+  <div class="px-2 md:px-4 py-4 flex items-center rounded bg-dark-200 text-white">
     <div class="flex flex-col items-center">
       <img class="w-24" [src]="team.logo ? team.logo : '../../assets/img/soccer_ball.png'" alt="Team Logo">
       <button class="heart h-8 w-20 mt-2 py-1 " [class.favorite]="isFavorite"
@@ -40,6 +40,6 @@
 
 
 <ng-template #loadingView>
-  <span>Loading...</span>
+  <app-loader></app-loader>
 </ng-template>
 

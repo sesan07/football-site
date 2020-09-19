@@ -10,6 +10,7 @@ import {LeagueTeamStanding} from '../../shared/models/league-standing.model';
 export class LeagueStandingsComponent implements OnInit {
   @Input() leagueId: number;
 
+  isLoading: boolean;
   standings: LeagueTeamStanding[][];
   groupNames: string[];
   activeGroupStandings: LeagueTeamStanding[];
@@ -17,6 +18,7 @@ export class LeagueStandingsComponent implements OnInit {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.repositoryService.getLeagueStandings(this.leagueId).subscribe((standings: LeagueTeamStanding[][]) => {
       this.standings = standings;
       if (standings.length === 0) { return; }
@@ -27,6 +29,8 @@ export class LeagueStandingsComponent implements OnInit {
       standings.forEach(groupStandings => {
         this.groupNames.push(groupStandings[0].group);
       });
+
+      this.isLoading = false;
     });
   }
 

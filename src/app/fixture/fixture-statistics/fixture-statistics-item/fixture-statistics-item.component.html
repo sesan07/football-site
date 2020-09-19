@@ -1,28 +1,24 @@
-<!--<div class="flex flex-col items-center px-2 py-1 font-semibold text-white border-b last:border-b-0 border-gray-500">-->
 <div class="flex flex-col items-center px-2 py-1 font-semibold text-white">
   <span class="font-semibold text-white">{{getStatName()}}</span>
   <div class="flex w-full">
-<!--    <span class="w-10 p-1 mr-2 rounded text-center text-sm">{{statistic[1].home}}</span>-->
-
-
     <div class="flex justify-center items-center w-12 h-12 mr-2 relative">
-      <span class="w-full h-full rounded bg-gray-600 opacity-25"></span>
+      <span class="w-full h-full rounded bg-dark-200"></span>
       <span class="absolute">{{statistic[1].home}}</span>
     </div>
 
     <div class="flex items-center w-full">
-      <div class="flex justify-end h-2 w-1/2 border-r border-gray-600 relative">
-        <span class="h-full w-full rounded-l bg-gray-600 opacity-25"></span>
+      <div class="flex justify-end h-2 w-1/2 border-r border-dark-100 relative">
+        <span class="h-full w-full rounded-l bg-dark-200 opacity-25"></span>
         <span class="h-full rounded-l bg-green-500 absolute" [ngStyle]="{width: getWidth(true)}"></span>
       </div>
 
-      <div class="flex justify-start h-2 w-1/2 border-l border-gray-600 relative">
-        <span class="h-full w-full rounded-r bg-gray-600 opacity-25"></span>
+      <div class="flex justify-start h-2 w-1/2 border-l border-dark-100 relative">
+        <span class="h-full w-full rounded-r bg-dark-200 opacity-25"></span>
         <span class="h-full rounded-r bg-yellow-500 absolute " [ngStyle]="{width: getWidth(false)}"></span>
       </div>
     </div>
     <div class="flex justify-center items-center w-12 h-12 ml-2 relative">
-      <span class="w-full h-full rounded bg-gray-600 opacity-25"></span>
+      <span class="w-full h-full rounded bg-dark-200"></span>
       <span class="absolute">{{statistic[1].away}}</span>
     </div>
   </div>

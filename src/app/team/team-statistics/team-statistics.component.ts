@@ -11,7 +11,7 @@ import {TeamStatistic} from '../../shared/models/team-statistic.model';
 export class TeamStatisticsComponent implements OnInit {
   @Input() teamId: number;
 
-  isLoading = true;
+  isLoading: boolean;
 
   private readonly MAX_SEASONS = 5;
   private leagueSeasonIds = new Map<string, Map<number, number>>();  // Map<leagueName, Map<seasonNumber, leagueId>>
@@ -26,6 +26,7 @@ export class TeamStatisticsComponent implements OnInit {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.repositoryService.getTeamLeagues(this.teamId).subscribe((leagues: League[]) => {
       leagues.forEach(league => {
         if (this.leagueSeasonIds.has(league.name)) {
@@ -45,8 +46,6 @@ export class TeamStatisticsComponent implements OnInit {
           .sort(((a, b) => b - a))[0];
         this.updateData(true, true);
       }
-
-      this.isLoading = false;
     });
   }
 
@@ -65,9 +64,13 @@ export class TeamStatisticsComponent implements OnInit {
       this.activeTeamStatistics = this.teamStatisticsMap.get(activeLeagueId);
     }
     else {
+      this.isLoading = true;
+
       this.repositoryService.getTeamStatistics(this.teamId, activeLeagueId).subscribe((teamStatistics: TeamStatistic[]) => {
         this.teamStatisticsMap.set(activeLeagueId, teamStatistics);
         this.activeTeamStatistics = teamStatistics;
+
+        this.isLoading = false;
       });
     }
 

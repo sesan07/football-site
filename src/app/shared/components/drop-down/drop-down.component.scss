@@ -1,7 +1,17 @@
-.dropdown:hover .dropdown-menu {
-  //display: block;
+//.dropdown:hover .dropdown-menu {
+//  //display: block;
+//}
+
+.dropdown-button {
+  @apply inline-flex items-center font-semibold text-white text-sm rounded bg-dark-400;
 }
 
-.dropdown .dropdown-button {
-  @apply inline-flex items-center font-semibold text-white text-sm rounded bg-gray-700;
+.dropdown-button:hover {
+  @apply bg-dark-600;
+}
+
+@media (hover: none) {
+  .dropdown-button:hover {
+    @apply bg-dark-400;
+  }
 }

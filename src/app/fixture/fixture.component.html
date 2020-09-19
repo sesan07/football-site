@@ -1,44 +1,41 @@
-<div #container>
-  <div *ngIf="isLoaded else loadingView">
-    <app-fixture-header class="hidden lg:block"
-                        [fixture]="fixture">
-    </app-fixture-header>
-    <app-fixture-header-compact class="lg:hidden"
-                                [fixture]="fixture">
-    </app-fixture-header-compact>
+<div *ngIf="isLoaded() else loadingView">
+  <app-fixture-header class="hidden lg:block"
+                      [fixture]="fixture">
+  </app-fixture-header>
+  <app-fixture-header-compact class="lg:hidden"
+                              [fixture]="fixture">
+  </app-fixture-header-compact>
 
-    <div class="flex flex-col-reverse xl:flex-row my-4" *ngIf="fixture">
-      <div class="w-full xl:w-1/2 xl:mr-8">
-        <app-fixture-events *ngIf="fixture.events"
-                            [fixtureEvents]="fixture.events"
-                            [homeTeamId]="fixture.homeTeam.team_id"
-                            [isFullTime]="fixture.statusShort ==='FT'">
-        </app-fixture-events>
-        <app-fixture-statistics *ngIf="statistics"
-                                [statistics]="statistics">
-        </app-fixture-statistics>
-        <app-fixture-head-to-head class="xl:hidden"
-                                  *ngIf="headToHeadFixtureGroups"
-                                  [fixtureGroups]="headToHeadFixtureGroups">
-        </app-fixture-head-to-head>
-      </div>
+  <div class="flex flex-col-reverse xl:flex-row my-4" *ngIf="fixture">
+    <div class="w-full xl:w-1/2 xl:mr-8">
+      <app-fixture-events *ngIf="fixture.events"
+                          [fixtureEvents]="fixture.events"
+                          [homeTeamId]="fixture.homeTeam.team_id"
+                          [isFullTime]="fixture.statusShort ==='FT'">
+      </app-fixture-events>
+      <app-fixture-statistics *ngIf="statistics"
+                              [statistics]="statistics">
+      </app-fixture-statistics>
+      <app-fixture-head-to-head class="xl:hidden"
+                                *ngIf="headToHeadFixtureGroups"
+                                [fixtureGroups]="headToHeadFixtureGroups">
+      </app-fixture-head-to-head>
+    </div>
 
-      <div class="w-full xl:w-1/2">
-        <app-fixture-line-ups *ngIf="fixture && homeLineUp && awayLineUp"
-                              [homeTeam]="fixture.homeTeam"
-                              [awayTeam]="fixture.awayTeam"
-                              [homeLineUp]="homeLineUp"
-                              [awayLineUp]="awayLineUp">
-        </app-fixture-line-ups>
-        <app-fixture-head-to-head class="hidden xl:block" *ngIf="headToHeadFixtureGroups"
-                                  [fixtureGroups]="headToHeadFixtureGroups">
-        </app-fixture-head-to-head>
-      </div>
+    <div class="w-full xl:w-1/2">
+      <app-fixture-line-ups *ngIf="fixture && homeLineUp && awayLineUp"
+                            [homeTeam]="fixture.homeTeam"
+                            [awayTeam]="fixture.awayTeam"
+                            [homeLineUp]="homeLineUp"
+                            [awayLineUp]="awayLineUp">
+      </app-fixture-line-ups>
+      <app-fixture-head-to-head class="hidden xl:block" *ngIf="headToHeadFixtureGroups"
+                                [fixtureGroups]="headToHeadFixtureGroups">
+      </app-fixture-head-to-head>
     </div>
   </div>
 </div>
 
-
 <ng-template #loadingView>
-  <span class="text-white">Loading...</span>
+  <app-loader></app-loader>
 </ng-template>

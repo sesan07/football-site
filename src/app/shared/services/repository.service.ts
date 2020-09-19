@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {ApiService} from './api.service';
 import {Fixture} from '../models/fixture.model';
 import {map} from 'rxjs/operators';
-import {BehaviorSubject} from 'rxjs';
 import {Team} from '../models/team.model';
 import {TeamPlayer} from '../models/team-player.model';
 import {League} from '../models/league.model';
@@ -14,25 +13,13 @@ import {LeagueTeamStanding} from '../models/league-standing.model';
   providedIn: 'root'
 })
 export class RepositoryService {
-  private isLoadingAllFixtures = false;
-  private isLoadingLiveFixtures = false;
   private allLeagues: League[] = [];
-
-  allFixturesSubject = new BehaviorSubject<Fixture[]>([]);
-  liveFixturesSubject = new BehaviorSubject<Fixture[]>([]);
 
   constructor(private apiService: ApiService) { }
 
   getAllFixtures(date: string) {
-    if (this.isLoadingAllFixtures) {
-      console.log('Already loading all fixtures');
-      return;
-    }
-
-    this.isLoadingAllFixtures = true;
-
-    // this.apiService.getAllFixtures(date)
-    this.apiService.getAllFixturesTest()
+    // return this.apiService.getAllFixtures(date)
+    return this.apiService.getAllFixturesTest()
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
@@ -40,27 +27,12 @@ export class RepositoryService {
         }
 
         return fixtures;
-      })))
-      .subscribe(allFixtures => {
-        this.allFixturesSubject.next(allFixtures);
-
-        this.isLoadingAllFixtures = false;
-      }, error => {
-        console.log(error);
-        this.isLoadingAllFixtures = false;
-      });
+      })));
   }
 
   getLiveFixtures() {
-    if (this.isLoadingLiveFixtures) {
-      console.log('Already loading live fixtures');
-      return;
-    }
-
-    this.isLoadingLiveFixtures = true;
-
-    // this.apiService.getLiveFixtures()
-    this.apiService.getLiveFixturesTest()
+    // return this.apiService.getLiveFixtures()
+    return this.apiService.getLiveFixturesTest()
       .pipe(map((responseJsonData => {
         let fixtures: Fixture[] = [];
         if (responseJsonData.api && responseJsonData.api.fixtures) {
@@ -68,15 +40,7 @@ export class RepositoryService {
         }
 
         return fixtures;
-      })))
-      .subscribe(liveFixtures => {
-        this.liveFixturesSubject.next(liveFixtures);
-
-        this.isLoadingLiveFixtures = false;
-      }, error => {
-        console.log(error);
-        this.isLoadingLiveFixtures = false;
-      });
+      })));
   }
 
   getTeam(id: number) {

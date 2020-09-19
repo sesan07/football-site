@@ -9,11 +9,14 @@ import {RepositoryService} from '../../shared/services/repository.service';
 })
 export class TeamSquadComponent implements OnInit {
   @Input() teamId: number;
+
   squad: [string, TeamPlayer[]][];
+  isLoading: boolean;
 
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.repositoryService.getTeamSquad(this.teamId, '2019-2020').subscribe((players: TeamPlayer[]) => {
       const playerMap = new Map<string, TeamPlayer[]>();
       players.forEach(player => {
@@ -28,6 +31,8 @@ export class TeamSquadComponent implements OnInit {
       this.squad.forEach(position => {
         position[1].sort((a, b) => a.firstname.localeCompare(b.firstname));
       });
+
+      this.isLoading = false;
     });
   }
 
