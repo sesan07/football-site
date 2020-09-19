@@ -24,6 +24,12 @@ export class FavoritesService {
   constructor() {
     // localStorage.clear()
 
+    const isFirstLaunch = localStorage.getItem('isFirstLaunch');
+    if (isFirstLaunch === null) {
+      FavoritesService.populateStartingFavorites();
+      localStorage.setItem('isFirstLaunch', 'false');
+    }
+
     const teams: [string, FavoriteTeam][] = JSON.parse(localStorage.getItem('teams'));
     const leagues: [string, FavoriteLeague][] = JSON.parse(localStorage.getItem('leagues'));
     const fixtures: [string, FavoriteFixture][] = JSON.parse(localStorage.getItem('fixtures'));
@@ -39,6 +45,67 @@ export class FavoritesService {
     if (fixtures) {
       fixtures.forEach(value => { this.fixtures.set(value[0], value[1]); });
     }
+  }
+
+  private static populateStartingFavorites() {
+    const teams: Map<string, FavoriteTeam> = new Map([
+      ['49',
+        {
+          id: 49,
+          teamName: 'Chelsea',
+          teamLogo: 'https://media.api-sports.io/football/teams/49.png',
+          clickCount: 0
+        }],
+      ['128',
+        {
+          id: 128,
+          teamName: 'Santos',
+          teamLogo: 'https://media.api-sports.io/football/teams/128.png',
+          clickCount: 0
+        }]
+    ]);
+
+    const leagues: Map<string, FavoriteLeague> = new Map([
+      ['2790',
+        {
+          id: 2790,
+          leagueName: 'Premier League',
+          leagueLogo: 'https://media.api-sports.io/football/leagues/39.png',
+          clickCount: 0
+        }],
+      ['1264',
+        {
+          id: 1264,
+          leagueName: 'Major League Soccer',
+          leagueLogo: 'https://media.api-sports.io/football/leagues/253.png',
+          clickCount: 0
+        }]
+    ]);
+
+    const fixtures: Map<string, FavoriteFixture> = new Map([
+      ['568714',
+        {
+          id: 568714,
+          homeTeamName: 'Reno 1868',
+          awayTeamName: 'Tacoma Defiance',
+          homeTeamLogo: 'https://media.api-sports.io/football/teams/4013.png',
+          awayTeamLogo: 'https://media.api-sports.io/football/teams/4020.png',
+          clickCount: 0
+        }],
+      ['589665',
+        {
+          id: 589665,
+          homeTeamName: 'Tampico Madero',
+          awayTeamName: 'Monarcas',
+          homeTeamLogo: 'https://media.api-sports.io/football/teams/2304.png',
+          awayTeamLogo: 'https://media.api-sports.io/football/teams/2284.png',
+          clickCount: 0
+        }]
+    ]);
+
+    localStorage.setItem('teams', JSON.stringify(Array.from(teams)));
+    localStorage.setItem('leagues', JSON.stringify(Array.from(leagues)));
+    localStorage.setItem('fixtures', JSON.stringify(Array.from(fixtures)));
   }
 
   addTeam(team: Team) {

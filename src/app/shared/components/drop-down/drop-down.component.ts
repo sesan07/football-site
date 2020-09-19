@@ -1,11 +1,11 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-drop-down',
   templateUrl: './drop-down.component.html',
   styleUrls: ['./drop-down.component.scss']
 })
-export class DropDownComponent implements OnInit {
+export class DropDownComponent implements OnInit, OnChanges {
   @Input() options: string[];
   @Input() isListPositionRight = false;
   @Output() ItemClickedIndex = new EventEmitter<number>();
@@ -19,6 +19,10 @@ export class DropDownComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.setUpValues();
+  }
+
+  setUpValues() {
     this.activeButtonLabel = this.options[0];
     this.lastIndex = this.options.length - 1;
   }
@@ -48,5 +52,9 @@ export class DropDownComponent implements OnInit {
     this.activeButtonLabel = this.options[index];
     this.ItemClickedIndex.emit(index);
     this.ItemClickedValue.emit(text);
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.setUpValues();
   }
 }

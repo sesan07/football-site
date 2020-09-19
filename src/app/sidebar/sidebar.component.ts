@@ -15,6 +15,9 @@ export class SidebarComponent implements OnInit {
   teams: FavoriteTeam[];
   leagues: FavoriteLeague[];
   fixtures: FavoriteFixture[];
+  isTeamsOpen = true;
+  isLeaguesOpen = true;
+  isFixturesOpen = false;
 
   constructor(private router: Router, private favoritesService: FavoritesService) { }
 

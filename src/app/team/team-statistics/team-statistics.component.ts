@@ -41,17 +41,24 @@ export class TeamStatisticsComponent implements OnInit {
 
       if (this.leagueSeasonIds.size > 0) {
         this.activeLeagueKey = [...this.leagueSeasonIds.keys()][0];
-        this.activeSeasonKey = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()][0];
-        this.updateData();
+        this.activeSeasonKey = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()]
+          .sort(((a, b) => b - a))[0];
+        this.updateData(true, true);
       }
 
       this.isLoading = false;
     });
   }
 
-  updateData() {
-    this.leagueOptions = [...this.leagueSeasonIds.keys()];
-    this.seasonOptions = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()].map(String);
+  updateData(updateLeagueOptions: boolean, updateSeasonOptions: boolean) {
+    if (updateLeagueOptions) {
+      this.leagueOptions = [...this.leagueSeasonIds.keys()];
+    }
+    if (updateSeasonOptions) {
+      this.seasonOptions = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()]
+        .sort(((a, b) => b - a))
+        .map(String);
+    }
 
     const activeLeagueId = this.leagueSeasonIds.get(this.activeLeagueKey).get(this.activeSeasonKey);
     if (this.teamStatisticsMap.has(activeLeagueId)) {
@@ -68,12 +75,13 @@ export class TeamStatisticsComponent implements OnInit {
 
   onLeagueOptionClicked(text: string) {
     this.activeLeagueKey = text;
-    this.activeSeasonKey = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()][0];
-    this.updateData();
+    this.activeSeasonKey = [...this.leagueSeasonIds.get(this.activeLeagueKey).keys()]
+      .sort(((a, b) => b - a))[0];
+    this.updateData(false, true);
   }
 
   onSeasonOptionClicked(text: string) {
     this.activeSeasonKey = +text;
-    this.updateData();
+    this.updateData(false, false);
   }
 }

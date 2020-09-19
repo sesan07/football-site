@@ -1,6 +1,6 @@
-<div class="w-full md:w-64 fixed flex flex-col z-20"
+<div class="w-full md:w-64 fixed flex flex-col text-white  z-20"
      [ngClass]="{'md:h-screen' : isCollapsed, 'h-screen' : !isCollapsed}">
-  <div class="h-16 p-4  flex justify-between md:justify-center items-center text-white cursor-pointer outline-none bg-green-500"
+  <div class="h-16 p-4  flex justify-between md:justify-center items-center cursor-pointer outline-none bg-green-500"
        (click)="onHomeClicked()">
     <div class="flex">
       <img class="h-12" src="assets/img/soccer_ball.png" alt="Site Logo">
@@ -14,22 +14,46 @@
   <div class="p-2 md:h-full transition ease-in-out transform md:translate-x-0 overflow-x-hidden overscroll-contain bg-gray-800"
        [ngClass]="{'-translate-x-full h-0' : isCollapsed, 'translate-x-0 h-full duration-200' : !isCollapsed}">
 
-
-
-    <app-sidebar-team-item *ngFor="let team of teams"
-                           [team]="team"
-                           (clicked)="onFavoriteClicked()">
-    </app-sidebar-team-item>
-
-    <app-sidebar-league-item *ngFor="let league of leagues"
-                             [league]="league"
+    <button class="w-full mb-1 py-1 flex justify-between items-center border-none shadow-none"
+            (click)="isTeamsOpen = !isTeamsOpen">
+      <span class="font-semibold">Favorite Teams</span>
+      <img class="h-4 w-4 ml-1 transition duration-200 transform" [class.rotate-180]="!isTeamsOpen"
+           src="../../assets/img/up-arrow.png" alt="Dropdown arrow">
+    </button>
+    <div *ngIf="isTeamsOpen">
+      <app-sidebar-team-item *ngFor="let team of teams"
+                             [team]="team"
                              (clicked)="onFavoriteClicked()">
-    </app-sidebar-league-item>
+      </app-sidebar-team-item>
+    </div>
 
-    <app-sidebar-fixture-item *ngFor="let fixture of fixtures"
-                              [fixture]="fixture"
-                              (clicked)="onFavoriteClicked()">
-    </app-sidebar-fixture-item>
+    <button class="w-full mb-1 py-1 flex justify-between items-center border-none shadow-none"
+            (click)="isLeaguesOpen = !isLeaguesOpen">
+      <span class="font-semibold">Favorite Leagues</span>
+      <img class="h-4 w-4 ml-1 transition duration-200 transform" [class.rotate-180]="!isLeaguesOpen"
+           src="../../assets/img/up-arrow.png" alt="Dropdown arrow">
+    </button>
+    <div *ngIf="isLeaguesOpen">
+      <app-sidebar-league-item *ngFor="let league of leagues"
+                               [league]="league"
+                               (clicked)="onFavoriteClicked()">
+      </app-sidebar-league-item>
+    </div>
+
+    <button class="w-full mb-1 py-1 flex justify-between items-center border-none shadow-none"
+            (click)="isFixturesOpen = !isFixturesOpen">
+      <span class="font-semibold">Favorite Fixtures</span>
+      <img class="h-4 w-4 ml-1 transition duration-200 transform" [class.rotate-180]="!isFixturesOpen"
+           src="../../assets/img/up-arrow.png" alt="Dropdown arrow">
+    </button>
+    <div *ngIf="isFixturesOpen">
+      <app-sidebar-fixture-item *ngFor="let fixture of fixtures"
+                                [fixture]="fixture"
+                                (clicked)="onFavoriteClicked()">
+      </app-sidebar-fixture-item>
+    </div>
 
   </div>
+
+
 </div>
