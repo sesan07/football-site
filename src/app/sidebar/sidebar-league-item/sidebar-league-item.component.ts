@@ -25,7 +25,6 @@ export class SidebarLeagueItemComponent implements OnInit {
   onClicked() {
     this.clicked.emit();
     this.favoritesService.leagueClicked(this.league.id);
-    this.router.navigate(['/league', this.league.leagueName, this.league.id]);
   }
 
 }

@@ -3,7 +3,7 @@
   <!-- Header -->
   <div class="flex flex-grow items-center py-2 bg-dark-400 px-4 cursor-pointer"
        (click)="isCollapsed = !isCollapsed">
-    <div class="w-full text-sm ">
+    <div class="w-full text-sm">
       <span>{{fixtureGroup.country}} - </span>
       <a class="truncate link"
             [routerLink]="['/league', fixtureGroup.leagueName, fixtureGroup.leagueId]">
@@ -12,7 +12,8 @@
     </div>
 
     <!--    Date-->
-    <span class="w-24 mr-8 text-center text-sm rounded bg-dark-100"
+    <span class="w-24 mr-8 text-center text-sm transition-opacity duration-200 ease-in-out rounded bg-dark-100 opacity-0"
+          [class.opacity-100]="!isCollapsed"
           *ngIf="date && !isCompactView">
       {{date | date:'d MMM, yy'}}
     </span>

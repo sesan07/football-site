@@ -1,6 +1,8 @@
 <!-- Fixture -->
-<div class="flex items-center py-1 text-white border-t border-dark-100 bg-dark-200 cursor-pointer hover:bg-dark-300"
+<div class="fixture-container">
+  <a class="absolute h-full w-full left-0"
      [routerLink]="['/fixture', fixture.fixture_id]">
+  </a>
 
 <!--  Default View-->
   <div class="px-4 flex flex-grow" *ngIf="!isCompactView else compactView">
@@ -21,13 +23,7 @@
     </div>
 
     <div class="flex flex-grow items-center justify-center">
-      <div class="flex justify-end w-1/2">
-        <a class="text-right text-sm link"
-              [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]"
-              (click)="onTeamClicked($event)">
-          {{fixture.homeTeam.team_name}}
-        </a>
-      </div>
+      <span class="w-1/2 text-right text-sm">{{fixture.homeTeam.team_name}}</span>
 
       <span class="w-24 mx-6 py-1 text-center text-sm rounded bg-dark-400"
             *ngIf="showScore">
@@ -38,13 +34,7 @@
         {{fixture.event_date | date:'HH:mm'}}
       </span>
 
-
-      <div class="w-1/2">
-        <a class="text-left text-sm link"
-              [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]"
-              (click)="onTeamClicked($event)"
-        >{{fixture.awayTeam.team_name}}</a>
-      </div>
+      <span class="w-1/2 text-left text-sm">{{fixture.awayTeam.team_name}}</span>
     </div>
 
     <div class="w-20 flex justify-end"
@@ -67,10 +57,10 @@
 
 <!--  Compact View-->
   <ng-template #compactView>
-    <div class="px-2 flex items-center w-full">
+    <div class="px-1 flex items-center w-full">
 
       <!--    Heart button-->
-      <button class="heart h-8 w-8 mr-2 py-1 " [class.favorite]="isFavorite"
+      <button class="heart h-8 w-8 mr-1 py-1 " [class.favorite]="isFavorite"
               (click)="onFavouriteClicked($event)">
       </button>
 
@@ -91,20 +81,8 @@
 
       <!--    Teams-->
       <div class="flex flex-col flex-grow mr-1">
-        <div class="w-full mb-2">
-          <a class="text-left text-sm link"
-             [routerLink]="['/team', fixture.homeTeam.team_name, fixture.homeTeam.team_id]"
-             (click)="onTeamClicked($event)">
-            {{fixture.homeTeam.team_name}}
-          </a>
-        </div>
-        <div class="w-full">
-          <a class="text-left text-sm link"
-             [routerLink]="['/team', fixture.awayTeam.team_name, fixture.awayTeam.team_id]"
-             (click)="onTeamClicked($event)">
-            {{fixture.awayTeam.team_name}}
-          </a>
-        </div>
+        <span class="mb-2 text-left text-sm">{{fixture.homeTeam.team_name}}</span>
+        <span class="text-left text-sm">{{fixture.awayTeam.team_name}}</span>
       </div>
 
       <!--    Elapsed Time-->

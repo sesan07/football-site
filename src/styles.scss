@@ -20,7 +20,7 @@ button {
 .link:hover {
   @apply
   underline
-  text-green-300;
+  text-green-500;
 }
 
 .heart {
@@ -40,16 +40,6 @@ button {
   content : url("assets/img/heart-add.png");
 }
 
-@media (hover: none) {
-  .heart:hover {
-    @apply bg-dark-600;
-  }
-
-  .heart:hover::after {
-    content : url("assets/img/heart.png");
-  }
-}
-
 .heart.favorite::after {
   content : url("assets/img/heart-added.png");
 }
@@ -59,6 +49,14 @@ button {
 }
 
 @media (hover: none) {
+  .heart:hover {
+    @apply bg-dark-600;
+  }
+
+  .heart:hover::after {
+    content : url("assets/img/heart.png");
+  }
+
   .heart.favorite:hover::after {
     content : url("assets/img/heart-added.png");
   }

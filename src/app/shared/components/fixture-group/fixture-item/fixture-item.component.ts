@@ -38,10 +38,6 @@ export class FixtureItemComponent implements OnInit, OnDestroy {
     });
   }
 
-  onTeamClicked(event: Event) {
-    event.stopPropagation();  // Prevent clicking fixture underneath team
-  }
-
   onFavouriteClicked(event: Event) {
     event.stopPropagation();
 

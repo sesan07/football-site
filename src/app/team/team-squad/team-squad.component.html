@@ -7,7 +7,7 @@
              *ngFor="let position of squad">
           <span class="px-4 py-2 font-semibold text-white bg-dark-400">{{position[0]}}s</span>
           <div class="pb-2 grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-x-4 bg-dark-200">
-            <div class="pl-4 pb-1 pt-3 text-sm border-b last:border-b-0 border-dark-100"
+            <div class="pl-4 pb-1 pt-3 text-sm border-b last:border-b-0 border-dark-400"
                  *ngFor="let player of position[1]">
               <span>{{player.firstname}} {{player.lastname}}</span>
             </div>

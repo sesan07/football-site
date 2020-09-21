@@ -56,11 +56,11 @@ export class FavoritesService {
           teamLogo: 'https://media.api-sports.io/football/teams/49.png',
           clickCount: 0
         }],
-      ['128',
+      ['541',
         {
-          id: 128,
-          teamName: 'Santos',
-          teamLogo: 'https://media.api-sports.io/football/teams/128.png',
+          id: 541,
+          teamName: 'Real Madrid',
+          teamLogo: 'https://media.api-sports.io/football/teams/541.png',
           clickCount: 0
         }]
     ]);
@@ -78,6 +78,13 @@ export class FavoritesService {
           id: 1264,
           leagueName: 'Major League Soccer',
           leagueLogo: 'https://media.api-sports.io/football/leagues/253.png',
+          clickCount: 0
+        }],
+      ['2833',
+        {
+          id: 2833,
+          leagueName: 'Primera Division',
+          leagueLogo: 'https://media.api-sports.io/football/leagues/140.png',
           clickCount: 0
         }]
     ]);

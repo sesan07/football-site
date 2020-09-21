@@ -25,7 +25,6 @@ export class SidebarFixtureItemComponent implements OnInit {
   onClicked() {
     this.clicked.emit();
     this.favoritesService.fixtureClicked(this.fixture.id);
-    this.router.navigate(['/fixture', this.fixture.id]);
   }
 
 }

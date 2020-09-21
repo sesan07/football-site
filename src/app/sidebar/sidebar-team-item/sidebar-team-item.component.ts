@@ -25,7 +25,6 @@ export class SidebarTeamItemComponent implements OnInit {
   onClicked() {
     this.clicked.emit();
     this.favoritesService.teamClicked(this.team.id);
-    this.router.navigate(['/team', this.team.teamName, this.team.id]);
   }
 
 }

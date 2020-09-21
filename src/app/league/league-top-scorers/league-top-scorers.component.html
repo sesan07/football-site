@@ -13,7 +13,7 @@
     </tr>
     </thead>
     <tbody class="bg-dark-200">
-    <tr class="border-t border-dark-100" *ngFor="let topScorer of topScorers">
+    <tr class="border-t border-dark-400" *ngFor="let topScorer of topScorers">
       <td class="py-2 pl-2">{{getPlayerName(topScorer.player_name)}}</td>
       <td class="py-2 text-center ">{{topScorer.goals.total ? topScorer.goals.total : 0}}</td>
       <td class="py-2 text-center ">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</td>

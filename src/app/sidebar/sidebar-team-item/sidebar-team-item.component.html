@@ -1,5 +1,8 @@
-<div class="h-20 mb-2 px-2 py-1 flex items-center justify-between text-white text-sm rounded bg-dark-200 hover:bg-dark-400 cursor-pointer"
-     (click)="onClicked()">
+<div class="relative h-20 mb-2 px-2 py-1 flex items-center justify-between text-white text-sm rounded bg-dark-200 hover:bg-dark-300">
+  <a class="absolute h-full w-full left-0"
+     (click)="onClicked()"
+     [routerLink]="['/team', this.team.teamName, this.team.id]">
+  </a>
   <div class="flex flex-col items-center flex-grow">
     <img class="h-10"
          [src]="team.teamLogo ? team.teamLogo : '../../../assets/img/soccer_ball.png'"

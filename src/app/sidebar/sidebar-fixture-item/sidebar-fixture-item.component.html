@@ -1,5 +1,8 @@
-<div class="h-20 mb-2 p-2 flex items-center text-white text-sm rounded bg-dark-200 hover:bg-dark-400 cursor-pointer"
-     (click)="onClicked()">
+<div class="relative h-20 mb-2 p-2 flex items-center text-white text-sm rounded bg-dark-200 hover:bg-dark-300">
+  <a class="absolute h-full w-full left-0"
+     (click)="onClicked()"
+     [routerLink]="['/fixture', this.fixture.id]">
+  </a>
   <div class="flex flex-col flex-grow">
     <div class="flex items-center">
       <img class="w-6"
