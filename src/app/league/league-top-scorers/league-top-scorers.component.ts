@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {RepositoryService} from '../../shared/services/repository.service';
 import {LeagueTopScorer} from '../../shared/models/league-top-scorer.model';
 
@@ -7,7 +7,7 @@ import {LeagueTopScorer} from '../../shared/models/league-top-scorer.model';
   templateUrl: './league-top-scorers.component.html',
   styleUrls: ['./league-top-scorers.component.scss']
 })
-export class LeagueTopScorersComponent implements OnInit {
+export class LeagueTopScorersComponent implements OnInit, OnChanges {
   @Input() leagueId: number;
 
   isLoading: boolean;
@@ -16,12 +16,17 @@ export class LeagueTopScorersComponent implements OnInit {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.setUp();
+  }
+
+  setUp() {
     this.isLoading = true;
     this.repositoryService.getLeagueTopScorers(this.leagueId).subscribe((topScorers: LeagueTopScorer[]) => {
       this.topScorers = topScorers;
       this.isLoading = false;
+    }, () => {
+      this.isLoading = false;
     });
-
   }
 
   getPlayerName(fullName: string) {
@@ -29,4 +34,9 @@ export class LeagueTopScorersComponent implements OnInit {
     return names.slice()[0] + ' ' + names.slice(-1)[0];
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if (!changes.leagueId.firstChange) {
+      this.setUp();
+    }
+  }
 }

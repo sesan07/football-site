@@ -12,26 +12,37 @@
                      (dateSelected)="onDateSelected($event)">
     </app-date-picker>
 
-    <app-loader *ngIf="isAllLoading"></app-loader>
+    <div *ngIf="!isAllLoading else loadingView">
+      <div *ngIf="allFixtureGroups.length > 0 else noFixturesView">
+        <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups; let i = index"
+                           [fixtureGroup]="fixtureGroup"
+                           [date]="getAllFixturesDate()"
+                           [isCompactView]="isCompactView"
+                           [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
+        </app-fixture-group>
+      </div>
+    </div>
 
-    <app-fixture-group *ngFor="let fixtureGroup of allFixtureGroups; let i = index"
-                       [fixtureGroup]="fixtureGroup"
-                       [date]="getAllFixturesDate()"
-                       [isCompactView]="isCompactView"
-                       [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
-    </app-fixture-group>
   </div>
   <!--  Live Fixtures-->
   <div *ngIf="activeToggleIndex === 1">
-
-    <app-loader *ngIf="isLiveLoading"></app-loader>
-
-    <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups; let i = index"
-                       [fixtureGroup]="fixtureGroup"
-                       [date]="getLiveDate()"
-                       [isCompactView]="isCompactView"
-                       [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
-    </app-fixture-group>
+    <div *ngIf="!isLiveLoading else loadingView">
+      <div *ngIf="liveFixtureGroups.length > 0 else noFixturesView">
+        <app-fixture-group *ngFor="let fixtureGroup of liveFixtureGroups; let i = index"
+                           [fixtureGroup]="fixtureGroup"
+                           [date]="getLiveDate()"
+                           [isCompactView]="isCompactView"
+                           [isCollapsed]="!fixtureGroup.isFavorite && i >= minExpandedFixtureGroups">
+        </app-fixture-group>
+      </div>
+    </div>
   </div>
-
 </div>
+
+<ng-template #loadingView>
+  <app-loader></app-loader>
+</ng-template>
+
+<ng-template #noFixturesView>
+  <span class="text-white">No data available</span>
+</ng-template>

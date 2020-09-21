@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {RepositoryService} from '../../shared/services/repository.service';
 import {LeagueTeamStanding} from '../../shared/models/league-standing.model';
 
@@ -7,7 +7,7 @@ import {LeagueTeamStanding} from '../../shared/models/league-standing.model';
   templateUrl: './league-standings.component.html',
   styleUrls: ['./league-standings.component.scss']
 })
-export class LeagueStandingsComponent implements OnInit {
+export class LeagueStandingsComponent implements OnInit, OnChanges {
   @Input() leagueId: number;
 
   isLoading: boolean;
@@ -18,6 +18,10 @@ export class LeagueStandingsComponent implements OnInit {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.setUp();
+  }
+
+  setUp() {
     this.isLoading = true;
     this.repositoryService.getLeagueStandings(this.leagueId).subscribe((standings: LeagueTeamStanding[][]) => {
       this.standings = standings;
@@ -31,10 +35,18 @@ export class LeagueStandingsComponent implements OnInit {
       });
 
       this.isLoading = false;
+    }, () => {
+      this.isLoading = false;
     });
   }
 
   onGroupClicked(index: number) {
     this.activeGroupStandings = this.standings[index];
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (!changes.leagueId.firstChange) {
+      this.setUp();
+    }
   }
 }

@@ -21,6 +21,7 @@ export class FixtureComponent implements OnInit, OnDestroy {
   awayLineUp: FixtureLineUp;
   statistics: [string, FixtureStatistic][];
   headToHeadFixtureGroups: FixtureGroup[];
+  isLoading: boolean;
 
   constructor(private activatedRoute: ActivatedRoute,
               private titleService: Title,
@@ -29,6 +30,7 @@ export class FixtureComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.routeParamsSub = this.activatedRoute.params.subscribe((params: Params) => {
+      this.isLoading = true;
       this.fixtureId = params.id;
       this.titleService.setTitle('Fixture' + ' - ' + environment.appTitle);
 
@@ -50,19 +52,17 @@ export class FixtureComponent implements OnInit, OnDestroy {
         // Head to head
         this.repositoryService.getFixtureHeadToHead(fixture.homeTeam.team_id, fixture.awayTeam.team_id)
           .subscribe((fixtures: Fixture[]) => {
-            this.headToHeadFixtureGroups = this.fixtureService.getFixtureGroups(fixtures);
+            this.headToHeadFixtureGroups = this.fixtureService.getFixtureGroups(fixtures.reverse());
           });
 
         // Statistics
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
         }
+
+        this.isLoading = false;
       });
     });
-  }
-
-  isLoaded() {
-    return this.fixture && this.headToHeadFixtureGroups;
   }
 
   ngOnDestroy(): void {

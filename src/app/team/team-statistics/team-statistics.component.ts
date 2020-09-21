@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {RepositoryService} from '../../shared/services/repository.service';
 import {League} from '../../shared/models/league.model';
 import {TeamStatistic} from '../../shared/models/team-statistic.model';
@@ -8,7 +8,7 @@ import {TeamStatistic} from '../../shared/models/team-statistic.model';
   templateUrl: './team-statistics.component.html',
   styleUrls: ['./team-statistics.component.scss']
 })
-export class TeamStatisticsComponent implements OnInit {
+export class TeamStatisticsComponent implements OnInit, OnChanges {
   @Input() teamId: number;
 
   isLoading: boolean;
@@ -26,6 +26,10 @@ export class TeamStatisticsComponent implements OnInit {
   constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
+    this.setUp();
+  }
+
+  setUp() {
     this.isLoading = true;
     this.repositoryService.getTeamLeagues(this.teamId).subscribe((leagues: League[]) => {
       leagues.forEach(league => {
@@ -62,6 +66,8 @@ export class TeamStatisticsComponent implements OnInit {
     const activeLeagueId = this.leagueSeasonIds.get(this.activeLeagueKey).get(this.activeSeasonKey);
     if (this.teamStatisticsMap.has(activeLeagueId)) {
       this.activeTeamStatistics = this.teamStatisticsMap.get(activeLeagueId);
+
+      this.isLoading = false;
     }
     else {
       this.isLoading = true;
@@ -86,5 +92,11 @@ export class TeamStatisticsComponent implements OnInit {
   onSeasonOptionClicked(text: string) {
     this.activeSeasonKey = +text;
     this.updateData(false, false);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (!changes.teamId.firstChange) {
+      this.setUp();
+    }
   }
 }

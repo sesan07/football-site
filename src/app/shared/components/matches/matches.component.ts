@@ -1,18 +1,26 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Fixture, FixtureGroup} from '../../models/fixture.model';
 import {FixtureService} from '../../services/fixture.service';
+import {RepositoryService} from '../../services/repository.service';
+
+export enum FixtureType {
+  Team,
+  League
+}
 
 @Component({
   selector: 'app-matches',
   templateUrl: './matches.component.html',
   styleUrls: ['./matches.component.scss']
 })
-export class MatchesComponent implements OnInit {
-  @Input() fixtures: Fixture[];
+export class MatchesComponent implements OnInit, OnChanges {
+  @Input() fixtureType: FixtureType;
+  @Input() id: number;
 
-  nextFixtures: Fixture[] = [];
-  prevFixtures: Fixture[] = [];
+  private nextFixtures: Fixture[] = [];
+  private prevFixtures: Fixture[] = [];
 
+  isLoading: boolean;
   nextFixtureGroups: FixtureGroup[] = [];
   prevFixtureGroups: FixtureGroup[] = [];
 
@@ -24,21 +32,29 @@ export class MatchesComponent implements OnInit {
   nextFixturesPeriod = this.fixturePeriodOptions[0];
   prevFixturesPeriod = this.fixturePeriodOptions[0];
 
-  constructor(private fixtureService: FixtureService) { }
+  constructor(private repositoryService: RepositoryService,
+              private fixtureService: FixtureService) { }
 
   ngOnInit(): void {
-    this.fixtures.forEach(fixture => {
+    this.setUp();
+  }
 
-      if (Date.parse(fixture.event_date) > Date.now()) {
-        this.nextFixtures.push(fixture);
-      } else {
-        this.prevFixtures.push(fixture);
-      }
-    });
-    this.prevFixtures.reverse();
-
-    this.updateFixtureGroups(true);
-    this.updateFixtureGroups(false);
+  setUp() {
+    this.isLoading = true;
+    if (this.fixtureType === FixtureType.Team) {
+      this.repositoryService.getTeamFixtures(this.id).subscribe((fixtures: Fixture[]) => {
+        this.processFixtures(fixtures);
+      }, () => {
+        this.isLoading = false;
+      });
+    }
+    else if (this.fixtureType === FixtureType.League) {
+      this.repositoryService.getLeagueFixtures(this.id).subscribe((fixtures: Fixture[]) => {
+        this.processFixtures(fixtures);
+      }, () => {
+        this.isLoading = false;
+      });
+    }
   }
 
   onToggleButtonClicked(index: number) {
@@ -49,6 +65,25 @@ export class MatchesComponent implements OnInit {
   onPeriodOptionClicked(index: number) {
     this.fixturesPeriod = this.fixturePeriodOptions[index];
     this.checkFixtureGroups();
+  }
+
+  processFixtures(fixtures: Fixture[]) {
+    this.nextFixtures = [];
+    this.prevFixtures = [];
+
+    fixtures.forEach(fixture => {
+      if (Date.parse(fixture.event_date) > Date.now()) {
+        this.nextFixtures.push(fixture);
+      } else {
+        this.prevFixtures.push(fixture);
+      }
+    });
+    this.prevFixtures.reverse();
+
+    this.updateFixtureGroups(true);
+    this.updateFixtureGroups(false);
+
+    this.isLoading = false;
   }
 
   checkFixtureGroups() {
@@ -115,4 +150,9 @@ export class MatchesComponent implements OnInit {
     }
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if (!changes.id.firstChange) {
+      this.setUp();
+    }
+  }
 }

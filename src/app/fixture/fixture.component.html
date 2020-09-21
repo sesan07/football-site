@@ -1,4 +1,4 @@
-<div *ngIf="isLoaded() else loadingView">
+<div *ngIf="!isLoading else loadingView">
   <app-fixture-header class="hidden lg:block"
                       [fixture]="fixture">
   </app-fixture-header>

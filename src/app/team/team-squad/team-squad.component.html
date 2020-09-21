@@ -2,13 +2,15 @@
   <span class="flex p-2 font-bold text-xl text-white bg-dark-400">Squad</span>
   <div class="px-2 pt-2">
     <div *ngIf="!isLoading else loadingView">
-      <div class="mb-2 flex flex-col text-white rounded bg-gray-800 overflow-hidden shadow-md"
-           *ngFor="let position of squad">
-        <span class="px-4 py-2 font-semibold text-white bg-dark-400">{{position[0]}}s</span>
-        <div class="pb-2 grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-x-4 bg-dark-200">
-          <div class="pl-4 pb-1 pt-3 text-sm border-b last:border-b-0 border-dark-100"
-               *ngFor="let player of position[1]">
-            <span>{{player.firstname}} {{player.lastname}}</span>
+      <div *ngIf="squad.length > 0 else noSquadView">
+        <div class="mb-2 flex flex-col text-white rounded bg-gray-800 overflow-hidden shadow-md"
+             *ngFor="let position of squad">
+          <span class="px-4 py-2 font-semibold text-white bg-dark-400">{{position[0]}}s</span>
+          <div class="pb-2 grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-x-4 bg-dark-200">
+            <div class="pl-4 pb-1 pt-3 text-sm border-b last:border-b-0 border-dark-100"
+                 *ngFor="let player of position[1]">
+              <span>{{player.firstname}} {{player.lastname}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -19,4 +21,8 @@
 
 <ng-template #loadingView>
   <app-loader></app-loader>
+</ng-template>
+
+<ng-template #noSquadView>
+  <span class="mb-2 text-white">No squad data available</span>
 </ng-template>

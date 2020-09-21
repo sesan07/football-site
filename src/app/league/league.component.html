@@ -1,41 +1,46 @@
-<div *ngIf="league else loadingView">
-  <div class="px-2 md:px-4 py-4 flex items-center rounded bg-dark-200 text-white">
-    <div class="flex flex-col items-center">
-      <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
-      <button class="heart h-8 w-20 mt-2 py-1 " [class.favorite]="isFavorite"
-              (click)="onFavouriteClicked($event)">
-      </button>
-    </div>
-
-    <div class="flex flex-col ml-4">
-      <span class="font-bold text-2xl">{{league.name}}</span>
-      <div class="flex items-center">
-        <img class="w-4 mr-1" [src]="league.flag ? league.flag : '../../assets/img/soccer_ball.png'" alt="Country Logo">
-        <span class="text-sm">{{league.country}}</span>
+<div *ngIf="!isLoading else loadingView">
+  <div *ngIf="league else leagueErrorView">
+    <div class="px-2 md:px-4 py-4 flex items-center rounded bg-dark-200 text-white">
+      <div class="flex flex-col items-center">
+        <img class="w-24" [src]="league.logo ? league.logo : '../../assets/img/soccer_ball.png'" alt="League Logo">
+        <button class="heart h-8 w-20 mt-2 py-1 " [class.favorite]="isFavorite"
+                (click)="onFavouriteClicked($event)">
+        </button>
       </div>
-      <div class="flex items-center">
-        <img class="w-4 mr-1" src="assets/img/cup.png" alt="Cup Icon">
-        <span class="text-sm">{{league.type}}</span>
+
+      <div class="flex flex-col ml-4">
+        <span class="font-bold text-2xl">{{league.name}}</span>
+        <div class="flex items-center">
+          <img class="w-4 mr-1" [src]="league.flag ? league.flag : '../../assets/img/soccer_ball.png'" alt="Country Logo">
+          <span class="text-sm">{{league.country}}</span>
+        </div>
+        <div class="flex items-center">
+          <img class="w-4 mr-1" src="assets/img/cup.png" alt="Cup Icon">
+          <span class="text-sm">{{league.type}}</span>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="flex flex-col-reverse xl:flex-row my-4">
-    <div class="w-full xl:w-3/5 xl:mr-8">
-      <app-league-standings [leagueId]="leagueId"></app-league-standings>
-      <app-league-top-scorers [leagueId]="leagueId"></app-league-top-scorers>
-    </div>
+    <div class="flex flex-col-reverse xl:flex-row my-4">
+      <div class="w-full xl:w-3/5 xl:mr-8">
+        <app-league-standings [leagueId]="leagueId"></app-league-standings>
+        <app-league-top-scorers [leagueId]="leagueId"></app-league-top-scorers>
+      </div>
 
-    <div class="w-full xl:w-2/5">
-      <app-matches *ngIf="fixtures"
-                   [fixtures]="fixtures">
-      </app-matches>
+      <div class="w-full xl:w-2/5">
+        <app-matches [fixtureType]="fixtureType"
+                     [id]="leagueId">
+        </app-matches>
+      </div>
     </div>
   </div>
 </div>
 
-
 <ng-template #loadingView>
   <app-loader></app-loader>
+</ng-template>
+
+<ng-template #leagueErrorView>
+  <span>Unable to load league</span>
 </ng-template>

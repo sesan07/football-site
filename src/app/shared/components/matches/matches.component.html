@@ -13,19 +13,37 @@
                     (activeChanged)="onToggleButtonClicked($event)">
     </app-tab-toggle>
 
-    <div class="mt-2" *ngIf="toggleIndex === 0">
-      <app-fixture-group *ngFor="let fixtureGroup of nextFixtureGroups"
-                         [fixtureGroup]="fixtureGroup"
-                         [isCompactView]="true"
-                         [showFixtureDates]="true">
-      </app-fixture-group>
-    </div>
-    <div class="mt-2" *ngIf="toggleIndex === 1">
-      <app-fixture-group *ngFor="let fixtureGroup of prevFixtureGroups"
-                         [fixtureGroup]="fixtureGroup"
-                         [isCompactView]="true"
-                         [showFixtureDates]="true">
-      </app-fixture-group>
+    <div class="mt-2" *ngIf="!isLoading else loadingView">
+      <div *ngIf="toggleIndex === 0">
+        <div *ngIf="nextFixtureGroups.length > 0 else noNextFixturesView">
+          <app-fixture-group *ngFor="let fixtureGroup of nextFixtureGroups"
+                             [fixtureGroup]="fixtureGroup"
+                             [isCompactView]="true"
+                             [showFixtureDates]="true">
+          </app-fixture-group>
+        </div>
+      </div>
+      <div *ngIf="(toggleIndex === 1)">
+        <div *ngIf="prevFixtureGroups.length > 0 else noPrevFixturesView">
+          <app-fixture-group *ngFor="let fixtureGroup of prevFixtureGroups"
+                             [fixtureGroup]="fixtureGroup"
+                             [isCompactView]="true"
+                             [showFixtureDates]="true">
+          </app-fixture-group>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<ng-template #loadingView>
+  <app-loader></app-loader>
+</ng-template>
+
+<ng-template #noNextFixturesView>
+  <span class="text-white">No fixtures available</span>
+</ng-template>
+
+<ng-template #noPrevFixturesView>
+  <span class="text-white">No results available</span>
+</ng-template>

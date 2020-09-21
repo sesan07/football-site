@@ -3,7 +3,7 @@
   <div class="flex w-full">
     <div class="flex justify-center items-center w-12 h-12 mr-2 relative">
       <span class="w-full h-full rounded bg-dark-200"></span>
-      <span class="absolute">{{statistic[1].home}}</span>
+      <span class="absolute">{{statistic[1].home !== null ? statistic[1].home : 0}}</span>
     </div>
 
     <div class="flex items-center w-full">
@@ -19,7 +19,7 @@
     </div>
     <div class="flex justify-center items-center w-12 h-12 ml-2 relative">
       <span class="w-full h-full rounded bg-dark-200"></span>
-      <span class="absolute">{{statistic[1].away}}</span>
+      <span class="absolute">{{statistic[1].away !== null ? statistic[1].away : 0}}</span>
     </div>
   </div>
 
