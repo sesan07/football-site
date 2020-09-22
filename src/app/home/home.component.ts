@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   readonly COMPACT_WIDTH = 720;
   isCompactView = false;
 
-  allFixturesDate = new Date();
+  allFixturesDate: Date;
 
   constructor(private titleService: Title,
               private repositoryService: RepositoryService,
@@ -34,15 +34,22 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.titleService.setTitle('Home - ' + environment.appTitle);
-    this.loadFixtures();
+
+    const currDate = new Date();
+    this.allFixturesDate = new Date(currDate.getFullYear(), currDate.getMonth(), currDate.getDate());
+    this.loadAllFixtures(false);
   }
 
   ngAfterViewInit(): void {
     this.updateCompactView();
   }
 
-  loadFixtures() {
-    if (this.activeToggleIndex === 0 && this.allFixtureGroups.length === 0 && !this.isAllLoading) {
+  loadAllFixtures(isNewDate: boolean) {
+    if (!isNewDate && this.allFixtureGroups.length > 0) {
+      return;
+    }
+
+    if (!this.isAllLoading) {
       this.isAllLoading = true;
       this.repositoryService.getAllFixtures(this.datePipe.transform(this.allFixturesDate, 'yyyy-MM-dd'))
         .subscribe((allFixtures: Fixture[]) => {
@@ -50,7 +57,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
           this.isAllLoading = false;
         });
     }
-    else if (this.liveFixtureGroups.length === 0 && !this.isLiveLoading) {
+  }
+
+  loadLiveFixtures() {
+    if (this.liveFixtureGroups.length === 0 && !this.isLiveLoading) {
       this.isLiveLoading = true;
       this.repositoryService.getLiveFixtures()
         .subscribe((liveFixtures: Fixture[]) => {
@@ -71,12 +81,17 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   onToggleButtonClicked(index: number) {
     this.activeToggleIndex = index;
-    this.loadFixtures();
+    if (this.activeToggleIndex === 0) {
+      this.loadAllFixtures(false);
+    } else {
+      this.loadLiveFixtures();
+    }
   }
 
   onDateSelected(date: Date) {
-    this.allFixturesDate = date;
-    this.loadFixtures();
+    const isNewDate = date.getTime() !== this.allFixturesDate.getTime();
+    if (isNewDate) { this.allFixturesDate = date; }
+    this.loadAllFixtures(isNewDate);
   }
 
   getAllFixturesDate() {

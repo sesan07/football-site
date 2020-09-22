@@ -56,7 +56,6 @@ export class SidebarComponent implements OnInit {
 
   onHomeClicked() {
     this.isCollapsed = true;
-    this.router.navigate(['']);
   }
 
   onMenuClicked(event: Event) {
