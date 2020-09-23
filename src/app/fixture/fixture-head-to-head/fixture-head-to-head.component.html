@@ -1,10 +1,16 @@
 <div #container class="mb-4 rounded bg-dark-600 overflow-hidden shadow-md">
   <span class="flex p-2 font-bold text-xl text-white bg-dark-400">Head to Head</span>
   <div class="px-1 py-2 md:px-2">
-    <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
-                       [fixtureGroup]="fixtureGroup"
-                       [isCompactView]="true"
-                       [showFixtureDates]="true">
-    </app-fixture-group>
+    <div *ngIf="fixtureGroups.length > 0 else noFixtureView">
+      <app-fixture-group *ngFor="let fixtureGroup of fixtureGroups"
+                         [fixtureGroup]="fixtureGroup"
+                         [isCompactView]="true"
+                         [showFixtureDates]="true">
+      </app-fixture-group>
+    </div>
   </div>
 </div>
+
+<ng-template #noFixtureView>
+  <span class="text-white">No fixture available</span>
+</ng-template>

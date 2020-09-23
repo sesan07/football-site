@@ -14,6 +14,9 @@ export class FixtureEventsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if (!this.fixtureEvents) {
+      this.fixtureEvents = [];
+    }
   }
 
 }

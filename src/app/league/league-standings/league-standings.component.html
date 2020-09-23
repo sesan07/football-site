@@ -9,7 +9,9 @@
     </app-drop-down>
   </div>
   <div class="px-1 py-2 md:px-2" *ngIf="!isLoading else loadingView">
-    <app-league-standings-group *ngIf="activeGroupStandings"
+
+
+    <app-league-standings-group *ngIf="activeGroupStandings else noStandingsView"
                                 [groupStandings]="activeGroupStandings">
     </app-league-standings-group>
   </div>
@@ -17,4 +19,8 @@
 
 <ng-template #loadingView>
   <app-loader></app-loader>
+</ng-template>
+
+<ng-template #noStandingsView>
+  <span class="text-white">No data available</span>
 </ng-template>

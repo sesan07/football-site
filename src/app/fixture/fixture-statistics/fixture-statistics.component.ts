@@ -12,6 +12,9 @@ export class FixtureStatisticsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if (!this.statistics) {
+      this.statistics = [];
+    }
   }
 
 }

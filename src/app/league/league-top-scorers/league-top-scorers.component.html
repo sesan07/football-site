@@ -1,27 +1,36 @@
 <div class="mb-4 rounded bg-dark-600 overflow-hidden shadow-md">
   <span class="flex p-2 font-bold text-xl text-white bg-dark-400">Top Scorers</span>
 
-  <table class="w-full table-fixed text-white text-sm" *ngIf="!isLoading else loadingView">
-    <thead>
-    <tr class="bg-dark-600">
-      <th class="w-3/4 py-2">Name</th>
-      <th class="py-2 hidden sm:table-cell">Goals</th>
-      <th class="py-2 hidden sm:table-cell">Assists</th>
+  <div *ngIf="!isLoading else loadingView">
+    <table class="w-full table-fixed text-white text-sm" *ngIf="topScorers.length > 0 else noScorersView">
+      <thead>
+      <tr class="bg-dark-600">
+        <th class="w-3/4 py-2">Name</th>
+        <th class="py-2 hidden sm:table-cell">Goals</th>
+        <th class="py-2 hidden sm:table-cell">Assists</th>
 
-      <th class="py-2 sm:hidden">G</th>
-      <th class="py-2 sm:hidden">A</th>
-    </tr>
-    </thead>
-    <tbody class="bg-dark-200">
-    <tr class="border-t border-dark-400" *ngFor="let topScorer of topScorers">
-      <td class="py-2 pl-2">{{getPlayerName(topScorer.player_name)}}</td>
-      <td class="py-2 text-center ">{{topScorer.goals.total ? topScorer.goals.total : 0}}</td>
-      <td class="py-2 text-center ">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</td>
-    </tr>
-    </tbody>
-  </table>
+        <th class="py-2 sm:hidden">G</th>
+        <th class="py-2 sm:hidden">A</th>
+      </tr>
+      </thead>
+      <tbody class="bg-dark-200">
+      <tr class="border-t border-dark-400" *ngFor="let topScorer of topScorers">
+        <td class="py-2 pl-2">{{getPlayerName(topScorer.player_name)}}</td>
+        <td class="py-2 text-center ">{{topScorer.goals.total ? topScorer.goals.total : 0}}</td>
+        <td class="py-2 text-center ">{{topScorer.goals.assists ? topScorer.goals.assists : 0}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
 
 <ng-template #loadingView>
   <app-loader></app-loader>
+</ng-template>
+
+<ng-template #noScorersView>
+  <div class="p-2 text-white">
+    <span>No data available</span>
+  </div>
 </ng-template>

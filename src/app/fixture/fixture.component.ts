@@ -42,10 +42,14 @@ export class FixtureComponent implements OnInit, OnDestroy {
         if (fixture.lineups) {
           if (fixture.lineups.hasOwnProperty(fixture.homeTeam.team_name)) {
             this.homeLineUp = fixture.lineups[fixture.homeTeam.team_name];
+          } else {
+            this.homeLineUp = null;
           }
 
           if (fixture.lineups.hasOwnProperty(fixture.awayTeam.team_name)) {
             this.awayLineUp = fixture.lineups[fixture.awayTeam.team_name];
+          } else {
+            this.awayLineUp = null;
           }
         }
 
@@ -58,8 +62,12 @@ export class FixtureComponent implements OnInit, OnDestroy {
         // Statistics
         if (fixture.statistics) {
           this.statistics = Object.entries(fixture.statistics);
+        } else {
+          this.statistics = null;
         }
 
+        this.isLoading = false;
+      }, () => {
         this.isLoading = false;
       });
     });

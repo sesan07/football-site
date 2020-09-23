@@ -11,6 +11,10 @@ export class FixtureHeadToHeadComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    if (!this.fixtureGroups) {
+      this.fixtureGroups = [];
+    }
+  }
 
 }

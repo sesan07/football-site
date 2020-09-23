@@ -11,7 +11,7 @@ export class LeagueTopScorersComponent implements OnInit, OnChanges {
   @Input() leagueId: number;
 
   isLoading: boolean;
-  topScorers: LeagueTopScorer[];
+  topScorers: LeagueTopScorer[] = [];
 
   constructor(private repositoryService: RepositoryService) { }
 

@@ -25,7 +25,11 @@ export class LeagueStandingsComponent implements OnInit, OnChanges {
     this.isLoading = true;
     this.repositoryService.getLeagueStandings(this.leagueId).subscribe((standings: LeagueTeamStanding[][]) => {
       this.standings = standings;
-      if (standings.length === 0) { return; }
+      if (standings.length === 0) {
+        this.activeGroupStandings = null;
+        this.groupNames = [];
+        return;
+      }
 
       this.activeGroupStandings = this.standings[0];
 
