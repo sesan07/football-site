@@ -15,7 +15,7 @@ import {SeasonApiResponse} from '../models/season.model';
 export class ApiService {
 
   private readonly BASE_URL = 'https://v2.api-football.com';
-  private readonly TEST_MODE = true;
+  private readonly TEST_MODE = false;
 
   constructor(private http: HttpClient) { }
 
