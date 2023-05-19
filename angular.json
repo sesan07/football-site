@@ -114,7 +114,6 @@
       }
     }
   },
-  "defaultProject": "football-site",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"
