@@ -130,7 +130,7 @@
   "defaultProject": "football-site",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "style": "scss"
     }
   }
 }
